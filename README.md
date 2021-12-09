@@ -1,6 +1,8 @@
-### Hi there 👋
+### Hi Coders 👋
 
 Welcome to my profile!
+If you are not a programmer, i think you need to retrace your steps.
+Not a 404 page tho.😊
 
 
 <!--
