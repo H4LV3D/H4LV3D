@@ -1,14 +1,8 @@
-### Hi Coders 👋
+### Hi there, 👋
 
-Welcome to my profile!
-If you are not a programmer, i think you need to retrace your steps.
-Not a 404 page tho.😊
+Looking for Something? 😊
 
-
-<!--
-**H4LV3D/H4LV3d** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
+I am Moyinoluwa Akinkunmi, Currently a Full stack Developer about to finish my Bachelor's Degree Engineering.
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
@@ -16,6 +10,6 @@ Here are some ideas to get you started:
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
-- 😄 Pronouns: ...
+
 - ⚡ Fun fact: ...
---
+
