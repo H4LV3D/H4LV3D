@@ -1,5 +1,6 @@
 # Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Toluwalope Akinkunmi
 
+<<<<<<< HEAD
 ## Developer
 
 Hey there, I'm Toluwalope Akinkunmi, a web and app developer based in Nigeria. People often tell me my name sounds cool, but I like to think it's my coding skills that are really cool! Right now, I'm working on a project called Coinsave - I figured I better save up some coins if I want to afford the newest and fanciest computer to code on. I'm always looking to learn new things, which is why I'm currently diving into Solidity and three.js. But let's be real - my real superpower is making sure that every website and app I create has the perfect shade of blue in the color scheme. I've been known to code in my sleep, although I don't recommend it - my keyboard's gotten pretty drool-y over the years. I'm always up for a coding challenge, so hit me up if you need some help or want to collaborate on an open source project. Just make sure to bring coffee, because let's be real, coding without caffeine is like trying to drive a car with no gas!
@@ -53,3 +54,14 @@ Hey there, I'm Toluwalope Akinkunmi, a web and app developer based in Nigeria. P
 ### Support Me
 
 <a href="https://www.buymeacoffee.com/Toluwalope"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
+=======
+##Looking for Something? 😊
+
+### I am Moyinoluwa Akinkunmi. 
+Currently a Full stack Developer about to finish my Bachelor's Degree Engineering.
+
+🔭 I’m currently working on CoinSave
+🌱 I’m currently learning Next.js
+👯 I’m looking to collaborate on Javascript WebApps
+📫 How to reach me: @moyinoluwa
+>>>>>>> refs/remotes/origin/main
