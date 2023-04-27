@@ -6,7 +6,7 @@ Hey there, I am a web and app developer based in Nigeria. People often tell me m
 
 - 🌍  I'm based in Nigeria
 - ✉️  You can contact me at [akinkunmitolulope23@gmail.com](mailto:akinkunmitolulope23@gmail.com)
-- 🚀  I'm currently working on [Coinsave](http://coinsave.app.railway.up)
+- 🚀  I'm currently working on [Coinsave](http://coinsave.cyclic.app). you might want to check it out.
 - 🧠  I'm learning Solidity and three.js
 - 🤝  I'm open to collaborating on Open source projects
 - ⚡  I have a degree in electrical electronics engineering, so i would like to code in space
