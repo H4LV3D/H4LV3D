@@ -1,6 +1,6 @@
-# Hi, ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
+# Toluwalope Akinkunmi [](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)
 
-Hey there! I'm Toluwalope Akinkunmi, a full-stack developer with a passion for crafting digital masterpieces. What makes me stand out? It's my obsession with perfection. I don't settle for 'good enough'; I strive for pixel-perfect front-end designs that leave users dazzled and back-end structures that are as solid as a rock. I take pride in architecting scalable, maintainable systems that withstand the test of time.
+Hey there! I am a full-stack developer with a passion for crafting digital masterpieces. What makes me stand out? It's my obsession with perfection. I don't settle for 'good enough'; I strive for pixel-perfect front-end designs that leave users dazzled and back-end structures that are as solid as a rock. I take pride in architecting scalable, maintainable systems that withstand the test of time.
 
 My toolset? It's diverse and always expanding. From React and Next for front-end wizardry to Node.js for server-side sorcery, I wield a wide range of technologies with finesse. But it's not just about the tools; it's about the art of coding itself. Clean code, efficient algorithms, and a knack for problem-solving are my signature traits. Let's collaborate, and together we'll build something truly extraordinary.
 
