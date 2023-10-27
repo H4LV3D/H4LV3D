@@ -5,27 +5,8 @@ I am a dedicated and detail-oriented developer with a strong commitment to quali
 My toolset? It's diverse and always expanding. From React and Next for front-end wizardry to Node.js for server-side sorcery, I wield a wide range of technologies with finesse. But it's not just about the tools; it's about the art of coding itself.Let's collaborate, and together we'll build something truly extraordinary.
 
 - ✉️  You can contact me at [akinkunmitolulope23@gmail.com](mailto:akinkunmitolulope23@gmail.com)
-- 🚀  I'm currently working on Gen-Z blog site.
-
-## Skills
-
-### Programming Skills
-
-- Frontend Development: Bringing ideas to life in the browser, coding from scratch.
-- Backend Development: Building powerful server-side systems, coding from scratch.
-- Hosting & Deployments: Optimum deployments & reliable hosting for web apps.
-- Web Applications: Creating dynamic and intuitive web experiences.
-- API Development: Crafting robust APIs, turning ideas into functional solutions.
-- Mobile Applications: Developing mobile apps with seamless user experiences.
-
-### Soft Skills
-
-- Effective Communication: Exchange of information and ideas.
-- Smart Collaboration: Working effectively in a team environment.
-- Easy Adaptability: Flexibility to embrace change and new technologies.
-- Time Management: Efficiently organizing and prioritizing tasks.
-- Problem Solving: Analytical thinking to resolve challenges.
-- Creativity & Innovations: Generating innovative solutions and ideas.
+- 🚀  I'm currently contributing to open source projects.
+- 📝  I'm currently learning React Native and GraphQL.
 
 ## Personal Projects
 
@@ -75,6 +56,26 @@ Cabify offers hassle-free travel with easy booking, real-time updates, and secur
 - Average rating of 4.5 out of 5 stars based on user reviews and feedback
 
 [View Project](https://cabify.cyclic.app)
+
+## Skills
+
+### Programming Skills
+
+- Frontend Development: Bringing ideas to life in the browser, coding from scratch.
+- Backend Development: Building powerful server-side systems, coding from scratch.
+- Hosting & Deployments: Optimum deployments & reliable hosting for web apps.
+- Web Applications: Creating dynamic and intuitive web experiences.
+- API Development: Crafting robust APIs, turning ideas into functional solutions.
+- Mobile Applications: Developing mobile apps with seamless user experiences.
+
+### Soft Skills
+
+- Effective Communication: Exchange of information and ideas.
+- Smart Collaboration: Working effectively in a team environment.
+- Easy Adaptability: Flexibility to embrace change and new technologies.
+- Time Management: Efficiently organizing and prioritizing tasks.
+- Problem Solving: Analytical thinking to resolve challenges.
+- Creativity & Innovations: Generating innovative solutions and ideas.
 
 ### Languages
 
