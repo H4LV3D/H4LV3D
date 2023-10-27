@@ -9,7 +9,6 @@ My toolset? It's diverse and always expanding. From React and Next for front-end
 - 🧠  I'm learning Solidity and three.js.
 - 🤝  I'm open to collaborating on Open source projects.
 - ⚡  I have a degree in electrical electronics engineering.
-- My blog is coming soon.
 
 ### Languages
 
