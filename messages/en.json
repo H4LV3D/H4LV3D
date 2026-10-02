@@ -1,0 +1,336 @@
+{
+  "Meta": {
+    "siteTitle": "Toluwalope Akinkunmi — Software Developer",
+    "description": "Toluwalope Akinkunmi is a software developer building fast, friendly web and mobile products with React, Next.js and Node.",
+    "ogTagline": "Software developer · Web & mobile"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content",
+    "primary": "Primary",
+    "openCommand": "Open command menu",
+    "theme": {
+      "label": "Theme",
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": "Language"
+  },
+  "Preloader": {
+    "loading": "Loading",
+    "tagline": "Sketching things…"
+  },
+  "Footer": {
+    "cta": "Let's talk",
+    "ctaSub": "Have an idea? My inbox is open.",
+    "built": "Built with Next.js and a lot of coffee",
+    "backToTop": "Back to top",
+    "rights": "© {year} Toluwalope Akinkunmi",
+    "elsewhere": "Elsewhere",
+    "sitemap": "Sitemap"
+  },
+  "Command": {
+    "placeholder": "Type a command or search…",
+    "empty": "No results found.",
+    "pages": "Pages",
+    "actions": "Actions",
+    "socials": "Socials",
+    "language": "Language",
+    "copyEmail": "Copy email address"
+  },
+  "Common": {
+    "copied": "Email copied to clipboard",
+    "copyEmail": "Copy email",
+    "available": "Available for new projects",
+    "unavailable": "Currently booked",
+    "view": "View",
+    "scroll": "Scroll"
+  },
+  "Peep": {
+    "laptop": "Toluwalope working on a laptop",
+    "wave": "Toluwalope waving hello",
+    "thinking": "Toluwalope thinking",
+    "coffee": "Toluwalope holding a coffee",
+    "envelope": "Toluwalope holding an envelope",
+    "sign": "Toluwalope holding a sign",
+    "lost": "Toluwalope holding a map upside down"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Software developer · Web & mobile",
+      "greeting": "Hi, I'm",
+      "name": "Toluwalope",
+      "roles": {
+        "a": "I build web & mobile apps.",
+        "b": "I solve real problems.",
+        "c": "I ship products people use.",
+        "d": "I sweat the small details."
+      },
+      "intro": "I design and build fast, friendly web and mobile products — from the first sketch to the last deploy.",
+      "note": "that's me, drawn!",
+      "cta": "See my work",
+      "secondary": "Get in touch"
+    },
+    "intro": {
+      "label": "01 / Intro",
+      "text": "I care about the details people feel but rarely notice: how a button responds, how a page loads, how a sentence reads. My toolkit is React, Next.js and Node — my habit is shipping, measuring and making it better."
+    },
+    "work": {
+      "label": "02 / Selected work",
+      "title": "Things I've built",
+      "all": "All projects"
+    },
+    "toolkit": {
+      "label": "03 / Toolkit"
+    },
+    "currently": {
+      "label": "04 / Currently",
+      "title": "What I'm up to",
+      "learning": "Learning React Native & GraphQL",
+      "oss": "Contributing to open source",
+      "building": "Building Reciept, a receipt generator"
+    },
+    "cta": {
+      "title": "Got an idea?",
+      "subtitle": "Let's turn it into something people love using.",
+      "button": "Start a conversation",
+      "sign": "hire me!"
+    }
+  },
+  "About": {
+    "metaTitle": "About",
+    "metaDescription": "The story, experience and toolkit of Toluwalope Akinkunmi, software developer.",
+    "label": "About",
+    "title": "A developer who still sketches on paper.",
+    "photo": {
+      "real": "The real me",
+      "drawn": "The drawn me",
+      "hint": "Hover or tap to switch",
+      "pending": "Photo coming soon",
+      "alt": "Portrait of Toluwalope Akinkunmi"
+    },
+    "story": {
+      "p1": "I'm Toluwalope Akinkunmi, a software developer focused on web and mobile. I like turning messy ideas into products that feel simple.",
+      "p2": "I've built and scaled products used by hundreds of people — budgeting tools, ride booking, blogging platforms — and I've learned that quality is a habit, not a phase.",
+      "p3": "Outside the editor I play games, binge series, read, and contribute to open source. I'm always up for meeting new people and learning from them.",
+      "note": "yes, I draw these too"
+    },
+    "stats": {
+      "label": "By the numbers",
+      "projects": "Projects completed",
+      "companies": "Companies worked with",
+      "clients": "Happy clients",
+      "pages": "Pages shipped"
+    },
+    "tabs": {
+      "experience": "Experience",
+      "toolkit": "Toolkit",
+      "approach": "Approach"
+    },
+    "experience": {
+      "present": "Present",
+      "coinsave": {
+        "role": "Full-stack Developer",
+        "company": "Coinsave",
+        "body": "Designing, developing, managing and scaling a budgeting platform with 500+ users, while continuously improving performance and functionality."
+      },
+      "cabify": {
+        "role": "Front-end Developer",
+        "company": "Cabify",
+        "body": "Optimised performance for fast loads and smooth navigation, which lifted customer satisfaction and engagement."
+      }
+    },
+    "toolkit": {
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "mobile": "Mobile",
+      "tooling": "Tooling"
+    },
+    "approach": {
+      "title": "How I work",
+      "communication": {
+        "title": "Clear communication",
+        "body": "Short updates, honest timelines and no jargon. You always know what's happening and why."
+      },
+      "collaboration": {
+        "title": "Smart collaboration",
+        "body": "I work well with designers, PMs and other engineers — reviews, pairing and shared ownership."
+      },
+      "adaptability": {
+        "title": "Easy adaptability",
+        "body": "New stack, new domain, changed scope — I pick things up quickly and adjust without drama."
+      },
+      "time": {
+        "title": "Time management",
+        "body": "I break work into small, shippable pieces and prioritise what moves the needle first."
+      },
+      "problems": {
+        "title": "Problem solving",
+        "body": "I dig until I understand the real problem, then pick the simplest thing that solves it."
+      },
+      "creativity": {
+        "title": "Creativity & innovation",
+        "body": "Good products have a little delight in them. I look for the detail that makes people smile."
+      }
+    },
+    "offscreen": {
+      "label": "Off-screen",
+      "games": "Playing games",
+      "series": "Watching series",
+      "books": "Reading books",
+      "oss": "Open source"
+    }
+  },
+  "Work": {
+    "metaTitle": "Work",
+    "metaDescription": "Selected projects by Toluwalope Akinkunmi — web apps, mobile apps and full-stack products.",
+    "label": "Work",
+    "title": "Selected work",
+    "subtitle": "Products I've designed, built and shipped.",
+    "count": "{count, plural, one {# project} other {# projects}}",
+    "filters": {
+      "label": "Filter projects",
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "fullstack": "Full-stack"
+    },
+    "layout": {
+      "label": "Layout",
+      "list": "List",
+      "grid": "Grid"
+    },
+    "status": {
+      "live": "Live",
+      "in-development": "In development",
+      "offline": "Archived"
+    },
+    "caseStudy": {
+      "back": "All work",
+      "role": "Role",
+      "year": "Year",
+      "stack": "Stack",
+      "links": "Links",
+      "status": "Status",
+      "live": "Visit site",
+      "code": "Source code",
+      "noLinks": "Private / archived",
+      "problem": "The problem",
+      "process": "The process",
+      "outcome": "The outcome",
+      "learnings": "What I learned",
+      "next": "Next project",
+      "imagePending": "Screenshots coming soon"
+    }
+  },
+  "Projects": {
+    "metrics": {
+      "users": "active users",
+      "engagement": "engagement rate",
+      "rating": "average rating"
+    },
+    "coinsave": {
+      "title": "Coinsave",
+      "tagline": "Expense & budget tracker",
+      "summary": "Take control of your finances: track income and expenses, set budgets, get notified, and monitor bank transactions in one place.",
+      "role": "Full-stack Developer",
+      "problem": "Most people know they should budget but drop off after a week. Spreadsheets are tedious and banking apps only show what already happened.",
+      "process": "I designed a fast, low-friction flow for logging spending, built budgets with smart alerts, and connected bank transaction monitoring so the app does most of the work.",
+      "outcome": "Coinsave grew to more than 500 active users with over 70% engagement and an average rating of 4.5 out of 5.",
+      "learnings": "Retention is a product feature. Small touches — sensible defaults, timely nudges — mattered more than any big feature."
+    },
+    "cabify": {
+      "title": "Cabify",
+      "tagline": "Cab & bus booking app",
+      "summary": "Hassle-free travel with easy booking, real-time updates and secure payments for rides in buses and cabs.",
+      "role": "Front-end Developer",
+      "problem": "Booking a ride meant juggling calls, cash and uncertainty about when the driver would actually show up.",
+      "process": "I built the booking and tracking interfaces with a focus on performance, so the app loads fast and navigation feels smooth even on slow connections.",
+      "outcome": "More than 500 active users, over 70% engagement and an average rating of 4.5 out of 5.",
+      "learnings": "Perceived speed is real speed. Skeletons, optimistic updates and fewer round-trips changed how fast the app felt."
+    },
+    "genz-blog": {
+      "title": "Gen-Z Blog",
+      "tagline": "A blogging platform",
+      "summary": "A place to read and write articles on all kinds of topics — simple, minimal, and fully dark-mode friendly.",
+      "role": "Full-stack Developer",
+      "problem": "Blogging platforms are either bloated or built for professionals. I wanted something that felt light and welcoming for every age group.",
+      "process": "I built it with React, Next.js and Tailwind on the front, and Node.js with SQL behind it, keeping the writing flow distraction-free.",
+      "outcome": "Over 100 active users reading and writing on the platform.",
+      "learnings": "Minimal design is a lot of decisions. Every removed option made writing easier."
+    },
+    "reciept": {
+      "title": "Reciept",
+      "tagline": "A receipt generator",
+      "summary": "Create receipts for businesses and personal use, export them as PDFs and print on thermal printers — a digital and a paper copy at once.",
+      "role": "Designer & Developer",
+      "problem": "Small businesses waste ink and paper on receipts and rarely keep a reliable digital record.",
+      "process": "Receipts are generated as PDFs sized for thermal printers, so one action gives you both a paper copy and a digital proof of purchase.",
+      "outcome": "Still in development — coming soon.",
+      "learnings": "Printing is the hardest part of the web. Thermal printers have opinions."
+    }
+  },
+  "Contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch with Toluwalope Akinkunmi about a project, a role or a question.",
+    "label": "Contact",
+    "title": "Let's talk.",
+    "subtitle": "Have a project, a role or just a question? My inbox is open.",
+    "or": "or write to",
+    "form": {
+      "name": "Your name",
+      "namePlaceholder": "Ada Lovelace",
+      "email": "Email",
+      "emailPlaceholder": "ada@example.com",
+      "budget": "Budget",
+      "budgetPlaceholder": "Pick a range (optional)",
+      "budgets": {
+        "small": "Under $1k",
+        "medium": "$1k – $5k",
+        "large": "$5k – $15k",
+        "xl": "$15k+",
+        "unsure": "Not sure yet"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your idea…",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Message sent — I'll get back to you soon.",
+      "error": "Something went wrong. Please try again or email me directly.",
+      "notConfigured": "The contact form isn't connected yet — please email me directly.",
+      "errors": {
+        "name": "Please tell me your name.",
+        "email": "That email doesn't look right.",
+        "message": "A little more detail, please (at least 10 characters)."
+      }
+    },
+    "faq": {
+      "title": "Good to know",
+      "projects": {
+        "q": "What kind of projects do you take on?",
+        "a": "Web apps, mobile apps and full-stack products — from MVPs to improving something that already exists."
+      },
+      "start": {
+        "q": "How soon can you start?",
+        "a": "Usually within a couple of weeks. Send me a message and I'll reply with honest availability."
+      },
+      "remote": {
+        "q": "Do you work remotely?",
+        "a": "Yes. I'm used to async, remote collaboration with teams across time zones."
+      }
+    }
+  },
+  "NotFound": {
+    "label": "404",
+    "title": "This page wandered off.",
+    "body": "The link might be broken, or the page may have moved.",
+    "back": "Take me home"
+  }
+}

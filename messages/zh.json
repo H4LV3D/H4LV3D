@@ -1,0 +1,336 @@
+{
+  "Meta": {
+    "siteTitle": "Toluwalope Akinkunmi — 软件开发",
+    "description": "Toluwalope Akinkunmi 使用 React、Next.js 和 Node 打造快速、友好的 Web 与移动产品。",
+    "ogTagline": "软件开发 · Web 与移动端"
+  },
+  "Nav": {
+    "home": "首页",
+    "about": "关于",
+    "work": "作品",
+    "contact": "联系",
+    "menu": "菜单",
+    "close": "关闭",
+    "skip": "跳到正文",
+    "primary": "主导航",
+    "openCommand": "打开命令菜单",
+    "theme": {
+      "label": "主题",
+      "toggle": "切换主题",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统"
+    },
+    "language": "语言"
+  },
+  "Preloader": {
+    "loading": "加载中",
+    "tagline": "正在画草图…"
+  },
+  "Footer": {
+    "cta": "聊一聊",
+    "ctaSub": "有想法？欢迎随时来信。",
+    "built": "由 Next.js 和大量咖啡驱动",
+    "backToTop": "回到顶部",
+    "rights": "© {year} Toluwalope Akinkunmi",
+    "elsewhere": "其他平台",
+    "sitemap": "网站地图"
+  },
+  "Command": {
+    "placeholder": "输入命令或搜索…",
+    "empty": "没有找到结果。",
+    "pages": "页面",
+    "actions": "操作",
+    "socials": "社交媒体",
+    "language": "语言",
+    "copyEmail": "复制邮箱地址"
+  },
+  "Common": {
+    "copied": "邮箱已复制到剪贴板",
+    "copyEmail": "复制邮箱",
+    "available": "可承接新项目",
+    "unavailable": "目前档期已满",
+    "view": "查看",
+    "scroll": "向下滚动"
+  },
+  "Peep": {
+    "laptop": "正在用笔记本电脑工作的 Toluwalope",
+    "wave": "挥手打招呼的 Toluwalope",
+    "thinking": "正在思考的 Toluwalope",
+    "coffee": "端着咖啡的 Toluwalope",
+    "envelope": "拿着信封的 Toluwalope",
+    "sign": "举着牌子的 Toluwalope",
+    "lost": "把地图拿反了的 Toluwalope"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "软件开发 · Web 与移动端",
+      "greeting": "你好，我是",
+      "name": "Toluwalope",
+      "roles": {
+        "a": "我打造 Web 与移动应用。",
+        "b": "我解决真实的问题。",
+        "c": "我上线人们真正在用的产品。",
+        "d": "我在意每一个细节。"
+      },
+      "intro": "我设计并开发快速、友好的 Web 与移动产品——从第一张草图到最后一次部署。",
+      "note": "这就是画里的我！",
+      "cta": "查看作品",
+      "secondary": "联系我"
+    },
+    "intro": {
+      "label": "01 / 简介",
+      "text": "我在意那些人们能感受到却很少注意到的细节：按钮如何回应、页面如何加载、句子读起来如何。我的工具是 React、Next.js 和 Node，我的习惯是上线、衡量、再改进。"
+    },
+    "work": {
+      "label": "02 / 精选作品",
+      "title": "我做过的东西",
+      "all": "全部项目"
+    },
+    "toolkit": {
+      "label": "03 / 工具箱"
+    },
+    "currently": {
+      "label": "04 / 近况",
+      "title": "最近在忙什么",
+      "learning": "学习 React Native 和 GraphQL",
+      "oss": "为开源项目做贡献",
+      "building": "开发收据生成器 Reciept"
+    },
+    "cta": {
+      "title": "有想法吗？",
+      "subtitle": "一起把它变成人们爱用的产品。",
+      "button": "开始聊聊",
+      "sign": "雇我吧！"
+    }
+  },
+  "About": {
+    "metaTitle": "关于",
+    "metaDescription": "软件开发者 Toluwalope Akinkunmi 的故事、经历与工具箱。",
+    "label": "关于",
+    "title": "写代码，也依然在纸上画画。",
+    "photo": {
+      "real": "真实的我",
+      "drawn": "画里的我",
+      "hint": "悬停或点击切换",
+      "pending": "照片即将上线",
+      "alt": "Toluwalope Akinkunmi 的肖像"
+    },
+    "story": {
+      "p1": "我是 Toluwalope Akinkunmi，专注于 Web 和移动端的软件开发者。我喜欢把杂乱的想法变成用起来很简单的产品。",
+      "p2": "我打造并扩展过数百人使用的产品——预算工具、出行预订、博客平台——也明白了品质是一种习惯，而不是某个阶段。",
+      "p3": "离开编辑器，我会打游戏、追剧、看书，也会为开源做贡献。我一直乐于结识新朋友，向他们学习。",
+      "note": "没错，这些也是我画的"
+    },
+    "stats": {
+      "label": "数字一览",
+      "projects": "已完成项目",
+      "companies": "合作过的公司",
+      "clients": "满意的客户",
+      "pages": "上线的页面"
+    },
+    "tabs": {
+      "experience": "经历",
+      "toolkit": "工具箱",
+      "approach": "工作方式"
+    },
+    "experience": {
+      "present": "至今",
+      "coinsave": {
+        "role": "全栈开发",
+        "company": "Coinsave",
+        "body": "负责一个拥有 500 多名用户的预算平台的设计、开发、管理与扩展，并持续提升性能和功能。"
+      },
+      "cabify": {
+        "role": "前端开发",
+        "company": "Cabify",
+        "body": "优化性能，实现快速加载和流畅导航，提升了客户满意度和参与度。"
+      }
+    },
+    "toolkit": {
+      "frontend": "前端",
+      "backend": "后端",
+      "mobile": "移动端",
+      "tooling": "工具"
+    },
+    "approach": {
+      "title": "我的工作方式",
+      "communication": {
+        "title": "清晰沟通",
+        "body": "简短的进展更新、诚实的时间预估、没有术语堆砌。你永远知道发生了什么以及原因。"
+      },
+      "collaboration": {
+        "title": "高效协作",
+        "body": "我能和设计师、产品经理以及其他工程师顺畅合作——代码评审、结对编程、共同负责。"
+      },
+      "adaptability": {
+        "title": "灵活适应",
+        "body": "新技术栈、新领域、需求变动——我上手快，调整起来也不慌不忙。"
+      },
+      "time": {
+        "title": "时间管理",
+        "body": "我把工作拆成可以交付的小块，优先做最有价值的部分。"
+      },
+      "problems": {
+        "title": "解决问题",
+        "body": "我会一直深挖，直到弄清真正的问题，再选最简单的方案。"
+      },
+      "creativity": {
+        "title": "创意与创新",
+        "body": "好的产品总带点小惊喜。我会寻找那个让人会心一笑的细节。"
+      }
+    },
+    "offscreen": {
+      "label": "屏幕之外",
+      "games": "打游戏",
+      "series": "追剧",
+      "books": "读书",
+      "oss": "开源"
+    }
+  },
+  "Work": {
+    "metaTitle": "作品",
+    "metaDescription": "Toluwalope Akinkunmi 的精选项目——Web 应用、移动应用和全栈产品。",
+    "label": "作品",
+    "title": "精选作品",
+    "subtitle": "我设计、开发并上线的产品。",
+    "count": "{count} 个项目",
+    "filters": {
+      "label": "筛选项目",
+      "all": "全部",
+      "web": "Web",
+      "mobile": "移动端",
+      "fullstack": "全栈"
+    },
+    "layout": {
+      "label": "布局",
+      "list": "列表",
+      "grid": "网格"
+    },
+    "status": {
+      "live": "已上线",
+      "in-development": "开发中",
+      "offline": "已归档"
+    },
+    "caseStudy": {
+      "back": "全部作品",
+      "role": "角色",
+      "year": "年份",
+      "stack": "技术栈",
+      "links": "链接",
+      "status": "状态",
+      "live": "访问网站",
+      "code": "源代码",
+      "noLinks": "私有 / 已归档",
+      "problem": "问题",
+      "process": "过程",
+      "outcome": "成果",
+      "learnings": "收获",
+      "next": "下一个项目",
+      "imagePending": "截图即将上线"
+    }
+  },
+  "Projects": {
+    "metrics": {
+      "users": "活跃用户",
+      "engagement": "参与率",
+      "rating": "平均评分"
+    },
+    "coinsave": {
+      "title": "Coinsave",
+      "tagline": "支出与预算追踪",
+      "summary": "掌控你的财务：在一个地方记录收支、设置预算、接收提醒并查看银行交易。",
+      "role": "全栈开发",
+      "problem": "大多数人都知道应该做预算，但一周后就放弃了。电子表格太繁琐，银行应用只能显示已经发生的事。",
+      "process": "我设计了快速、低门槛的记账流程，构建了带智能提醒的预算功能，并接入银行交易监控，让应用替你完成大部分工作。",
+      "outcome": "Coinsave 拥有超过 500 名活跃用户，参与率超过 70%，平均评分 4.5（满分 5 分）。",
+      "learnings": "留存本身就是产品功能。合理的默认设置、恰到好处的提醒这些小细节，比任何大功能都更重要。"
+    },
+    "cabify": {
+      "title": "Cabify",
+      "tagline": "出租车与巴士预订应用",
+      "summary": "轻松出行：便捷预订、实时更新，以及巴士和出租车行程的安全支付。",
+      "role": "前端开发",
+      "problem": "过去订车意味着打电话、付现金，还不确定司机到底什么时候来。",
+      "process": "我以性能为重点开发了预订和行程追踪界面，即使网络较慢，应用也能快速加载、流畅导航。",
+      "outcome": "超过 500 名活跃用户，参与率超过 70%，平均评分 4.5（满分 5 分）。",
+      "learnings": "感知速度就是真实速度。骨架屏、乐观更新和更少的请求，改变了应用给人的速度感。"
+    },
+    "genz-blog": {
+      "title": "Gen-Z Blog",
+      "tagline": "博客平台",
+      "summary": "一个阅读和撰写各类话题文章的地方——简单、极简，并全面支持深色模式。",
+      "role": "全栈开发",
+      "problem": "博客平台要么功能臃肿，要么只面向专业人士。我想要一个轻盈、对所有年龄段都友好的平台。",
+      "process": "前端使用 React、Next.js 和 Tailwind，后端使用 Node.js 和 SQL，让写作过程不受干扰。",
+      "outcome": "超过 100 名活跃用户在平台上阅读和写作。",
+      "learnings": "极简设计背后是大量决策。每去掉一个选项，写作就变得更轻松。"
+    },
+    "reciept": {
+      "title": "Reciept",
+      "tagline": "收据生成器",
+      "summary": "为商家和个人创建收据，导出为 PDF 并用热敏打印机打印——同时获得电子版和纸质版。",
+      "role": "设计与开发",
+      "problem": "小商家在收据上浪费墨水和纸张，却很少保留可靠的电子记录。",
+      "process": "收据会生成适配热敏打印机尺寸的 PDF，一次操作即可同时获得纸质收据和电子购买凭证。",
+      "outcome": "仍在开发中——敬请期待。",
+      "learnings": "打印是 Web 中最难的部分。热敏打印机很有自己的脾气。"
+    }
+  },
+  "Contact": {
+    "metaTitle": "联系",
+    "metaDescription": "就项目、职位或任何问题联系 Toluwalope Akinkunmi。",
+    "label": "联系",
+    "title": "聊一聊吧。",
+    "subtitle": "有项目、职位机会，或只是一个问题？欢迎随时来信。",
+    "or": "或发邮件至",
+    "form": {
+      "name": "你的名字",
+      "namePlaceholder": "Ada Lovelace",
+      "email": "邮箱",
+      "emailPlaceholder": "ada@example.com",
+      "budget": "预算",
+      "budgetPlaceholder": "选择一个范围（可选）",
+      "budgets": {
+        "small": "1000 美元以下",
+        "medium": "1000 – 5000 美元",
+        "large": "5000 – 15000 美元",
+        "xl": "15000 美元以上",
+        "unsure": "还不确定"
+      },
+      "message": "留言",
+      "messagePlaceholder": "说说你的想法…",
+      "submit": "发送",
+      "sending": "发送中…",
+      "success": "已发送——我会尽快回复你。",
+      "error": "出了点问题。请重试，或直接给我发邮件。",
+      "notConfigured": "联系表单尚未接通——请直接给我发邮件。",
+      "errors": {
+        "name": "请告诉我你的名字。",
+        "email": "这个邮箱地址看起来不太对。",
+        "message": "请再多写一点（至少 10 个字符）。"
+      }
+    },
+    "faq": {
+      "title": "须知",
+      "projects": {
+        "q": "你接哪些类型的项目？",
+        "a": "Web 应用、移动应用和全栈产品——从 MVP 到改进现有产品都可以。"
+      },
+      "start": {
+        "q": "多久可以开始？",
+        "a": "通常在两周内。给我发消息，我会如实告诉你我的档期。"
+      },
+      "remote": {
+        "q": "你接受远程工作吗？",
+        "a": "接受。我习惯与跨时区的团队进行异步远程协作。"
+      }
+    }
+  },
+  "NotFound": {
+    "label": "404",
+    "title": "这个页面走丢了。",
+    "body": "链接可能已失效，或者页面已经搬走了。",
+    "back": "带我回首页"
+  }
+}

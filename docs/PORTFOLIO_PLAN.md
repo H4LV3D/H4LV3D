@@ -1,6 +1,6 @@
 # Portfolio v2 — Build Plan
 
-> Status: **decisions locked, building on branch `portfolio-v1`.** Where the original questions (kept below for the record) and the locked decisions disagree, the locked decisions win.
+> Status: **v1 built on branch `portfolio-v1`** (phases 1–9 done; see [DEVELOPMENT.md](./DEVELOPMENT.md)). Waiting on: your photos, real project screenshots and links, a Resend API key, and native-speaker review of the translations. Where the original questions (kept below for the record) and the locked decisions disagree, the locked decisions win.
 
 ## Locked decisions
 

@@ -1,0 +1,386 @@
+@import "tailwindcss" theme(static);
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * ─── Colour roles ────────────────────────────────────────────────────────────
+ * neutral → structure (backgrounds, text, cards, primary buttons)
+ * gray    → detail (borders, inputs, muted text, illustration shading)
+ * brand   → the single accent. Its value comes from src/config/brand.ts and is
+ *           injected on <html> as --brand / --brand-foreground. Do not
+ *           hard-code it anywhere else.
+ * NB: shadcn's --accent is a neutral *hover surface*, not the brand colour.
+ */
+:root {
+  --radius: 0.375rem;
+
+  --background: var(--color-neutral-100);
+  --foreground: var(--color-neutral-900);
+  --card: var(--color-neutral-50);
+  --card-foreground: var(--color-neutral-900);
+  --popover: var(--color-neutral-50);
+  --popover-foreground: var(--color-neutral-900);
+  --primary: var(--color-neutral-900);
+  --primary-foreground: var(--color-neutral-100);
+  --secondary: var(--color-neutral-200);
+  --secondary-foreground: var(--color-neutral-900);
+  --muted: var(--color-neutral-200);
+  --muted-foreground: var(--color-gray-600);
+  --accent: var(--color-neutral-200);
+  --accent-foreground: var(--color-neutral-900);
+  --destructive: var(--color-red-600);
+  --border: var(--color-gray-300);
+  --input: var(--color-gray-300);
+  --ring: var(--brand);
+
+  --brand-soft: color-mix(in oklch, var(--brand) 16%, transparent);
+
+  --peep-line: var(--color-neutral-900);
+  --peep-fill: var(--color-neutral-50);
+  --peep-shade: var(--color-gray-300);
+  --peep-hair: var(--color-neutral-900);
+
+  --grain-opacity: 0.045;
+
+  /* motion tokens (mirrors src/lib/motion.ts) */
+  --dur-fast: 150ms;
+  --dur-base: 300ms;
+  --dur-slow: 600ms;
+  --dur-xslow: 1000ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.dark {
+  --background: var(--color-neutral-900);
+  --foreground: var(--color-neutral-100);
+  --card: var(--color-neutral-800);
+  --card-foreground: var(--color-neutral-100);
+  --popover: var(--color-neutral-800);
+  --popover-foreground: var(--color-neutral-100);
+  --primary: var(--color-neutral-100);
+  --primary-foreground: var(--color-neutral-900);
+  --secondary: var(--color-neutral-800);
+  --secondary-foreground: var(--color-neutral-100);
+  --muted: var(--color-neutral-800);
+  --muted-foreground: var(--color-gray-400);
+  --accent: var(--color-neutral-700);
+  --accent-foreground: var(--color-neutral-100);
+  --destructive: var(--color-red-400);
+  --border: var(--color-gray-700);
+  --input: var(--color-gray-700);
+
+  --peep-line: var(--color-neutral-100);
+  --peep-fill: var(--color-neutral-800);
+  --peep-shade: color-mix(in oklch, var(--color-gray-700) 55%, var(--color-neutral-700));
+  /* Hair stays dark in dark mode — it's part of the likeness, not the theme. */
+  --peep-hair: var(--color-neutral-950);
+
+  --grain-opacity: 0.06;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  /* Each stack falls back per-glyph: Latin → Cyrillic → CJK. */
+  --font-sans: var(--font-geist), var(--font-noto-sans-sc), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), var(--font-noto-sans-sc), ui-monospace, monospace;
+  --font-display:
+    var(--font-instrument-serif), var(--font-playfair), var(--font-noto-serif-sc), ui-serif, Georgia, serif;
+  --font-hand: var(--font-caveat), var(--font-noto-sans-sc), cursive;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
+  --animate-marquee-reverse: marquee var(--marquee-duration, 40s) linear infinite reverse;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background font-sans text-foreground;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    background: var(--brand);
+    color: var(--brand-foreground);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+  }
+  /* Chinese and Russian read better slightly looser. */
+  :lang(zh) body,
+  :lang(ru) body {
+    line-height: 1.7;
+  }
+  :lang(zh) .font-display {
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Grayscale photos, everywhere, both modes. */
+  .photo-mono {
+    filter: grayscale(1) contrast(1.05);
+  }
+  .dark .photo-mono {
+    filter: grayscale(1) contrast(1.05) brightness(0.9);
+  }
+
+  /* Mono metadata labels like "01 / WORK". */
+  .label-mono {
+    @apply font-mono text-[0.7rem] tracking-[0.18em] uppercase;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-10;
+  }
+}
+
+/* ─── Hand-drawn UI details ───────────────────────────────────────────────── */
+@layer components {
+  /* Sketchy rectangle drawn around an element (buttons, cards). */
+  .sketch-border {
+    position: relative;
+  }
+  .sketch-border::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: currentColor;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M3 6.5C58 3 141 4.5 197 5.2'/%3E%3Cpath d='M195.6 2.6c1.6 17.6.9 36.4-1.4 54.6'/%3E%3Cpath d='M197.5 54.4C139 57.3 61 56.2 3.4 54.6'/%3E%3Cpath d='M5.8 57.6C2.9 40.3 3.6 20.6 5.1 2.4'/%3E%3C/g%3E%3C/svg%3E")
+      center / 100% 100% no-repeat;
+    opacity: 0;
+    transform: scale(0.96) rotate(-0.6deg);
+    transition:
+      opacity var(--dur-base) var(--ease-out-expo),
+      transform var(--dur-slow) var(--ease-out-expo);
+  }
+  .sketch-border:hover::after,
+  .sketch-border:focus-visible::after,
+  .group:hover > .sketch-border::after,
+  .sketch-border-on::after {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Scribbled underline that draws in from the left on hover. */
+  .scribble-underline {
+    position: relative;
+  }
+  .scribble-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.35em;
+    height: 0.45em;
+    background: var(--brand);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 7.5C42 3 88 3.5 128 6s56 4.5 70-1.5' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E")
+      center / 100% 100% no-repeat;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path var(--dur-slow) var(--ease-out-expo);
+  }
+  .scribble-underline:hover::after,
+  .scribble-underline:focus-visible::after,
+  .scribble-underline[data-active="true"]::after,
+  .group:hover .scribble-underline::after {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Hide the custom cursor's target styles on touch devices */
+@media (hover: none) {
+  .cursor-only {
+    display: none !important;
+  }
+}
+
+/* Theme-switch circular reveal (View Transitions API) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Line boil on illustrations (see components/illustrations/boil-filter.tsx) */
+.boil {
+  filter: url(#boil);
+}
+@media (prefers-reduced-motion: reduce) {
+  .boil {
+    filter: url(#boil-static);
+  }
+}
+
+/* Native cursor stays visible for text inputs; hidden elsewhere when the custom one is on. */
+html.has-custom-cursor,
+html.has-custom-cursor a,
+html.has-custom-cursor button {
+  cursor: none;
+}
+
+/* ─── Peep draw-in ─────────────────────────────────────────────────────────
+ * Strokes draw on via dash offset (pathLength="1" is set in JS-free CSS by
+ * normalising with a large dasharray), then fills fade in.
+ */
+.peep[data-draw="pending"] .peep-part {
+  opacity: 0;
+}
+.peep[data-draw="play"] .peep-part {
+  animation: peep-part-in 0.5s var(--ease-out-expo) both;
+}
+.peep[data-draw="play"] .peep-part path,
+.peep[data-draw="play"] .peep-part ellipse,
+.peep[data-draw="play"] .peep-part circle,
+.peep[data-draw="play"] .peep-part rect {
+  stroke-dasharray: 1200;
+  animation:
+    peep-stroke 1.4s var(--ease-out-expo) both,
+    peep-fill 0.6s ease-out both;
+  animation-delay: var(--peep-delay, 0s), calc(var(--peep-delay, 0s) + 0.55s);
+}
+.peep [data-part="body"] {
+  --peep-delay: 0s;
+}
+.peep [data-part="arms"] {
+  --peep-delay: 0.2s;
+}
+.peep [data-part="head"] {
+  --peep-delay: 0.3s;
+}
+.peep [data-part="props"] {
+  --peep-delay: 0.45s;
+}
+
+@keyframes peep-part-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes peep-stroke {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes peep-fill {
+  from {
+    fill-opacity: 0;
+  }
+  to {
+    fill-opacity: 1;
+  }
+}
+
+/* Coffee steam drifts up and fades, forever. */
+.peep-steam path {
+  animation: steam 2.4s ease-in-out infinite;
+}
+.peep-steam path:nth-child(2) {
+  animation-delay: 1.2s;
+}
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Locked while the preloader is showing (removed by components/preloader). */
+html.preloading {
+  overflow: hidden;
+}
+
+/* CJK glyphs need more vertical room than the tight Latin display leading.
+ * Unlayered on purpose so it wins over the leading-* utilities. */
+:lang(zh) .font-display {
+  line-height: 1.18;
+}

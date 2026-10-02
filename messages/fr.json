@@ -1,0 +1,336 @@
+{
+  "Meta": {
+    "siteTitle": "Toluwalope Akinkunmi — Développement logiciel",
+    "description": "Toluwalope Akinkunmi conçoit et développe des produits web et mobiles rapides et agréables avec React, Next.js et Node.",
+    "ogTagline": "Développement logiciel · Web & mobile"
+  },
+  "Nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "work": "Projets",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Fermer",
+    "skip": "Aller au contenu",
+    "primary": "Navigation principale",
+    "openCommand": "Ouvrir le menu de commandes",
+    "theme": {
+      "label": "Thème",
+      "toggle": "Changer de thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    },
+    "language": "Langue"
+  },
+  "Preloader": {
+    "loading": "Chargement",
+    "tagline": "Je griffonne…"
+  },
+  "Footer": {
+    "cta": "Parlons-en",
+    "ctaSub": "Une idée ? Ma boîte mail est ouverte.",
+    "built": "Fait avec Next.js et beaucoup de café",
+    "backToTop": "Retour en haut",
+    "rights": "© {year} Toluwalope Akinkunmi",
+    "elsewhere": "Ailleurs",
+    "sitemap": "Plan du site"
+  },
+  "Command": {
+    "placeholder": "Tapez une commande ou recherchez…",
+    "empty": "Aucun résultat.",
+    "pages": "Pages",
+    "actions": "Actions",
+    "socials": "Réseaux",
+    "language": "Langue",
+    "copyEmail": "Copier l'adresse e-mail"
+  },
+  "Common": {
+    "copied": "E-mail copié dans le presse-papiers",
+    "copyEmail": "Copier l'e-mail",
+    "available": "Disponible pour de nouveaux projets",
+    "unavailable": "Agenda complet pour le moment",
+    "view": "Voir",
+    "scroll": "Défiler"
+  },
+  "Peep": {
+    "laptop": "Toluwalope travaillant sur un ordinateur portable",
+    "wave": "Toluwalope qui fait coucou",
+    "thinking": "Toluwalope en pleine réflexion",
+    "coffee": "Toluwalope avec un café",
+    "envelope": "Toluwalope tenant une enveloppe",
+    "sign": "Toluwalope tenant une pancarte",
+    "lost": "Toluwalope tenant une carte à l'envers"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Développement logiciel · Web & mobile",
+      "greeting": "Salut, moi c'est",
+      "name": "Toluwalope",
+      "roles": {
+        "a": "Je crée des apps web et mobiles.",
+        "b": "Je résous de vrais problèmes.",
+        "c": "Je livre des produits utilisés.",
+        "d": "Je soigne chaque détail."
+      },
+      "intro": "Je conçois et développe des produits web et mobiles rapides et agréables — du premier croquis au dernier déploiement.",
+      "note": "c'est moi, en dessin !",
+      "cta": "Voir mes projets",
+      "secondary": "Me contacter"
+    },
+    "intro": {
+      "label": "01 / Intro",
+      "text": "Je m'attache aux détails que l'on ressent sans les remarquer : la réaction d'un bouton, le chargement d'une page, le rythme d'une phrase. Mes outils : React, Next.js et Node — mon habitude : livrer, mesurer et améliorer."
+    },
+    "work": {
+      "label": "02 / Projets choisis",
+      "title": "Ce que j'ai construit",
+      "all": "Tous les projets"
+    },
+    "toolkit": {
+      "label": "03 / Boîte à outils"
+    },
+    "currently": {
+      "label": "04 / En ce moment",
+      "title": "Ce qui m'occupe",
+      "learning": "J'apprends React Native et GraphQL",
+      "oss": "Je contribue à l'open source",
+      "building": "Je construis Reciept, un générateur de reçus"
+    },
+    "cta": {
+      "title": "Une idée ?",
+      "subtitle": "Transformons-la en quelque chose que les gens adorent utiliser.",
+      "button": "Lancer la conversation",
+      "sign": "on bosse ?"
+    }
+  },
+  "About": {
+    "metaTitle": "À propos",
+    "metaDescription": "Le parcours, l'expérience et les outils de Toluwalope Akinkunmi, développement logiciel.",
+    "label": "À propos",
+    "title": "Je code, et je dessine encore sur papier.",
+    "photo": {
+      "real": "En vrai",
+      "drawn": "En dessin",
+      "hint": "Survolez ou touchez pour changer",
+      "pending": "Photo bientôt disponible",
+      "alt": "Portrait de Toluwalope Akinkunmi"
+    },
+    "story": {
+      "p1": "Je m'appelle Toluwalope Akinkunmi et je développe des logiciels pour le web et le mobile. J'aime transformer des idées brouillonnes en produits qui paraissent simples.",
+      "p2": "J'ai construit et fait grandir des produits utilisés par des centaines de personnes — outils de budget, réservation de trajets, plateformes de blog — et j'ai appris que la qualité est une habitude, pas une étape.",
+      "p3": "Loin de l'éditeur, je joue à des jeux vidéo, j'enchaîne les séries, je lis et je contribue à l'open source. J'aime toujours rencontrer de nouvelles personnes et apprendre d'elles.",
+      "note": "oui, c'est moi qui dessine"
+    },
+    "stats": {
+      "label": "En chiffres",
+      "projects": "Projets réalisés",
+      "companies": "Entreprises accompagnées",
+      "clients": "Clients satisfaits",
+      "pages": "Pages livrées"
+    },
+    "tabs": {
+      "experience": "Expérience",
+      "toolkit": "Outils",
+      "approach": "Méthode"
+    },
+    "experience": {
+      "present": "Aujourd'hui",
+      "coinsave": {
+        "role": "Développement full-stack",
+        "company": "Coinsave",
+        "body": "Conception, développement, gestion et montée en charge d'une plateforme de budget de plus de 500 utilisateurs, avec une amélioration continue des performances et des fonctionnalités."
+      },
+      "cabify": {
+        "role": "Développement front-end",
+        "company": "Cabify",
+        "body": "Optimisation des performances pour des chargements rapides et une navigation fluide, ce qui a renforcé la satisfaction et l'engagement des clients."
+      }
+    },
+    "toolkit": {
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "mobile": "Mobile",
+      "tooling": "Outillage"
+    },
+    "approach": {
+      "title": "Ma façon de travailler",
+      "communication": {
+        "title": "Une communication claire",
+        "body": "Des points courts, des délais honnêtes et zéro jargon. Vous savez toujours ce qui se passe et pourquoi."
+      },
+      "collaboration": {
+        "title": "Une collaboration efficace",
+        "body": "Je travaille main dans la main avec designers, PM et autres devs — revues, pair programming et responsabilité partagée."
+      },
+      "adaptability": {
+        "title": "De l'adaptabilité",
+        "body": "Nouvelle stack, nouveau domaine, périmètre qui change — j'apprends vite et je m'ajuste sans drame."
+      },
+      "time": {
+        "title": "Gestion du temps",
+        "body": "Je découpe le travail en petites étapes livrables et je priorise ce qui a le plus d'impact."
+      },
+      "problems": {
+        "title": "Résolution de problèmes",
+        "body": "Je creuse jusqu'à comprendre le vrai problème, puis je choisis la solution la plus simple."
+      },
+      "creativity": {
+        "title": "Créativité & innovation",
+        "body": "Les bons produits ont une petite touche de plaisir. Je cherche le détail qui fait sourire."
+      }
+    },
+    "offscreen": {
+      "label": "Hors écran",
+      "games": "Jeux vidéo",
+      "series": "Séries",
+      "books": "Lecture",
+      "oss": "Open source"
+    }
+  },
+  "Work": {
+    "metaTitle": "Projets",
+    "metaDescription": "Une sélection de projets de Toluwalope Akinkunmi — applications web, mobiles et produits full-stack.",
+    "label": "Projets",
+    "title": "Projets choisis",
+    "subtitle": "Des produits que j'ai conçus, développés et livrés.",
+    "count": "{count, plural, one {# projet} other {# projets}}",
+    "filters": {
+      "label": "Filtrer les projets",
+      "all": "Tous",
+      "web": "Web",
+      "mobile": "Mobile",
+      "fullstack": "Full-stack"
+    },
+    "layout": {
+      "label": "Affichage",
+      "list": "Liste",
+      "grid": "Grille"
+    },
+    "status": {
+      "live": "En ligne",
+      "in-development": "En développement",
+      "offline": "Archivé"
+    },
+    "caseStudy": {
+      "back": "Tous les projets",
+      "role": "Rôle",
+      "year": "Année",
+      "stack": "Stack",
+      "links": "Liens",
+      "status": "Statut",
+      "live": "Voir le site",
+      "code": "Code source",
+      "noLinks": "Privé / archivé",
+      "problem": "Le problème",
+      "process": "La démarche",
+      "outcome": "Le résultat",
+      "learnings": "Ce que j'en retiens",
+      "next": "Projet suivant",
+      "imagePending": "Captures d'écran bientôt"
+    }
+  },
+  "Projects": {
+    "metrics": {
+      "users": "utilisateurs actifs",
+      "engagement": "taux d'engagement",
+      "rating": "note moyenne"
+    },
+    "coinsave": {
+      "title": "Coinsave",
+      "tagline": "Suivi des dépenses et du budget",
+      "summary": "Reprenez le contrôle de vos finances : suivez revenus et dépenses, fixez des budgets, recevez des alertes et surveillez vos transactions bancaires au même endroit.",
+      "role": "Développement full-stack",
+      "problem": "Tout le monde sait qu'il faudrait tenir un budget, mais on abandonne au bout d'une semaine. Les tableurs sont fastidieux et les applis bancaires ne montrent que le passé.",
+      "process": "J'ai conçu un parcours rapide et sans friction pour noter ses dépenses, créé des budgets avec alertes intelligentes et connecté le suivi des transactions bancaires pour que l'appli fasse l'essentiel du travail.",
+      "outcome": "Coinsave a dépassé les 500 utilisateurs actifs, avec plus de 70 % d'engagement et une note moyenne de 4,5 sur 5.",
+      "learnings": "La rétention est une fonctionnalité. Les petites attentions — de bons réglages par défaut, des rappels au bon moment — ont compté plus que n'importe quelle grosse fonctionnalité."
+    },
+    "cabify": {
+      "title": "Cabify",
+      "tagline": "Réservation de taxis et de bus",
+      "summary": "Des trajets sans tracas : réservation facile, suivi en temps réel et paiements sécurisés pour les courses en bus et en taxi.",
+      "role": "Développement front-end",
+      "problem": "Réserver un trajet, c'était jongler entre appels, espèces et incertitude sur l'arrivée réelle du chauffeur.",
+      "process": "J'ai développé les interfaces de réservation et de suivi en misant sur la performance, pour que l'appli se charge vite et reste fluide même avec une connexion lente.",
+      "outcome": "Plus de 500 utilisateurs actifs, plus de 70 % d'engagement et une note moyenne de 4,5 sur 5.",
+      "learnings": "La vitesse perçue est la vraie vitesse. Squelettes de chargement, mises à jour optimistes et moins d'allers-retours ont changé la sensation de rapidité."
+    },
+    "genz-blog": {
+      "title": "Gen-Z Blog",
+      "tagline": "Une plateforme de blog",
+      "summary": "Un endroit pour lire et écrire sur tous les sujets — simple, minimaliste et entièrement compatible avec le mode sombre.",
+      "role": "Développement full-stack",
+      "problem": "Les plateformes de blog sont soit surchargées, soit pensées pour les pros. Je voulais quelque chose de léger et accueillant pour tous les âges.",
+      "process": "Je l'ai construite avec React, Next.js et Tailwind côté interface, et Node.js avec SQL côté serveur, en gardant une écriture sans distraction.",
+      "outcome": "Plus de 100 utilisateurs actifs qui lisent et écrivent sur la plateforme.",
+      "learnings": "Le minimalisme, c'est beaucoup de décisions. Chaque option retirée a rendu l'écriture plus simple."
+    },
+    "reciept": {
+      "title": "Reciept",
+      "tagline": "Un générateur de reçus",
+      "summary": "Créez des reçus pour votre activité ou un usage personnel, exportez-les en PDF et imprimez-les sur imprimante thermique — une copie numérique et une copie papier d'un coup.",
+      "role": "Design & développement",
+      "problem": "Les petites entreprises gaspillent encre et papier pour leurs reçus et gardent rarement une trace numérique fiable.",
+      "process": "Les reçus sont générés en PDF au format des imprimantes thermiques : une seule action donne une copie papier et une preuve d'achat numérique.",
+      "outcome": "Toujours en développement — bientôt disponible.",
+      "learnings": "L'impression est la partie la plus difficile du web. Les imprimantes thermiques ont leur caractère."
+    }
+  },
+  "Contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Contactez Toluwalope Akinkunmi pour un projet, un poste ou une question.",
+    "label": "Contact",
+    "title": "Parlons-en.",
+    "subtitle": "Un projet, un poste ou simplement une question ? Ma boîte mail est ouverte.",
+    "or": "ou écrivez à",
+    "form": {
+      "name": "Votre nom",
+      "namePlaceholder": "Ada Lovelace",
+      "email": "E-mail",
+      "emailPlaceholder": "ada@exemple.com",
+      "budget": "Budget",
+      "budgetPlaceholder": "Choisissez une fourchette (facultatif)",
+      "budgets": {
+        "small": "Moins de 1 000 $",
+        "medium": "1 000 – 5 000 $",
+        "large": "5 000 – 15 000 $",
+        "xl": "15 000 $ et plus",
+        "unsure": "Je ne sais pas encore"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Parlez-moi de votre idée…",
+      "submit": "Envoyer le message",
+      "sending": "Envoi…",
+      "success": "Message envoyé — je vous réponds très vite.",
+      "error": "Un problème est survenu. Réessayez ou écrivez-moi directement.",
+      "notConfigured": "Le formulaire n'est pas encore connecté — écrivez-moi directement par e-mail.",
+      "errors": {
+        "name": "Indiquez-moi votre nom.",
+        "email": "Cet e-mail ne semble pas valide.",
+        "message": "Un peu plus de détails, s'il vous plaît (10 caractères minimum)."
+      }
+    },
+    "faq": {
+      "title": "Bon à savoir",
+      "projects": {
+        "q": "Quels types de projets acceptez-vous ?",
+        "a": "Applications web, mobiles et produits full-stack — du MVP à l'amélioration d'un produit existant."
+      },
+      "start": {
+        "q": "Quand pouvez-vous commencer ?",
+        "a": "En général sous deux semaines. Envoyez-moi un message et je vous réponds avec mes disponibilités réelles."
+      },
+      "remote": {
+        "q": "Travaillez-vous à distance ?",
+        "a": "Oui. J'ai l'habitude de collaborer à distance, en asynchrone, avec des équipes sur plusieurs fuseaux horaires."
+      }
+    }
+  },
+  "NotFound": {
+    "label": "404",
+    "title": "Cette page s'est égarée.",
+    "body": "Le lien est peut-être cassé, ou la page a déménagé.",
+    "back": "Retour à l'accueil"
+  }
+}
