@@ -63,7 +63,7 @@ test("language switcher keeps you on the same page", async ({ page }) => {
 test("work is grouped by company and filters narrow it", async ({ page }) => {
   await page.goto("/work");
   await waitForIntro(page);
-  await expect(page.getByText("18 projects")).toBeVisible();
+  await expect(page.getByText("15 projects")).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "The Circular Net" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Smarkt" })).toBeVisible();
   await page.getByRole("button", { name: "AI", exact: true }).click();
@@ -83,8 +83,8 @@ test("case studies show the system diagram and decisions", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Circular Ticket");
   await expect(page.getByRole("img", { name: "Two apps, one shared package" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Key decisions" })).toBeVisible();
-  // Private repositories never link to their source.
-  await expect(page.getByRole("link", { name: /Source code/ })).toHaveCount(0);
+  // The Work section never links to source code.
+  await expect(page.locator('main a[href*="github.com"]')).toHaveCount(0);
 });
 
 test("notes are listed and readable in every language", async ({ page }) => {

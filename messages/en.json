@@ -215,7 +215,6 @@
       "links": "Links",
       "status": "Status",
       "live": "Visit site",
-      "code": "Source code",
       "noLinks": "Private / internal",
       "problem": "The problem",
       "process": "The process",
@@ -285,7 +284,7 @@
       "apps": "apps in the product family"
     },
     "the-circular-net-web": {
-      "title": "Circular Net Web",
+      "title": "Social App",
       "tagline": "A social network for sustainability",
       "summary": "The web app of a social network for people and organisations working on sustainability: feed, communities, messaging, live audio and video rooms, jobs, projects and podcasts.",
       "role": "Lead frontend engineer",
@@ -318,7 +317,7 @@
       "system": "How the web app fits into the platform"
     },
     "the-circular-net-mobile": {
-      "title": "Circular Net Mobile",
+      "title": "Social Mobile App",
       "tagline": "The sustainability network on iOS and Android",
       "summary": "The iOS and Android app for The Circular Net: feed, communities, messaging, calls, live rooms and podcasts with background playback.",
       "role": "Lead mobile engineer",
@@ -352,7 +351,7 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Events and ticketing on web and mobile",
+      "tagline": "Website + app for events and ticketing",
       "summary": "An events and ticketing product: attendees discover events and buy tickets; organisers create events, scan tickets at the door and get paid in NGN or USD.",
       "role": "Sole frontend engineer, web & mobile",
       "problem": "Organisers needed one place to publish events, sell tickets, check people in, verify their identity and get paid. The web and mobile apps were duplicating API calls and business rules, and slowly drifting apart.",
@@ -384,7 +383,7 @@
       "system": "Two apps, one shared package"
     },
     "circular-net-sso": {
-      "title": "Circular Net SSO",
+      "title": "Single Sign-On",
       "tagline": "One sign-in for every app",
       "summary": "A single sign-on service for The Circular Net's products: login, sign-up and account recovery over OAuth 2.0, with Google and Apple sign-in.",
       "role": "Sole frontend engineer",
@@ -416,7 +415,7 @@
       "system": "Every product signs in through one service"
     },
     "circular-net-website": {
-      "title": "Circular Net Website",
+      "title": "Website",
       "tagline": "Marketing site and sustainability insights",
       "summary": "The public site for The Circular Net: the platform, its sustainability services and a blog, with sign-in that hands people over to the app.",
       "role": "Sole frontend engineer",
@@ -481,7 +480,7 @@
       "role": "Volunteer web developer, sole developer",
       "problem": "The organisation needed a modern site it could update itself. On the original site, every new episode or partner meant asking a developer.",
       "process": "I built the first site in React in 2023. In 2026 I rebuilt it on Next.js 16 with motion, then added an admin CMS backed by Postgres: credential sign-in, a rich-text blog editor, image uploads and role-based user management. Larger features, like partners, started as a written spec and plan before any code.",
-      "outcome": "Live at lawxtech.org, with the team publishing content themselves. The code is open on GitHub.",
+      "outcome": "Live at lawxtech.org, with the team publishing content themselves.",
       "learnings": "Serverless databases need care around connection pooling and build-time access. The build should never depend on the database being reachable.",
       "built": {
         "a": "A home page with animated stats, series preview, speakers carousel and community sections",

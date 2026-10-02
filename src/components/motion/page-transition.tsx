@@ -49,6 +49,7 @@ export function TransitionProvider({ children }: { children: React.ReactNode }) 
       if (href === "/" || href === "") return t("home");
       if (href.startsWith("/about")) return t("about");
       if (href.startsWith("/work")) return t("work");
+      if (href.startsWith("/notes")) return t("notes");
       if (href.startsWith("/contact")) return t("contact");
       return "";
     },

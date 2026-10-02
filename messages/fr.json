@@ -215,7 +215,6 @@
       "links": "Liens",
       "status": "Statut",
       "live": "Voir le site",
-      "code": "Code source",
       "noLinks": "Privé / interne",
       "problem": "Le problème",
       "process": "La démarche",
@@ -285,7 +284,7 @@
       "apps": "apps dans la famille de produits"
     },
     "the-circular-net-web": {
-      "title": "Circular Net Web",
+      "title": "App sociale",
       "tagline": "Un réseau social pour le développement durable",
       "summary": "L'app web d'un réseau social pour les personnes et organisations engagées dans le développement durable : fil d'actualité, communautés, messagerie, salons audio et vidéo en direct, offres d'emploi, projets et podcasts.",
       "role": "Responsable frontend",
@@ -318,7 +317,7 @@
       "system": "La place de l'app web dans la plateforme"
     },
     "the-circular-net-mobile": {
-      "title": "Circular Net Mobile",
+      "title": "App sociale mobile",
       "tagline": "Le réseau du développement durable sur iOS et Android",
       "summary": "L'app iOS et Android de The Circular Net : fil, communautés, messagerie, appels, salons en direct et podcasts avec lecture en arrière-plan.",
       "role": "Responsable mobile",
@@ -352,7 +351,7 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Événements et billetterie, sur le web et le mobile",
+      "tagline": "Site web + app pour les événements et la billetterie",
       "summary": "Un produit d'événements et de billetterie : le public découvre des événements et achète des billets ; les organisateurs créent leurs événements, scannent les billets à l'entrée et sont payés en NGN ou en USD.",
       "role": "Frontend en solo, web et mobile",
       "problem": "Les organisateurs avaient besoin d'un seul endroit pour publier, vendre des billets, gérer les entrées, vérifier leur identité et être payés. Les apps web et mobile dupliquaient les appels d'API et les règles métier, et divergeaient peu à peu.",
@@ -384,7 +383,7 @@
       "system": "Deux apps, un paquet partagé"
     },
     "circular-net-sso": {
-      "title": "Circular Net SSO",
+      "title": "Authentification unique",
       "tagline": "Une connexion pour toutes les apps",
       "summary": "Un service d'authentification unique pour les produits de The Circular Net : connexion, inscription et récupération de compte via OAuth 2.0, avec connexion Google et Apple.",
       "role": "Frontend en solo",
@@ -416,7 +415,7 @@
       "system": "Tous les produits se connectent via un seul service"
     },
     "circular-net-website": {
-      "title": "Circular Net Website",
+      "title": "Site web",
       "tagline": "Site vitrine et analyses sur le développement durable",
       "summary": "Le site public de The Circular Net : la plateforme, ses services de développement durable et un blog, avec une connexion qui transmet les visiteurs à l'app.",
       "role": "Frontend en solo",
@@ -481,7 +480,7 @@
       "role": "Développement web bénévole, en solo",
       "problem": "L'organisation avait besoin d'un site moderne qu'elle puisse mettre à jour elle-même. Sur le site d'origine, chaque nouvel épisode ou partenaire passait par une demande au développement.",
       "process": "J'ai construit le premier site en React en 2023. En 2026, je l'ai refait sur Next.js 16 avec des animations, puis ajouté un CMS d'administration adossé à Postgres : connexion par identifiants, éditeur de blog riche, envoi d'images et gestion des utilisateurs par rôles. Les fonctionnalités plus larges, comme les partenaires, ont commencé par une spec et un plan écrits avant tout code.",
-      "outcome": "En ligne sur lawxtech.org, avec une équipe qui publie elle-même son contenu. Le code est ouvert sur GitHub.",
+      "outcome": "En ligne sur lawxtech.org, avec une équipe qui publie elle-même son contenu.",
       "learnings": "Les bases de données serverless demandent de l'attention sur le pooling de connexions et l'accès au moment du build. Le build ne doit jamais dépendre de la disponibilité de la base.",
       "built": {
         "a": "Un accueil avec statistiques animées, aperçu des séries, carrousel d'intervenants et sections communauté",

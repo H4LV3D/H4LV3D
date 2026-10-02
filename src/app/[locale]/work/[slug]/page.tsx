@@ -56,7 +56,6 @@ export default async function CaseStudyPage({ params }: Props) {
     { href: project.links.appStore, label: w("caseStudy.appStore") },
     { href: project.links.playStore, label: w("caseStudy.playStore") },
     { href: project.links.npm, label: w("caseStudy.npm") },
-    { href: project.links.code, label: w("caseStudy.code") },
   ].filter((l): l is { href: string; label: string } => Boolean(l.href));
 
   const sections = [

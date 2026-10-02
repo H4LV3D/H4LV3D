@@ -2,8 +2,8 @@
  * Language-neutral work data. All prose (titles, taglines, case study text)
  * lives in messages/<locale>.json under `Companies.<id>` and `Projects.<slug>`.
  *
- * Privacy rule: private repositories never get a `code` link. Only public
- * live sites, store listings and packages are linked.
+ * The Work section never links to source code. Only live sites, store
+ * listings and packages are linked.
  */
 import type { DiagramDef } from "./diagrams";
 import { diagrams } from "./diagrams";
@@ -48,8 +48,6 @@ export type ProjectLinks = {
   appStore?: string;
   playStore?: string;
   npm?: string;
-  /** Public repositories only. */
-  code?: string;
 };
 
 type ProjectBase = {
@@ -60,6 +58,8 @@ type ProjectBase = {
   period?: Period;
   status: "live" | "in-development" | "offline" | "internal";
   links: ProjectLinks;
+  /** Kept in the data but not shown anywhere on the site. */
+  hidden?: boolean;
 };
 
 /** Full case study with its own page. */
@@ -94,8 +94,21 @@ export type ArchiveItem = ProjectBase & {
 
 export type Project = CaseStudy | ArchiveItem;
 
-export const projects: Project[] = [
+const allProjects: Project[] = [
   // The Circular Net ---------------------------------------------------------
+  {
+    slug: "circular-net-website",
+    tier: "case-study",
+    company: "circular-net",
+    categories: ["web"],
+    stack: ["Next.js", "React 19", "TypeScript", "Tailwind CSS", "shadcn/ui", "Motion", "Lenis"],
+    period: { start: "2026-06" },
+    status: "live",
+    links: { live: "https://www.thecircularnet.com" },
+    metrics: [],
+    built: 5,
+    decisions: 2,
+  },
   {
     slug: "the-circular-net-web",
     tier: "case-study",
@@ -198,21 +211,9 @@ export const projects: Project[] = [
     system: diagrams.sso,
   },
   {
-    slug: "circular-net-website",
-    tier: "case-study",
-    company: "circular-net",
-    categories: ["web"],
-    stack: ["Next.js", "React 19", "TypeScript", "Tailwind CSS", "shadcn/ui", "Motion", "Lenis"],
-    period: { start: "2026-06" },
-    status: "live",
-    links: { live: "https://www.thecircularnet.com" },
-    metrics: [],
-    built: 5,
-    decisions: 2,
-  },
-  {
     slug: "circular-net-admin",
     tier: "archive",
+    hidden: true,
     company: "circular-net",
     categories: ["web"],
     stack: ["Next.js", "Mantine", "TanStack Table", "Docker"],
@@ -223,6 +224,7 @@ export const projects: Project[] = [
   {
     slug: "thebasenet-ui",
     tier: "archive",
+    hidden: true,
     company: "circular-net",
     categories: ["web", "systems"],
     stack: ["React", "Radix UI", "Tailwind CSS", "tsup"],
@@ -232,6 +234,7 @@ export const projects: Project[] = [
   {
     slug: "circular-net-waitlist",
     tier: "archive",
+    hidden: true,
     company: "circular-net",
     categories: ["web"],
     stack: ["Next.js", "Radix UI", "Motion"],
@@ -284,7 +287,7 @@ export const projects: Project[] = [
     ],
     period: { start: "2023-09" },
     status: "live",
-    links: { live: "https://lawxtech.org", code: "https://github.com/LawxTech/lawxtech-website" },
+    links: { live: "https://lawxtech.org" },
     metrics: [],
     built: 5,
     decisions: 3,
@@ -386,6 +389,9 @@ export const projects: Project[] = [
     decisions: 0,
   },
 ];
+
+/** Everything shown on the site, in display order. */
+export const projects = allProjects.filter((p) => !p.hidden);
 
 export const caseStudies = projects.filter((p): p is CaseStudy => p.tier === "case-study");
 

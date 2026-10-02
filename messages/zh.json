@@ -215,7 +215,6 @@
       "links": "链接",
       "status": "状态",
       "live": "访问网站",
-      "code": "源代码",
       "noLinks": "私有 / 内部",
       "problem": "问题",
       "process": "过程",
@@ -285,7 +284,7 @@
       "apps": "个产品家族应用"
     },
     "the-circular-net-web": {
-      "title": "Circular Net Web",
+      "title": "社交应用",
       "tagline": "面向可持续发展的社交网络",
       "summary": "一个面向可持续发展领域个人与组织的社交网络 Web 应用：动态、社区、消息、实时音视频房间、招聘、项目和播客。",
       "role": "前端负责人",
@@ -318,7 +317,7 @@
       "system": "Web 应用在平台中的位置"
     },
     "the-circular-net-mobile": {
-      "title": "Circular Net Mobile",
+      "title": "社交移动应用",
       "tagline": "iOS 与 Android 上的可持续发展社区",
       "summary": "The Circular Net 的 iOS 与 Android 应用：动态、社区、消息、通话、直播房间，以及支持后台播放的播客。",
       "role": "移动端负责人",
@@ -352,7 +351,7 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Web 与移动端的活动与票务",
+      "tagline": "活动与票务：网站 + 应用",
       "summary": "一款活动与票务产品：参与者发现活动并购票；主办方创建活动、在入口扫码验票，并以 NGN 或 USD 收款。",
       "role": "独立负责 Web 与移动端前端",
       "problem": "主办方需要一个地方完成发布活动、售票、签到、身份验证和收款。而 Web 与移动应用各自重复 API 调用和业务规则，正在慢慢分化。",
@@ -384,7 +383,7 @@
       "system": "两个应用，一个共享包"
     },
     "circular-net-sso": {
-      "title": "Circular Net SSO",
+      "title": "单点登录",
       "tagline": "所有应用，一次登录",
       "summary": "The Circular Net 各产品的单点登录服务：基于 OAuth 2.0 的登录、注册和账号找回，并支持 Google 与 Apple 登录。",
       "role": "独立负责前端",
@@ -416,7 +415,7 @@
       "system": "所有产品都通过同一个服务登录"
     },
     "circular-net-website": {
-      "title": "Circular Net Website",
+      "title": "官网",
       "tagline": "官网与可持续发展洞察",
       "summary": "The Circular Net 的公开网站：介绍平台、可持续发展服务和博客，登录后直接把用户交给应用。",
       "role": "独立负责前端",
@@ -481,7 +480,7 @@
       "role": "志愿 Web 开发，独立完成",
       "problem": "组织需要一个可以自己更新的现代网站。在旧网站上，每新增一期节目或一个合作伙伴，都得找开发人员。",
       "process": "我在 2023 年用 React 做了第一版网站。2026 年用 Next.js 16 加动效重建，并加入基于 Postgres 的管理 CMS：凭据登录、富文本博客编辑器、图片上传和基于角色的用户管理。合作伙伴等较大的功能，都是先写好设计说明和计划再动手写代码。",
-      "outcome": "已上线 lawxtech.org，团队可以自己发布内容。代码在 GitHub 上开源。",
+      "outcome": "已上线 lawxtech.org，团队可以自己发布内容。",
       "learnings": "Serverless 数据库需要注意连接池和构建期访问。构建绝不能依赖数据库是否可达。",
       "built": {
         "a": "带动态数据、系列预览、嘉宾轮播和社区板块的首页",

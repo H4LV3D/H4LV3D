@@ -215,7 +215,6 @@
       "links": "Enlaces",
       "status": "Estado",
       "live": "Visitar el sitio",
-      "code": "Código fuente",
       "noLinks": "Privado / interno",
       "problem": "El problema",
       "process": "El proceso",
@@ -285,7 +284,7 @@
       "apps": "apps en la familia de productos"
     },
     "the-circular-net-web": {
-      "title": "Circular Net Web",
+      "title": "App social",
       "tagline": "Una red social para la sostenibilidad",
       "summary": "La app web de una red social para personas y organizaciones que trabajan en sostenibilidad: feed, comunidades, mensajería, salas de audio y vídeo en directo, empleos, proyectos y pódcasts.",
       "role": "Responsable de frontend",
@@ -318,7 +317,7 @@
       "system": "Cómo encaja la app web en la plataforma"
     },
     "the-circular-net-mobile": {
-      "title": "Circular Net Mobile",
+      "title": "App social móvil",
       "tagline": "La red de sostenibilidad en iOS y Android",
       "summary": "La app de iOS y Android de The Circular Net: feed, comunidades, mensajería, llamadas, salas en directo y pódcasts con reproducción en segundo plano.",
       "role": "Responsable de móvil",
@@ -352,7 +351,7 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Eventos y venta de entradas en web y móvil",
+      "tagline": "Sitio web + app de eventos y venta de entradas",
       "summary": "Un producto de eventos y venta de entradas: el público descubre eventos y compra entradas; quienes organizan crean eventos, escanean entradas en la puerta y cobran en NGN o USD.",
       "role": "Frontend en solitario, web y móvil",
       "problem": "Quienes organizan eventos necesitaban un solo lugar para publicar, vender entradas, controlar el acceso, verificar su identidad y cobrar. Las apps web y móvil duplicaban llamadas a la API y reglas de negocio, y se iban distanciando.",
@@ -384,7 +383,7 @@
       "system": "Dos apps, un paquete compartido"
     },
     "circular-net-sso": {
-      "title": "Circular Net SSO",
+      "title": "Inicio de sesión único",
       "tagline": "Un inicio de sesión para todas las apps",
       "summary": "Un servicio de inicio de sesión único para los productos de The Circular Net: acceso, registro y recuperación de cuenta con OAuth 2.0, e inicio de sesión con Google y Apple.",
       "role": "Frontend en solitario",
@@ -416,7 +415,7 @@
       "system": "Todos los productos inician sesión en un solo servicio"
     },
     "circular-net-website": {
-      "title": "Circular Net Website",
+      "title": "Sitio web",
       "tagline": "Sitio corporativo y análisis de sostenibilidad",
       "summary": "El sitio público de The Circular Net: la plataforma, sus servicios de sostenibilidad y un blog, con un inicio de sesión que lleva directamente a la app.",
       "role": "Frontend en solitario",
@@ -481,7 +480,7 @@
       "role": "Desarrollo web voluntario, en solitario",
       "problem": "La organización necesitaba un sitio moderno que pudiera actualizar por su cuenta. En el sitio original, cada nuevo episodio o socio implicaba pedirlo a desarrollo.",
       "process": "Construí el primer sitio en React en 2023. En 2026 lo rehice con Next.js 16 y animación, y añadí un CMS de administración sobre Postgres: acceso con credenciales, editor enriquecido para el blog, subida de imágenes y gestión de usuarios por roles. Las funciones más grandes, como la de socios, empezaron como una especificación y un plan escritos antes del código.",
-      "outcome": "En línea en lawxtech.org, con el equipo publicando su propio contenido. El código es abierto en GitHub.",
+      "outcome": "En línea en lawxtech.org, con el equipo publicando su propio contenido.",
       "learnings": "Las bases de datos serverless requieren cuidado con el pooling de conexiones y el acceso en tiempo de build. El build nunca debe depender de que la base esté disponible.",
       "built": {
         "a": "Una portada con estadísticas animadas, vista previa de series, carrusel de ponentes y secciones de comunidad",
