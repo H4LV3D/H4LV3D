@@ -35,31 +35,9 @@
   --ring: var(--brand);
 
   --brand-soft: color-mix(in oklch, var(--brand) 16%, transparent);
-
-  /* Illustration palette (monochrome; the tie pattern carries --brand) */
+  /* Illustration ink + paper (line art, see components/illustrations/peep) */
   --peep-line: var(--color-neutral-900);
-  --peep-fill: var(--color-neutral-50);
-  --peep-shade: var(--color-gray-300);
-  --peep-skin: var(--color-neutral-500);
-  --peep-skin-shade: var(--color-neutral-600);
-  --peep-skin-light: var(--color-neutral-400);
-  --peep-skin-line: var(--color-neutral-700);
-  --peep-lip: var(--color-neutral-600);
-  --peep-lip-top: var(--color-neutral-700);
-  --peep-eye: var(--color-neutral-50);
-  --peep-iris: var(--color-neutral-900);
-  --peep-hair: var(--color-neutral-900);
-  --peep-hair-fade: var(--color-neutral-700);
-  --peep-hair-texture: var(--color-neutral-700);
-  --peep-suit: var(--color-neutral-700);
-  --peep-suit-detail: var(--color-neutral-500);
-  --peep-lapel: var(--color-neutral-900);
-  --peep-shirt: var(--color-neutral-50);
-  --peep-tie: var(--color-neutral-800);
-  --peep-watch: var(--color-neutral-300);
-  --peep-device: var(--color-neutral-300);
-  --peep-device-edge: var(--color-neutral-200);
-  --peep-device-logo: var(--color-neutral-100);
+  --peep-fill: var(--background);
 
   --grain-opacity: 0.045;
 
@@ -92,29 +70,7 @@
   --input: var(--color-gray-700);
 
   --peep-line: var(--color-neutral-100);
-  --peep-fill: var(--color-neutral-800);
-  --peep-shade: color-mix(in oklch, var(--color-gray-700) 55%, var(--color-neutral-700));
-  /* Skin and hair keep their tone in dark mode — they're the likeness, not the theme. */
-  --peep-skin: var(--color-neutral-500);
-  --peep-skin-shade: var(--color-neutral-600);
-  --peep-skin-light: var(--color-neutral-400);
-  --peep-skin-line: var(--color-neutral-700);
-  --peep-lip: var(--color-neutral-600);
-  --peep-lip-top: var(--color-neutral-700);
-  --peep-eye: var(--color-neutral-100);
-  --peep-iris: var(--color-neutral-950);
-  --peep-hair: var(--color-neutral-950);
-  --peep-hair-fade: var(--color-neutral-700);
-  --peep-hair-texture: var(--color-neutral-700);
-  --peep-suit: var(--color-neutral-800);
-  --peep-suit-detail: var(--color-neutral-600);
-  --peep-lapel: var(--color-neutral-950);
-  --peep-shirt: var(--color-neutral-100);
-  --peep-tie: var(--color-neutral-900);
-  --peep-watch: var(--color-neutral-400);
-  --peep-device: var(--color-neutral-700);
-  --peep-device-edge: var(--color-neutral-600);
-  --peep-device-logo: var(--color-neutral-400);
+  --peep-fill: var(--background);
 
   --grain-opacity: 0.06;
 }
@@ -355,16 +311,12 @@ html.has-custom-cursor button {
   animation-delay: var(--peep-delay, 0s), calc(var(--peep-delay, 0s) + 0.55s);
 }
 .peep [data-part="body"] {
-  --peep-delay: 0s;
 }
 .peep [data-part="arms"] {
-  --peep-delay: 0.2s;
 }
 .peep [data-part="head"] {
-  --peep-delay: 0.3s;
 }
 .peep [data-part="props"] {
-  --peep-delay: 0.45s;
 }
 
 @keyframes peep-part-in {
@@ -390,6 +342,11 @@ html.has-custom-cursor button {
   to {
     fill-opacity: 1;
   }
+}
+
+/* Line art: the paper fill matches whatever surface the figure sits on. */
+.bg-card {
+  --peep-fill: var(--card);
 }
 
 /* Coffee steam drifts up and fades, forever. */

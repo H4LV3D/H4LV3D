@@ -3,7 +3,7 @@
  * shared suit and head.
  */
 import * as React from "react";
-import { Forearm, GripHand, OpenHand, fine, ink, line, paper, suit } from "./parts";
+import { Forearm, GripHand, OpenHand, fine, line, paper } from "./parts";
 
 /* ─── MacBook (hero) ────────────────────────────────────────────────────── */
 
@@ -15,20 +15,15 @@ export function LaptopProps() {
   return (
     <g id="laptop">
       {/* Forearms reaching for the keyboard behind the lid */}
-      <path {...suit} d="M76 440 C 80 416, 94 396, 128 384 L 134 418 C 114 424, 104 432, 100 440 Z" />
-      <path {...suit} d="M326 440 C 322 416, 308 396, 274 384 L 268 418 C 288 424, 298 432, 302 440 Z" />
+      <path {...paper} d="M76 440 C 80 416, 94 396, 128 384 L 134 418 C 114 424, 104 432, 100 440 Z" />
+      <path {...paper} d="M326 440 C 322 416, 308 396, 274 384 L 268 418 C 288 424, 298 432, 302 440 Z" />
       {/* Aluminium lid, seen from behind */}
       <path
-        {...ink}
-        fill="var(--peep-device)"
+        {...paper}
         d="M108 440 L 122 352 C 123.4 344, 128.6 340, 136 340 L 266 340 C 273.4 340, 278.6 344, 280 352 L 294 440 Z"
       />
-      <path
-        {...fine}
-        stroke="var(--peep-device-edge)"
-        d="M126 350 C 127 346, 130 344, 136 344 L 266 344 C 272 344, 275 346, 276 350"
-      />
-      <path transform="translate(201 386) scale(0.95)" fill="var(--peep-device-logo)" d={APPLE} />
+      <path {...fine} d="M126 350 C 127 346, 130 344, 136 344 L 266 344 C 272 344, 275 346, 276 350" />
+      <path {...fine} transform="translate(201 386) scale(0.95)" d={APPLE} />
       {/* Coffee */}
       <g id="mug">
         <path
@@ -57,7 +52,7 @@ export function WaveUpperArm() {
   return (
     <>
       <path {...line} d="M104 324 C 110 364, 112 404, 110 440" />
-      <path {...suit} d="M276 298 C 298 288, 322 274, 334 252 L 366 264 C 354 298, 330 326, 300 346 Z" />
+      <path {...paper} d="M276 298 C 298 288, 322 274, 334 252 L 366 264 C 354 298, 330 326, 300 346 Z" />
     </>
   );
 }
@@ -161,7 +156,7 @@ export function MapProps() {
     <g id="map">
       <HoldingArms left={[104, 360]} right={[300, 356]} />
       <path {...paper} d="M94 298 L 308 292 L 312 394 L 98 400 Z" />
-      <path {...fine} stroke="var(--peep-shade)" d="M165 296 L 167 398 M236 294 L 239 396" />
+      <path {...fine} d="M165 296 L 167 398 M236 294 L 239 396" />
       <path {...fine} strokeDasharray="7 7" d="M120 378 C 150 340, 186 386, 222 342 S 270 352, 284 330" />
       <path {...line} strokeWidth={4} d="M278 318 L 294 334 M294 318 L 278 334" />
       {/* Upside-down compass rose — the map is being held the wrong way */}

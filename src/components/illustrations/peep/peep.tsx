@@ -188,7 +188,7 @@ export function Peep({
         >
           <Ears />
           <FaceShape />
-          <Hair />
+          <Hair clipId={`${uid}-hair`} />
           <Brows mood={brows ?? defaults.brows} />
           <Eyes
             clipId={`${uid}-eye`}
