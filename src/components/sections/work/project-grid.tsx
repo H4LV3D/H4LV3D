@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { TransitionLink } from "@/components/motion/page-transition";
 import type { Project } from "@/content/projects";
 import { ProjectCover } from "./project-cover";
+import { SketchFrame } from "@/components/illustrations/sketch-frame";
 import { ease } from "@/lib/motion";
 
 export function ProjectGrid({ projects }: { projects: Project[] }) {
@@ -30,7 +31,8 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
               data-cursor={common("view")}
               className="group flex flex-col gap-4"
             >
-              <div className="sketch-border transition-transform duration-700 ease-out-expo group-hover:-rotate-1">
+              <div className="relative transition-transform duration-700 ease-out-expo group-hover:-rotate-1">
+                <SketchFrame />
                 <ProjectCover project={p} title={t(`${p.slug}.title`)} tagline={t(`${p.slug}.tagline`)} />
               </div>
               <div className="flex items-baseline justify-between gap-4">

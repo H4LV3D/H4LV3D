@@ -6,6 +6,7 @@ import { m } from "motion/react";
 import { useTranslations } from "next-intl";
 
 import { Peep } from "@/components/illustrations/peep/peep";
+import { SketchFrame } from "@/components/illustrations/sketch-frame";
 import { site } from "@/config/site";
 import { ease } from "@/lib/motion";
 
@@ -26,13 +27,14 @@ export function PortraitSwap() {
         onClick={() => setReal((r) => !r)}
         aria-pressed={real}
         aria-label={t("hint")}
-        className="sketch-border relative aspect-[4/5] w-full cursor-pointer overflow-hidden rounded-md border border-border bg-card"
+        className="group relative aspect-[4/5] w-full cursor-pointer rounded-md"
       >
-        <div className="absolute inset-0 flex items-end justify-center px-6 pt-10">
+        <SketchFrame />
+        <div className="absolute inset-0 flex items-end justify-center overflow-hidden rounded-md border border-border bg-card px-6 pt-10">
           <Peep pose="thinking" className="w-full" />
         </div>
         <m.div
-          className="absolute inset-0 bg-secondary"
+          className="absolute inset-0 overflow-hidden rounded-md bg-secondary"
           initial={false}
           animate={{ clipPath: real ? "circle(150% at 100% 100%)" : "circle(0% at 100% 100%)" }}
           transition={{ duration: 0.9, ease: ease.inOut }}
@@ -43,7 +45,7 @@ export function PortraitSwap() {
               alt={t("alt")}
               fill
               sizes="(min-width: 768px) 40vw, 100vw"
-              className="photo-mono object-cover"
+              className="photo-mono object-cover object-[50%_18%]"
             />
           ) : (
             <div className="flex h-full flex-col items-center justify-center gap-3 text-muted-foreground">

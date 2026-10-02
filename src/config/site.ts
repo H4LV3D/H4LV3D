@@ -20,7 +20,7 @@ export const site = {
    * Portrait for the About page ("the real me"). Drop a photo at
    * public/images/me/portrait.jpg and set this to "/images/me/portrait.jpg".
    */
-  portrait: undefined as string | undefined,
+  portrait: "/images/me/portrait.jpg" as string | undefined,
   /** Numbers for the About page. */
   stats: { projects: 15, companies: 6, clients: 12, pages: 60 },
   /** Shown as a pulsing badge on the contact page and footer. */

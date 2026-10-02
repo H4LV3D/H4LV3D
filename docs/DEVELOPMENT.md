@@ -22,17 +22,19 @@ pnpm dev                     # http://localhost:3000
 
 ## Common changes
 
-| I want to…                                               | Edit                                                                                   |
-| -------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Change the accent colour                                 | `src/config/brand.ts` — the **only** place it is defined                               |
-| Change name, email, socials, stats, "available for work" | `src/config/site.ts`                                                                   |
-| Add my portrait                                          | put it at `public/images/me/portrait.jpg`, set `portrait` in `src/config/site.ts`      |
-| Add / edit a project                                     | data in `src/content/projects.ts`, text in `messages/*.json` → `Projects.<slug>`       |
-| Change any copy                                          | `messages/<locale>.json` (run `pnpm i18n:check` after)                                 |
-| Add a language                                           | add it to `src/i18n/routing.ts` + create `messages/<locale>.json`                      |
-| Tweak colours per theme                                  | `src/app/globals.css` (`:root` / `.dark`) — neutral = structure, gray = detail         |
-| Tweak animation timing                                   | `src/lib/motion.ts` (+ mirrored CSS vars in `globals.css`)                             |
-| Redraw the character                                     | `src/components/illustrations/peep/parts.tsx` (hair/face) and `poses.tsx` (arms/props) |
+| I want to…                                               | Edit                                                                                                                                                                   |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Change the accent colour                                 | `src/config/brand.ts` — the **only** place it is defined                                                                                                               |
+| Change name, email, socials, stats, "available for work" | `src/config/site.ts`                                                                                                                                                   |
+| Add my portrait                                          | put it at `public/images/me/portrait.jpg`, set `portrait` in `src/config/site.ts`                                                                                      |
+| Add / edit a project                                     | data in `src/content/projects.ts`, text in `messages/*.json` → `Projects.<slug>`                                                                                       |
+| Change any copy                                          | `messages/<locale>.json` (run `pnpm i18n:check` after)                                                                                                                 |
+| Add a language                                           | add it to `src/i18n/routing.ts` + create `messages/<locale>.json`                                                                                                      |
+| Tweak colours per theme                                  | `src/app/globals.css` (`:root` / `.dark`) — neutral = structure, gray = detail                                                                                         |
+| Tweak animation timing                                   | `src/lib/motion.ts` (+ mirrored CSS vars in `globals.css`)                                                                                                             |
+| Re-trace the face                                        | edit `scripts/peep/head-trace.tsv` (paths in headshot pixel coordinates), then `node scripts/peep/convert-trace.mjs > src/components/illustrations/peep/head-paths.ts` |
+| Change outfit / poses / props                            | `src/components/illustrations/peep/parts.tsx` (suit, hands, cuffs) and `poses.tsx` (arms, props)                                                                       |
+| Change illustration colours                              | `--peep-*` tokens in `src/app/globals.css` (skin, suit, tie, device…)                                                                                                  |
 
 ## Contact form
 
@@ -46,7 +48,7 @@ Set `RESEND_API_KEY`, `CONTACT_FROM_EMAIL` (a sender on a domain verified in Res
 - **Loading screen** — `components/preloader/preloader.tsx`. Server-rendered so it covers the page before JS runs; only plays on full loads (client navigations never remount the root layout); shorter on repeat visits within a session; reduced-motion users get a quick fade. The hero waits for it via `useIntro()`.
 - **Page transitions** — `components/motion/page-transition.tsx`. Use `TransitionLink` instead of `Link`: cover → navigate → reveal. Back/forward skips the curtain.
 - **Theme switch** — circular reveal from the toggle using the View Transitions API, instant fallback elsewhere.
-- **Illustrations** — Open Peeps-style rig (`components/illustrations/peep`), coloured only via `--peep-*` and `--brand` CSS variables, so it re-themes automatically. Blinks, breathes, follows the cursor, waves, draws itself in, and has a subtle "line boil" (SVG turbulence filter).
+- **Illustrations** — traced from the reference photos in `public/images/me/`; Open Peeps-style rig (`components/illustrations/peep`), coloured only via `--peep-*` and `--brand` CSS variables, so it re-themes automatically. Blinks, breathes, follows the cursor, waves, draws itself in, and has a subtle "line boil" (SVG turbulence filter).
 - **Signature** — generated single-stroke handwriting (`scripts/generate-signature.mjs`, EMS Allure font, SIL OFL).
 - **Fonts** — Instrument Serif / Geist / Geist Mono / Caveat, with Playfair Display (Cyrillic) and Noto Sans/Serif SC (Chinese) as per-glyph fallbacks that only download when needed.
 

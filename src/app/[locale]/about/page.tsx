@@ -11,6 +11,7 @@ import { AboutTabs } from "@/components/sections/about/about-tabs";
 import { Reveal } from "@/components/motion/reveal";
 import { CountUp } from "@/components/motion/count-up";
 import { Doodle } from "@/components/illustrations/doodle";
+import { SketchFrame } from "@/components/illustrations/sketch-frame";
 import type { DoodleName } from "@/components/illustrations/doodle-paths";
 
 type Props = { params: Promise<{ locale: Locale }> };
@@ -85,8 +86,9 @@ export default async function AboutPage({ params }: Props) {
               as="li"
               key={key}
               delay={i * 0.06}
-              className="sketch-border flex aspect-square flex-col items-start justify-between rounded-md border border-border bg-card p-6 transition-colors hover:border-transparent"
+              className="group relative flex aspect-square flex-col items-start justify-between rounded-md border border-border bg-card p-6 transition-colors hover:border-transparent"
             >
+              <SketchFrame />
               <Doodle name={doodle} className="size-12" delay={0.2 + i * 0.1} />
               <span className="font-display text-3xl">{t(`offscreen.${key}`)}</span>
             </Reveal>

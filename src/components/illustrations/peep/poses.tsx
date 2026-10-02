@@ -1,56 +1,42 @@
 /*
- * Pose-specific foreground layers (arms and props), drawn on top of the
- * shared torso and head.
+ * Pose-specific foreground layers (arms, hands and props), drawn over the
+ * shared suit and head.
  */
 import * as React from "react";
-import { Mitten, fine, line, paper, shade } from "./parts";
+import { Forearm, GripHand, OpenHand, fine, ink, line, paper, suit } from "./parts";
+
+/* ─── MacBook (hero) ────────────────────────────────────────────────────── */
+
+/** Apple logo, centred on (0,0), ~1 unit = 1px at scale 1 (bbox ≈ 32×38). */
+const APPLE =
+  "M0.2 -9.6 C -2 -9.6, -5 -11.6, -8.4 -11.6 C -13.6 -11.6, -18 -7, -18 0 C -18 9, -12.4 18.6, -7.8 18.6 C -5.2 18.6, -3.6 17, 0 17 C 3.6 17, 4.8 18.6, 8 18.6 C 12.6 18.6, 16.4 12.6, 18 8 C 13.6 6, 11.4 2.8, 11.4 -1.2 C 11.4 -5, 13.4 -8, 16.4 -10 C 13.8 -13, 10.4 -14, 7.8 -14 C 4.4 -14, 2.2 -9.6, 0.2 -9.6 Z M0.4 -14.2 C 0.4 -18.6, 3.6 -22.6, 8 -23 C 8 -18.6, 4.6 -14.6, 0.4 -14.2 Z";
 
 export function LaptopProps() {
   return (
     <g id="laptop">
-      {/* Arms reaching forward behind the lid */}
-      <path {...line} d="M104 322 C 108 350, 106 376, 100 398" />
-      <path {...line} d="M298 322 C 294 350, 296 376, 302 398" />
-      <path {...paper} d="M80 440 C 84 418, 98 398, 132 386 L 136 418 C 116 424, 106 432, 102 440 Z" />
-      <path {...paper} d="M322 440 C 318 418, 304 398, 270 386 L 266 418 C 286 424, 296 432, 300 440 Z" />
-      {/* Lid (back side, facing us) */}
+      {/* Forearms reaching for the keyboard behind the lid */}
+      <path {...suit} d="M76 440 C 80 416, 94 396, 128 384 L 134 418 C 114 424, 104 432, 100 440 Z" />
+      <path {...suit} d="M326 440 C 322 416, 308 396, 274 384 L 268 418 C 288 424, 298 432, 302 440 Z" />
+      {/* Aluminium lid, seen from behind */}
       <path
-        {...paper}
-        d="M114 440 L 129 344 C 130 338, 134 335, 140 335 L 262 335 C 268 335, 272 338, 273 344 L 288 440 Z"
+        {...ink}
+        fill="var(--peep-device)"
+        d="M108 440 L 122 352 C 123.4 344, 128.6 340, 136 340 L 266 340 C 273.4 340, 278.6 344, 280 352 L 294 440 Z"
       />
-      <path {...shade} d="M118 436 L 121 416 C 170 420, 232 420, 281 416 L 284 436 Z" />
-      {/* Stickers */}
-      <circle cx="201" cy="380" r="15" fill="var(--brand)" stroke="var(--peep-line)" strokeWidth={2.4} />
-      <path {...fine} d="M194 381 C 197 386, 205 386, 208 381" />
-      <g transform="translate(152 364) rotate(-10)">
-        <rect {...paper} strokeWidth={2.4} x="-18" y="-10" width="36" height="20" rx="3" />
-        <text
-          x="0"
-          y="4.5"
-          textAnchor="middle"
-          fontFamily="var(--font-geist-mono), monospace"
-          fontSize="12"
-          fill="var(--peep-line)"
-        >
-          {"</>"}
-        </text>
-      </g>
       <path
-        {...paper}
-        strokeWidth={2.2}
-        transform="translate(248 360) scale(0.42) translate(-30 -30)"
-        d="M30 5 L 36.5 22.5 L 55 23.5 L 40.5 35.5 L 46 55 L 30 44 L 13.5 55.5 L 19.5 35.5 L 5 23 L 23.5 22 Z"
+        {...fine}
+        stroke="var(--peep-device-edge)"
+        d="M126 350 C 127 346, 130 344, 136 344 L 266 344 C 272 344, 275 346, 276 350"
       />
+      <path transform="translate(201 386) scale(0.95)" fill="var(--peep-device-logo)" d={APPLE} />
       {/* Coffee */}
       <g id="mug">
         <path
           {...paper}
-          d="M316 392 L 318 432 C 318 437, 322 440, 327 440 L 347 440 C 352 440, 355 437, 356 432 L 358 392 Z"
+          d="M318 394 L 320 432 C 320 437, 324 440, 329 440 L 349 440 C 354 440, 357 437, 358 432 L 360 394 Z"
         />
-        <path {...line} d="M357 402 C 371 400, 373 424, 356 425" />
-        <path fill="var(--brand)" d="M317.6 404 L 357.4 404 L 357 414 L 318 414 Z" />
-        <path {...fine} d="M317.6 404 L 357.4 404 M318 414 L 357 414" />
-        <Steam x={328} y={384} />
+        <path {...line} d="M359 404 C 373 402, 375 426, 358 427" />
+        <Steam x={330} y={386} />
       </g>
     </g>
   );
@@ -65,66 +51,53 @@ function Steam({ x, y }: { x: number; y: number }) {
   );
 }
 
+/* ─── Wave ──────────────────────────────────────────────────────────────── */
+
 export function WaveUpperArm() {
   return (
     <>
-      <path {...line} d="M104 322 C 110 362, 114 404, 112 440" />
-      <path {...paper} d="M280 300 C 300 288, 322 274, 334 250 L 362 262 C 350 294, 328 322, 300 342 Z" />
+      <path {...line} d="M104 324 C 110 364, 112 404, 110 440" />
+      <path {...suit} d="M276 298 C 298 288, 322 274, 334 252 L 366 264 C 354 298, 330 326, 300 346 Z" />
     </>
   );
 }
 
-/** Forearm + open hand; rotated around the elbow to wave. */
+/** Forearm, cuff, watch and open hand; rotated around the elbow to wave. */
 export function WaveForearm() {
   return (
     <>
-      <path {...paper} d="M334 258 C 336 232, 338 212, 337 194 L 363 194 C 365 212, 365 236, 362 264 Z" />
-      <path {...fine} d="M337 202 C 346 205, 355 205, 363 202" />
-      {/* Thumb */}
-      <path
-        {...paper}
-        d="M336 182 C 326 180, 318 170, 321 162 C 324 156, 331 158, 335 165 C 337 170, 338 176, 338 180 Z"
-      />
-      {/* Open palm with spread fingers */}
-      <path
-        {...paper}
-        d="M336 196 C 333 184, 332 172, 333 160 C 332 148, 331 138, 335 134 C 339 131, 342 136, 342 146 L 343 154 C 343 140, 343 128, 348 126 C 353 125, 354 134, 353 148 L 353 154 C 354 142, 356 130, 361 130 C 366 131, 366 140, 364 152 L 363 160 C 366 152, 369 146, 373 148 C 377 151, 373 162, 370 172 C 368 182, 366 190, 364 196 Z"
-      />
+      <Forearm elbow={[350, 266]} wrist={[352, 196]} width={34} watch />
+      <OpenHand x={353} y={178} rotate={6} />
     </>
   );
 }
+
+/* ─── Thinking ──────────────────────────────────────────────────────────── */
 
 export function ThinkingArm() {
   return (
     <g id="thinking-arm">
-      <path {...line} d="M298 322 C 292 362, 288 404, 290 440" />
-      <path {...line} d="M104 322 C 108 350, 106 376, 100 398" />
-      {/* Forearm rising to the chin */}
-      <path {...paper} d="M112 440 C 128 384, 150 324, 170 264 L 198 274 C 182 334, 164 392, 150 440 Z" />
-      <path {...fine} d="M171 270 C 179 274, 188 276, 196 275" />
-      {/* Fist resting under the chin, index finger along the jaw */}
-      <path
-        {...paper}
-        d="M166 262 C 158 248, 164 230, 180 226 C 194 222, 208 230, 208 244 C 208 258, 196 268, 182 268 C 175 268, 169 266, 166 262 Z"
-      />
-      <path
-        {...paper}
-        d="M190 226 C 196 220, 206 214, 214 214 C 220 214, 222 220, 216 224 C 210 228, 204 230, 200 232 Z"
-      />
-      <path {...fine} d="M172 240 C 180 242, 190 242, 199 239 M171 251 C 180 253, 190 253, 200 250" />
+      <path {...line} d="M298 324 C 292 364, 290 404, 292 440" />
+      <path {...line} d="M104 324 C 108 350, 106 376, 100 398" />
+      <Forearm elbow={[126, 452]} wrist={[178, 266]} width={36} watch />
+      {/* Fist resting under the chin */}
+      <GripHand x={186} y={240} rotate={-12} scale={1.1} />
     </g>
   );
 }
 
-/** Upper-arm seams plus forearms rising from the bottom edge to the hands. */
-function HoldingArms() {
+/* ─── Holding things ────────────────────────────────────────────────────── */
+
+/** Upper-arm seams plus forearms rising from the elbows to the hands. */
+function HoldingArms({ left, right }: { left: [number, number]; right: [number, number] }) {
+  const [lx, ly] = left;
+  const [rx, ry] = right;
   return (
     <>
-      <path {...line} d="M104 322 C 108 350, 106 380, 98 404" />
-      <path {...line} d="M298 322 C 294 350, 296 380, 304 404" />
-      <path {...paper} d="M112 440 C 120 420, 134 400, 152 380 L 176 394 C 162 410, 152 426, 148 440 Z" />
-      <path {...paper} d="M290 440 C 282 420, 268 400, 250 380 L 226 394 C 240 410, 250 426, 254 440 Z" />
-      <path {...fine} d="M152 380 C 160 388, 168 392, 176 394 M250 380 C 242 388, 234 392, 226 394" />
+      <path {...line} d="M104 324 C 108 352, 106 382, 98 410" />
+      <path {...line} d="M298 324 C 294 352, 296 382, 304 410" />
+      <Forearm elbow={[78, 450]} wrist={[lx - 10, ly + 16]} watch />
+      <Forearm elbow={[324, 450]} wrist={[rx + 10, ry + 16]} />
     </>
   );
 }
@@ -132,16 +105,15 @@ function HoldingArms() {
 export function CoffeeProps() {
   return (
     <g id="coffee">
-      <HoldingArms />
+      <HoldingArms left={[166, 368]} right={[236, 368]} />
       <path
         {...paper}
-        d="M176 312 L 179 380 C 180 387, 185 391, 192 391 L 211 391 C 218 391, 223 387, 224 380 L 227 312 Z"
+        d="M176 316 L 179 382 C 180 389, 185 393, 192 393 L 211 393 C 218 393, 223 389, 224 382 L 227 316 Z"
       />
-      <path fill="var(--brand)" d="M177.2 334 L 225.8 334 L 225.1 350 L 177.9 350 Z" />
-      <path {...fine} d="M177.2 334 L 225.8 334 M177.9 350 L 225.1 350" />
-      <Steam x={194} y={300} />
-      <Mitten x={170} y={366} rotate={-8} />
-      <Mitten x={232} y={366} rotate={8} flip />
+      <path {...fine} d="M177 326 L 226 326" />
+      <Steam x={194} y={304} />
+      <GripHand x={168} y={362} rotate={-10} />
+      <GripHand x={234} y={362} rotate={10} flip />
     </g>
   );
 }
@@ -149,20 +121,14 @@ export function CoffeeProps() {
 export function EnvelopeProps() {
   return (
     <g id="envelope">
-      <HoldingArms />
+      <HoldingArms left={[150, 376]} right={[252, 370]} />
       <g transform="rotate(-6 201 352)">
-        <path {...paper} d="M144 316 L 258 316 L 258 388 L 144 388 Z" />
-        <path {...line} d="M144 316 L 201 356 L 258 316" />
-        <path
-          fill="var(--brand)"
-          stroke="var(--peep-line)"
-          strokeWidth={2.2}
-          transform="translate(201 358) scale(0.36) translate(-30 -30)"
-          d="M30 52 C 10 38, 2 24, 12 14 C 20 6, 28 12, 30 19 C 32 12, 40 6, 48 14 C 58 24, 50 38, 30 52 Z"
-        />
+        <path {...paper} d="M142 314 L 260 314 L 260 390 L 142 390 Z" />
+        <path {...line} d="M142 314 L 201 356 L 260 314" />
+        <path {...fine} d="M142 390 L 188 350 M260 390 L 214 350" />
       </g>
-      <Mitten x={150} y={378} rotate={-14} />
-      <Mitten x={252} y={372} rotate={10} flip />
+      <GripHand x={148} y={374} rotate={-14} />
+      <GripHand x={254} y={368} rotate={12} flip />
     </g>
   );
 }
@@ -170,12 +136,11 @@ export function EnvelopeProps() {
 export function SignProps({ text }: { text: string }) {
   return (
     <g id="sign">
-      <path {...paper} d="M78 440 C 84 412, 92 384, 98 352 L 124 358 C 118 388, 114 414, 112 440 Z" />
-      <path {...paper} d="M324 440 C 318 412, 310 384, 304 352 L 278 358 C 284 388, 288 414, 290 440 Z" />
-      <path {...paper} d="M84 236 L 318 228 L 322 352 L 90 358 Z" />
+      <HoldingArms left={[104, 340]} right={[300, 336]} />
+      <path {...paper} d="M84 234 L 318 226 L 322 352 L 90 358 Z" />
       <text
         x="203"
-        y="306"
+        y="304"
         textAnchor="middle"
         fontFamily="var(--font-caveat), var(--font-noto-sans-sc), cursive"
         fontSize="58"
@@ -184,15 +149,9 @@ export function SignProps({ text }: { text: string }) {
       >
         {text}
       </text>
-      <path
-        fill="none"
-        stroke="var(--brand)"
-        strokeWidth={5}
-        strokeLinecap="round"
-        d="M120 326 C 170 318, 240 316, 288 322"
-      />
-      <Mitten x={104} y={344} rotate={-10} />
-      <Mitten x={300} y={340} rotate={10} flip />
+      <path {...line} strokeWidth={4} d="M120 324 C 170 316, 240 314, 288 320" />
+      <GripHand x={102} y={340} rotate={-10} />
+      <GripHand x={302} y={336} rotate={10} flip />
     </g>
   );
 }
@@ -200,12 +159,11 @@ export function SignProps({ text }: { text: string }) {
 export function MapProps() {
   return (
     <g id="map">
-      <path {...paper} d="M80 440 C 86 418, 92 396, 98 374 L 124 380 C 118 402, 114 422, 112 440 Z" />
-      <path {...paper} d="M322 440 C 316 418, 310 396, 304 374 L 278 380 C 284 402, 288 422, 290 440 Z" />
-      <path {...paper} d="M94 300 L 308 294 L 312 394 L 98 400 Z" />
-      <path {...fine} stroke="var(--peep-shade)" d="M165 298 L 167 398 M236 296 L 239 396" />
+      <HoldingArms left={[104, 360]} right={[300, 356]} />
+      <path {...paper} d="M94 298 L 308 292 L 312 394 L 98 400 Z" />
+      <path {...fine} stroke="var(--peep-shade)" d="M165 296 L 167 398 M236 294 L 239 396" />
       <path {...fine} strokeDasharray="7 7" d="M120 378 C 150 340, 186 386, 222 342 S 270 352, 284 330" />
-      <path stroke="var(--brand)" strokeWidth={4.5} strokeLinecap="round" d="M278 318 L 294 334 M294 318 L 278 334" />
+      <path {...line} strokeWidth={4} d="M278 318 L 294 334 M294 318 L 278 334" />
       {/* Upside-down compass rose — the map is being held the wrong way */}
       <g transform="translate(130 326) rotate(180)" {...fine}>
         <path d="M0 -14 L 5 0 L 0 14 L -5 0 Z" />
@@ -221,8 +179,8 @@ export function MapProps() {
           N
         </text>
       </g>
-      <Mitten x={104} y={364} rotate={-12} />
-      <Mitten x={300} y={360} rotate={12} flip />
+      <GripHand x={102} y={360} rotate={-12} />
+      <GripHand x={302} y={356} rotate={12} flip />
     </g>
   );
 }
