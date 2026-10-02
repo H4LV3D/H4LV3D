@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "siteTitle": "Toluwalope Akinkunmi — 软件开发",
-    "description": "Toluwalope Akinkunmi 使用 React、Next.js 和 Node 打造快速、友好的 Web 与移动产品。",
-    "ogTagline": "软件开发 · Web 与移动端"
+    "siteTitle": "Toluwalope Akinkunmi — 资深前端工程师 · 系统与 AI",
+    "description": "Toluwalope Akinkunmi 是一名正在迈向系统设计与 AI 的资深前端工程师：打造 Web 与移动产品、支撑它们的平台，以及真正干活的 AI。",
+    "ogTagline": "资深前端工程师 · 系统 · AI"
   },
   "Nav": {
     "home": "首页",
@@ -21,7 +21,8 @@
       "dark": "深色",
       "system": "跟随系统"
     },
-    "language": "语言"
+    "language": "语言",
+    "notes": "笔记"
   },
   "Preloader": {
     "loading": "加载中",
@@ -64,28 +65,28 @@
   },
   "Home": {
     "hero": {
-      "eyebrow": "软件开发 · Web 与移动端",
+      "eyebrow": "资深前端工程师 · 系统 · AI",
       "greeting": "你好，我是",
       "name": "Toluwalope",
       "roles": {
-        "a": "我打造 Web 与移动应用。",
-        "b": "我解决真实的问题。",
-        "c": "我上线人们真正在用的产品。",
-        "d": "我在意每一个细节。"
+        "a": "我设计系统，而不只是界面。",
+        "b": "我端到端交付 Web 与移动产品。",
+        "c": "我让多个应用共用一套基础。",
+        "d": "我用 AI 做真正有用的事。"
       },
-      "intro": "我设计并开发快速、友好的 Web 与移动产品——从第一张草图到最后一次部署。",
+      "intro": "资深前端工程师，正在迈向系统设计与 AI。我为一整个产品家族搭建了单点登录，做过 Web 与移动端共用的 monorepo、已发布的设计系统，以及实时音视频房间。",
       "note": "这就是画里的我！",
       "cta": "查看作品",
       "secondary": "联系我"
     },
     "intro": {
       "label": "01 / 简介",
-      "text": "我在意那些人们能感受到却很少注意到的细节：按钮如何回应、页面如何加载、句子读起来如何。我的工具是 React、Next.js 和 Node，我的习惯是上线、衡量、再改进。"
+      "text": "好的产品都是系统。界面是人们看到的部分；在它之下，是共享的规则、所有应用都信任的登录，以及让一切显得简单的实时基础设施。三年来我两者都在做，如今我开始有意识地设计“下面”的那部分。"
     },
     "work": {
       "label": "02 / 精选作品",
-      "title": "我做过的东西",
-      "all": "全部项目"
+      "title": "我交付的系统",
+      "all": "全部作品"
     },
     "toolkit": {
       "label": "03 / 工具箱"
@@ -93,22 +94,22 @@
     "currently": {
       "label": "04 / 近况",
       "title": "最近在忙什么",
-      "learning": "学习 React Native 和 GraphQL",
-      "oss": "为开源项目做贡献",
-      "building": "开发收据生成器 Reciept"
+      "learning": "深入学习分布式系统：队列、缓存与一致性",
+      "building": "在做 Stock Bot：面向尼日利亚股市的 AI 分析师",
+      "writing": "为我构建的系统写笔记"
     },
     "cta": {
-      "title": "有想法吗？",
-      "subtitle": "一起把它变成人们爱用的产品。",
+      "title": "有系统要搭建？",
+      "subtitle": "先把它设计好，再把它上线。",
       "button": "开始聊聊",
       "sign": "雇我吧！"
     }
   },
   "About": {
     "metaTitle": "关于",
-    "metaDescription": "软件开发者 Toluwalope Akinkunmi 的故事、经历与工具箱。",
+    "metaDescription": "资深前端工程师 Toluwalope Akinkunmi 的经历、经验与工具箱，正在迈向系统设计与 AI。",
     "label": "关于",
-    "title": "写代码，也依然在纸上画画。",
+    "title": "用系统思维做前端。",
     "photo": {
       "real": "真实的我",
       "drawn": "画里的我",
@@ -117,17 +118,17 @@
       "alt": "Toluwalope Akinkunmi 的肖像"
     },
     "story": {
-      "p1": "我是 Toluwalope Akinkunmi，专注于 Web 和移动端的软件开发者。我喜欢把杂乱的想法变成用起来很简单的产品。",
-      "p2": "我打造并扩展过数百人使用的产品——预算工具、出行预订、博客平台——也明白了品质是一种习惯，而不是某个阶段。",
-      "p3": "离开编辑器，我会打游戏、追剧、看书，也会为开源做贡献。我一直乐于结识新朋友，向他们学习。",
+      "p1": "我是 Toluwalope Akinkunmi，一名资深前端工程师。三年来我端到端地打造 Web 与移动产品，而我的工作越来越多地发生在界面之下。",
+      "p2": "在 The Circular Net，我搭建了产品家族的大部分：Web 与移动应用、一套在 Web 和移动端共用代码库的活动平台、所有应用都信任的单点登录，以及发布到 npm 的组件库。与此同时，我还参与了 GemsPay 的支付产品、为 Hotrac 打造的多语言贸易平台，以及 Law x Tech 的 CMS。",
+      "p3": "现在我正转向系统设计与 AI：决定各个部分如何组合，并打造让 LLM 真正干活的产品。屏幕之外，我玩游戏、追剧、读书。",
       "note": "没错，这些也是我画的"
     },
     "stats": {
       "label": "数字一览",
-      "projects": "已完成项目",
-      "companies": "合作过的公司",
-      "clients": "满意的客户",
-      "pages": "上线的页面"
+      "companies": "个团队与客户",
+      "years": "年交付经验",
+      "products": "个上线产品",
+      "commits": "次提交"
     },
     "tabs": {
       "experience": "经历",
@@ -135,49 +136,41 @@
       "approach": "工作方式"
     },
     "experience": {
-      "present": "至今",
-      "coinsave": {
-        "role": "全栈开发",
-        "company": "Coinsave",
-        "body": "负责一个拥有 500 多名用户的预算平台的设计、开发、管理与扩展，并持续提升性能和功能。"
-      },
-      "cabify": {
-        "role": "前端开发",
-        "company": "Cabify",
-        "body": "优化性能，实现快速加载和流畅导航，提升了客户满意度和参与度。"
-      }
+      "present": "至今"
     },
     "toolkit": {
       "frontend": "前端",
-      "backend": "后端",
+      "backend": "后端与云",
       "mobile": "移动端",
-      "tooling": "工具"
+      "tooling": "工具",
+      "systems": "系统",
+      "ai": "AI"
     },
     "approach": {
       "title": "我的工作方式",
+      "systems": {
+        "title": "系统优先",
+        "body": "在画界面之前，我先划清边界：哪些是共享的，谁负责什么，某个部分出故障时会发生什么。"
+      },
       "communication": {
         "title": "清晰沟通",
-        "body": "简短的进展更新、诚实的时间预估、没有术语堆砌。你永远知道发生了什么以及原因。"
+        "body": "简短的进度、诚实的时间表和成文的决策。你始终知道发生了什么，以及为什么。"
       },
-      "collaboration": {
-        "title": "高效协作",
-        "body": "我能和设计师、产品经理以及其他工程师顺畅合作——代码评审、结对编程、共同负责。"
-      },
-      "adaptability": {
-        "title": "灵活适应",
-        "body": "新技术栈、新领域、需求变动——我上手快，调整起来也不慌不忙。"
-      },
-      "time": {
-        "title": "时间管理",
-        "body": "我把工作拆成可以交付的小块，优先做最有价值的部分。"
+      "ownership": {
+        "title": "端到端负责",
+        "body": "从第一份需求文档到构建、发布，再到上线后的 bug 报告，我对结果负责，而不只是对工单负责。"
       },
       "problems": {
         "title": "解决问题",
-        "body": "我会一直深挖，直到弄清真正的问题，再选最简单的方案。"
+        "body": "我会一直深挖，直到弄清真正的问题，然后选择能解决它的最简单方案。"
       },
-      "creativity": {
-        "title": "创意与创新",
-        "body": "好的产品总带点小惊喜。我会寻找那个让人会心一笑的细节。"
+      "quality": {
+        "title": "把质量当习惯",
+        "body": "每个状态都经过设计：加载、空状态和错误。默认无障碍，在慢网络下也快。"
+      },
+      "ai": {
+        "title": "让 AI 用在该用的地方",
+        "body": "我用 AI 提升效率，也把它放进真正需要它干活的产品里，而不是当装饰。"
       }
     },
     "offscreen": {
@@ -190,17 +183,18 @@
   },
   "Work": {
     "metaTitle": "作品",
-    "metaDescription": "Toluwalope Akinkunmi 的精选项目——Web 应用、移动应用和全栈产品。",
+    "metaDescription": "Toluwalope Akinkunmi 的作品，按公司分组：平台、Web 与移动应用以及 AI 项目。",
     "label": "作品",
-    "title": "精选作品",
-    "subtitle": "我设计、开发并上线的产品。",
+    "title": "作品",
+    "subtitle": "按工作经历分组。每个案例都展示产品背后的系统。",
     "count": "{count} 个项目",
     "filters": {
       "label": "筛选项目",
       "all": "全部",
       "web": "Web",
       "mobile": "移动端",
-      "fullstack": "全栈"
+      "systems": "系统",
+      "ai": "AI"
     },
     "layout": {
       "label": "布局",
@@ -210,7 +204,8 @@
     "status": {
       "live": "已上线",
       "in-development": "开发中",
-      "offline": "已归档"
+      "offline": "已归档",
+      "internal": "内部"
     },
     "caseStudy": {
       "back": "全部作品",
@@ -221,61 +216,489 @@
       "status": "状态",
       "live": "访问网站",
       "code": "源代码",
-      "noLinks": "私有 / 已归档",
+      "noLinks": "私有 / 内部",
       "problem": "问题",
       "process": "过程",
       "outcome": "成果",
       "learnings": "收获",
       "next": "下一个项目",
-      "imagePending": "截图即将上线"
+      "imagePending": "截图即将上线",
+      "company": "公司",
+      "period": "时间",
+      "appStore": "App Store",
+      "playStore": "Google Play",
+      "npm": "npm 包",
+      "built": "我做了什么",
+      "system": "系统",
+      "decisions": "关键决策"
+    },
+    "group": {
+      "present": "至今",
+      "website": "官网",
+      "caseStudy": "案例",
+      "pending": "案例即将上线。"
+    }
+  },
+  "Companies": {
+    "circular-net": {
+      "name": "The Circular Net",
+      "role": "前端工程师 · Web 与移动端",
+      "summary": "负责一个可持续发展平台整个产品家族的前端：社交 Web 与移动应用、Circular Ticket、单点登录、管理后台、官网以及共享 UI 库。"
+    },
+    "smarkt": {
+      "name": "Smarkt",
+      "role": "前端工程师",
+      "summary": "负责 Smarkt 四款核心产品的前端工程。"
+    },
+    "gemspay": {
+      "name": "GemsPay Solutions",
+      "role": "前端工程师",
+      "summary": "负责 GemsPay 大部分产品的前端工程：一个面向批量付款、收款与对账的集中式支付平台。"
+    },
+    "hotrac": {
+      "name": "Hotrac",
+      "role": "前端工程师",
+      "summary": "为 Hotrac 的两款产品打造前端：跨境大宗商品交易平台 Export Trades，以及拖拉机共享管理后台 FarmShare。"
+    },
+    "lawxtech": {
+      "name": "Law x Tech",
+      "role": "Web 开发 · 志愿者",
+      "summary": "为非洲法律与科技交叉领域的社区做志愿开发：2023 年的初版网站，以及 2026 年带管理 CMS 的全面改版。"
+    },
+    "freelance": {
+      "name": "自由职业",
+      "role": "前端与移动工程师",
+      "summary": "独立客户项目：一款个人理财应用及其官网、一家太阳能供应商的销售门户，以及一家品牌机构的网站。"
+    },
+    "lab": {
+      "name": "实验室",
+      "role": "个人项目",
+      "summary": "为学习而做的东西。目前是一个盯着尼日利亚股市的 AI 智能体。"
     }
   },
   "Projects": {
     "metrics": {
       "users": "活跃用户",
       "engagement": "参与率",
-      "rating": "平均评分"
+      "rating": "平均评分",
+      "commits": "次提交（两个版本）",
+      "apps": "个产品家族应用"
+    },
+    "the-circular-net-web": {
+      "title": "Circular Net Web",
+      "tagline": "面向可持续发展的社交网络",
+      "summary": "一个面向可持续发展领域个人与组织的社交网络 Web 应用：动态、社区、消息、实时音视频房间、招聘、项目和播客。",
+      "role": "前端负责人",
+      "problem": "从事气候与可持续发展工作的人分散在各种通用社交网络上。平台需要一个能分享、组织、招聘和相聚的地方，而第一版已经不够用了。",
+      "process": "我在 2023–24 年用 Pages Router 搭建了第一版，随后主导用 App Router 重建，每个产品领域一个模块。聊天和直播房间基于 Stream 与 Pusher，发帖使用富文本编辑器，动态流无限滚动。登录迁移到共享的 SSO 服务，所有产品共用一个账号。",
+      "outcome": "已上线 app.thecircularnet.com，并可深度链接到移动应用。两个版本中我累计提交超过 2,000 次。",
+      "learnings": "直播房间是一个状态机，而不是一个页面。设备设置、屏幕共享、成员离开或被移出，都需要明确的状态，否则界面就会对用户撒谎。",
+      "built": {
+        "a": "支持媒体、定时发布、编辑、话题标签和收藏的动态与发帖编辑器",
+        "b": "社区、企业主页、个人资料和多步骤资料完善流程",
+        "c": "带媒体预览的私信与群聊，以及挂在聊天上的房间",
+        "d": "音视频房间：主持人控制、管理、举手、表情回应、屏幕共享和画中画",
+        "e": "招聘板、带里程碑的项目中心、播客和活动",
+        "f": "访客页面、链接预览和 SEO 元数据，没有账号也能打开分享链接"
+      },
+      "decisions": {
+        "a": {
+          "title": "每个产品领域一个模块",
+          "body": "动态、房间、招聘等各自拥有路由、组件和查询。改一个领域不会牵动其他领域，第一版的混乱也不会重演。"
+        },
+        "b": {
+          "title": "实时能力交给托管服务",
+          "body": "Stream 负责媒体与聊天，Pusher 推送应用事件。这样一个小团队几周内就上线了直播房间，而不用自己运维媒体服务器。"
+        },
+        "c": {
+          "title": "把登录移出应用",
+          "body": "认证放在独立的 SSO 服务中，Web 应用、Circular Ticket 和官网共用一个账号和一套安全流程。"
+        }
+      },
+      "system": "Web 应用在平台中的位置"
+    },
+    "the-circular-net-mobile": {
+      "title": "Circular Net Mobile",
+      "tagline": "iOS 与 Android 上的可持续发展社区",
+      "summary": "The Circular Net 的 iOS 与 Android 应用：动态、社区、消息、通话、直播房间，以及支持后台播放的播客。",
+      "role": "移动端负责人",
+      "problem": "社区需要在手机上拥有完整的平台：实时聊天、通话和后台音频，而不是套壳网页。",
+      "process": "我用 Expo 和 Expo Router 搭建应用，按功能模块组织。房间和通话基于 Stream，聊天基于 Pusher 驱动的状态库，播客播放器可在后台持续播放。开发、预发布和生产三个变体通过 EAS Build 和 OTA 更新发布。",
+      "outcome": "已在 App Store 和 Google Play 上架。",
+      "learnings": "环境出错时要“大声”失败。配置不对就拒绝启动的构建变体，杜绝了构建悄悄连到错误后端的情况。",
+      "built": {
+        "a": "邮箱与 Google 登录、新手引导和多步骤资料完善",
+        "b": "支持媒体、定时发布、话题联想和全屏手势的动态与发帖",
+        "c": "支持文档预览与下载的消息，以及带来电检测的一对一通话",
+        "d": "支持表情回应、举手、主持人操作、画中画和后台音频的音视频房间",
+        "e": "带迷你与全屏模式、播放队列、断点续播和后台播放的播客播放器",
+        "f": "深度链接、推送通知、令牌刷新和 iOS 分享扩展"
+      },
+      "decisions": {
+        "a": {
+          "title": "选择 Expo 而不是纯 React Native",
+          "body": "早先的纯 React Native 版本推进困难。Expo、EAS 和 OTA 更新让一个人就能负责构建、发布和修复。"
+        },
+        "b": {
+          "title": "功能模块与 Web 对齐",
+          "body": "移动端模块与 Web 应用的领域一一对应，两端共用同一套心智模型、API 约定和命名。"
+        },
+        "c": {
+          "title": "三个构建变体",
+          "body": "开发、预发布和生产是三个独立应用，各有配置，测试人员和真实用户绝不会意外共用一个后端。"
+        }
+      },
+      "system": "应用内部与发布流水线"
+    },
+    "circular-ticket": {
+      "title": "Circular Ticket",
+      "tagline": "Web 与移动端的活动与票务",
+      "summary": "一款活动与票务产品：参与者发现活动并购票；主办方创建活动、在入口扫码验票，并以 NGN 或 USD 收款。",
+      "role": "独立负责 Web 与移动端前端",
+      "problem": "主办方需要一个地方完成发布活动、售票、签到、身份验证和收款。而 Web 与移动应用各自重复 API 调用和业务规则，正在慢慢分化。",
+      "process": "我先做了 Web 应用，然后把它和新的 Expo 应用一起迁入基于 npm workspaces 的 monorepo。服务、查询 hooks、校验 schema，以及货币格式化、提现资格等规则都移入一个共享包；界面仍按平台各自实现。每个领域（活动、订单、钱包、提现、KYC 和扫码）都对接了线上 API，包括 Stripe 入驻和银行提现。",
+      "outcome": "Web 应用已上线 circularticket.com。两个应用引用同一套服务与规则，比如“何时可以申请提现”这样的改动只需要做一次。",
+      "learnings": "共享代码首先是依赖问题，其次才是代码问题。版本对齐和对 Web 与原生之间 hoisting 的谨慎处理，比共享代码本身更重要。",
+      "built": {
+        "a": "带 SEO 元数据、站点地图和 OG 图片的公开活动页",
+        "b": "多步骤活动创建向导：日程、票种、嘉宾和混合场地",
+        "c": "浏览器与手机上的扫码验票，取景框会锁定二维码",
+        "d": "NGN/USD 钱包、交易记录、收款账户和提现申请",
+        "e": "五步 KYC 流程和主办方认证设置",
+        "f": "面向主办方的订单、报名统计和表格导出"
+      },
+      "decisions": {
+        "a": {
+          "title": "共享逻辑，不共享界面",
+          "body": "共享包里是服务、hooks、schema 和规则。界面在每个平台保持原生，两个应用都不像对方的移植版。"
+        },
+        "b": {
+          "title": "一条规则，只放一处",
+          "body": "提现资格、订单状态映射和货币格式化都只存在一份。Web 和移动端在钱的问题上不可能不一致。"
+        },
+        "c": {
+          "title": "为每个状态做设计",
+          "body": "加载、出错、筛选后为空和真正为空，在每个数据页面都是不同的状态。信息密集的主办方后台因此清晰了很多。"
+        }
+      },
+      "system": "两个应用，一个共享包"
+    },
+    "circular-net-sso": {
+      "title": "Circular Net SSO",
+      "tagline": "所有应用，一次登录",
+      "summary": "The Circular Net 各产品的单点登录服务：基于 OAuth 2.0 的登录、注册和账号找回，并支持 Google 与 Apple 登录。",
+      "role": "独立负责前端",
+      "problem": "每个产品都有自己的登录。用户需要在 Web 应用、Circular Ticket 和官网之间使用同一个账号、同一个安全的登录入口。",
+      "process": "我实现了带客户端校验和严格重定向处理的 OAuth 2.0 授权流程，随后是带 OTP 验证的邮箱密码登录、Google 与 Apple 登录，以及实时检测密码强度的重置流程，全部做成带动效的多步骤表单，支持浅色和深色主题。",
+      "outcome": "已上线 accounts.thecircularnet.com，是官网、Web 应用和 Circular Ticket 的登录入口。",
+      "learnings": "SSO 页面是所有应用都信任的唯一地方，所以它必须最严格。客户端 ID 和重定向地址必须校验，绝不假设。",
+      "built": {
+        "a": "带客户端 ID 校验和重定向处理的 OAuth 2.0 授权流程",
+        "b": "带邮箱 OTP 验证的邮箱密码登录与注册",
+        "c": "Google 与 Apple 登录及其回调处理",
+        "d": "实时校验密码强度的密码重置",
+        "e": "带动效的多步骤表单、主题和登录后的跳转页"
+      },
+      "decisions": {
+        "a": {
+          "title": "独立应用，而非共享组件",
+          "body": "登录运行在自己的域名上。各应用跳转过去并拿回一个授权码，任何产品都不会接触其他产品的密码。"
+        },
+        "b": {
+          "title": "严格的重定向",
+          "body": "只接受已注册的客户端和重定向地址。登录页上的开放重定向，就是现成的钓鱼工具。"
+        },
+        "c": {
+          "title": "React 19 与 React Compiler",
+          "body": "表单动效很重。编译器在不手写记忆化的情况下控制住了重渲染。"
+        }
+      },
+      "system": "所有产品都通过同一个服务登录"
+    },
+    "circular-net-website": {
+      "title": "Circular Net Website",
+      "tagline": "官网与可持续发展洞察",
+      "summary": "The Circular Net 的公开网站：介绍平台、可持续发展服务和博客，登录后直接把用户交给应用。",
+      "role": "独立负责前端",
+      "problem": "公司需要一个能讲清产品和服务、在搜索中有排名、并把访客引导进应用的网站。",
+      "process": "我把首页和服务页做成带动效与平滑滚动的功能模块，然后加入了带密码保护发布页的博客。之后又做了一轮 SEO、Web Vitals 和无障碍优化，并为旧的已收录链接设置重定向。",
+      "outcome": "已上线 thecircularnet.com，展示来自 API 的近期活动，并把已登录用户交接到 Web 应用。",
+      "learnings": "服务端密钥在不同托管平台上的表现各不相同。博客后台需要针对托管平台的服务端渲染做专门处理。",
+      "built": {
+        "a": "带功能展示和实时近期活动的首页",
+        "b": "Carbon Accounting、ESG Reporting 和 Sustainability Projects 页面",
+        "c": "带文章页、白皮书下载和分享功能的博客",
+        "d": "受密码保护的文章发布页",
+        "e": "SEO 全面改造：元数据、站点地图、生成式 OG 图片、重定向和无障碍修复"
+      },
+      "decisions": {
+        "a": {
+          "title": "通过 SSO 登录，并校验 state",
+          "body": "网站发起 SSO 流程时带上 state 值，返回时进行校验，伪造的回调无法让任何人登录。"
+        },
+        "b": {
+          "title": "重定向旧链接，而不是丢掉它们",
+          "body": "旧网站被收录的地址都指向新页面，改版期间的搜索流量得以保留。"
+        }
+      }
+    },
+    "export-trades": {
+      "title": "Export Trades",
+      "tagline": "多语言的跨境大宗商品交易",
+      "summary": "一个营销网站加交易 Web 应用，连接大宗商品买卖双方，带他们走完报价、出价、托管和交付。",
+      "role": "前端负责人",
+      "problem": "大宗商品买卖双方需要一个可信赖的地方，跨越国界和语言（包括从右到左书写的阿拉伯语）找到商品、谈判并完成交易。",
+      "process": "我搭建了公开网站（市场、商品和行情趋势），以及按交易步骤划分模块的登录后应用。按语言路由和翻译从一开始就内置，认证文件直接上传到存储。",
+      "outcome": "已上线 exportrades.com。网站与应用的 0.9 版于 2026 年 2 月发布；在五人团队中我的贡献最多。",
+      "learnings": "翻译要从第一天就做进去。如果之后再加从右到左的语言，每个布局都得重做。",
+      "built": {
+        "a": "公开网站：市场、商品分类、市场指数和趋势",
+        "b": "带国家选择和 OTP 的注册、登录和资料编辑",
+        "c": "包含规格、证书和常见问题的商品页",
+        "d": "询价、意向书、报价和交易，分为用户视图和管理视图",
+        "e": "托管设置、争议处理和交易历史"
+      },
+      "decisions": {
+        "a": {
+          "title": "每个交易步骤一个模块",
+          "body": "询价、报价、交易、托管和争议是各自独立的模块，拥有自己的数据和视图，与真实交易的推进方式一致。"
+        },
+        "b": {
+          "title": "语言写进 URL",
+          "body": "每个页面都位于对应语言之下，链接、搜索引擎和从右到左的布局都无需猜测就知道语言。"
+        },
+        "c": {
+          "title": "共享视图，权限分离",
+          "body": "用户和管理员通过不同视图查看同一批交易记录，而不是维护两份逻辑。"
+        }
+      },
+      "system": "从访客到已验证的交易"
+    },
+    "lawxtech": {
+      "title": "Law x Tech",
+      "tagline": "非洲法律科技社区的家",
+      "summary": "Law x Tech 的网站与 CMS。这是一个拥有 2,000 多名成员、位于法律与科技交叉领域的社区，举办系列活动、峰会和奖项。",
+      "role": "志愿 Web 开发，独立完成",
+      "problem": "组织需要一个可以自己更新的现代网站。在旧网站上，每新增一期节目或一个合作伙伴，都得找开发人员。",
+      "process": "我在 2023 年用 React 做了第一版网站。2026 年用 Next.js 16 加动效重建，并加入基于 Postgres 的管理 CMS：凭据登录、富文本博客编辑器、图片上传和基于角色的用户管理。合作伙伴等较大的功能，都是先写好设计说明和计划再动手写代码。",
+      "outcome": "已上线 lawxtech.org，团队可以自己发布内容。代码在 GitHub 上开源。",
+      "learnings": "Serverless 数据库需要注意连接池和构建期访问。构建绝不能依赖数据库是否可达。",
+      "built": {
+        "a": "带动态数据、系列预览、嘉宾轮播和社区板块的首页",
+        "b": "关于、系列、峰会与奖项、招聘、联系和赞助商页面",
+        "c": "带详情页和峰会倒计时的合作伙伴板块",
+        "d": "带富文本编辑器和图片上传的管理 CMS",
+        "e": "带角色和仅限管理员访问的用户管理"
+      },
+      "decisions": {
+        "a": {
+          "title": "用 CMS 取代写死在代码里的内容",
+          "body": "第一版网站把内容写在代码里，团队无法更新。新版给了他们编辑器，网站不需要我也能保持更新。"
+        },
+        "b": {
+          "title": "Postgres 加文件存储，而不是托管 CMS",
+          "body": "Neon Postgres 和 Vercel Blob 让一个志愿组织的运行成本接近于零，也没有按席位收费。"
+        },
+        "c": {
+          "title": "先写说明，再写代码",
+          "body": "较大的功能先写成设计说明和计划，让非技术背景的组织者也能看清范围。"
+        }
+      },
+      "system": "公开网站和 CMS 共用一个数据库"
+    },
+    "pennywise": {
+      "title": "Pennywise",
+      "tagline": "个人理财应用与官网",
+      "summary": "一款用于追踪支出、预算和目标的个人理财移动应用，以及为它收集等候名单的官网。",
+      "role": "移动与前端开发，独立完成",
+      "problem": "人们想在手机上看清钱花到了哪里、守住预算；产品也需要一个网站来介绍自己，并在上线前收集报名。",
+      "process": "我用 Expo 和 Expo Router 做了这款应用：新手引导、带验证的注册、密码重置、钱包、预算和图表，并通过第三方组件绑定银行账户。官网最初基于 Pages Router 和 Mantine，后来用 App Router 和 Tailwind 重做。",
+      "outcome": "官网已上线 iampennywise.com，应用通过独立的预发布与预览构建渠道发布。",
+      "learnings": "Android 构建和网络配置真的很费时间，要和功能开发一起预留出来。",
+      "built": {
+        "a": "新手引导、注册、验证和多步骤密码重置",
+        "b": "用 Skia 绘制图表的钱包与预算",
+        "c": "银行账户绑定和安全的本地存储",
+        "d": "用于预发布和预览的 EAS 构建渠道",
+        "e": "包含等候名单、定价、社区和博客的落地页"
+      },
+      "decisions": {
+        "a": {
+          "title": "快速的本地存储",
+          "body": "MMKV 把设置和会话保存在设备上，应用打开时直接进入正确状态。"
+        },
+        "b": {
+          "title": "从组件库换到 Tailwind",
+          "body": "网站第二版放弃组件库改用 Tailwind，主题和后续修改都简单了很多。"
+        }
+      }
+    },
+    "stock-bot": {
+      "title": "Stock Bot",
+      "tagline": "尼日利亚股市的 AI 分析师",
+      "summary": "一个定时运行的智能体：每天扫描尼日利亚证券交易所，检查近期价格走势，让 LLM 评估每一次下跌，并在 Telegram 上给我发一份简短报告。",
+      "role": "设计与开发",
+      "problem": "要在 NGX 上找到好的回调，每天得查几十只股票，还要弄清每次下跌背后的原因。我想把枯燥的部分自动化，把需要判断的部分做成摘要。",
+      "process": "一个 Lambda 函数通过 EventBridge 每天定时运行。它先抓取当天跌幅最大的股票，只对这些做进一步检查，再与 DynamoDB 中保存的五天价格对比，把候选股票交给 Gemini 做简短分析。精选结果发到 Telegram，GitHub Actions 在每次推送时自动部署。",
+      "outcome": "进行中。抓取、分析和 Telegram 报告在本地已跑通，Lambda 部署正在收尾。",
+      "learnings": "花费 token 和请求之前先过滤。从当天的下跌股开始，而不是扫描所有股票，工作量只剩零头。",
+      "built": {
+        "a": "并行抓取 NGX 每日跌幅榜",
+        "b": "在 DynamoDB 中保存五天价格，用来确认真实的回调",
+        "c": "为每家公司使用结构化提示词的 LLM 分析步骤",
+        "d": "每日推送精选结果的 Telegram 报告",
+        "e": "通过 GitHub Actions 持续部署到 AWS Lambda"
+      },
+      "decisions": {
+        "a": {
+          "title": "定时运行的 Serverless",
+          "body": "任务每天只跑几分钟。定时触发的 Lambda 几乎不花钱，也不用维护服务器。"
+        },
+        "b": {
+          "title": "先过滤，再思考",
+          "body": "廉价的代码先缩小名单，LLM 只看值得细看的几只股票，延迟和成本都降了下来。"
+        },
+        "c": {
+          "title": "去掉重量级依赖",
+          "body": "用轻量的 HTML 解析器替换 pandas，让 Lambda 包小到无需特殊层就能部署。"
+        }
+      },
+      "system": "每日一次运行：从定时到报告"
+    },
+    "trendhub": {
+      "title": "TrendHub",
+      "tagline": "汇集 newsletter、播客和博客的平台",
+      "summary": "一个让 Z 世代读者发现 newsletter、播客和博客、紧跟潮流的地方。",
+      "role": "全栈开发",
+      "problem": "好内容散落在 newsletter、播客和博客里。我想要一个轻盈、友好的地方来找到它们。",
+      "process": "基于 Next.js 13、TypeScript 和 Redux Toolkit 构建，用动效让浏览更有趣，阅读界面简洁并支持深色模式。",
+      "outcome": "已上线，有 100 多名活跃读者。",
+      "learnings": "极简设计意味着大量取舍。每去掉一个选项，阅读就更轻松一点。"
     },
     "coinsave": {
       "title": "Coinsave",
       "tagline": "支出与预算追踪",
-      "summary": "掌控你的财务：在一个地方记录收支、设置预算、接收提醒并查看银行交易。",
+      "summary": "掌控你的财务：记录收入和支出，设定预算，接收提醒，并在一个地方监控银行交易。",
       "role": "全栈开发",
-      "problem": "大多数人都知道应该做预算，但一周后就放弃了。电子表格太繁琐，银行应用只能显示已经发生的事。",
+      "problem": "大多数人知道应该做预算，却坚持不过一周。表格太繁琐，银行应用又只能显示已经发生的事。",
       "process": "我设计了快速、低门槛的记账流程，构建了带智能提醒的预算功能，并接入银行交易监控，让应用替你完成大部分工作。",
-      "outcome": "Coinsave 拥有超过 500 名活跃用户，参与率超过 70%，平均评分 4.5（满分 5 分）。",
-      "learnings": "留存本身就是产品功能。合理的默认设置、恰到好处的提醒这些小细节，比任何大功能都更重要。"
+      "outcome": "Coinsave 拥有 500 多名活跃用户，参与率超过 70%，平均评分 4.5 分（满分 5 分）。",
+      "learnings": "留存本身就是产品功能。合理的默认值、恰到好处的提醒，这些小细节比任何大功能都重要。"
     },
     "cabify": {
       "title": "Cabify",
       "tagline": "出租车与巴士预订应用",
-      "summary": "轻松出行：便捷预订、实时更新，以及巴士和出租车行程的安全支付。",
+      "summary": "轻松出行：简单预订、实时更新，安全支付巴士和出租车费用。",
       "role": "前端开发",
-      "problem": "过去订车意味着打电话、付现金，还不确定司机到底什么时候来。",
-      "process": "我以性能为重点开发了预订和行程追踪界面，即使网络较慢，应用也能快速加载、流畅导航。",
-      "outcome": "超过 500 名活跃用户，参与率超过 70%，平均评分 4.5（满分 5 分）。",
-      "learnings": "感知速度就是真实速度。骨架屏、乐观更新和更少的请求，改变了应用给人的速度感。"
+      "problem": "预订一次出行意味着打电话、准备现金，还要猜司机到底什么时候来。",
+      "process": "我以性能为重点构建了预订和行程追踪界面，即使网络很慢，应用也能快速加载、流畅切换。",
+      "outcome": "500 多名活跃用户，参与率超过 70%，平均评分 4.5 分（满分 5 分）。",
+      "learnings": "感知速度就是真实速度。骨架屏、乐观更新和更少的往返请求，彻底改变了应用给人的速度感。"
     },
-    "genz-blog": {
-      "title": "Gen-Z Blog",
-      "tagline": "博客平台",
-      "summary": "一个阅读和撰写各类话题文章的地方——简单、极简，并全面支持深色模式。",
-      "role": "全栈开发",
-      "problem": "博客平台要么功能臃肿，要么只面向专业人士。我想要一个轻盈、对所有年龄段都友好的平台。",
-      "process": "前端使用 React、Next.js 和 Tailwind，后端使用 Node.js 和 SQL，让写作过程不受干扰。",
-      "outcome": "超过 100 名活跃用户在平台上阅读和写作。",
-      "learnings": "极简设计背后是大量决策。每去掉一个选项，写作就变得更轻松。"
+    "circular-net-admin": {
+      "title": "Circular Net Admin",
+      "tagline": "平台的后台系统",
+      "summary": "内部管理用户、内容、社区、招聘和活动，并为 Circular Ticket 提供 KYC 与提现审核。"
     },
-    "reciept": {
-      "title": "Reciept",
-      "tagline": "收据生成器",
-      "summary": "为商家和个人创建收据，导出为 PDF 并用热敏打印机打印——同时获得电子版和纸质版。",
-      "role": "设计与开发",
-      "problem": "小商家在收据上浪费墨水和纸张，却很少保留可靠的电子记录。",
-      "process": "收据会生成适配热敏打印机尺寸的 PDF，一次操作即可同时获得纸质收据和电子购买凭证。",
-      "outcome": "仍在开发中——敬请期待。",
-      "learnings": "打印是 Web 中最难的部分。热敏打印机很有自己的脾气。"
+    "thebasenet-ui": {
+      "title": "@thebasenet/ui",
+      "tagline": "共享的 React 组件库",
+      "summary": "设计令牌、品牌资源和约 37 个 UI 基础组件，发布在 npm 上，被官网和 Circular Ticket 使用。"
+    },
+    "circular-net-waitlist": {
+      "title": "Circular Net Waitlist",
+      "tagline": "上线前的报名",
+      "summary": "带国家选择和手机号校验的等候名单，在应用上线前使用。"
+    },
+    "farmshare": {
+      "title": "FarmShare Admin",
+      "tagline": "拖拉机共享后台",
+      "summary": "管理用户、拖拉机、预订、交易和付款申请的后台，带地图和图表。"
+    },
+    "ds-energy": {
+      "title": "DS Energy Sales Portal",
+      "tagline": "太阳能销售人员的销售与佣金系统",
+      "summary": "为一家太阳能供应商的销售人员管理销售、客户、佣金和采购，带入职流程和 PDF 发票。"
+    },
+    "royal-revamps": {
+      "title": "Royal Revamps",
+      "tagline": "品牌机构官网",
+      "summary": "一家个人与企业品牌机构的网站：服务、公司和学习页面，以及基于数据库的博客、客户评价和联系表单。"
     }
+  },
+  "Diagram": {
+    "nodes": {
+      "community": "社区",
+      "webApp": "Web 应用",
+      "mobileApp": "移动应用",
+      "platformApi": "平台 API",
+      "sso": "单点登录",
+      "realtime": "房间与聊天",
+      "push": "推送通知",
+      "feed": "动态与帖子",
+      "rooms": "音视频房间",
+      "podcast": "播客播放器",
+      "variants": "构建变体",
+      "eas": "构建与更新",
+      "stores": "应用商店",
+      "attendeesOrganisers": "参与者与主办方",
+      "sharedPackage": "共享包",
+      "payouts": "提现",
+      "marketingSite": "官网",
+      "circularTicket": "Circular Ticket",
+      "providers": "社交登录",
+      "authApi": "认证 API",
+      "emailOtp": "邮箱 OTP",
+      "buyersSellers": "买家与卖家",
+      "publicSite": "公开网站",
+      "tradingApp": "交易应用",
+      "localeRouting": "语言路由",
+      "tradeFlow": "询价 → 报价 → 托管",
+      "uploads": "文件上传",
+      "visitors": "访客",
+      "editors": "编辑",
+      "adminCms": "管理 CMS",
+      "database": "数据库",
+      "images": "图片",
+      "schedule": "每日定时",
+      "scanner": "扫描器",
+      "marketData": "行情数据",
+      "priceHistory": "历史价格",
+      "aiAnalyst": "AI 分析师",
+      "report": "每日报告"
+    },
+    "edges": {
+      "signIn": "登录",
+      "roomsChat": "实时",
+      "config": "配置",
+      "ship": "发布",
+      "imports": "引用",
+      "typedRequests": "类型化请求",
+      "authorise": "授权",
+      "socialSignIn": "社交登录",
+      "tokens": "令牌",
+      "verify": "验证",
+      "read": "读取",
+      "write": "写入",
+      "upload": "上传",
+      "trigger": "触发",
+      "fetch": "抓取跌幅榜",
+      "check": "五日校验",
+      "analyse": "分析",
+      "send": "精选"
+    }
+  },
+  "Notes": {
+    "metaTitle": "笔记",
+    "metaDescription": "关于 Toluwalope Akinkunmi 设计与构建的系统的简短文章。",
+    "label": "笔记",
+    "title": "系统笔记。",
+    "subtitle": "关于我构建的东西如何组合在一起，以及哪些地方我会换种做法的简短文章。",
+    "readingTime": "{minutes} 分钟阅读",
+    "back": "全部笔记",
+    "next": "下一篇",
+    "related": "相关案例",
+    "read": "阅读"
   },
   "Contact": {
     "metaTitle": "联系",
@@ -315,7 +738,7 @@
       "title": "须知",
       "projects": {
         "q": "你接哪些类型的项目？",
-        "a": "Web 应用、移动应用和全栈产品——从 MVP 到改进现有产品都可以。"
+        "a": "Web 与移动产品，单点登录、设计系统和 monorepo 等平台工作，以及 AI 功能——从 MVP 到改进已有产品都可以。"
       },
       "start": {
         "q": "多久可以开始？",

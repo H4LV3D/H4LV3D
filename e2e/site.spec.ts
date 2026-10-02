@@ -29,7 +29,7 @@ test("header navigation plays the curtain transition", async ({ page }) => {
   await waitForIntro(page);
   await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Work" }).click();
   await expect(page).toHaveURL(/\/work$/);
-  await expect(page.getByRole("heading", { level: 1 })).toContainText("Selected work");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Work");
 });
 
 test("theme toggle switches to dark mode", async ({ page }) => {
@@ -60,18 +60,39 @@ test("language switcher keeps you on the same page", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("lang", "fr");
 });
 
-test("work filters narrow the list", async ({ page }) => {
+test("work is grouped by company and filters narrow it", async ({ page }) => {
   await page.goto("/work");
   await waitForIntro(page);
-  await expect(page.getByText("4 projects")).toBeVisible();
-  await page.getByRole("button", { name: "Mobile" }).click();
+  await expect(page.getByText("18 projects")).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "The Circular Net" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Smarkt" })).toBeVisible();
+  await page.getByRole("button", { name: "AI", exact: true }).click();
   await expect(page.getByText("1 project", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Lab" })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Smarkt" })).toHaveCount(0);
 });
 
 test("case study pages render with metrics", async ({ page }) => {
   await page.goto("/work/coinsave");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Coinsave");
   await expect(page.getByText("active users", { exact: true })).toBeVisible();
+});
+
+test("case studies show the system diagram and decisions", async ({ page }) => {
+  await page.goto("/work/circular-ticket");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Circular Ticket");
+  await expect(page.getByRole("img", { name: "Two apps, one shared package" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Key decisions" })).toBeVisible();
+  // Private repositories never link to their source.
+  await expect(page.getByRole("link", { name: /Source code/ })).toHaveCount(0);
+});
+
+test("notes are listed and readable in every language", async ({ page }) => {
+  await page.goto("/notes");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Notes on systems.");
+  await page.goto("/zh/notes/filter-before-you-think");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("先过滤，再思考");
+  await expect(page.getByRole("img", { name: "每日一次运行：从定时到报告。" })).toBeVisible();
 });
 
 test("contact form validates input", async ({ page }) => {

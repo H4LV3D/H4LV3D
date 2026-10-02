@@ -33,7 +33,6 @@ export default async function AboutPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("About");
-  const stats = Object.entries(site.stats) as [keyof typeof site.stats, number][];
 
   return (
     <>
@@ -63,11 +62,11 @@ export default async function AboutPage({ params }: Props) {
       <section className="container-page mt-32">
         <SectionLabel className="mb-10">{t("stats.label")}</SectionLabel>
         <dl className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          {stats.map(([key, value]) => (
+          {site.stats.map(({ key, value, suffix }) => (
             <Reveal key={key} className="flex flex-col-reverse gap-2 border-t border-border pt-6">
               <dt className="label-mono text-muted-foreground">{t(`stats.${key}`)}</dt>
-              <dd className="font-display text-7xl md:text-8xl">
-                <CountUp value={value} suffix="+" />
+              <dd className="font-display text-6xl md:text-8xl">
+                <CountUp value={value} suffix={suffix} />
               </dd>
             </Reveal>
           ))}

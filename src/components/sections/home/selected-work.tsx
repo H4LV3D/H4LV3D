@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { projects } from "@/content/projects";
+import { featured, getCaseStudy } from "@/content/projects";
 import { ProjectRows } from "@/components/sections/work/project-rows";
 import { SectionLabel } from "@/components/sections/section-label";
 import { SplitText } from "@/components/motion/split-text";
@@ -26,7 +26,7 @@ export function SelectedWork() {
           </TransitionLink>
         </Button>
       </div>
-      <ProjectRows projects={projects.slice(0, 4)} />
+      <ProjectRows projects={featured.map((slug) => getCaseStudy(slug)!)} />
     </section>
   );
 }

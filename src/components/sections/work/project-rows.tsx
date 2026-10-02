@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { TransitionLink } from "@/components/motion/page-transition";
 import { ArrowUpRight } from "@/components/illustrations/doodle-icons";
 import { Badge } from "@/components/ui/badge";
-import type { Project } from "@/content/projects";
+import { caseIndex, type CaseStudy } from "@/content/projects";
 import { ProjectCover } from "./project-cover";
 import { spring, ease } from "@/lib/motion";
 import { cn } from "@/lib/utils";
@@ -16,11 +16,11 @@ import { cn } from "@/lib/utils";
  * Editorial project list. On pointer devices a preview card follows the
  * cursor while hovering a row.
  */
-export function ProjectRows({ projects }: { projects: Project[] }) {
+export function ProjectRows({ projects, compact = false }: { projects: CaseStudy[]; compact?: boolean }) {
   const t = useTranslations("Projects");
   const common = useTranslations("Common");
   const work = useTranslations("Work");
-  const [active, setActive] = React.useState<Project | null>(null);
+  const [active, setActive] = React.useState<CaseStudy | null>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const sx = useSpring(x, spring.soft);
@@ -35,7 +35,7 @@ export function ProjectRows({ projects }: { projects: Project[] }) {
       }}
       onPointerLeave={() => setActive(null)}
     >
-      <ul className="border-t border-border">
+      <ul className={cn(!compact && "border-t border-border")}>
         <AnimatePresence initial={false}>
           {projects.map((p) => (
             <m.li
@@ -52,13 +52,25 @@ export function ProjectRows({ projects }: { projects: Project[] }) {
                 transitionLabel={t(`${p.slug}.title`)}
                 data-cursor={common("view")}
                 onPointerEnter={(e) => e.pointerType === "mouse" && setActive(p)}
-                className="group grid grid-cols-[auto_1fr_auto] items-center gap-x-4 gap-y-2 py-7 md:grid-cols-[4rem_1.2fr_1fr_auto] md:gap-x-8 md:py-10"
+                className={cn(
+                  "group grid items-center gap-x-4 gap-y-2",
+                  compact
+                    ? "grid-cols-[auto_1fr_auto] py-6 md:grid-cols-[3rem_1fr_auto] md:gap-x-6 md:py-8"
+                    : "grid-cols-[auto_1fr_auto] py-7 md:grid-cols-[4rem_1.2fr_1fr_auto] md:gap-x-8 md:py-10",
+                )}
               >
-                <span className="label-mono text-muted-foreground">{p.index}</span>
-                <span className="font-display text-4xl leading-none transition-transform duration-500 ease-out-expo group-hover:translate-x-3 group-hover:italic md:text-6xl">
+                <span className="label-mono text-muted-foreground">{caseIndex(p.slug)}</span>
+                <span
+                  className={cn(
+                    "font-display leading-none transition-transform duration-500 ease-out-expo group-hover:translate-x-3 group-hover:italic",
+                    compact ? "text-3xl md:text-5xl" : "text-4xl md:text-6xl",
+                  )}
+                >
                   {t(`${p.slug}.title`)}
                 </span>
-                <span className="col-start-2 text-muted-foreground md:col-start-auto">
+                <span
+                  className={cn("col-start-2 text-muted-foreground", compact ? "row-start-2" : "md:col-start-auto")}
+                >
                   {t(`${p.slug}.tagline`)}
                   <span className="mt-2 hidden flex-wrap gap-1.5 md:flex">
                     <Badge variant={p.status === "live" ? "brand" : "outline"}>{work(`status.${p.status}`)}</Badge>

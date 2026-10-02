@@ -12,7 +12,16 @@ test("mobile menu opens and navigates", async ({ page }) => {
 });
 
 test("no horizontal scroll on phones", async ({ page }) => {
-  for (const path of ["/", "/about", "/work", "/work/coinsave", "/contact"]) {
+  for (const path of [
+    "/",
+    "/about",
+    "/work",
+    "/work/coinsave",
+    "/work/circular-ticket",
+    "/notes",
+    "/notes/filter-before-you-think",
+    "/contact",
+  ]) {
     await page.goto(path);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     expect(overflow, path).toBeLessThanOrEqual(0);

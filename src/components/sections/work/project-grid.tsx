@@ -4,12 +4,12 @@ import { AnimatePresence, m } from "motion/react";
 import { useTranslations } from "next-intl";
 
 import { TransitionLink } from "@/components/motion/page-transition";
-import type { Project } from "@/content/projects";
+import { caseIndex, type CaseStudy } from "@/content/projects";
 import { ProjectCover } from "./project-cover";
 import { SketchFrame } from "@/components/illustrations/sketch-frame";
 import { ease } from "@/lib/motion";
 
-export function ProjectGrid({ projects }: { projects: Project[] }) {
+export function ProjectGrid({ projects }: { projects: CaseStudy[] }) {
   const t = useTranslations("Projects");
   const common = useTranslations("Common");
   return (
@@ -37,7 +37,7 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
               </div>
               <div className="flex items-baseline justify-between gap-4">
                 <h2 className="font-display text-3xl">{t(`${p.slug}.title`)}</h2>
-                <span className="label-mono text-muted-foreground">{p.index}</span>
+                <span className="label-mono text-muted-foreground">{caseIndex(p.slug)}</span>
               </div>
               <p className="text-muted-foreground">{t(`${p.slug}.summary`)}</p>
             </TransitionLink>
