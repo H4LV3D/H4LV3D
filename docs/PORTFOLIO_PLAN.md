@@ -1,10 +1,25 @@
 # Portfolio v2 — Build Plan
 
-> Status: **planning, no code yet.** Every section ends in either a decision (marked ✅ default) or an open question (marked ❓). Answer the ❓s, adjust any ✅ you disagree with, and only then do we scaffold.
+> Status: **decisions locked, building on branch `portfolio-v1`.** Where the original questions (kept below for the record) and the locked decisions disagree, the locked decisions win.
+
+## Locked decisions
+
+| # | Decision |
+|---|----------|
+| 1 | Code lives on a separate **`portfolio-v1`** branch of this repo. The profile README on `main` is untouched. |
+| 2 | Accent is **Signal Orange `#FF5B1F`**, set in **one place**: `src/config/brand.ts`. CSS variables, OG images, and the browser theme colour all read from it. |
+| 3 | Languages: **English (default), French, Spanish, Russian, Chinese (Simplified)**. Russian and Chinese need Cyrillic and CJK fallback fonts in every font stack (§2.5). |
+| 4 | **Claude draws the illustrations**: an Open Peeps-style rig drawn as SVG, with a placeholder likeness until your photos arrive. |
+| 5 | Contact form: **server action + Resend** (`RESEND_API_KEY`, `CONTACT_TO_EMAIL`). |
+| 6 | Pages: core 4 + case studies + 404. **No** `/now` or `/uses`. |
+| 7 | Vercel on **toluwalope.tech** (you're renewing the domain). |
+| 8 | **No** location or clock anywhere on the site. |
+| — | All other ✅ defaults are accepted: no localised slugs, shorter preloader on repeat visits in a session, photos stay grayscale. |
+| — | Change from the plan: case-study text lives in the translation files (one typed JSON per locale) instead of per-locale MDX. Every project is fully translated, and there's one fewer build dependency. |
 
 ---
 
-## 0. Decisions needed before any code
+## 0. Original decision questions (answered above)
 
 | # | Question | Default I'd go with | Why it matters |
 |---|----------|---------------------|----------------|
@@ -97,8 +112,8 @@ The final CSS uses Tailwind's OKLCH values. Hex is shown here for readability.
 
 | Role | Font | Use |
 |---|---|---|
-| Display | **Instrument Serif** (incl. italic) | Hero name, page titles, big CTA. Italics for emphasis words |
-| Body / UI | **Geist Sans** | Everything else |
+| Display | **Instrument Serif** (incl. italic) → Cyrillic fallback **Playfair Display** → CJK fallback **Noto Serif SC** | Hero name, page titles, big CTA. Italics for emphasis words |
+| Body / UI | **Geist Sans** → CJK fallback **Noto Sans SC** | Everything else |
 | Mono | **Geist Mono** | Labels, tags, counters, metadata (`01 / WORK`) |
 | Hand | **Caveat** | Margin notes next to doodles ("← that's me!") |
 
