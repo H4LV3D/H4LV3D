@@ -9,7 +9,7 @@ import { SplitText } from "@/components/motion/split-text";
 import { Magnetic } from "@/components/motion/magnetic";
 import { TransitionLink } from "@/components/motion/page-transition";
 import { Doodle } from "@/components/illustrations/doodle";
-import { Peep } from "@/components/illustrations/peep/peep";
+import { Artwork } from "@/components/illustrations/art/artwork";
 import { ArrowRight } from "@/components/illustrations/doodle-icons";
 import { Button } from "@/components/ui/button";
 import { site } from "@/config/site";
@@ -20,6 +20,7 @@ const ROLE_KEYS = ["a", "b", "c", "d"] as const;
 export function Hero() {
   const t = useTranslations("Home.hero");
   const common = useTranslations("Common");
+  const peep = useTranslations("Peep");
   const { introDone } = useIntro();
   const [role, setRole] = React.useState(0);
 
@@ -63,7 +64,7 @@ export function Hero() {
           </span>
         </h1>
 
-        <div className="mt-8 h-9 overflow-hidden text-xl md:text-2xl" aria-live="polite">
+        <div className="mt-8 min-h-9 overflow-hidden py-1 text-xl md:text-2xl" aria-live="polite">
           <AnimatePresence mode="wait" initial={false}>
             <m.p
               key={role}
@@ -111,7 +112,7 @@ export function Hero() {
             tone="muted"
           />
         </m.div>
-        <Peep pose="laptop" play={introDone} className="w-full" />
+        <Artwork name="laptop" title={peep("laptop")} play={introDone} className="mx-auto w-full max-w-[460px]" />
       </div>
 
       <m.div

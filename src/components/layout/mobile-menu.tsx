@@ -44,7 +44,7 @@ export function MobileMenu() {
           {allPages.map((p, i) => {
             const active = p.href === "/" ? pathname === "/" : pathname.startsWith(p.href);
             return (
-              <div key={p.href} className="overflow-hidden border-b border-border/70">
+              <div key={p.href} className="overflow-hidden border-b border-border/70 pt-1 pb-2">
                 <m.a
                   href={getPathname({ href: p.href, locale })}
                   onClick={(e) => {

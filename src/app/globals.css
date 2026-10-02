@@ -38,6 +38,9 @@
   /* Illustration ink + paper (line art, see components/illustrations/peep) */
   --peep-line: var(--color-neutral-900);
   --peep-fill: var(--background);
+  /* Hand-drawn artwork: black ink on a paper cut-out (sticker-style in dark mode) */
+  --art-ink: var(--color-neutral-900);
+  --art-paper: var(--background);
 
   --grain-opacity: 0.045;
 
@@ -71,6 +74,8 @@
 
   --peep-line: var(--color-neutral-100);
   --peep-fill: var(--background);
+  --art-ink: var(--color-neutral-900);
+  --art-paper: var(--color-neutral-200);
 
   --grain-opacity: 0.06;
 }
@@ -234,6 +239,19 @@
   .group:hover .scribble-underline::after {
     clip-path: inset(0 0 0 0);
   }
+}
+
+/*
+ * Reveal masks for SplitText. The padding gives italic overhangs, ascenders
+ * and descenders room inside the clip; the matching negative margins keep
+ * letter spacing and line height exactly as if the mask weren't there.
+ */
+.split-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding: 0.18em 0.22em 0.16em;
+  margin: -0.18em -0.22em -0.16em;
 }
 
 /* Lenis */

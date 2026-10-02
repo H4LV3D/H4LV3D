@@ -44,7 +44,7 @@ export function SplitText({
             {" "}
           </span>
         ) : (
-          <span key={i} aria-hidden className="-mb-[0.12em] inline-block overflow-hidden pb-[0.12em] align-bottom">
+          <span key={i} aria-hidden className="split-mask">
             <m.span
               className={cn("inline-block will-change-transform", wordClassName)}
               initial={{ y: "110%", rotate: 4 }}
