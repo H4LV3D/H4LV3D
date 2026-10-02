@@ -42,7 +42,7 @@ pnpm dev                     # http://localhost:3000
   - `tier: "case-study"` gets its own page at `/work/<slug>`. Text: `Projects.<slug>` with `title`, `tagline`, `summary`, `role`, `problem`, `process`, `outcome`, `learnings`, plus `built.a…` and `decisions.a….{title,body}` (set the `built` / `decisions` counts in the data), and `system` (the diagram heading) when it has a diagram.
   - `tier: "archive"` is a one-line entry under its company: `Projects.<slug>` with `title`, `tagline`, `summary`.
 - **The Work section never links to source code.** Only live sites, store listings and npm packages go in `links`.
-- **Hiding a project:** set `hidden: true` on it in `src/content/projects.ts`. It stays in the data but disappears from the site (the Circular Net admin, UI library and waitlist are hidden this way).
+- **Hiding a project:** set `hidden: true` on it in `src/content/projects.ts`. It stays in the data but disappears from the site (the Circular Net admin, UI library, waitlist and SSO are hidden this way).
 - **System diagrams** are data in `src/content/diagrams.ts` (node centres in an 800-wide viewBox). Node and arrow labels are keys under `Diagram.nodes` / `Diagram.edges` in the messages; the small technology line (`sub`) is never translated.
 - **Home page** features the case studies listed in `featured`.
 - **Notes** (`/notes`) live in `src/content/notes/`: metadata in `index.ts`, text per language in `en.ts`, `fr.ts`, `es.ts`, `ru.ts`, `zh.ts` (TypeScript fails the build if a language is missing a note). Blocks are `p`, `h`, `list` and `diagram`.

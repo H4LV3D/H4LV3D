@@ -107,6 +107,26 @@ export const diagrams = {
     ],
   }),
 
+  circularTicketMobile: d({
+    width: 800,
+    height: 380,
+    nodes: [
+      { id: "people", label: "attendeesOrganisers", x: 250, y: 50, kind: "actor" },
+      { id: "app", label: "mobileApp", sub: "Expo Router", x: 250, y: 180, kind: "accent" },
+      { id: "shared", label: "sharedPackage", sub: "npm workspaces", x: 610, y: 180 },
+      { id: "attendee", label: "attendeeFlow", x: 130, y: 325 },
+      { id: "creator", label: "creatorFlow", x: 400, y: 325 },
+      { id: "scanner", label: "ticketScanner", sub: "expo-camera", x: 670, y: 325 },
+    ],
+    edges: [
+      { from: "people", to: "app" },
+      { from: "app", to: "shared", label: "imports" },
+      { from: "app", to: "attendee" },
+      { from: "app", to: "creator" },
+      { from: "app", to: "scanner" },
+    ],
+  }),
+
   sso: d({
     width: 800,
     height: 400,

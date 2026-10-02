@@ -26,7 +26,7 @@ export type Note = {
 export const notes: Note[] = [
   { slug: "filter-before-you-think", date: "2026-10-02", related: "stock-bot" },
   { slug: "share-logic-not-screens", date: "2026-10-02", related: "circular-ticket" },
-  { slug: "one-sign-in-many-apps", date: "2026-10-02", related: "circular-net-sso" },
+  { slug: "one-sign-in-many-apps", date: "2026-10-02", related: "the-circular-net-web" },
 ];
 
 const content: Record<Locale, NoteTranslations> = { en, fr, es, ru, zh };

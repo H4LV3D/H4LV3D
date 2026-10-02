@@ -68,6 +68,7 @@ export type CaseStudy = ProjectBase & {
     | "the-circular-net-web"
     | "the-circular-net-mobile"
     | "circular-ticket"
+    | "circular-ticket-mobile"
     | "circular-net-sso"
     | "circular-net-website"
     | "export-trades"
@@ -167,14 +168,15 @@ const allProjects: Project[] = [
     slug: "circular-ticket",
     tier: "case-study",
     company: "circular-net",
-    categories: ["web", "mobile", "systems"],
+    categories: ["web", "systems"],
     stack: [
       "Next.js",
-      "Expo",
-      "React Native",
+      "React 19",
       "TypeScript",
+      "Tailwind CSS",
       "npm workspaces",
       "TanStack Query",
+      "TanStack Table",
       "Redux Toolkit",
       "Zod",
       "Stripe",
@@ -188,8 +190,35 @@ const allProjects: Project[] = [
     system: diagrams.circularTicket,
   },
   {
+    slug: "circular-ticket-mobile",
+    tier: "case-study",
+    company: "circular-net",
+    categories: ["mobile", "systems"],
+    stack: [
+      "Expo",
+      "React Native",
+      "Expo Router",
+      "TypeScript",
+      "NativeWind",
+      "TanStack Query",
+      "Redux Toolkit",
+      "Zod",
+      "Reanimated",
+      "expo-camera",
+      "EAS",
+    ],
+    period: { start: "2026-07" },
+    status: "in-development",
+    links: {},
+    metrics: [],
+    built: 6,
+    decisions: 3,
+    system: diagrams.circularTicketMobile,
+  },
+  {
     slug: "circular-net-sso",
     tier: "case-study",
+    hidden: true,
     company: "circular-net",
     categories: ["web", "systems"],
     stack: [
@@ -428,8 +457,8 @@ export function groupedWork(list: Project[] = projects) {
 /** The case studies featured on the home page. */
 export const featured: CaseStudy["slug"][] = [
   "the-circular-net-web",
+  "the-circular-net-mobile",
   "circular-ticket",
-  "circular-net-sso",
   "stock-bot",
 ];
 

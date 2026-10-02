@@ -351,9 +351,9 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Sitio web + app de eventos y venta de entradas",
+      "tagline": "Sitio + app web de eventos y venta de entradas",
       "summary": "Un producto de eventos y venta de entradas: el público descubre eventos y compra entradas; quienes organizan crean eventos, escanean entradas en la puerta y cobran en NGN o USD.",
-      "role": "Frontend en solitario, web y móvil",
+      "role": "Frontend web en solitario",
       "problem": "Quienes organizan eventos necesitaban un solo lugar para publicar, vender entradas, controlar el acceso, verificar su identidad y cobrar. Las apps web y móvil duplicaban llamadas a la API y reglas de negocio, y se iban distanciando.",
       "process": "Primero construí la app web y luego la llevé a un monorepo con npm workspaces junto a una nueva app de Expo. Servicios, hooks de consultas, esquemas de validación y reglas como el formato de moneda o la elegibilidad de pagos pasaron a un paquete compartido; las pantallas siguen siendo propias de cada plataforma. Cada área (eventos, pedidos, monederos, pagos, KYC y escaneo) está conectada a la API real, incluido el onboarding de Stripe y las transferencias bancarias.",
       "outcome": "La app web está en línea en circularticket.com. Ambas apps importan los mismos servicios y reglas, así que un cambio, por ejemplo en cuándo se puede solicitar un pago, se hace una sola vez.",
@@ -361,7 +361,7 @@
       "built": {
         "a": "Páginas públicas de eventos con metadatos SEO, sitemap e imágenes OG",
         "b": "Un asistente de creación de eventos en varios pasos con agenda, tipos de entrada, ponentes y sedes híbridas",
-        "c": "Escaneo de entradas en el navegador y en el móvil, con un marco de cámara que se fija en el código",
+        "c": "Escaneo de entradas en el navegador, centro de escaneo y acceso para el personal",
         "d": "Monederos en NGN/USD, transacciones, cuentas de cobro y solicitudes de pago",
         "e": "Un flujo KYC de cinco pasos y ajustes de verificación para quien organiza",
         "f": "Pedidos, estadísticas de inscripción y exportación a hoja de cálculo"
@@ -381,6 +381,39 @@
         }
       },
       "system": "Dos apps, un paquete compartido"
+    },
+    "circular-ticket-mobile": {
+      "title": "Circular Ticket Mobile",
+      "tagline": "La app de eventos para iOS y Android",
+      "summary": "La app de iOS y Android de Circular Ticket: el público descubre eventos y lleva sus entradas encima; quienes organizan crean eventos, escanean entradas en la puerta y solicitan sus pagos.",
+      "role": "Móvil en solitario",
+      "problem": "El público y quienes organizan necesitaban una app nativa para el producto de eventos, con una sola cuenta que cambia entre el rol de asistente y el de organización.",
+      "process": "Construí la app en el mismo monorepo con npm workspaces que la app web, importando servicios, hooks y esquemas desde el paquete compartido. Empezó con datos de prueba y componentes base, y después cada área (eventos, pedidos, monederos, pagos, KYC y escaneo) se conectó a la API real.",
+      "outcome": "La identidad de la app, los enlaces profundos y los builds de EAS para Play Console están configurados; el lanzamiento en las tiendas es lo siguiente.",
+      "learnings": "Compartir datos y validación mantuvo coherentes la web y el móvil, mientras las pantallas siguen siendo nativas de cada plataforma.",
+      "built": {
+        "a": "El flujo del público: descubrir y filtrar eventos, detalles, inscripción, pago y pedidos con entradas QR",
+        "b": "El flujo de organización: asistente de creación y edición en varios pasos, estadísticas, pedidos y acceso al escáner",
+        "c": "Un escáner de entradas con un marco de cámara que se fija en el código, validación y registro de asistencia",
+        "d": "Monederos en NGN/USD, transacciones, cuentas de cobro y solicitudes de pago",
+        "e": "Un asistente KYC de cinco pasos y estados «en revisión» en las pantallas de pagos",
+        "f": "Acceso por SSO, sincronización con el calendario, centro de notificaciones, modo oscuro y estados vacíos ilustrados"
+      },
+      "decisions": {
+        "a": {
+          "title": "Una cuenta, dos roles",
+          "body": "Público y organización usan el mismo acceso y cambian de rol dentro de la app, en lugar de instalar dos apps."
+        },
+        "b": {
+          "title": "Escanear, validar y luego registrar",
+          "body": "El escáner encuadra el código, valida la entrada con la API y solo después registra la asistencia, con un estado visible en cada paso."
+        },
+        "c": {
+          "title": "Lista para el último iOS",
+          "body": "La rotación en iPad y el ciclo de vida de escenas de iOS están desde el principio, así la app arranca sin problemas en el último iOS."
+        }
+      },
+      "system": "Una app, dos roles y el paquete compartido debajo"
     },
     "circular-net-sso": {
       "title": "Inicio de sesión único",
@@ -664,7 +697,10 @@
       "marketData": "Datos de mercado",
       "priceHistory": "Historial de precios",
       "aiAnalyst": "Analista de IA",
-      "report": "Informe diario"
+      "report": "Informe diario",
+      "attendeeFlow": "Flujo del público",
+      "creatorFlow": "Herramientas de organización",
+      "ticketScanner": "Escáner de entradas"
     },
     "edges": {
       "signIn": "acceso",

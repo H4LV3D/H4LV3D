@@ -351,9 +351,9 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Website + app for events and ticketing",
+      "tagline": "Website + web app for events and ticketing",
       "summary": "An events and ticketing product: attendees discover events and buy tickets; organisers create events, scan tickets at the door and get paid in NGN or USD.",
-      "role": "Sole frontend engineer, web & mobile",
+      "role": "Sole frontend engineer, web",
       "problem": "Organisers needed one place to publish events, sell tickets, check people in, verify their identity and get paid. The web and mobile apps were duplicating API calls and business rules, and slowly drifting apart.",
       "process": "I built the web app first, then moved it into an npm-workspaces monorepo with a new Expo app. Services, query hooks, validation schemas and rules like currency formatting and payout eligibility moved into one shared package; screens stayed platform-specific. Each area (events, orders, wallets, payouts, KYC and scanning) was wired to the live API, including Stripe onboarding and bank payouts.",
       "outcome": "The web app is live at circularticket.com. Both apps import the same services and rules, so a change such as when a payout can be requested happens once.",
@@ -361,7 +361,7 @@
       "built": {
         "a": "Public event pages with SEO metadata, a sitemap and OG images",
         "b": "A multi-step event wizard with schedules, ticket types, speakers and hybrid venues",
-        "c": "Ticket scanning in the browser and on mobile, with a camera frame that locks onto the code",
+        "c": "Browser ticket scanning, a scanner hub and staff scanner access",
         "d": "NGN/USD wallets, transactions, payout accounts and payout requests",
         "e": "A five-step KYC flow and organiser verification settings",
         "f": "Orders, registration stats and spreadsheet export for organisers"
@@ -381,6 +381,39 @@
         }
       },
       "system": "Two apps, one shared package"
+    },
+    "circular-ticket-mobile": {
+      "title": "Circular Ticket Mobile",
+      "tagline": "The events app for iOS and Android",
+      "summary": "The iOS and Android app for Circular Ticket: attendees discover events and carry their tickets; organisers create events, scan tickets at the door and request payouts.",
+      "role": "Sole mobile engineer",
+      "problem": "Organisers and attendees needed a native app for the events product, with one account that switches between attendee and organiser roles.",
+      "process": "I built the app in the same npm-workspaces monorepo as the web app, importing services, hooks and schemas from the shared package. It started from mock data and UI primitives, then each area (events, orders, wallets, payouts, KYC and scanning) was wired to the live API.",
+      "outcome": "App identity, deep links and EAS builds for the Play Console are configured; the store release is next.",
+      "learnings": "Sharing data and validation logic kept web and mobile consistent, while the screens stayed native to each platform.",
+      "built": {
+        "a": "The attendee flow: discover and filter events, event details, registration, checkout and orders with QR tickets",
+        "b": "The organiser flow: a multi-step create/edit event wizard, dashboard stats, orders and scanner access",
+        "c": "A ticket scanner with camera framing that locks onto the code, validation and attendee check-in",
+        "d": "NGN/USD wallets, transactions, payout accounts and payout requests",
+        "e": "A five-step KYC wizard and in-review states on payout screens",
+        "f": "SSO sign-in, calendar sync, a notifications hub, dark mode and illustrated empty states"
+      },
+      "decisions": {
+        "a": {
+          "title": "One account, two roles",
+          "body": "Attendees and organisers use the same sign-in and switch roles inside the app, instead of installing two apps."
+        },
+        "b": {
+          "title": "Scan, validate, then check in",
+          "body": "The scanner frames the code, validates the ticket against the API and only then checks the attendee in, with a visible state for each step."
+        },
+        "c": {
+          "title": "Ready for the newest iOS",
+          "body": "iPad rotation and the iOS scene lifecycle are in from the start, so the app launches cleanly on the latest iOS."
+        }
+      },
+      "system": "One app, two roles, the shared package underneath"
     },
     "circular-net-sso": {
       "title": "Single Sign-On",
@@ -664,7 +697,10 @@
       "marketData": "Market data",
       "priceHistory": "Price history",
       "aiAnalyst": "AI analyst",
-      "report": "Daily report"
+      "report": "Daily report",
+      "attendeeFlow": "Attendee flow",
+      "creatorFlow": "Organiser tools",
+      "ticketScanner": "Ticket scanner"
     },
     "edges": {
       "signIn": "sign in",

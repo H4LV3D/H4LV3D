@@ -351,9 +351,9 @@
     },
     "circular-ticket": {
       "title": "Circular Ticket",
-      "tagline": "Site web + app pour les événements et la billetterie",
+      "tagline": "Site + app web pour les événements et la billetterie",
       "summary": "Un produit d'événements et de billetterie : le public découvre des événements et achète des billets ; les organisateurs créent leurs événements, scannent les billets à l'entrée et sont payés en NGN ou en USD.",
-      "role": "Frontend en solo, web et mobile",
+      "role": "Frontend web en solo",
       "problem": "Les organisateurs avaient besoin d'un seul endroit pour publier, vendre des billets, gérer les entrées, vérifier leur identité et être payés. Les apps web et mobile dupliquaient les appels d'API et les règles métier, et divergeaient peu à peu.",
       "process": "J'ai d'abord construit l'app web, puis je l'ai déplacée dans un monorepo npm workspaces avec une nouvelle app Expo. Services, hooks de requêtes, schémas de validation et règles comme le formatage des montants ou l'éligibilité aux versements sont passés dans un paquet partagé ; les écrans restent propres à chaque plateforme. Chaque domaine (événements, commandes, portefeuilles, versements, KYC, scan) est relié à l'API en production, y compris l'onboarding Stripe et les virements bancaires.",
       "outcome": "L'app web est en ligne sur circularticket.com. Les deux apps importent les mêmes services et règles : une modification, par exemple du moment où un versement peut être demandé, ne se fait qu'une fois.",
@@ -361,7 +361,7 @@
       "built": {
         "a": "Pages publiques d'événements avec métadonnées SEO, plan du site et images OG",
         "b": "Un assistant de création d'événement en plusieurs étapes : programme, types de billets, intervenants et lieux hybrides",
-        "c": "Scan de billets dans le navigateur et sur mobile, avec un cadre de caméra qui se cale sur le code",
+        "c": "Scan de billets dans le navigateur, hub de scan et accès scanner pour le personnel",
         "d": "Portefeuilles NGN/USD, transactions, comptes de versement et demandes de versement",
         "e": "Un parcours KYC en cinq étapes et les réglages de vérification des organisateurs",
         "f": "Commandes, statistiques d'inscription et export tableur pour les organisateurs"
@@ -381,6 +381,39 @@
         }
       },
       "system": "Deux apps, un paquet partagé"
+    },
+    "circular-ticket-mobile": {
+      "title": "Circular Ticket Mobile",
+      "tagline": "L'app d'événements pour iOS et Android",
+      "summary": "L'app iOS et Android de Circular Ticket : le public découvre des événements et garde ses billets sur lui ; les organisateurs créent leurs événements, scannent les billets à l'entrée et demandent leurs versements.",
+      "role": "Mobile en solo",
+      "problem": "Organisateurs et public avaient besoin d'une app native pour le produit d'événements, avec un seul compte qui passe du rôle de participant à celui d'organisateur.",
+      "process": "J'ai construit l'app dans le même monorepo npm workspaces que l'app web, en important services, hooks et schémas depuis le paquet partagé. Elle est partie de données fictives et de composants de base, puis chaque domaine (événements, commandes, portefeuilles, versements, KYC et scan) a été relié à l'API en production.",
+      "outcome": "L'identité de l'app, les liens profonds et les builds EAS pour la Play Console sont configurés ; la publication sur les stores est la prochaine étape.",
+      "learnings": "Partager les données et la validation a gardé le web et le mobile cohérents, tandis que les écrans restent natifs à chaque plateforme.",
+      "built": {
+        "a": "Le parcours public : découverte et filtres d'événements, détails, inscription, paiement et commandes avec billets QR",
+        "b": "Le parcours organisateur : assistant de création et de modification en plusieurs étapes, statistiques, commandes et accès au scanner",
+        "c": "Un scanner de billets avec un cadre de caméra qui se cale sur le code, validation et enregistrement des entrées",
+        "d": "Portefeuilles NGN/USD, transactions, comptes de versement et demandes de versement",
+        "e": "Un assistant KYC en cinq étapes et des états « en cours d'examen » sur les écrans de versement",
+        "f": "Connexion SSO, synchronisation du calendrier, centre de notifications, mode sombre et états vides illustrés"
+      },
+      "decisions": {
+        "a": {
+          "title": "Un compte, deux rôles",
+          "body": "Public et organisateurs utilisent la même connexion et changent de rôle dans l'app, au lieu d'installer deux apps."
+        },
+        "b": {
+          "title": "Scanner, valider, puis enregistrer",
+          "body": "Le scanner cadre le code, valide le billet auprès de l'API et seulement ensuite enregistre l'entrée, avec un état visible à chaque étape."
+        },
+        "c": {
+          "title": "Prête pour le dernier iOS",
+          "body": "La rotation sur iPad et le cycle de vie des scènes iOS sont là dès le départ : l'app démarre proprement sur le dernier iOS."
+        }
+      },
+      "system": "Une app, deux rôles, le paquet partagé dessous"
     },
     "circular-net-sso": {
       "title": "Authentification unique",
@@ -664,7 +697,10 @@
       "marketData": "Données de marché",
       "priceHistory": "Historique des cours",
       "aiAnalyst": "Analyste IA",
-      "report": "Rapport quotidien"
+      "report": "Rapport quotidien",
+      "attendeeFlow": "Parcours public",
+      "creatorFlow": "Outils d'organisation",
+      "ticketScanner": "Scanner de billets"
     },
     "edges": {
       "signIn": "connexion",
