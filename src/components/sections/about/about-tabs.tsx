@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { toolkit } from "@/content/projects";
 import { Timeline } from "./timeline";
 
-const APPROACH = ["communication", "collaboration", "adaptability", "time", "problems", "creativity"] as const;
+const APPROACH = ["systems", "communication", "ownership", "problems", "quality", "ai"] as const;
 
 export function AboutTabs() {
   const t = useTranslations("About");
@@ -25,7 +25,7 @@ export function AboutTabs() {
       </TabsContent>
 
       <TabsContent value="toolkit">
-        <div className="grid gap-10 sm:grid-cols-2">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {(Object.keys(toolkit) as (keyof typeof toolkit)[]).map((group) => (
             <div key={group} className="flex flex-col gap-4 border-t border-border pt-5">
               <h3 className="label-mono text-muted-foreground">{t(`toolkit.${group}`)}</h3>
@@ -42,7 +42,7 @@ export function AboutTabs() {
       </TabsContent>
 
       <TabsContent value="approach">
-        <Accordion type="single" collapsible defaultValue="communication" className="border-t border-border">
+        <Accordion type="single" collapsible defaultValue="systems" className="border-t border-border">
           {APPROACH.map((key) => (
             <AccordionItem key={key} value={key}>
               <AccordionTrigger>{t(`approach.${key}.title`)}</AccordionTrigger>

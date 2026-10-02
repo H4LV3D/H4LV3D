@@ -21,8 +21,13 @@ export const site = {
    * public/images/me/portrait.jpg and set this to "/images/me/portrait.jpg".
    */
   portrait: "/images/me/portrait.jpg" as string | undefined,
-  /** Numbers for the About page. */
-  stats: { projects: 15, companies: 6, clients: 12, pages: 60 },
+  /** Numbers for the About page (labels in About.stats). */
+  stats: [
+    { key: "years", value: 3, suffix: "+" },
+    { key: "products", value: 20, suffix: "+" },
+    { key: "companies", value: 8, suffix: "" },
+    { key: "commits", value: 3500, suffix: "+" },
+  ],
   /** Shown as a pulsing badge on the contact page and footer. */
   availableForWork: true,
 } as const;

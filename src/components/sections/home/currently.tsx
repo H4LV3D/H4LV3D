@@ -4,10 +4,11 @@ import { Peep } from "@/components/illustrations/peep/peep";
 import { Doodle } from "@/components/illustrations/doodle";
 import { Reveal } from "@/components/motion/reveal";
 import { SectionLabel } from "@/components/sections/section-label";
+import { TransitionLink } from "@/components/motion/page-transition";
 
 export function Currently() {
   const t = useTranslations("Home.currently");
-  const items = ["learning", "oss", "building"] as const;
+  const items = ["building", "learning", "writing"] as const;
   return (
     <section className="container-page grid items-center gap-12 py-24 md:grid-cols-12 md:py-32">
       <div className="flex flex-col gap-8 md:col-span-7">
@@ -22,7 +23,13 @@ export function Currently() {
               className="flex items-center gap-5 border-b border-border py-5 text-xl md:text-2xl"
             >
               <Doodle name="check" className="size-7 shrink-0" delay={0.2 + i * 0.15} />
-              {t(key)}
+              {key === "writing" ? (
+                <TransitionLink href="/notes" className="scribble-underline">
+                  {t(key)}
+                </TransitionLink>
+              ) : (
+                t(key)
+              )}
             </Reveal>
           ))}
         </ul>

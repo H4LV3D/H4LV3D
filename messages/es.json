@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "siteTitle": "Toluwalope Akinkunmi — Desarrollo de software",
-    "description": "Toluwalope Akinkunmi diseña y desarrolla productos web y móviles rápidos y agradables con React, Next.js y Node.",
-    "ogTagline": "Desarrollo de software · Web y móvil"
+    "siteTitle": "Toluwalope Akinkunmi — Ingeniería frontend senior, sistemas e IA",
+    "description": "Toluwalope Akinkunmi: ingeniería frontend senior en camino hacia el diseño de sistemas y la IA. Productos web y móviles, las plataformas que los sostienen e IA que hace trabajo real.",
+    "ogTagline": "Ingeniería frontend senior · Sistemas · IA"
   },
   "Nav": {
     "home": "Inicio",
@@ -21,7 +21,8 @@
       "dark": "Oscuro",
       "system": "Sistema"
     },
-    "language": "Idioma"
+    "language": "Idioma",
+    "notes": "Notas"
   },
   "Preloader": {
     "loading": "Cargando",
@@ -64,28 +65,28 @@
   },
   "Home": {
     "hero": {
-      "eyebrow": "Desarrollo de software · Web y móvil",
+      "eyebrow": "Ingeniería frontend senior · Sistemas · IA",
       "greeting": "Hola, soy",
       "name": "Toluwalope",
       "roles": {
-        "a": "Creo apps web y móviles.",
-        "b": "Resuelvo problemas reales.",
-        "c": "Lanzo productos que se usan.",
-        "d": "Cuido cada pequeño detalle."
+        "a": "Diseño sistemas, no solo pantallas.",
+        "b": "Entrego productos web y móviles de principio a fin.",
+        "c": "Hago que muchas apps compartan una misma base.",
+        "d": "Construyo con IA, para trabajo real."
       },
-      "intro": "Diseño y desarrollo productos web y móviles rápidos y agradables, desde el primer boceto hasta el último despliegue.",
+      "intro": "Ingeniería frontend senior, en camino hacia el diseño de sistemas y la IA. He construido el inicio de sesión único de una familia de productos, un monorepo web y móvil, un design system publicado y salas de audio y vídeo en directo.",
       "note": "¡soy yo, en dibujo!",
       "cta": "Ver mis proyectos",
       "secondary": "Escríbeme"
     },
     "intro": {
       "label": "01 / Intro",
-      "text": "Me importan los detalles que la gente siente pero rara vez nota: cómo responde un botón, cómo carga una página, cómo se lee una frase. Mis herramientas son React, Next.js y Node; mi costumbre, lanzar, medir y mejorar."
+      "text": "Los buenos productos son sistemas. La pantalla es la parte visible; debajo están las reglas compartidas, el inicio de sesión en el que confía cada app y la fontanería en tiempo real que hacen que todo parezca simple. Llevo tres años construyendo ambas cosas, y ahora diseño esa parte de abajo a propósito."
     },
     "work": {
       "label": "02 / Proyectos destacados",
-      "title": "Lo que he construido",
-      "all": "Todos los proyectos"
+      "title": "Sistemas que he entregado",
+      "all": "Ver todo"
     },
     "toolkit": {
       "label": "03 / Herramientas"
@@ -93,22 +94,22 @@
     "currently": {
       "label": "04 / Ahora mismo",
       "title": "En qué ando",
-      "learning": "Aprendiendo React Native y GraphQL",
-      "oss": "Contribuyendo al código abierto",
-      "building": "Construyendo Reciept, un generador de recibos"
+      "learning": "Profundizando en sistemas distribuidos: colas, caché y consistencia",
+      "building": "Construyendo Stock Bot, un analista con IA para la bolsa de Nigeria",
+      "writing": "Escribiendo notas sobre los sistemas que construyo"
     },
     "cta": {
-      "title": "¿Tienes una idea?",
-      "subtitle": "Convirtámosla en algo que a la gente le encante usar.",
+      "title": "¿Tienes un sistema que construir?",
+      "subtitle": "Diseñémoslo bien y luego lancémoslo.",
       "button": "Empezar a hablar",
       "sign": "¡trabajemos!"
     }
   },
   "About": {
     "metaTitle": "Sobre mí",
-    "metaDescription": "La historia, la experiencia y las herramientas de Toluwalope Akinkunmi, desarrollo de software.",
+    "metaDescription": "La historia, la experiencia y las herramientas de Toluwalope Akinkunmi: ingeniería frontend senior en camino hacia el diseño de sistemas y la IA.",
     "label": "Sobre mí",
-    "title": "Programo, y todavía dibujo en papel.",
+    "title": "Frontend pensado en sistemas.",
     "photo": {
       "real": "En persona",
       "drawn": "En dibujo",
@@ -117,17 +118,17 @@
       "alt": "Retrato de Toluwalope Akinkunmi"
     },
     "story": {
-      "p1": "Soy Toluwalope Akinkunmi y desarrollo software para web y móvil. Me gusta convertir ideas desordenadas en productos que se sienten sencillos.",
-      "p2": "He creado y escalado productos que usan cientos de personas —herramientas de presupuesto, reservas de viajes, plataformas de blogs— y he aprendido que la calidad es un hábito, no una fase.",
-      "p3": "Fuera del editor juego videojuegos, veo series, leo y contribuyo al código abierto. Siempre me apetece conocer gente nueva y aprender de ella.",
+      "p1": "Soy Toluwalope Akinkunmi y me dedico a la ingeniería frontend. Llevo tres años construyendo productos web y móviles de principio a fin, y cada vez más de mi trabajo está debajo de las pantallas.",
+      "p2": "En The Circular Net he construido la mayor parte de una familia de productos: las apps web y móvil, una plataforma de eventos que comparte una sola base de código entre web y móvil, el inicio de sesión único en el que confía cada app y una biblioteca de componentes publicada en npm. Además, he trabajado en productos de pagos en GemsPay, una plataforma de comercio multilingüe para Hotrac y un CMS para Law x Tech.",
+      "p3": "Ahora me oriento hacia el diseño de sistemas y la IA: decidir cómo encajan las piezas y crear productos donde un LLM hace trabajo real. Fuera de la pantalla, juego, veo series sin parar y leo.",
       "note": "sí, también los dibujo yo"
     },
     "stats": {
       "label": "En cifras",
-      "projects": "Proyectos completados",
-      "companies": "Empresas con las que he trabajado",
-      "clients": "Clientes satisfechos",
-      "pages": "Páginas publicadas"
+      "companies": "Equipos y clientes",
+      "years": "Años lanzando",
+      "products": "Productos lanzados",
+      "commits": "Commits"
     },
     "tabs": {
       "experience": "Experiencia",
@@ -135,49 +136,41 @@
       "approach": "Método"
     },
     "experience": {
-      "present": "Actualidad",
-      "coinsave": {
-        "role": "Desarrollo full-stack",
-        "company": "Coinsave",
-        "body": "Diseño, desarrollo, gestión y escalado de una plataforma de presupuestos con más de 500 usuarios, mejorando continuamente su rendimiento y funcionalidad."
-      },
-      "cabify": {
-        "role": "Desarrollo front-end",
-        "company": "Cabify",
-        "body": "Optimización del rendimiento para cargas rápidas y una navegación fluida, lo que aumentó la satisfacción y la participación de los clientes."
-      }
+      "present": "Actualidad"
     },
     "toolkit": {
       "frontend": "Front-end",
-      "backend": "Back-end",
+      "backend": "Back-end y nube",
       "mobile": "Móvil",
-      "tooling": "Utilidades"
+      "tooling": "Utilidades",
+      "systems": "Sistemas",
+      "ai": "IA"
     },
     "approach": {
       "title": "Cómo trabajo",
+      "systems": {
+        "title": "Primero, los sistemas",
+        "body": "Antes de las pantallas, trazo los límites: qué se comparte, quién es responsable de qué y qué pasa cuando una pieza falla."
+      },
       "communication": {
         "title": "Comunicación clara",
-        "body": "Actualizaciones breves, plazos honestos y nada de jerga. Siempre sabes qué está pasando y por qué."
+        "body": "Actualizaciones breves, plazos honestos y decisiones por escrito. Siempre sabes qué está pasando y por qué."
       },
-      "collaboration": {
-        "title": "Colaboración inteligente",
-        "body": "Trabajo bien con diseño, producto y otros equipos de ingeniería: revisiones, programación en pareja y responsabilidad compartida."
-      },
-      "adaptability": {
-        "title": "Adaptabilidad",
-        "body": "Nueva tecnología, nuevo sector, cambios de alcance: aprendo rápido y me adapto sin dramas."
-      },
-      "time": {
-        "title": "Gestión del tiempo",
-        "body": "Divido el trabajo en piezas pequeñas y entregables, y priorizo lo que más impacto tiene."
+      "ownership": {
+        "title": "Responsabilidad de principio a fin",
+        "body": "Desde la primera especificación hasta los builds, los lanzamientos y el bug que llega después: respondo por el resultado, no solo por el ticket."
       },
       "problems": {
         "title": "Resolución de problemas",
-        "body": "Investigo hasta entender el problema real y elijo la solución más sencilla."
+        "body": "Investigo hasta entender el problema real y elijo la solución más simple que lo resuelva."
       },
-      "creativity": {
-        "title": "Creatividad e innovación",
-        "body": "Los buenos productos tienen un toque de encanto. Busco el detalle que saca una sonrisa."
+      "quality": {
+        "title": "La calidad como hábito",
+        "body": "Cada estado está diseñado: carga, vacío y error. Accesible por defecto y rápido en redes lentas."
+      },
+      "ai": {
+        "title": "IA donde aporta",
+        "body": "Uso la IA para avanzar más rápido y la integro en productos donde hace trabajo real, nunca como adorno."
       }
     },
     "offscreen": {
@@ -190,17 +183,18 @@
   },
   "Work": {
     "metaTitle": "Proyectos",
-    "metaDescription": "Proyectos seleccionados de Toluwalope Akinkunmi: apps web, apps móviles y productos full-stack.",
+    "metaDescription": "El trabajo de Toluwalope Akinkunmi, agrupado por empresa: plataformas, apps web y móviles, y proyectos de IA.",
     "label": "Proyectos",
-    "title": "Proyectos destacados",
-    "subtitle": "Productos que he diseñado, desarrollado y lanzado.",
+    "title": "Trabajo",
+    "subtitle": "Agrupado por dónde lo hice. Cada caso de estudio muestra el sistema detrás del producto.",
     "count": "{count, plural, one {# proyecto} other {# proyectos}}",
     "filters": {
       "label": "Filtrar proyectos",
       "all": "Todos",
       "web": "Web",
       "mobile": "Móvil",
-      "fullstack": "Full-stack"
+      "systems": "Sistemas",
+      "ai": "IA"
     },
     "layout": {
       "label": "Vista",
@@ -210,7 +204,8 @@
     "status": {
       "live": "En línea",
       "in-development": "En desarrollo",
-      "offline": "Archivado"
+      "offline": "Archivado",
+      "internal": "Interno"
     },
     "caseStudy": {
       "back": "Todos los proyectos",
@@ -221,61 +216,489 @@
       "status": "Estado",
       "live": "Visitar el sitio",
       "code": "Código fuente",
-      "noLinks": "Privado / archivado",
+      "noLinks": "Privado / interno",
       "problem": "El problema",
       "process": "El proceso",
       "outcome": "El resultado",
       "learnings": "Lo que aprendí",
       "next": "Siguiente proyecto",
-      "imagePending": "Capturas muy pronto"
+      "imagePending": "Capturas muy pronto",
+      "company": "Empresa",
+      "period": "Periodo",
+      "appStore": "App Store",
+      "playStore": "Google Play",
+      "npm": "Paquete npm",
+      "built": "Lo que construí",
+      "system": "El sistema",
+      "decisions": "Decisiones clave"
+    },
+    "group": {
+      "present": "Actualidad",
+      "website": "Sitio web",
+      "caseStudy": "Caso de estudio",
+      "pending": "Casos de estudio próximamente."
+    }
+  },
+  "Companies": {
+    "circular-net": {
+      "name": "The Circular Net",
+      "role": "Ingeniería frontend, web y móvil",
+      "summary": "Responsable de frontend en toda la familia de productos de una plataforma de sostenibilidad: las apps sociales web y móvil, Circular Ticket, el inicio de sesión único, el panel de administración, el sitio corporativo y una biblioteca de interfaz compartida."
+    },
+    "smarkt": {
+      "name": "Smarkt",
+      "role": "Ingeniería frontend",
+      "summary": "Ingeniería frontend en los cuatro productos principales de Smarkt."
+    },
+    "gemspay": {
+      "name": "GemsPay Solutions",
+      "role": "Ingeniería frontend",
+      "summary": "Ingeniería frontend en la mayoría de los productos de GemsPay: una plataforma de pagos centralizada para pagos masivos, cobros y conciliación."
+    },
+    "hotrac": {
+      "name": "Hotrac",
+      "role": "Ingeniería frontend",
+      "summary": "Los frontends de dos productos de Hotrac: Export Trades, una plataforma de comercio internacional de materias primas, y FarmShare, un panel de administración para compartir tractores."
+    },
+    "lawxtech": {
+      "name": "Law x Tech",
+      "role": "Desarrollo web, voluntariado",
+      "summary": "Desarrollo voluntario para una comunidad en la intersección del derecho y la tecnología en África: el sitio original en 2023 y un rediseño completo con CMS de administración en 2026."
+    },
+    "freelance": {
+      "name": "Freelance",
+      "role": "Ingeniería frontend y móvil",
+      "summary": "Trabajo independiente para clientes: una app y un sitio de finanzas personales, un portal de ventas para un proveedor solar y el sitio de una agencia de branding."
+    },
+    "lab": {
+      "name": "Lab",
+      "role": "Proyectos personales",
+      "summary": "Lo que construyo para aprender. Ahora mismo: un agente de IA que vigila la bolsa de Nigeria."
     }
   },
   "Projects": {
     "metrics": {
       "users": "usuarios activos",
-      "engagement": "tasa de participación",
-      "rating": "valoración media"
+      "engagement": "tasa de interacción",
+      "rating": "valoración media",
+      "commits": "commits en dos versiones",
+      "apps": "apps en la familia de productos"
+    },
+    "the-circular-net-web": {
+      "title": "Circular Net Web",
+      "tagline": "Una red social para la sostenibilidad",
+      "summary": "La app web de una red social para personas y organizaciones que trabajan en sostenibilidad: feed, comunidades, mensajería, salas de audio y vídeo en directo, empleos, proyectos y pódcasts.",
+      "role": "Responsable de frontend",
+      "problem": "Quienes trabajan en clima y sostenibilidad estaban dispersos en redes generalistas. La plataforma necesitaba un único lugar para compartir, organizarse, contratar y reunirse, y su primera versión se había quedado pequeña.",
+      "process": "Construí la primera versión con el Pages Router en 2023–24 y después lideré la reconstrucción con el App Router, con un módulo por área de producto. El chat y las salas en directo funcionan con Stream y Pusher, las publicaciones usan un editor enriquecido y los feeds tienen scroll infinito. El inicio de sesión pasó a un servicio SSO compartido: una sola cuenta para todos los productos.",
+      "outcome": "En línea en app.thecircularnet.com, con enlaces profundos a la app móvil. Más de 2.000 commits míos entre las dos versiones.",
+      "learnings": "Una sala en directo es una máquina de estados, no una página. La configuración de dispositivos, compartir pantalla y las salidas o expulsiones necesitan estados explícitos; si no, la interfaz miente.",
+      "built": {
+        "a": "Feed y editor de publicaciones con multimedia, programación, edición, hashtags y guardados",
+        "b": "Comunidades, páginas de empresa, perfiles y una configuración de perfil en varios pasos",
+        "c": "Mensajería directa y grupal con vistas previas de multimedia y salas vinculadas a los chats",
+        "d": "Salas de audio y vídeo con controles de anfitrión, moderación, mano levantada, reacciones, compartir pantalla y imagen en imagen",
+        "e": "Bolsa de empleo, espacio de proyectos con hitos, pódcasts y eventos",
+        "f": "Páginas para invitados, vistas previas de enlaces y metadatos SEO, para que los enlaces compartidos funcionen sin cuenta"
+      },
+      "decisions": {
+        "a": {
+          "title": "Un módulo por área de producto",
+          "body": "Feed, salas, empleos y el resto tienen sus propias rutas, componentes y consultas. Un área puede cambiar sin tocar las demás, y el desorden de la primera versión no vuelve."
+        },
+        "b": {
+          "title": "Tiempo real sobre servicios gestionados",
+          "body": "Stream gestiona multimedia y chat, y Pusher envía los eventos de la app. Así un equipo pequeño lanzó salas en directo en semanas, sin operar servidores de medios."
+        },
+        "c": {
+          "title": "El inicio de sesión, fuera de la app",
+          "body": "La autenticación vive en un servicio SSO aparte: la app web, Circular Ticket y el sitio corporativo comparten una cuenta y un flujo seguro."
+        }
+      },
+      "system": "Cómo encaja la app web en la plataforma"
+    },
+    "the-circular-net-mobile": {
+      "title": "Circular Net Mobile",
+      "tagline": "La red de sostenibilidad en iOS y Android",
+      "summary": "La app de iOS y Android de The Circular Net: feed, comunidades, mensajería, llamadas, salas en directo y pódcasts con reproducción en segundo plano.",
+      "role": "Responsable de móvil",
+      "problem": "La comunidad quería toda la plataforma en el móvil, con chat en tiempo real, llamadas y audio en segundo plano, no una web envuelta en una app.",
+      "process": "Construí la app con Expo y Expo Router, organizada por módulos. Las salas y llamadas funcionan con Stream, el chat con un store alimentado por Pusher, y un reproductor de pódcasts sigue sonando en segundo plano. Las variantes de desarrollo, staging y producción se publican con EAS Build y actualizaciones remotas.",
+      "outcome": "Disponible en App Store y Google Play.",
+      "learnings": "Los entornos deben fallar de forma visible. Variantes de build que no arrancan con la configuración equivocada evitaron que los builds apuntaran en silencio al backend incorrecto.",
+      "built": {
+        "a": "Inicio de sesión con correo y Google, onboarding y configuración de perfil en varios pasos",
+        "b": "Feed y creación de publicaciones con multimedia, programación, autocompletado de hashtags y gestos a pantalla completa",
+        "c": "Mensajería con vista previa y descarga de documentos, y llamadas uno a uno con detección de timbre",
+        "d": "Salas de audio y vídeo con reacciones, mano levantada, acciones de anfitrión, imagen en imagen y audio en segundo plano",
+        "e": "Un reproductor de pódcasts con mini reproductor y pantalla completa, cola, reanudación y segundo plano",
+        "f": "Enlaces profundos, notificaciones push, renovación de tokens y una extensión para compartir en iOS"
+      },
+      "decisions": {
+        "a": {
+          "title": "Expo en lugar de React Native puro",
+          "body": "Una versión anterior en React Native puro avanzaba con dificultad. Expo, EAS y las actualizaciones remotas permiten que una sola persona se encargue de builds, lanzamientos y correcciones."
+        },
+        "b": {
+          "title": "Módulos que reflejan la web",
+          "body": "Los módulos móviles coinciden con las áreas de la app web: el mismo modelo mental, los mismos contratos de API y los mismos nombres en ambas plataformas."
+        },
+        "c": {
+          "title": "Tres variantes de build",
+          "body": "Desarrollo, staging y producción son apps separadas con su propia configuración: quienes prueban y quienes usan la app nunca comparten backend por accidente."
+        }
+      },
+      "system": "Dentro de la app y su cadena de lanzamiento"
+    },
+    "circular-ticket": {
+      "title": "Circular Ticket",
+      "tagline": "Eventos y venta de entradas en web y móvil",
+      "summary": "Un producto de eventos y venta de entradas: el público descubre eventos y compra entradas; quienes organizan crean eventos, escanean entradas en la puerta y cobran en NGN o USD.",
+      "role": "Frontend en solitario, web y móvil",
+      "problem": "Quienes organizan eventos necesitaban un solo lugar para publicar, vender entradas, controlar el acceso, verificar su identidad y cobrar. Las apps web y móvil duplicaban llamadas a la API y reglas de negocio, y se iban distanciando.",
+      "process": "Primero construí la app web y luego la llevé a un monorepo con npm workspaces junto a una nueva app de Expo. Servicios, hooks de consultas, esquemas de validación y reglas como el formato de moneda o la elegibilidad de pagos pasaron a un paquete compartido; las pantallas siguen siendo propias de cada plataforma. Cada área (eventos, pedidos, monederos, pagos, KYC y escaneo) está conectada a la API real, incluido el onboarding de Stripe y las transferencias bancarias.",
+      "outcome": "La app web está en línea en circularticket.com. Ambas apps importan los mismos servicios y reglas, así que un cambio, por ejemplo en cuándo se puede solicitar un pago, se hace una sola vez.",
+      "learnings": "Compartir código es antes un problema de dependencias que de código. Versiones alineadas y un hoisting cuidadoso entre web y nativo importaron más que el propio código compartido.",
+      "built": {
+        "a": "Páginas públicas de eventos con metadatos SEO, sitemap e imágenes OG",
+        "b": "Un asistente de creación de eventos en varios pasos con agenda, tipos de entrada, ponentes y sedes híbridas",
+        "c": "Escaneo de entradas en el navegador y en el móvil, con un marco de cámara que se fija en el código",
+        "d": "Monederos en NGN/USD, transacciones, cuentas de cobro y solicitudes de pago",
+        "e": "Un flujo KYC de cinco pasos y ajustes de verificación para quien organiza",
+        "f": "Pedidos, estadísticas de inscripción y exportación a hoja de cálculo"
+      },
+      "decisions": {
+        "a": {
+          "title": "Compartir lógica, no pantallas",
+          "body": "El paquete compartido contiene servicios, hooks, esquemas y reglas. La interfaz sigue siendo nativa en cada plataforma, así que ninguna app parece una adaptación de la otra."
+        },
+        "b": {
+          "title": "Una regla, un lugar",
+          "body": "La elegibilidad de pagos, el mapeo de estados de pedido y el formato de moneda existen una sola vez. Web y móvil no pueden discrepar sobre el dinero."
+        },
+        "c": {
+          "title": "Diseñar cada estado",
+          "body": "Carga, error, vacío por filtro y vacío real son estados distintos en cada pantalla de datos. Los paneles densos de organización se volvieron mucho más legibles."
+        }
+      },
+      "system": "Dos apps, un paquete compartido"
+    },
+    "circular-net-sso": {
+      "title": "Circular Net SSO",
+      "tagline": "Un inicio de sesión para todas las apps",
+      "summary": "Un servicio de inicio de sesión único para los productos de The Circular Net: acceso, registro y recuperación de cuenta con OAuth 2.0, e inicio de sesión con Google y Apple.",
+      "role": "Frontend en solitario",
+      "problem": "Cada producto tenía su propio inicio de sesión. Hacía falta una cuenta y un acceso seguro para la app web, Circular Ticket y el sitio corporativo.",
+      "process": "Construí el flujo de autorización OAuth 2.0 con validación de clientes y un manejo estricto de redirecciones, y después el acceso con correo y contraseña con verificación OTP, el acceso con Google y Apple, y el restablecimiento de contraseña con comprobación de seguridad en vivo, todo en formularios animados de varios pasos con tema claro y oscuro.",
+      "outcome": "En línea en accounts.thecircularnet.com como punto de entrada para el sitio corporativo, la app web y Circular Ticket.",
+      "learnings": "La página de SSO es el único lugar en el que confían todas las apps, así que debe ser la más estricta. Los ID de cliente y las URL de redirección se validan, nunca se suponen.",
+      "built": {
+        "a": "El flujo de autorización OAuth 2.0 con validación del ID de cliente y manejo de redirecciones",
+        "b": "Acceso y registro con correo y contraseña, con verificación OTP por correo",
+        "c": "Acceso con Google y Apple con gestión de las respuestas de cada proveedor",
+        "d": "Restablecimiento de contraseña con validación de seguridad en vivo",
+        "e": "Formularios animados de varios pasos, temas y una página de transición tras el acceso"
+      },
+      "decisions": {
+        "a": {
+          "title": "Una app aparte, no un componente compartido",
+          "body": "El inicio de sesión funciona en su propio dominio. Las apps redirigen ahí y reciben un código de vuelta, así ningún producto maneja las contraseñas de otro."
+        },
+        "b": {
+          "title": "Redirecciones estrictas",
+          "body": "Solo se aceptan clientes y URL de redirección registrados. Una redirección abierta en una página de acceso es un kit de phishing listo para usar."
+        },
+        "c": {
+          "title": "React 19 y el React Compiler",
+          "body": "Los formularios tienen mucha animación. El compilador mantiene a raya los renderizados sin memoización escrita a mano."
+        }
+      },
+      "system": "Todos los productos inician sesión en un solo servicio"
+    },
+    "circular-net-website": {
+      "title": "Circular Net Website",
+      "tagline": "Sitio corporativo y análisis de sostenibilidad",
+      "summary": "El sitio público de The Circular Net: la plataforma, sus servicios de sostenibilidad y un blog, con un inicio de sesión que lleva directamente a la app.",
+      "role": "Frontend en solitario",
+      "problem": "La empresa necesitaba un sitio que explicara el producto y sus servicios, posicionara en buscadores y llevara visitantes a las apps.",
+      "process": "Construí la portada y las páginas de servicios como módulos, con animación y scroll suave, y después un blog con una página de publicación protegida con contraseña. Una revisión posterior cubrió SEO, Web Vitals y accesibilidad, además de redirecciones para los enlaces antiguos indexados.",
+      "outcome": "En línea en thecircularnet.com, con los próximos eventos desde la API y paso directo a la app web para quien ya inició sesión.",
+      "learnings": "Los secretos del servidor se comportan distinto en cada hosting. La administración del blog necesitó un tratamiento específico para el renderizado en servidor de la plataforma.",
+      "built": {
+        "a": "La portada con presentación de funciones y próximos eventos en vivo",
+        "b": "Las páginas Carbon Accounting, ESG Reporting y Sustainability Projects",
+        "c": "Un blog con páginas de artículos, descarga de un libro blanco y opciones para compartir",
+        "d": "Una página de publicación protegida con contraseña",
+        "e": "Una renovación SEO: metadatos, sitemap, imágenes OG generadas, redirecciones y mejoras de accesibilidad"
+      },
+      "decisions": {
+        "a": {
+          "title": "Acceso por SSO con comprobación de estado",
+          "body": "El sitio inicia el flujo SSO con un valor de estado que comprueba a la vuelta, así una respuesta falsificada no puede iniciar sesión por nadie."
+        },
+        "b": {
+          "title": "Redirigir los enlaces antiguos en vez de perderlos",
+          "body": "Las URL indexadas del sitio anterior apuntan a las nuevas páginas, lo que mantuvo el tráfico de búsqueda durante el relanzamiento."
+        }
+      }
+    },
+    "export-trades": {
+      "title": "Export Trades",
+      "tagline": "Comercio internacional de materias primas, en varios idiomas",
+      "summary": "Un sitio corporativo y una app web de comercio que conecta a compradores y vendedores de materias primas y los acompaña por cotizaciones, ofertas, depósito en garantía y entrega.",
+      "role": "Responsable de frontend",
+      "problem": "Compradores y vendedores de materias primas necesitaban un lugar de confianza para encontrar productos, negociar y cerrar operaciones entre países e idiomas, incluido el árabe, que se escribe de derecha a izquierda.",
+      "process": "Construí el sitio público (mercado, materias primas y tendencias) y la app con sesión iniciada con un módulo por paso de la operación. El enrutamiento por idioma y las traducciones estuvieron desde el principio, y los documentos de verificación se suben directamente al almacenamiento.",
+      "outcome": "En línea en exportrades.com. La versión 0.9 del sitio y la app salió en febrero de 2026; fui quien más contribuyó en un equipo de cinco personas.",
+      "learnings": "La traducción se integra desde el primer día. Añadir más tarde un idioma de derecha a izquierda habría obligado a tocar cada maquetación.",
+      "built": {
+        "a": "El sitio público: mercado, categorías de materias primas, índice y tendencias",
+        "b": "Registro con selección de país y OTP, inicio de sesión y edición de perfil",
+        "c": "Fichas de producto con especificaciones, certificados y preguntas frecuentes",
+        "d": "Solicitudes de cotización, manifestaciones de interés, ofertas y operaciones, con vistas de usuario y de administración",
+        "e": "Configuración del depósito en garantía, gestión de disputas e historial de transacciones"
+      },
+      "decisions": {
+        "a": {
+          "title": "Un módulo por paso de la operación",
+          "body": "Cotizaciones, ofertas, operaciones, depósito y disputas son módulos separados con sus propios datos y vistas, igual que avanza un acuerdo real."
+        },
+        "b": {
+          "title": "El idioma en la URL",
+          "body": "Cada página vive bajo su idioma, así los enlaces, los buscadores y las maquetaciones de derecha a izquierda conocen el idioma sin adivinar."
+        },
+        "c": {
+          "title": "Vistas compartidas, permisos separados",
+          "body": "Usuarios y administración ven los mismos registros a través de vistas distintas, en lugar de dos copias de la lógica."
+        }
+      },
+      "system": "De la visita a la operación verificada"
+    },
+    "lawxtech": {
+      "title": "Law x Tech",
+      "tagline": "El hogar de la comunidad de derecho y tecnología en África",
+      "summary": "El sitio web y el CMS de Law x Tech, una comunidad de más de 2.000 miembros en la intersección del derecho y la tecnología que organiza series, una cumbre y premios.",
+      "role": "Desarrollo web voluntario, en solitario",
+      "problem": "La organización necesitaba un sitio moderno que pudiera actualizar por su cuenta. En el sitio original, cada nuevo episodio o socio implicaba pedirlo a desarrollo.",
+      "process": "Construí el primer sitio en React en 2023. En 2026 lo rehice con Next.js 16 y animación, y añadí un CMS de administración sobre Postgres: acceso con credenciales, editor enriquecido para el blog, subida de imágenes y gestión de usuarios por roles. Las funciones más grandes, como la de socios, empezaron como una especificación y un plan escritos antes del código.",
+      "outcome": "En línea en lawxtech.org, con el equipo publicando su propio contenido. El código es abierto en GitHub.",
+      "learnings": "Las bases de datos serverless requieren cuidado con el pooling de conexiones y el acceso en tiempo de build. El build nunca debe depender de que la base esté disponible.",
+      "built": {
+        "a": "Una portada con estadísticas animadas, vista previa de series, carrusel de ponentes y secciones de comunidad",
+        "b": "Las páginas Acerca de, Series, Cumbre y premios, Empleo, Contacto y Patrocinadores",
+        "c": "Socios con páginas de detalle y una cuenta atrás para la cumbre",
+        "d": "Un CMS de administración con editor enriquecido y subida de imágenes",
+        "e": "Gestión de usuarios con roles y acceso solo para administración"
+      },
+      "decisions": {
+        "a": {
+          "title": "Un CMS en vez de contenido en el código",
+          "body": "El primer sitio guardaba el contenido en el código y el equipo no podía actualizarlo. El rediseño le da un editor, así el sitio se mantiene al día sin mí."
+        },
+        "b": {
+          "title": "Postgres y almacenamiento de archivos, no un CMS alojado",
+          "body": "Neon Postgres y Vercel Blob mantienen el coste casi en cero para una organización de voluntariado, sin cuotas por usuario."
+        },
+        "c": {
+          "title": "Especificación antes que código",
+          "body": "Las funciones grandes se escribieron primero como especificación y plan, lo que dejó claro el alcance a un equipo no técnico."
+        }
+      },
+      "system": "Sitio público y CMS sobre una misma base de datos"
+    },
+    "pennywise": {
+      "title": "Pennywise",
+      "tagline": "App y sitio de finanzas personales",
+      "summary": "Una app móvil de finanzas personales para seguir gastos, presupuestos y metas, y el sitio que recogió su lista de espera.",
+      "role": "Móvil y frontend, en solitario",
+      "problem": "La gente quería ver a dónde va su dinero y cumplir sus presupuestos desde el móvil, y el producto necesitaba un sitio para presentarse y reunir registros antes del lanzamiento.",
+      "process": "Construí la app con Expo y Expo Router: onboarding, registro con verificación, restablecimiento de contraseña, monederos, presupuestos y gráficos, con vinculación de cuentas bancarias mediante un widget externo. El sitio empezó con el Pages Router y Mantine, y después se rehízo con el App Router y Tailwind.",
+      "outcome": "El sitio está en línea en iampennywise.com, y la app se publica mediante canales de build separados para staging y vista previa.",
+      "learnings": "Los builds de Android y la configuración de red llevan tiempo de verdad. Hay que reservarlo junto al trabajo en funciones.",
+      "built": {
+        "a": "Onboarding, registro, verificación y restablecimiento de contraseña en varios pasos",
+        "b": "Monederos y presupuestos con gráficos dibujados en Skia",
+        "c": "Vinculación de cuentas bancarias y almacenamiento local seguro",
+        "d": "Canales de build de EAS para staging y vista previa",
+        "e": "Un sitio con lista de espera, precios, comunidad y blog"
+      },
+      "decisions": {
+        "a": {
+          "title": "Almacenamiento local rápido",
+          "body": "MMKV guarda ajustes y sesión en el dispositivo, así la app se abre directamente en el estado correcto."
+        },
+        "b": {
+          "title": "De una biblioteca de componentes a Tailwind",
+          "body": "La segunda versión del sitio dejó la biblioteca de componentes por Tailwind, lo que simplificó mucho los temas y los cambios posteriores."
+        }
+      }
+    },
+    "stock-bot": {
+      "title": "Stock Bot",
+      "tagline": "Un analista con IA para la bolsa de Nigeria",
+      "summary": "Un agente programado que revisa cada día la bolsa de Nigeria, comprueba el historial reciente de precios, pide a un LLM que evalúe cada caída y me envía un breve informe por Telegram.",
+      "role": "Diseño e ingeniería",
+      "problem": "Encontrar buenas caídas en la NGX significa revisar decenas de acciones cada día y leer la historia detrás de cada bajada. Quería automatizar la parte tediosa y resumir la parte de criterio.",
+      "process": "Una función Lambda se ejecuta a diario con EventBridge. Obtiene las mayores caídas del día, para revisar solo esas, las compara con cinco días de precios guardados en DynamoDB y envía las candidatas a Gemini para un breve análisis. Las mejores opciones llegan por Telegram, y GitHub Actions despliega en cada push.",
+      "outcome": "En curso. La extracción, el análisis y los informes de Telegram funcionan en local; el despliegue en Lambda se está terminando.",
+      "learnings": "Filtra antes de gastar tokens o peticiones. Empezar por las caídas del día en lugar de por todos los valores redujo el trabajo a una fracción.",
+      "built": {
+        "a": "Un extractor en paralelo de las mayores caídas diarias de la NGX",
+        "b": "Cinco días de historial de precios en DynamoDB para confirmar una caída real",
+        "c": "Un paso de análisis con LLM con un prompt estructurado por empresa",
+        "d": "Informes diarios por Telegram con las mejores opciones",
+        "e": "Despliegue continuo en AWS Lambda con GitHub Actions"
+      },
+      "decisions": {
+        "a": {
+          "title": "Serverless programado",
+          "body": "La tarea dura un par de minutos al día. Una Lambda programada no cuesta casi nada y no hay servidor que mantener."
+        },
+        "b": {
+          "title": "Primero filtrar, luego pensar",
+          "body": "Código barato acorta la lista y el LLM solo ve las pocas acciones que merecen una mirada. Así bajan la latencia y el coste."
+        },
+        "c": {
+          "title": "Sin dependencias pesadas",
+          "body": "Sustituir pandas por un parser HTML ligero dejó el paquete de Lambda lo bastante pequeño para desplegarlo sin capas especiales."
+        }
+      },
+      "system": "Una ejecución diaria, del horario al informe"
+    },
+    "trendhub": {
+      "title": "TrendHub",
+      "tagline": "Un hub de newsletters, pódcasts y blogs",
+      "summary": "Un solo lugar para que la generación Z explore newsletters, pódcasts y blogs y esté al día de lo que es tendencia.",
+      "role": "Desarrollo full-stack",
+      "problem": "La buena escritura está repartida entre newsletters, pódcasts y blogs. Quería un lugar ligero y acogedor para encontrarla.",
+      "process": "Construido con Next.js 13, TypeScript y Redux Toolkit, con animación para que navegar sea divertido y una vista de lectura minimalista, apta para modo oscuro.",
+      "outcome": "En línea, con más de 100 lectores activos.",
+      "learnings": "El diseño minimalista son muchas decisiones. Cada opción que quité hizo la lectura más fácil."
     },
     "coinsave": {
       "title": "Coinsave",
-      "tagline": "Control de gastos y presupuestos",
-      "summary": "Toma el control de tus finanzas: registra ingresos y gastos, define presupuestos, recibe avisos y revisa tus movimientos bancarios en un solo lugar.",
+      "tagline": "Control de gastos y presupuesto",
+      "summary": "Toma el control de tus finanzas: registra ingresos y gastos, define presupuestos, recibe avisos y supervisa tus movimientos bancarios en un solo lugar.",
       "role": "Desarrollo full-stack",
-      "problem": "Casi todo el mundo sabe que debería llevar un presupuesto, pero lo abandona a la semana. Las hojas de cálculo son tediosas y las apps bancarias solo muestran lo que ya pasó.",
-      "process": "Diseñé un flujo rápido y sin fricción para registrar gastos, creé presupuestos con alertas inteligentes y conecté el seguimiento de movimientos bancarios para que la app haga casi todo el trabajo.",
-      "outcome": "Coinsave superó los 500 usuarios activos, con más de un 70 % de participación y una valoración media de 4,5 sobre 5.",
-      "learnings": "La retención es una funcionalidad. Los pequeños detalles —buenos valores por defecto, recordatorios oportunos— importaron más que cualquier gran función."
+      "problem": "Casi todo el mundo sabe que debería presupuestar, pero lo deja a la semana. Las hojas de cálculo son tediosas y las apps bancarias solo muestran lo que ya pasó.",
+      "process": "Diseñé un flujo rápido y sin fricción para registrar gastos, creé presupuestos con alertas inteligentes y conecté el seguimiento de movimientos bancarios para que la app haga la mayor parte del trabajo.",
+      "outcome": "Coinsave superó los 500 usuarios activos, con más de un 70 % de interacción y una valoración media de 4,5 sobre 5.",
+      "learnings": "La retención es una función del producto. Pequeños detalles, como buenos valores por defecto y recordatorios oportunos, importaron más que cualquier gran función."
     },
     "cabify": {
       "title": "Cabify",
-      "tagline": "App de reserva de taxis y autobuses",
-      "summary": "Viajes sin complicaciones: reservas sencillas, actualizaciones en tiempo real y pagos seguros para trayectos en autobús y taxi.",
+      "tagline": "Reserva de taxis y autobuses",
+      "summary": "Viajes sin complicaciones: reserva fácil, actualizaciones en tiempo real y pagos seguros para autobuses y taxis.",
       "role": "Desarrollo front-end",
-      "problem": "Reservar un viaje implicaba llamadas, efectivo e incertidumbre sobre cuándo llegaría de verdad el conductor.",
-      "process": "Desarrollé las interfaces de reserva y seguimiento con foco en el rendimiento, para que la app cargue rápido y se navegue con fluidez incluso con conexiones lentas.",
-      "outcome": "Más de 500 usuarios activos, más de un 70 % de participación y una valoración media de 4,5 sobre 5.",
-      "learnings": "La velocidad percibida es la velocidad real. Los esqueletos de carga, las actualizaciones optimistas y menos idas y vueltas cambiaron lo rápida que se sentía la app."
+      "problem": "Reservar un viaje significaba hacer malabares con llamadas, efectivo y la incertidumbre de cuándo llegaría el conductor.",
+      "process": "Construí las interfaces de reserva y seguimiento con foco en el rendimiento, para que la app cargue rápido y la navegación sea fluida incluso con conexiones lentas.",
+      "outcome": "Más de 500 usuarios activos, más de un 70 % de interacción y una valoración media de 4,5 sobre 5.",
+      "learnings": "La velocidad percibida es velocidad real. Esqueletos de carga, actualizaciones optimistas y menos idas y vueltas cambiaron lo rápida que se sentía la app."
     },
-    "genz-blog": {
-      "title": "Gen-Z Blog",
-      "tagline": "Una plataforma de blogs",
-      "summary": "Un lugar para leer y escribir artículos sobre cualquier tema: sencillo, minimalista y totalmente compatible con el modo oscuro.",
-      "role": "Desarrollo full-stack",
-      "problem": "Las plataformas de blogs o están sobrecargadas o están pensadas para profesionales. Quería algo ligero y acogedor para todas las edades.",
-      "process": "La construí con React, Next.js y Tailwind en la interfaz, y Node.js con SQL en el servidor, manteniendo una escritura sin distracciones.",
-      "outcome": "Más de 100 usuarios activos leyendo y escribiendo en la plataforma.",
-      "learnings": "El diseño minimalista implica muchas decisiones. Cada opción eliminada hizo más fácil escribir."
+    "circular-net-admin": {
+      "title": "Circular Net Admin",
+      "tagline": "Back office de la plataforma",
+      "summary": "Administración interna de usuarios, contenido, comunidades, empleos y eventos, con revisión de KYC y de pagos para Circular Ticket."
     },
-    "reciept": {
-      "title": "Reciept",
-      "tagline": "Un generador de recibos",
-      "summary": "Crea recibos para tu negocio o uso personal, expórtalos en PDF e imprímelos en impresoras térmicas: copia digital y en papel a la vez.",
-      "role": "Diseño y desarrollo",
-      "problem": "Los pequeños negocios gastan tinta y papel en recibos y casi nunca guardan un registro digital fiable.",
-      "process": "Los recibos se generan como PDF con el tamaño de las impresoras térmicas, así que una sola acción te da una copia en papel y un comprobante digital.",
-      "outcome": "Aún en desarrollo: muy pronto.",
-      "learnings": "Imprimir es lo más difícil de la web. Las impresoras térmicas tienen su carácter."
+    "thebasenet-ui": {
+      "title": "@thebasenet/ui",
+      "tagline": "Biblioteca de componentes React compartida",
+      "summary": "Design tokens, recursos de marca y unos 37 componentes de interfaz, publicados en npm y usados por el sitio corporativo y Circular Ticket."
+    },
+    "circular-net-waitlist": {
+      "title": "Circular Net Waitlist",
+      "tagline": "Registros antes del lanzamiento",
+      "summary": "Una lista de espera con selección de país y números de teléfono validados, usada antes del lanzamiento de las apps."
+    },
+    "farmshare": {
+      "title": "FarmShare Admin",
+      "tagline": "Back office para compartir tractores",
+      "summary": "Panel de administración de usuarios, tractores, reservas, transacciones y solicitudes de pago, con mapas y gráficos."
+    },
+    "ds-energy": {
+      "title": "DS Energy Sales Portal",
+      "tagline": "Ventas y comisiones para comerciales solares",
+      "summary": "Ventas, clientes, comisiones y compras para la red comercial de un proveedor solar, con onboarding y facturas en PDF."
+    },
+    "royal-revamps": {
+      "title": "Royal Revamps",
+      "tagline": "Sitio de una agencia de branding",
+      "summary": "El sitio de una agencia de branding personal y corporativo: servicios, empresa y páginas formativas, con blog, testimonios y contacto sobre una base de datos."
     }
+  },
+  "Diagram": {
+    "nodes": {
+      "community": "Comunidad",
+      "webApp": "App web",
+      "mobileApp": "App móvil",
+      "platformApi": "API de la plataforma",
+      "sso": "Inicio de sesión único",
+      "realtime": "Salas y chat",
+      "push": "Notificaciones push",
+      "feed": "Feed y publicaciones",
+      "rooms": "Salas de audio y vídeo",
+      "podcast": "Reproductor de pódcasts",
+      "variants": "Variantes de build",
+      "eas": "Builds y actualizaciones",
+      "stores": "Tiendas de apps",
+      "attendeesOrganisers": "Público y organización",
+      "sharedPackage": "Paquete compartido",
+      "payouts": "Pagos",
+      "marketingSite": "Sitio corporativo",
+      "circularTicket": "Circular Ticket",
+      "providers": "Acceso social",
+      "authApi": "API de autenticación",
+      "emailOtp": "OTP por correo",
+      "buyersSellers": "Compra y venta",
+      "publicSite": "Sitio público",
+      "tradingApp": "App de comercio",
+      "localeRouting": "Rutas por idioma",
+      "tradeFlow": "Cotización → oferta → depósito",
+      "uploads": "Subida de documentos",
+      "visitors": "Visitas",
+      "editors": "Edición",
+      "adminCms": "CMS de administración",
+      "database": "Base de datos",
+      "images": "Imágenes",
+      "schedule": "Programación diaria",
+      "scanner": "Escáner",
+      "marketData": "Datos de mercado",
+      "priceHistory": "Historial de precios",
+      "aiAnalyst": "Analista de IA",
+      "report": "Informe diario"
+    },
+    "edges": {
+      "signIn": "acceso",
+      "roomsChat": "en directo",
+      "config": "config",
+      "ship": "publicar",
+      "imports": "importa",
+      "typedRequests": "peticiones tipadas",
+      "authorise": "autorizar",
+      "socialSignIn": "acceso social",
+      "tokens": "tokens",
+      "verify": "verificar",
+      "read": "lectura",
+      "write": "escritura",
+      "upload": "subida",
+      "trigger": "dispara",
+      "fetch": "caídas del día",
+      "check": "control de 5 días",
+      "analyse": "analiza",
+      "send": "mejores opciones"
+    }
+  },
+  "Notes": {
+    "metaTitle": "Notas",
+    "metaDescription": "Textos breves sobre los sistemas que diseña y construye Toluwalope Akinkunmi.",
+    "label": "Notas",
+    "title": "Notas sobre sistemas.",
+    "subtitle": "Textos breves sobre cómo encajan las cosas que construyo y qué haría de otra manera.",
+    "readingTime": "{minutes} min de lectura",
+    "back": "Todas las notas",
+    "next": "Siguiente nota",
+    "related": "Caso de estudio relacionado",
+    "read": "Leer"
   },
   "Contact": {
     "metaTitle": "Contacto",
@@ -315,7 +738,7 @@
       "title": "Bueno saber",
       "projects": {
         "q": "¿Qué tipo de proyectos aceptas?",
-        "a": "Apps web, apps móviles y productos full-stack: desde MVP hasta mejorar algo que ya existe."
+        "a": "Productos web y móviles, trabajo de plataforma como SSO, design systems y monorepos, y funciones de IA, desde un MVP hasta mejorar algo que ya existe."
       },
       "start": {
         "q": "¿Cuándo puedes empezar?",

@@ -2,16 +2,19 @@
 
 import * as React from "react";
 import { m } from "motion/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-import { projects, type ProjectCategory } from "@/content/projects";
+import { companies, projects, type ArchiveItem, type CaseStudy, type ProjectCategory } from "@/content/projects";
 import { ProjectRows } from "./project-rows";
 import { ProjectGrid } from "./project-grid";
-import { Grid, List } from "@/components/illustrations/doodle-icons";
+import { ArchiveList } from "./archive-list";
+import { ArrowUpRight, Grid, List } from "@/components/illustrations/doodle-icons";
+import { Reveal } from "@/components/motion/reveal";
+import { formatPeriod } from "@/lib/period";
 import { cn } from "@/lib/utils";
 
 type Filter = "all" | ProjectCategory;
-const FILTERS: Filter[] = ["all", "web", "mobile", "fullstack"];
+const FILTERS: Filter[] = ["all", "web", "mobile", "systems", "ai"];
 const STORAGE_KEY = "work-layout";
 const LAYOUT_EVENT = "work-layout-change";
 let memoryLayout: "list" | "grid" = "list";
@@ -43,15 +46,31 @@ function subscribeLayout(cb: () => void) {
   };
 }
 
-/** Filter chips + list/grid toggle (layout remembered per browser). */
+/**
+ * Work grouped by company, with filter chips and a list/grid toggle for the
+ * case studies (layout remembered per browser).
+ */
 export function WorkBrowser() {
   const t = useTranslations("Work");
+  const co = useTranslations("Companies");
+  const locale = useLocale();
   const [filter, setFilter] = React.useState<Filter>("all");
   const layout = React.useSyncExternalStore(subscribeLayout, readLayout, () => "list" as const);
 
   const changeLayout = writeLayout;
 
   const visible = filter === "all" ? projects : projects.filter((p) => p.categories.includes(filter));
+  const groups = companies
+    .map((company) => {
+      const items = visible.filter((p) => p.company === company.id);
+      return {
+        company,
+        cases: items.filter((p): p is CaseStudy => p.tier === "case-study"),
+        archive: items.filter((p): p is ArchiveItem => p.tier === "archive"),
+      };
+    })
+    // Companies whose projects are still being written up only show unfiltered.
+    .filter((g) => g.cases.length + g.archive.length > 0 || filter === "all");
 
   return (
     <section className="container-page">
@@ -102,7 +121,46 @@ export function WorkBrowser() {
           </div>
         </div>
       </div>
-      {layout === "list" ? <ProjectRows projects={visible} /> : <ProjectGrid projects={visible} />}
+      <div className="flex flex-col gap-24 md:gap-32">
+        {groups.map(({ company, cases, archive }) => (
+          <section
+            key={company.id}
+            aria-labelledby={`company-${company.id}`}
+            className="grid gap-8 border-t border-border pt-10 md:grid-cols-12 md:gap-10"
+          >
+            <Reveal className="flex flex-col gap-4 md:col-span-4">
+              <div className="flex flex-col gap-4 md:sticky md:top-28">
+                <p className="label-mono text-muted-foreground">
+                  {formatPeriod(company.period, locale as Parameters<typeof formatPeriod>[1], t("group.present"))}
+                </p>
+                <h2 id={`company-${company.id}`} className="font-display text-5xl leading-[0.95] md:text-6xl">
+                  {co(`${company.id}.name`)}
+                </h2>
+                <p className="text-lg">{co(`${company.id}.role`)}</p>
+                <p className="text-muted-foreground">{co(`${company.id}.summary`)}</p>
+                {company.url && (
+                  <a
+                    href={company.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="scribble-underline inline-flex w-fit items-center gap-1 text-sm"
+                  >
+                    {t("group.website")} <ArrowUpRight className="size-4" />
+                  </a>
+                )}
+              </div>
+            </Reveal>
+            <div className="flex flex-col gap-10 md:col-span-8">
+              {cases.length > 0 &&
+                (layout === "list" ? <ProjectRows projects={cases} compact /> : <ProjectGrid projects={cases} />)}
+              {archive.length > 0 && <ArchiveList items={archive} />}
+              {cases.length + archive.length === 0 && (
+                <p className="font-hand text-2xl text-muted-foreground">{t("group.pending")}</p>
+              )}
+            </div>
+          </section>
+        ))}
+      </div>
     </section>
   );
 }

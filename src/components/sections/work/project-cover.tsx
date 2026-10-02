@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import type { Project } from "@/content/projects";
+import { caseIndex, type CaseStudy } from "@/content/projects";
 import { doodles } from "@/components/illustrations/doodle-paths";
 
 const marks = ["star", "sparkle", "heart", "burst"] as const;
@@ -15,13 +15,14 @@ export function ProjectCover({
   className,
   size = "md",
 }: {
-  project: Project;
+  project: CaseStudy;
   title: string;
   tagline: string;
   className?: string;
   size?: "sm" | "md" | "lg";
 }) {
-  const mark = doodles[marks[Number(project.index) % marks.length]];
+  const index = caseIndex(project.slug);
+  const mark = doodles[marks[Number(index) % marks.length]];
   return (
     <div
       className={cn(
@@ -35,7 +36,7 @@ export function ProjectCover({
         className="absolute inset-0 -z-10 [background-image:repeating-linear-gradient(to_bottom,transparent_0,transparent_27px,var(--border)_27px,var(--border)_28px)] opacity-60"
       />
       <div className="flex items-start justify-between">
-        <span className="label-mono text-muted-foreground">{project.index}</span>
+        <span className="label-mono text-muted-foreground">{index}</span>
         <svg viewBox={mark.viewBox} aria-hidden className={cn("text-brand", size === "lg" ? "size-16" : "size-10")}>
           {mark.strokes.map((d, i) => (
             <path

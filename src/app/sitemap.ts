@@ -2,10 +2,19 @@ import type { MetadataRoute } from "next";
 
 import { getPathname } from "@/i18n/navigation";
 import { localeTags, routing } from "@/i18n/routing";
-import { projects } from "@/content/projects";
+import { caseStudies } from "@/content/projects";
+import { notes } from "@/content/notes";
 import { site } from "@/config/site";
 
-const paths = ["/", "/about", "/work", "/contact", ...projects.map((p) => `/work/${p.slug}`)];
+const paths = [
+  "/",
+  "/about",
+  "/work",
+  "/notes",
+  "/contact",
+  ...caseStudies.map((p) => `/work/${p.slug}`),
+  ...notes.map((n) => `/notes/${n.slug}`),
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return paths.map((href) => ({

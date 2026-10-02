@@ -1,8 +1,8 @@
 {
   "Meta": {
-    "siteTitle": "Toluwalope Akinkunmi — Software Developer",
-    "description": "Toluwalope Akinkunmi is a software developer building fast, friendly web and mobile products with React, Next.js and Node.",
-    "ogTagline": "Software developer · Web & mobile"
+    "siteTitle": "Toluwalope Akinkunmi — Senior Frontend Engineer, Systems & AI",
+    "description": "Toluwalope Akinkunmi is a senior frontend engineer moving into systems design and AI: web and mobile products, the platforms under them, and AI that does real work.",
+    "ogTagline": "Senior Frontend Engineer · Systems · AI"
   },
   "Nav": {
     "home": "Home",
@@ -21,7 +21,8 @@
       "dark": "Dark",
       "system": "System"
     },
-    "language": "Language"
+    "language": "Language",
+    "notes": "Notes"
   },
   "Preloader": {
     "loading": "Loading",
@@ -64,28 +65,28 @@
   },
   "Home": {
     "hero": {
-      "eyebrow": "Software developer · Web & mobile",
+      "eyebrow": "Senior Frontend Engineer · Systems · AI",
       "greeting": "Hi, I'm",
       "name": "Toluwalope",
       "roles": {
-        "a": "I build web & mobile apps.",
-        "b": "I solve real problems.",
-        "c": "I ship products people use.",
-        "d": "I sweat the small details."
+        "a": "I design systems, not just screens.",
+        "b": "I ship web & mobile products end to end.",
+        "c": "I make many apps share one foundation.",
+        "d": "I build with AI, for real work."
       },
-      "intro": "I design and build fast, friendly web and mobile products — from the first sketch to the last deploy.",
+      "intro": "Senior frontend engineer moving into systems design and AI. I've built single sign-on for a product family, a web-and-mobile monorepo, a published design system and live audio and video rooms.",
       "note": "that's me, drawn!",
       "cta": "See my work",
       "secondary": "Get in touch"
     },
     "intro": {
       "label": "01 / Intro",
-      "text": "I care about the details people feel but rarely notice: how a button responds, how a page loads, how a sentence reads. My toolkit is React, Next.js and Node — my habit is shipping, measuring and making it better."
+      "text": "Good products are systems. The screen is the part people see; underneath are the shared rules, the sign-in every app trusts and the real-time plumbing that make it feel simple. I've spent three years building both, and now I design the underneath on purpose."
     },
     "work": {
       "label": "02 / Selected work",
-      "title": "Things I've built",
-      "all": "All projects"
+      "title": "Systems I've shipped",
+      "all": "All work"
     },
     "toolkit": {
       "label": "03 / Toolkit"
@@ -93,22 +94,22 @@
     "currently": {
       "label": "04 / Currently",
       "title": "What I'm up to",
-      "learning": "Learning React Native & GraphQL",
-      "oss": "Contributing to open source",
-      "building": "Building Reciept, a receipt generator"
+      "learning": "Going deeper on distributed systems: queues, caching and consistency",
+      "building": "Building Stock Bot, an AI analyst for the Nigerian stock market",
+      "writing": "Writing notes on the systems I build"
     },
     "cta": {
-      "title": "Got an idea?",
-      "subtitle": "Let's turn it into something people love using.",
+      "title": "Got a system to build?",
+      "subtitle": "Let's design it properly, then ship it.",
       "button": "Start a conversation",
       "sign": "hire me!"
     }
   },
   "About": {
     "metaTitle": "About",
-    "metaDescription": "The story, experience and toolkit of Toluwalope Akinkunmi, software developer.",
+    "metaDescription": "The story, experience and toolkit of Toluwalope Akinkunmi, senior frontend engineer moving into systems design and AI.",
     "label": "About",
-    "title": "A developer who still sketches on paper.",
+    "title": "A frontend engineer who thinks in systems.",
     "photo": {
       "real": "The real me",
       "drawn": "The drawn me",
@@ -117,17 +118,17 @@
       "alt": "Portrait of Toluwalope Akinkunmi"
     },
     "story": {
-      "p1": "I'm Toluwalope Akinkunmi, a software developer focused on web and mobile. I like turning messy ideas into products that feel simple.",
-      "p2": "I've built and scaled products used by hundreds of people — budgeting tools, ride booking, blogging platforms — and I've learned that quality is a habit, not a phase.",
-      "p3": "Outside the editor I play games, binge series, read, and contribute to open source. I'm always up for meeting new people and learning from them.",
+      "p1": "I'm Toluwalope Akinkunmi, a senior frontend engineer. For three years I've built web and mobile products end to end, and more and more of my work sits underneath the screens.",
+      "p2": "At The Circular Net I've built most of a product family: the web and mobile apps, an events platform that shares one codebase across web and mobile, the single sign-on every app trusts and a component library published to npm. Alongside that I've worked on payments products at GemsPay, a multilingual trading platform for Hotrac and a CMS for Law x Tech.",
+      "p3": "Now I'm moving into systems design and AI: deciding how the parts fit together, and building products where an LLM does real work. Off-screen I play games, binge series and read.",
       "note": "yes, I draw these too"
     },
     "stats": {
       "label": "By the numbers",
-      "projects": "Projects completed",
-      "companies": "Companies worked with",
-      "clients": "Happy clients",
-      "pages": "Pages shipped"
+      "companies": "Teams & clients",
+      "years": "Years shipping",
+      "products": "Products shipped",
+      "commits": "Commits"
     },
     "tabs": {
       "experience": "Experience",
@@ -135,49 +136,41 @@
       "approach": "Approach"
     },
     "experience": {
-      "present": "Present",
-      "coinsave": {
-        "role": "Full-stack Developer",
-        "company": "Coinsave",
-        "body": "Designing, developing, managing and scaling a budgeting platform with 500+ users, while continuously improving performance and functionality."
-      },
-      "cabify": {
-        "role": "Front-end Developer",
-        "company": "Cabify",
-        "body": "Optimised performance for fast loads and smooth navigation, which lifted customer satisfaction and engagement."
-      }
+      "present": "Present"
     },
     "toolkit": {
       "frontend": "Front-end",
-      "backend": "Back-end",
+      "backend": "Back-end & cloud",
       "mobile": "Mobile",
-      "tooling": "Tooling"
+      "tooling": "Tooling",
+      "systems": "Systems",
+      "ai": "AI"
     },
     "approach": {
       "title": "How I work",
+      "systems": {
+        "title": "Systems first",
+        "body": "Before screens, I map the boundaries: what's shared, who owns what, and what happens when a piece fails."
+      },
       "communication": {
         "title": "Clear communication",
-        "body": "Short updates, honest timelines and no jargon. You always know what's happening and why."
+        "body": "Short updates, honest timelines and written decisions. You always know what's happening and why."
       },
-      "collaboration": {
-        "title": "Smart collaboration",
-        "body": "I work well with designers, PMs and other engineers — reviews, pairing and shared ownership."
-      },
-      "adaptability": {
-        "title": "Easy adaptability",
-        "body": "New stack, new domain, changed scope — I pick things up quickly and adjust without drama."
-      },
-      "time": {
-        "title": "Time management",
-        "body": "I break work into small, shippable pieces and prioritise what moves the needle first."
+      "ownership": {
+        "title": "End-to-end ownership",
+        "body": "From the first spec to builds, releases and the bug report after launch, I own the outcome, not just the ticket."
       },
       "problems": {
         "title": "Problem solving",
         "body": "I dig until I understand the real problem, then pick the simplest thing that solves it."
       },
-      "creativity": {
-        "title": "Creativity & innovation",
-        "body": "Good products have a little delight in them. I look for the detail that makes people smile."
+      "quality": {
+        "title": "Quality as a habit",
+        "body": "Every state designed: loading, empty and error. Accessible by default and fast on slow networks."
+      },
+      "ai": {
+        "title": "AI where it earns its place",
+        "body": "I use AI to move faster, and build it into products where it does real work, never as decoration."
       }
     },
     "offscreen": {
@@ -190,17 +183,18 @@
   },
   "Work": {
     "metaTitle": "Work",
-    "metaDescription": "Selected projects by Toluwalope Akinkunmi — web apps, mobile apps and full-stack products.",
+    "metaDescription": "Work by Toluwalope Akinkunmi, grouped by company: platforms, web and mobile apps, and AI projects.",
     "label": "Work",
-    "title": "Selected work",
-    "subtitle": "Products I've designed, built and shipped.",
+    "title": "Work",
+    "subtitle": "Grouped by where I did it. Each case study shows the system behind the product.",
     "count": "{count, plural, one {# project} other {# projects}}",
     "filters": {
       "label": "Filter projects",
       "all": "All",
       "web": "Web",
       "mobile": "Mobile",
-      "fullstack": "Full-stack"
+      "systems": "Systems",
+      "ai": "AI"
     },
     "layout": {
       "label": "Layout",
@@ -210,7 +204,8 @@
     "status": {
       "live": "Live",
       "in-development": "In development",
-      "offline": "Archived"
+      "offline": "Archived",
+      "internal": "Internal"
     },
     "caseStudy": {
       "back": "All work",
@@ -221,61 +216,489 @@
       "status": "Status",
       "live": "Visit site",
       "code": "Source code",
-      "noLinks": "Private / archived",
+      "noLinks": "Private / internal",
       "problem": "The problem",
       "process": "The process",
       "outcome": "The outcome",
       "learnings": "What I learned",
       "next": "Next project",
-      "imagePending": "Screenshots coming soon"
+      "imagePending": "Screenshots coming soon",
+      "company": "Company",
+      "period": "Period",
+      "appStore": "App Store",
+      "playStore": "Google Play",
+      "npm": "npm package",
+      "built": "What I built",
+      "system": "The system",
+      "decisions": "Key decisions"
+    },
+    "group": {
+      "website": "Website",
+      "caseStudy": "Case study",
+      "pending": "Case studies coming soon.",
+      "present": "Present"
+    }
+  },
+  "Companies": {
+    "circular-net": {
+      "name": "The Circular Net",
+      "role": "Frontend Engineer, web & mobile",
+      "summary": "Lead frontend engineer across a sustainability platform's product family: the social web and mobile apps, Circular Ticket, single sign-on, the admin dashboard, the marketing site and a shared UI library."
+    },
+    "smarkt": {
+      "name": "Smarkt",
+      "role": "Frontend Engineer",
+      "summary": "Frontend engineering across Smarkt's four core products."
+    },
+    "gemspay": {
+      "name": "GemsPay Solutions",
+      "role": "Frontend Engineer",
+      "summary": "Frontend engineering across most of GemsPay's products: a centralised payments platform for bulk payments, collections and reconciliation."
+    },
+    "hotrac": {
+      "name": "Hotrac",
+      "role": "Frontend Engineer",
+      "summary": "Built the frontends of two Hotrac products: Export Trades, a cross-border commodity trading platform, and FarmShare, a tractor-sharing admin dashboard."
+    },
+    "lawxtech": {
+      "name": "Law x Tech",
+      "role": "Web Developer, volunteer",
+      "summary": "Volunteer developer for a community at the intersection of law and technology in Africa: the original site in 2023, and a full redesign with an admin CMS in 2026."
+    },
+    "freelance": {
+      "name": "Freelance",
+      "role": "Frontend & Mobile Engineer",
+      "summary": "Independent client work: a personal-finance app and website, a sales portal for a solar provider and a branding agency site."
+    },
+    "lab": {
+      "name": "Lab",
+      "role": "Personal projects",
+      "summary": "Things I build to learn. Right now: an AI agent that watches the Nigerian stock market."
     }
   },
   "Projects": {
     "metrics": {
       "users": "active users",
       "engagement": "engagement rate",
-      "rating": "average rating"
+      "rating": "average rating",
+      "commits": "commits across two versions",
+      "apps": "apps in the product family"
+    },
+    "the-circular-net-web": {
+      "title": "Circular Net Web",
+      "tagline": "A social network for sustainability",
+      "summary": "The web app of a social network for people and organisations working on sustainability: feed, communities, messaging, live audio and video rooms, jobs, projects and podcasts.",
+      "role": "Lead frontend engineer",
+      "problem": "People working on climate and sustainability were scattered across general-purpose networks. The platform needed one place to share, organise, hire and meet, and it had outgrown its first version.",
+      "process": "I built the first version on the Pages Router in 2023–24, then led the rebuild on the App Router with a module per product area. Chat and live rooms run on Stream and Pusher, posts use a rich-text composer and feeds scroll infinitely. Sign-in moved to a shared SSO service, so every product uses one account.",
+      "outcome": "Live at app.thecircularnet.com, with deep links into the mobile app. I wrote more than 2,000 commits across the two versions.",
+      "learnings": "Live rooms are a state machine, not a page. Device setup, screen share and people leaving or being removed all need explicit states, or the interface lies to the user.",
+      "built": {
+        "a": "Feed and post composer with media, scheduling, editing, hashtags and saved posts",
+        "b": "Communities, business pages, profiles and a multi-step profile setup",
+        "c": "Direct and group messaging with media previews and rooms attached to chats",
+        "d": "Audio and video rooms with host controls, moderation, raise hand, reactions, screen share and picture-in-picture",
+        "e": "Jobs board, projects hub with milestones, podcasts and events",
+        "f": "Guest pages, link previews and SEO metadata, so shared links work for people without an account"
+      },
+      "decisions": {
+        "a": {
+          "title": "A module per product area",
+          "body": "Feed, rooms, jobs and the rest each own their routes, components and queries. One area can change without touching the others, and the sprawl of the first version doesn't come back."
+        },
+        "b": {
+          "title": "Real-time on managed services",
+          "body": "Stream handles media and chat, and Pusher pushes app events. Building on them let a small team ship live rooms in weeks instead of running media servers."
+        },
+        "c": {
+          "title": "Sign-in moved out of the app",
+          "body": "Authentication lives in a separate SSO service, so the web app, Circular Ticket and the marketing site share one account and one secure flow."
+        }
+      },
+      "system": "How the web app fits into the platform"
+    },
+    "the-circular-net-mobile": {
+      "title": "Circular Net Mobile",
+      "tagline": "The sustainability network on iOS and Android",
+      "summary": "The iOS and Android app for The Circular Net: feed, communities, messaging, calls, live rooms and podcasts with background playback.",
+      "role": "Lead mobile engineer",
+      "problem": "The community needed the full platform on their phones, with real-time chat, calls and background audio, not a wrapped website.",
+      "process": "I built the app with Expo and Expo Router, organised by feature module. Rooms and calls run on Stream, chat on a Pusher-backed store, and a podcast player keeps playing in the background. Development, staging and production variants ship through EAS Build and over-the-air updates.",
+      "outcome": "Live on the App Store and Google Play.",
+      "learnings": "Make environments fail loudly. Build variants that refuse to start with the wrong config stopped builds from quietly pointing at the wrong backend.",
+      "built": {
+        "a": "Email and Google sign-in, onboarding and a multi-step profile setup",
+        "b": "Feed and post creation with media, scheduling, hashtag autocomplete and full-screen media gestures",
+        "c": "Messaging with document preview and download, plus one-to-one calls with ring detection",
+        "d": "Audio and video rooms with reactions, raise hand, host actions, picture-in-picture and background audio",
+        "e": "A podcast player with mini and full players, queue, resume position and background playback",
+        "f": "Deep links, push notifications, token refresh and an iOS share extension"
+      },
+      "decisions": {
+        "a": {
+          "title": "Expo over bare React Native",
+          "body": "An earlier bare build was hard to keep moving. Expo, EAS and over-the-air updates let one engineer own builds, releases and fixes."
+        },
+        "b": {
+          "title": "Feature modules that mirror the web",
+          "body": "The mobile modules match the web app's areas, so the same mental model, API contracts and naming work on both platforms."
+        },
+        "c": {
+          "title": "Three build variants",
+          "body": "Development, staging and production are separate apps with their own config, so testers and real users never share a backend by accident."
+        }
+      },
+      "system": "Inside the app and its release pipeline"
+    },
+    "circular-ticket": {
+      "title": "Circular Ticket",
+      "tagline": "Events and ticketing on web and mobile",
+      "summary": "An events and ticketing product: attendees discover events and buy tickets; organisers create events, scan tickets at the door and get paid in NGN or USD.",
+      "role": "Sole frontend engineer, web & mobile",
+      "problem": "Organisers needed one place to publish events, sell tickets, check people in, verify their identity and get paid. The web and mobile apps were duplicating API calls and business rules, and slowly drifting apart.",
+      "process": "I built the web app first, then moved it into an npm-workspaces monorepo with a new Expo app. Services, query hooks, validation schemas and rules like currency formatting and payout eligibility moved into one shared package; screens stayed platform-specific. Each area (events, orders, wallets, payouts, KYC and scanning) was wired to the live API, including Stripe onboarding and bank payouts.",
+      "outcome": "The web app is live at circularticket.com. Both apps import the same services and rules, so a change such as when a payout can be requested happens once.",
+      "learnings": "Sharing code is a dependency problem before it's a code problem. Aligned versions and careful hoisting across web and native mattered more than the shared code itself.",
+      "built": {
+        "a": "Public event pages with SEO metadata, a sitemap and OG images",
+        "b": "A multi-step event wizard with schedules, ticket types, speakers and hybrid venues",
+        "c": "Ticket scanning in the browser and on mobile, with a camera frame that locks onto the code",
+        "d": "NGN/USD wallets, transactions, payout accounts and payout requests",
+        "e": "A five-step KYC flow and organiser verification settings",
+        "f": "Orders, registration stats and spreadsheet export for organisers"
+      },
+      "decisions": {
+        "a": {
+          "title": "Share logic, not screens",
+          "body": "The shared package holds services, hooks, schemas and rules. The interface stays native to each platform, so neither app feels like a port of the other."
+        },
+        "b": {
+          "title": "One rule, one place",
+          "body": "Payout eligibility, order status mapping and currency formatting each exist once. Web and mobile can't disagree about money."
+        },
+        "c": {
+          "title": "Design every state",
+          "body": "Loading, error, filtered-empty and truly-empty are separate states on every data screen. It made dense organiser dashboards much easier to read."
+        }
+      },
+      "system": "Two apps, one shared package"
+    },
+    "circular-net-sso": {
+      "title": "Circular Net SSO",
+      "tagline": "One sign-in for every app",
+      "summary": "A single sign-on service for The Circular Net's products: login, sign-up and account recovery over OAuth 2.0, with Google and Apple sign-in.",
+      "role": "Sole frontend engineer",
+      "problem": "Each product had its own login. People needed one account and one secure sign-in across the web app, Circular Ticket and the marketing site.",
+      "process": "I built the OAuth 2.0 authorisation flow with client validation and strict redirect handling, then email and password sign-in with OTP verification, Google and Apple sign-in, and password reset with live strength checks, all as animated multi-step forms with light and dark themes.",
+      "outcome": "Live at accounts.thecircularnet.com as the sign-in entry point for the marketing site, the web app and Circular Ticket.",
+      "learnings": "The SSO page is the one place every app trusts, so it has to be the strictest. Client IDs and redirect URLs are validated, never assumed.",
+      "built": {
+        "a": "The OAuth 2.0 authorise flow with client ID validation and redirect handling",
+        "b": "Email and password sign-in and sign-up with OTP email verification",
+        "c": "Google and Apple sign-in with provider callbacks",
+        "d": "Password reset with live strength validation",
+        "e": "Animated multi-step forms, themes and a post-sign-in hand-off page"
+      },
+      "decisions": {
+        "a": {
+          "title": "A separate app, not a shared component",
+          "body": "Sign-in runs on its own domain. Apps redirect to it and get a code back, so no product ever handles another product's passwords."
+        },
+        "b": {
+          "title": "Strict redirects",
+          "body": "Only registered clients and redirect URLs are accepted. An open redirect on a sign-in page is a ready-made phishing kit."
+        },
+        "c": {
+          "title": "React 19 and the React Compiler",
+          "body": "The forms are animation-heavy. The compiler keeps re-renders in check without hand-written memoisation."
+        }
+      },
+      "system": "Every product signs in through one service"
+    },
+    "circular-net-website": {
+      "title": "Circular Net Website",
+      "tagline": "Marketing site and sustainability insights",
+      "summary": "The public site for The Circular Net: the platform, its sustainability services and a blog, with sign-in that hands people over to the app.",
+      "role": "Sole frontend engineer",
+      "problem": "The company needed a site that explains the product and its services, ranks in search and routes visitors into the apps.",
+      "process": "I built the home and service pages as feature modules with motion and smooth scrolling, then a blog with a password-gated publishing page. A later pass covered SEO, web vitals and accessibility, plus redirects for old indexed links.",
+      "outcome": "Live at thecircularnet.com, showing upcoming events from the API and handing signed-in users over to the web app.",
+      "learnings": "Server-side secrets behave differently on every host. The blog admin needed specific handling for the hosting platform's server rendering.",
+      "built": {
+        "a": "The home page with feature showcases and live upcoming events",
+        "b": "Carbon Accounting, ESG Reporting and Sustainability Projects pages",
+        "c": "A blog with article pages, a white-paper download and sharing",
+        "d": "A password-gated page for publishing posts",
+        "e": "An SEO overhaul: metadata, sitemap, generated OG images, redirects and accessibility fixes"
+      },
+      "decisions": {
+        "a": {
+          "title": "Sign-in through SSO, with a state check",
+          "body": "The site starts the SSO flow with a state value it checks on return, so a forged callback can't sign someone in."
+        },
+        "b": {
+          "title": "Redirect old links instead of losing them",
+          "body": "The old site's indexed URLs map to the new pages, keeping search traffic through the relaunch."
+        }
+      }
+    },
+    "export-trades": {
+      "title": "Export Trades",
+      "tagline": "Cross-border commodity trading, in many languages",
+      "summary": "A marketing site and trading web app that connects commodity buyers and sellers and walks them through quotes, offers, escrow and delivery.",
+      "role": "Lead frontend engineer",
+      "problem": "Commodity buyers and sellers needed a trusted place to find products, negotiate and complete trades across borders and across languages, including right-to-left Arabic.",
+      "process": "I built the public site (marketplace, commodities and market trends) and the signed-in app around one module per trading step. Locale-based routing and translations went in from the start, and verification documents upload straight to storage.",
+      "outcome": "Live at exportrades.com. Version 0.9 of the site and app shipped in February 2026; I was the largest contributor on a five-person team.",
+      "learnings": "Build translation in from day one. Adding a right-to-left language later would have meant touching every layout.",
+      "built": {
+        "a": "The public site: marketplace, commodity categories, market index and trends",
+        "b": "Sign-up with country selection and OTP, login and profile editing",
+        "c": "Product pages with specifications, certificates and FAQs",
+        "d": "Requests for quote, expressions of interest, offers and trades, with user and admin views",
+        "e": "Escrow setup, dispute management and transaction history"
+      },
+      "decisions": {
+        "a": {
+          "title": "A module per trading step",
+          "body": "Quotes, offers, trades, escrow and disputes are separate modules with their own data and views, mirroring how a deal actually moves."
+        },
+        "b": {
+          "title": "Locale in the URL",
+          "body": "Every page lives under its locale, so links, search engines and right-to-left layouts all know the language without guessing."
+        },
+        "c": {
+          "title": "Shared views, separate permissions",
+          "body": "Users and admins see the same trade records through different views, instead of two copies of the logic."
+        }
+      },
+      "system": "From visitor to verified trade"
+    },
+    "lawxtech": {
+      "title": "Law x Tech",
+      "tagline": "A home for Africa's law and technology community",
+      "summary": "The website and CMS of Law x Tech, a 2,000+ member community at the intersection of law and technology that runs series, a summit and awards.",
+      "role": "Volunteer web developer, sole developer",
+      "problem": "The organisation needed a modern site it could update itself. On the original site, every new episode or partner meant asking a developer.",
+      "process": "I built the first site in React in 2023. In 2026 I rebuilt it on Next.js 16 with motion, then added an admin CMS backed by Postgres: credential sign-in, a rich-text blog editor, image uploads and role-based user management. Larger features, like partners, started as a written spec and plan before any code.",
+      "outcome": "Live at lawxtech.org, with the team publishing content themselves. The code is open on GitHub.",
+      "learnings": "Serverless databases need care around connection pooling and build-time access. The build should never depend on the database being reachable.",
+      "built": {
+        "a": "A home page with animated stats, series preview, speakers carousel and community sections",
+        "b": "About, Series, Summit & Awards, Careers, Contact and Sponsors pages",
+        "c": "Partners with detail pages and a summit countdown",
+        "d": "An admin CMS with a rich-text editor and image uploads",
+        "e": "User management with roles and admin-only access"
+      },
+      "decisions": {
+        "a": {
+          "title": "A CMS instead of content in code",
+          "body": "The first site kept content in code and the team couldn't update it. The redesign gives them an editor, so the site stays current without me."
+        },
+        "b": {
+          "title": "Postgres and blob storage, not a hosted CMS",
+          "body": "Neon Postgres and Vercel Blob keep running costs near zero for a volunteer-run organisation, with no per-seat fees."
+        },
+        "c": {
+          "title": "Spec before code",
+          "body": "Bigger features were written up as a design spec and plan first, which made the scope clear to non-technical organisers."
+        }
+      },
+      "system": "Public site and CMS on one database"
+    },
+    "pennywise": {
+      "title": "Pennywise",
+      "tagline": "Personal finance app and website",
+      "summary": "A personal-finance mobile app for tracking spending, budgets and goals, plus the marketing site that collected its waitlist.",
+      "role": "Mobile & frontend engineer, sole developer",
+      "problem": "People wanted to see where their money goes and stick to budgets from their phone, and the product needed a site to explain itself and collect sign-ups before launch.",
+      "process": "I built the app with Expo and Expo Router: onboarding, sign-up with verification, password reset, wallets, budgets and charts, with bank account linking through a third-party widget. The website started on the Pages Router with Mantine and was later rebuilt on the App Router with Tailwind.",
+      "outcome": "The website is live at iampennywise.com, and the app ships through separate staging and preview build channels.",
+      "learnings": "Android builds and network configuration take real time. Budget for platform work alongside feature work.",
+      "built": {
+        "a": "Onboarding, sign-up, verification and a multi-step password reset",
+        "b": "Wallets and budgets with charts drawn in Skia",
+        "c": "Bank account linking and secure local storage",
+        "d": "EAS build channels for staging and preview",
+        "e": "A landing site with waitlist, pricing, community and blog pages"
+      },
+      "decisions": {
+        "a": {
+          "title": "Fast local storage",
+          "body": "MMKV keeps settings and session data on the device, so the app opens straight into the right state."
+        },
+        "b": {
+          "title": "From a component library to Tailwind",
+          "body": "The second version of the site dropped the component library for Tailwind, which made theming and later changes much simpler."
+        }
+      }
+    },
+    "stock-bot": {
+      "title": "Stock Bot",
+      "tagline": "An AI analyst for the Nigerian stock market",
+      "summary": "A scheduled agent that scans the Nigerian Exchange every day, checks recent price history, asks an LLM to assess each dip and sends me a short report on Telegram.",
+      "role": "Designer & engineer",
+      "problem": "Finding good dips on the NGX means checking dozens of stocks every day and reading the story behind each drop. I wanted the boring part automated and the judgement call summarised.",
+      "process": "A Lambda function runs on a daily EventBridge schedule. It scrapes the day's biggest losers, so only those get a closer look, compares them with five days of prices stored in DynamoDB and sends the candidates to Gemini for a short analysis. The top picks arrive on Telegram, and GitHub Actions deploys every push.",
+      "outcome": "In progress. Scraping, analysis and Telegram reports work locally; the Lambda deployment is being finalised.",
+      "learnings": "Filter before you spend tokens or requests. Starting from the day's losers instead of every ticker cut the work to a fraction.",
+      "built": {
+        "a": "A parallel scraper for the NGX daily losers",
+        "b": "Five days of price history in DynamoDB to confirm a real dip",
+        "c": "An LLM analysis step with a structured prompt per company",
+        "d": "Daily Telegram reports with the top picks",
+        "e": "Continuous deployment to AWS Lambda with GitHub Actions"
+      },
+      "decisions": {
+        "a": {
+          "title": "Serverless on a schedule",
+          "body": "The job runs for a couple of minutes a day. A scheduled Lambda costs almost nothing and needs no server to look after."
+        },
+        "b": {
+          "title": "Filter first, then think",
+          "body": "Cheap code narrows the list, and the LLM only sees the few stocks worth a closer look. It keeps both latency and cost down."
+        },
+        "c": {
+          "title": "Drop heavy dependencies",
+          "body": "Replacing pandas with a lightweight HTML parser made the Lambda package small enough to deploy without special layers."
+        }
+      },
+      "system": "A daily run, from schedule to report"
+    },
+    "trendhub": {
+      "title": "TrendHub",
+      "tagline": "A hub for newsletters, podcasts and blogs",
+      "summary": "One place for Gen Z readers to explore newsletters, podcasts and blogs and keep up with what's trending.",
+      "role": "Full-stack developer",
+      "problem": "Good writing is scattered across newsletters, podcasts and blogs. I wanted one light, welcoming place to find it.",
+      "process": "I built it on Next.js 13 with TypeScript and Redux Toolkit, with motion to keep browsing playful and a minimal, dark-mode-friendly reading view.",
+      "outcome": "Live, with more than 100 active readers.",
+      "learnings": "Minimal design is a lot of decisions. Every option I removed made reading easier."
     },
     "coinsave": {
       "title": "Coinsave",
       "tagline": "Expense & budget tracker",
       "summary": "Take control of your finances: track income and expenses, set budgets, get notified, and monitor bank transactions in one place.",
-      "role": "Full-stack Developer",
+      "role": "Full-stack developer",
       "problem": "Most people know they should budget but drop off after a week. Spreadsheets are tedious and banking apps only show what already happened.",
       "process": "I designed a fast, low-friction flow for logging spending, built budgets with smart alerts, and connected bank transaction monitoring so the app does most of the work.",
       "outcome": "Coinsave grew to more than 500 active users with over 70% engagement and an average rating of 4.5 out of 5.",
-      "learnings": "Retention is a product feature. Small touches — sensible defaults, timely nudges — mattered more than any big feature."
+      "learnings": "Retention is a product feature. Small touches like sensible defaults and timely nudges mattered more than any big feature."
     },
     "cabify": {
       "title": "Cabify",
       "tagline": "Cab & bus booking app",
       "summary": "Hassle-free travel with easy booking, real-time updates and secure payments for rides in buses and cabs.",
-      "role": "Front-end Developer",
+      "role": "Front-end developer",
       "problem": "Booking a ride meant juggling calls, cash and uncertainty about when the driver would actually show up.",
       "process": "I built the booking and tracking interfaces with a focus on performance, so the app loads fast and navigation feels smooth even on slow connections.",
       "outcome": "More than 500 active users, over 70% engagement and an average rating of 4.5 out of 5.",
       "learnings": "Perceived speed is real speed. Skeletons, optimistic updates and fewer round-trips changed how fast the app felt."
     },
-    "genz-blog": {
-      "title": "Gen-Z Blog",
-      "tagline": "A blogging platform",
-      "summary": "A place to read and write articles on all kinds of topics — simple, minimal, and fully dark-mode friendly.",
-      "role": "Full-stack Developer",
-      "problem": "Blogging platforms are either bloated or built for professionals. I wanted something that felt light and welcoming for every age group.",
-      "process": "I built it with React, Next.js and Tailwind on the front, and Node.js with SQL behind it, keeping the writing flow distraction-free.",
-      "outcome": "Over 100 active users reading and writing on the platform.",
-      "learnings": "Minimal design is a lot of decisions. Every removed option made writing easier."
+    "circular-net-admin": {
+      "title": "Circular Net Admin",
+      "tagline": "Back office for the platform",
+      "summary": "Internal admin for users, content, communities, jobs and events, with KYC and payout review for Circular Ticket."
     },
-    "reciept": {
-      "title": "Reciept",
-      "tagline": "A receipt generator",
-      "summary": "Create receipts for businesses and personal use, export them as PDFs and print on thermal printers — a digital and a paper copy at once.",
-      "role": "Designer & Developer",
-      "problem": "Small businesses waste ink and paper on receipts and rarely keep a reliable digital record.",
-      "process": "Receipts are generated as PDFs sized for thermal printers, so one action gives you both a paper copy and a digital proof of purchase.",
-      "outcome": "Still in development — coming soon.",
-      "learnings": "Printing is the hardest part of the web. Thermal printers have opinions."
+    "thebasenet-ui": {
+      "title": "@thebasenet/ui",
+      "tagline": "Shared React component library",
+      "summary": "Design tokens, brand assets and about 37 UI primitives, published to npm and used by the marketing site and Circular Ticket."
+    },
+    "circular-net-waitlist": {
+      "title": "Circular Net Waitlist",
+      "tagline": "Pre-launch sign-ups",
+      "summary": "A waitlist with country selection and validated phone numbers, used before the apps launched."
+    },
+    "farmshare": {
+      "title": "FarmShare Admin",
+      "tagline": "Tractor-sharing back office",
+      "summary": "Admin dashboard for users, tractors, bookings, transactions and payment requests, with maps and charts."
+    },
+    "ds-energy": {
+      "title": "DS Energy Sales Portal",
+      "tagline": "Sales and commissions for solar marketers",
+      "summary": "Sales, customers, commissions and procurement for a solar provider's marketers, with onboarding and PDF invoices."
+    },
+    "royal-revamps": {
+      "title": "Royal Revamps",
+      "tagline": "Branding agency website",
+      "summary": "Site for a personal and corporate branding agency: services, company and learning pages, with a blog, testimonials and contact backed by a database."
     }
+  },
+  "Diagram": {
+    "nodes": {
+      "community": "Community",
+      "webApp": "Web app",
+      "mobileApp": "Mobile app",
+      "platformApi": "Platform API",
+      "sso": "Single sign-on",
+      "realtime": "Rooms & chat",
+      "push": "Push notifications",
+      "feed": "Feed & posts",
+      "rooms": "Audio & video rooms",
+      "podcast": "Podcast player",
+      "variants": "Build variants",
+      "eas": "Builds & updates",
+      "stores": "App stores",
+      "attendeesOrganisers": "Attendees & organisers",
+      "sharedPackage": "Shared package",
+      "payouts": "Payouts",
+      "marketingSite": "Marketing site",
+      "circularTicket": "Circular Ticket",
+      "providers": "Social sign-in",
+      "authApi": "Auth API",
+      "emailOtp": "Email OTP",
+      "buyersSellers": "Buyers & sellers",
+      "publicSite": "Public site",
+      "tradingApp": "Trading app",
+      "localeRouting": "Locale routing",
+      "tradeFlow": "Quote → offer → escrow",
+      "uploads": "Document uploads",
+      "visitors": "Visitors",
+      "editors": "Editors",
+      "adminCms": "Admin CMS",
+      "database": "Database",
+      "images": "Images",
+      "schedule": "Daily schedule",
+      "scanner": "Scanner",
+      "marketData": "Market data",
+      "priceHistory": "Price history",
+      "aiAnalyst": "AI analyst",
+      "report": "Daily report"
+    },
+    "edges": {
+      "signIn": "sign in",
+      "roomsChat": "live",
+      "config": "config",
+      "ship": "ship",
+      "imports": "imports",
+      "typedRequests": "typed requests",
+      "authorise": "authorise",
+      "socialSignIn": "social sign-in",
+      "tokens": "tokens",
+      "verify": "verify",
+      "read": "read",
+      "write": "write",
+      "upload": "upload",
+      "trigger": "trigger",
+      "fetch": "fetch losers",
+      "check": "5-day check",
+      "analyse": "analyse",
+      "send": "top picks"
+    }
+  },
+  "Notes": {
+    "metaTitle": "Notes",
+    "metaDescription": "Short write-ups on the systems Toluwalope Akinkunmi designs and builds.",
+    "label": "Notes",
+    "title": "Notes on systems.",
+    "subtitle": "Short write-ups on how the things I build fit together, and what I'd do differently.",
+    "readingTime": "{minutes} min read",
+    "back": "All notes",
+    "next": "Next note",
+    "related": "Related case study",
+    "read": "Read"
   },
   "Contact": {
     "metaTitle": "Contact",
@@ -315,7 +738,7 @@
       "title": "Good to know",
       "projects": {
         "q": "What kind of projects do you take on?",
-        "a": "Web apps, mobile apps and full-stack products — from MVPs to improving something that already exists."
+        "a": "Web and mobile products, platform work like SSO, design systems and monorepos, and AI features, from MVPs to improving something that already exists."
       },
       "start": {
         "q": "How soon can you start?",
