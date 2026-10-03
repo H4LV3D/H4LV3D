@@ -63,11 +63,11 @@ test("language switcher keeps you on the same page", async ({ page }) => {
 test("work is grouped by company and filters narrow it", async ({ page }) => {
   await page.goto("/work");
   await waitForIntro(page);
-  await expect(page.getByText("16 projects")).toBeVisible();
+  await expect(page.getByText("18 projects")).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "The Circular Net" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Smarkt" })).toBeVisible();
   await page.getByRole("button", { name: "AI", exact: true }).click();
-  await expect(page.getByText("1 project", { exact: true })).toBeVisible();
+  await expect(page.getByText("2 projects", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Lab" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "Smarkt" })).toHaveCount(0);
 });

@@ -149,6 +149,26 @@ export const diagrams = {
     ],
   }),
 
+  architekt: d({
+    width: 800,
+    height: 400,
+    nodes: [
+      { id: "visitors", label: "visitors", x: 120, y: 50, kind: "actor" },
+      { id: "site", label: "publicSite", sub: "Next.js", x: 120, y: 195 },
+      { id: "quiz", label: "pricingQuestionnaire", x: 400, y: 195, kind: "accent" },
+      { id: "ai", label: "aiAnalyst", sub: "Gemini · Genkit", x: 690, y: 195 },
+      { id: "mail", label: "emails", sub: "Resend", x: 400, y: 345 },
+      { id: "inbox", label: "agencyInbox", x: 690, y: 345, kind: "actor" },
+    ],
+    edges: [
+      { from: "visitors", to: "site" },
+      { from: "site", to: "quiz" },
+      { from: "quiz", to: "ai", label: "typedResult", both: true },
+      { from: "quiz", to: "mail" },
+      { from: "mail", to: "inbox", label: "newLead" },
+    ],
+  }),
+
   sso: d({
     width: 800,
     height: 400,

@@ -268,7 +268,7 @@
     "freelance": {
       "name": "Freelance",
       "role": "Frontend & Mobile Engineer",
-      "summary": "Independent client work: a personal-finance app and website, a sales portal for a solar provider and a branding agency site."
+      "summary": "Independent client work: a personal-finance app and website, an invoicing and payments platform, a multilingual medical centre website, an agency site with an AI pricing advisor, a sales portal for a solar provider and a branding agency site."
     },
     "lab": {
       "name": "Lab",
@@ -566,38 +566,6 @@
         }
       }
     },
-    "stock-bot": {
-      "title": "Stock Bot",
-      "tagline": "An AI analyst for the Nigerian stock market",
-      "summary": "A scheduled agent that scans the Nigerian Exchange every day, checks recent price history, asks an LLM to assess each dip and sends me a short report on Telegram.",
-      "role": "Designer & engineer",
-      "problem": "Finding good dips on the NGX means checking dozens of stocks every day and reading the story behind each drop. I wanted the boring part automated and the judgement call summarised.",
-      "process": "A Lambda function runs on a daily EventBridge schedule. It scrapes the day's biggest losers, so only those get a closer look, compares them with five days of prices stored in DynamoDB and sends the candidates to Gemini for a short analysis. The top picks arrive on Telegram, and GitHub Actions deploys every push.",
-      "outcome": "In progress. Scraping, analysis and Telegram reports work locally; the Lambda deployment is being finalised.",
-      "learnings": "Filter before you spend tokens or requests. Starting from the day's losers instead of every ticker cut the work to a fraction.",
-      "built": {
-        "a": "A parallel scraper for the NGX daily losers",
-        "b": "Five days of price history in DynamoDB to confirm a real dip",
-        "c": "An LLM analysis step with a structured prompt per company",
-        "d": "Daily Telegram reports with the top picks",
-        "e": "Continuous deployment to AWS Lambda with GitHub Actions"
-      },
-      "decisions": {
-        "a": {
-          "title": "Serverless on a schedule",
-          "body": "The job runs for a couple of minutes a day. A scheduled Lambda costs almost nothing and needs no server to look after."
-        },
-        "b": {
-          "title": "Filter first, then think",
-          "body": "Cheap code narrows the list, and the LLM only sees the few stocks worth a closer look. It keeps both latency and cost down."
-        },
-        "c": {
-          "title": "Drop heavy dependencies",
-          "body": "Replacing pandas with a lightweight HTML parser made the Lambda package small enough to deploy without special layers."
-        }
-      },
-      "system": "A daily run, from schedule to report"
-    },
     "invocipt": {
       "title": "Invocipt",
       "tagline": "Invoices, payments and receipts for small businesses",
@@ -630,6 +598,103 @@
         }
       },
       "system": "From invoice to payment to receipt"
+    },
+    "life-fount": {
+      "title": "Life Fount",
+      "tagline": "A multilingual website for a medical centre",
+      "summary": "The website of Life Fount Medical Center: 18 services with their own pages, in English, Yoruba, Igbo and Hausa, built mobile-first for patients on their phones.",
+      "role": "Designer & frontend engineer",
+      "problem": "Patients look a hospital up on their phone, often in a language other than English, and want to know quickly what it treats and how to reach someone.",
+      "process": "I built the site on Next.js with next-intl, so every page exists in English, Yoruba, Igbo and Hausa under its own URL. Each of the 18 services, from cardiology to physiotherapy, gets a page generated from one data file. The layout is mobile-first with motion throughout, plus a floating WhatsApp button for quick questions, FAQs, testimonials, careers and a contact form.",
+      "outcome": "Live in four languages.",
+      "learnings": "Designing for four languages means layouts that flex with the length of the text, instead of being tuned to English.",
+      "built": {
+        "a": "A home page with hero, services, why-choose-us, stats, testimonials and FAQs",
+        "b": "18 service pages generated from a single data file",
+        "c": "English, Yoruba, Igbo and Hausa, with a language switcher and localised URLs",
+        "d": "A floating WhatsApp button for quick patient questions",
+        "e": "About, careers and contact pages with a validated contact form",
+        "f": "SEO metadata, a sitemap, a web app manifest and light and dark themes"
+      },
+      "decisions": {
+        "a": {
+          "title": "Nigerian languages, first-class",
+          "body": "Yoruba, Igbo and Hausa get their own routes instead of a machine-translation widget, so every page can be shared and found in the patient's language."
+        },
+        "b": {
+          "title": "Services as data",
+          "body": "All 18 services live in one data file, so adding or updating a department is a content change, not a new page."
+        },
+        "c": {
+          "title": "WhatsApp over a chat widget",
+          "body": "Patients already use WhatsApp, so the support button opens a conversation there instead of an embedded chat that needs its own staff."
+        }
+      }
+    },
+    "architekt": {
+      "title": "Architekt",
+      "tagline": "An agency website with an AI pricing advisor",
+      "summary": "The website of a digital agency for websites, web apps and mobile apps, with a project portfolio, a pricing calculator and a questionnaire where an LLM recommends a plan, add-ons and a cost estimate.",
+      "role": "Designer & frontend engineer",
+      "problem": "People want a ballpark price before they talk to an agency, but fixed price lists don't fit custom work, and a long sales call is a big ask for a small client.",
+      "process": "I designed and built the site on Next.js with motion throughout: services, how-we-work, featured projects, testimonials, careers and a contact page with a Mapbox map. Pricing combines fixed tiers, add-ons and an interactive calculator. A short questionnaire sends the project type, complexity, features, timeline and budget to Gemini through Genkit, which returns a recommended tier, add-ons and an estimate as structured data. Resend then emails the result to both the visitor and the agency.",
+      "outcome": "In progress. The site and the AI questionnaire run on a preview deployment while the remaining pages are finished.",
+      "learnings": "Constrain the model's output. A strict schema for tier, add-ons and cost turned the AI's answer into data the interface and emails could use directly, instead of free text.",
+      "built": {
+        "a": "A home page with services, how-we-work, featured projects, testimonials and client logos",
+        "b": "A project portfolio with detail pages and a similar-projects carousel",
+        "c": "Pricing tiers, add-ons and an interactive pricing calculator",
+        "d": "An AI pricing questionnaire using Gemini 2.5 Flash through Genkit",
+        "e": "Confirmation and lead emails through Resend",
+        "f": "About, careers and contact pages with a Mapbox map, plus light and dark themes"
+      },
+      "decisions": {
+        "a": {
+          "title": "Structured output, not chat",
+          "body": "The model returns a typed object (tier, add-ons, cost) checked against a schema, so the result renders as a proper recommendation, not a paragraph."
+        },
+        "b": {
+          "title": "Real prices in the prompt",
+          "body": "The tiers and add-on prices are given to the model explicitly, so estimates stay within the agency's actual price list instead of being invented."
+        },
+        "c": {
+          "title": "Every answer becomes a lead",
+          "body": "The recommendation is emailed to both the visitor and the agency, so the first conversation starts with scope and budget already on the table."
+        }
+      },
+      "system": "From questionnaire to recommendation to lead"
+    },
+    "stock-bot": {
+      "title": "Stock Bot",
+      "tagline": "An AI analyst for the Nigerian stock market",
+      "summary": "A scheduled agent that scans the Nigerian Exchange every day, checks recent price history, asks an LLM to assess each dip and sends me a short report on Telegram.",
+      "role": "Designer & engineer",
+      "problem": "Finding good dips on the NGX means checking dozens of stocks every day and reading the story behind each drop. I wanted the boring part automated and the judgement call summarised.",
+      "process": "A Lambda function runs on a daily EventBridge schedule. It scrapes the day's biggest losers, so only those get a closer look, compares them with five days of prices stored in DynamoDB and sends the candidates to Gemini for a short analysis. The top picks arrive on Telegram, and GitHub Actions deploys every push.",
+      "outcome": "In progress. Scraping, analysis and Telegram reports work locally; the Lambda deployment is being finalised.",
+      "learnings": "Filter before you spend tokens or requests. Starting from the day's losers instead of every ticker cut the work to a fraction.",
+      "built": {
+        "a": "A parallel scraper for the NGX daily losers",
+        "b": "Five days of price history in DynamoDB to confirm a real dip",
+        "c": "An LLM analysis step with a structured prompt per company",
+        "d": "Daily Telegram reports with the top picks",
+        "e": "Continuous deployment to AWS Lambda with GitHub Actions"
+      },
+      "decisions": {
+        "a": {
+          "title": "Serverless on a schedule",
+          "body": "The job runs for a couple of minutes a day. A scheduled Lambda costs almost nothing and needs no server to look after."
+        },
+        "b": {
+          "title": "Filter first, then think",
+          "body": "Cheap code narrows the list, and the LLM only sees the few stocks worth a closer look. It keeps both latency and cost down."
+        },
+        "c": {
+          "title": "Drop heavy dependencies",
+          "body": "Replacing pandas with a lightweight HTML parser made the Lambda package small enough to deploy without special layers."
+        }
+      },
+      "system": "A daily run, from schedule to report"
     },
     "trendhub": {
       "title": "TrendHub",
@@ -739,7 +804,10 @@
       "customers": "Customers",
       "publicInvoice": "Public invoice page",
       "paymentGateway": "Payment gateway",
-      "notifications": "Notifications"
+      "notifications": "Notifications",
+      "pricingQuestionnaire": "Pricing questionnaire",
+      "emails": "Emails",
+      "agencyInbox": "Agency inbox"
     },
     "edges": {
       "signIn": "sign in",
@@ -762,7 +830,9 @@
       "send": "top picks",
       "shareLink": "share link",
       "pay": "pay",
-      "notify": "email + push"
+      "notify": "email + push",
+      "typedResult": "typed result",
+      "newLead": "new lead"
     }
   },
   "Notes": {

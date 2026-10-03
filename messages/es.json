@@ -268,7 +268,7 @@
     "freelance": {
       "name": "Freelance",
       "role": "Ingeniería frontend y móvil",
-      "summary": "Trabajo independiente para clientes: una app y un sitio de finanzas personales, un portal de ventas para un proveedor solar y el sitio de una agencia de branding."
+      "summary": "Trabajo independiente para clientes: una app y un sitio de finanzas personales, una plataforma de facturación y pagos, el sitio multilingüe de un centro médico, el sitio de una agencia con un asesor de precios con IA, un portal de ventas para un proveedor solar y el sitio de una agencia de branding."
     },
     "lab": {
       "name": "Lab",
@@ -566,38 +566,6 @@
         }
       }
     },
-    "stock-bot": {
-      "title": "Stock Bot",
-      "tagline": "Un analista con IA para la bolsa de Nigeria",
-      "summary": "Un agente programado que revisa cada día la bolsa de Nigeria, comprueba el historial reciente de precios, pide a un LLM que evalúe cada caída y me envía un breve informe por Telegram.",
-      "role": "Diseño e ingeniería",
-      "problem": "Encontrar buenas caídas en la NGX significa revisar decenas de acciones cada día y leer la historia detrás de cada bajada. Quería automatizar la parte tediosa y resumir la parte de criterio.",
-      "process": "Una función Lambda se ejecuta a diario con EventBridge. Obtiene las mayores caídas del día, para revisar solo esas, las compara con cinco días de precios guardados en DynamoDB y envía las candidatas a Gemini para un breve análisis. Las mejores opciones llegan por Telegram, y GitHub Actions despliega en cada push.",
-      "outcome": "En curso. La extracción, el análisis y los informes de Telegram funcionan en local; el despliegue en Lambda se está terminando.",
-      "learnings": "Filtra antes de gastar tokens o peticiones. Empezar por las caídas del día en lugar de por todos los valores redujo el trabajo a una fracción.",
-      "built": {
-        "a": "Un extractor en paralelo de las mayores caídas diarias de la NGX",
-        "b": "Cinco días de historial de precios en DynamoDB para confirmar una caída real",
-        "c": "Un paso de análisis con LLM con un prompt estructurado por empresa",
-        "d": "Informes diarios por Telegram con las mejores opciones",
-        "e": "Despliegue continuo en AWS Lambda con GitHub Actions"
-      },
-      "decisions": {
-        "a": {
-          "title": "Serverless programado",
-          "body": "La tarea dura un par de minutos al día. Una Lambda programada no cuesta casi nada y no hay servidor que mantener."
-        },
-        "b": {
-          "title": "Primero filtrar, luego pensar",
-          "body": "Código barato acorta la lista y el LLM solo ve las pocas acciones que merecen una mirada. Así bajan la latencia y el coste."
-        },
-        "c": {
-          "title": "Sin dependencias pesadas",
-          "body": "Sustituir pandas por un parser HTML ligero dejó el paquete de Lambda lo bastante pequeño para desplegarlo sin capas especiales."
-        }
-      },
-      "system": "Una ejecución diaria, del horario al informe"
-    },
     "invocipt": {
       "title": "Invocipt",
       "tagline": "Facturas, pagos y recibos para pequeños negocios",
@@ -630,6 +598,103 @@
         }
       },
       "system": "De la factura al pago y al recibo"
+    },
+    "life-fount": {
+      "title": "Life Fount",
+      "tagline": "El sitio multilingüe de un centro médico",
+      "summary": "El sitio de Life Fount Medical Center: 18 servicios con su propia página, en inglés, yoruba, igbo y hausa, pensado primero para pacientes en el móvil.",
+      "role": "Diseño e ingeniería frontend",
+      "problem": "Los pacientes buscan un hospital desde el móvil, a menudo en un idioma distinto del inglés, y quieren saber rápido qué trata y cómo hablar con alguien.",
+      "process": "Construí el sitio con Next.js y next-intl, así cada página existe en inglés, yoruba, igbo y hausa con su propia URL. Cada uno de los 18 servicios, de cardiología a fisioterapia, tiene una página generada a partir de un único archivo de datos. El diseño es móvil primero y animado, con un botón flotante de WhatsApp para consultas rápidas, preguntas frecuentes, testimonios, empleo y un formulario de contacto.",
+      "outcome": "En línea, en cuatro idiomas.",
+      "learnings": "Diseñar para cuatro idiomas significa maquetaciones que se adaptan a la longitud del texto en lugar de ajustarse al inglés.",
+      "built": {
+        "a": "Una portada con cabecera, servicios, por qué elegirnos, cifras, testimonios y preguntas frecuentes",
+        "b": "18 páginas de servicios generadas a partir de un único archivo de datos",
+        "c": "Inglés, yoruba, igbo y hausa, con selector de idioma y URL localizadas",
+        "d": "Un botón flotante de WhatsApp para consultas rápidas de pacientes",
+        "e": "Páginas de información, empleo y contacto con formulario validado",
+        "f": "Metadatos SEO, sitemap, manifiesto de app web y tema claro y oscuro"
+      },
+      "decisions": {
+        "a": {
+          "title": "Las lenguas nigerianas, de primera",
+          "body": "El yoruba, el igbo y el hausa tienen sus propias rutas en lugar de un widget de traducción automática, así cada página se puede compartir y encontrar en el idioma del paciente."
+        },
+        "b": {
+          "title": "Los servicios como datos",
+          "body": "Los 18 servicios viven en un único archivo de datos, así añadir o actualizar un departamento es un cambio de contenido, no una página nueva."
+        },
+        "c": {
+          "title": "WhatsApp en vez de un chat integrado",
+          "body": "Los pacientes ya usan WhatsApp, así el botón de ayuda abre una conversación allí en lugar de un chat integrado que necesitaría su propio personal."
+        }
+      }
+    },
+    "architekt": {
+      "title": "Architekt",
+      "tagline": "El sitio de una agencia con un asesor de precios con IA",
+      "summary": "El sitio de una agencia digital de sitios web, apps web y apps móviles, con portafolio, calculadora de precios y un cuestionario donde un LLM recomienda un plan, extras y una estimación de coste.",
+      "role": "Diseño e ingeniería frontend",
+      "problem": "La gente quiere una idea del precio antes de hablar con una agencia, pero las tarifas fijas no encajan con el trabajo a medida, y una llamada comercial larga es mucho pedir para un cliente pequeño.",
+      "process": "Diseñé y construí el sitio con Next.js y animación en todo: servicios, forma de trabajo, proyectos destacados, testimonios, empleo y una página de contacto con mapa de Mapbox. Los precios combinan planes fijos, extras y una calculadora interactiva. Un cuestionario breve envía el tipo de proyecto, la complejidad, las funciones, el plazo y el presupuesto a Gemini mediante Genkit, que devuelve un plan recomendado, extras y una estimación como datos estructurados. Después Resend envía el resultado al visitante y a la agencia.",
+      "outcome": "En curso. El sitio y el cuestionario con IA funcionan en un despliegue de vista previa mientras se terminan las páginas restantes.",
+      "learnings": "Hay que acotar la salida del modelo. Un esquema estricto para plan, extras y coste convirtió la respuesta de la IA en datos que la interfaz y los correos podían usar directamente, en lugar de texto libre.",
+      "built": {
+        "a": "Una portada con servicios, forma de trabajo, proyectos destacados, testimonios y logos de clientes",
+        "b": "Un portafolio con páginas de detalle y un carrusel de proyectos similares",
+        "c": "Planes, extras y una calculadora de precios interactiva",
+        "d": "Un cuestionario de precios con IA usando Gemini 2.5 Flash mediante Genkit",
+        "e": "Correos de confirmación y de nuevo contacto con Resend",
+        "f": "Páginas de la agencia, empleo y contacto con mapa de Mapbox, con tema claro y oscuro"
+      },
+      "decisions": {
+        "a": {
+          "title": "Salida estructurada, no un chat",
+          "body": "El modelo devuelve un objeto tipado (plan, extras, coste) validado con un esquema, así el resultado se muestra como una recomendación de verdad y no como un párrafo."
+        },
+        "b": {
+          "title": "Precios reales en el prompt",
+          "body": "Los planes y los precios de los extras se dan al modelo de forma explícita, así las estimaciones respetan la tarifa real de la agencia en lugar de inventarse."
+        },
+        "c": {
+          "title": "Cada respuesta es un contacto",
+          "body": "La recomendación se envía al visitante y a la agencia, así la primera conversación empieza con el alcance y el presupuesto ya sobre la mesa."
+        }
+      },
+      "system": "Del cuestionario a la recomendación y al contacto"
+    },
+    "stock-bot": {
+      "title": "Stock Bot",
+      "tagline": "Un analista con IA para la bolsa de Nigeria",
+      "summary": "Un agente programado que revisa cada día la bolsa de Nigeria, comprueba el historial reciente de precios, pide a un LLM que evalúe cada caída y me envía un breve informe por Telegram.",
+      "role": "Diseño e ingeniería",
+      "problem": "Encontrar buenas caídas en la NGX significa revisar decenas de acciones cada día y leer la historia detrás de cada bajada. Quería automatizar la parte tediosa y resumir la parte de criterio.",
+      "process": "Una función Lambda se ejecuta a diario con EventBridge. Obtiene las mayores caídas del día, para revisar solo esas, las compara con cinco días de precios guardados en DynamoDB y envía las candidatas a Gemini para un breve análisis. Las mejores opciones llegan por Telegram, y GitHub Actions despliega en cada push.",
+      "outcome": "En curso. La extracción, el análisis y los informes de Telegram funcionan en local; el despliegue en Lambda se está terminando.",
+      "learnings": "Filtra antes de gastar tokens o peticiones. Empezar por las caídas del día en lugar de por todos los valores redujo el trabajo a una fracción.",
+      "built": {
+        "a": "Un extractor en paralelo de las mayores caídas diarias de la NGX",
+        "b": "Cinco días de historial de precios en DynamoDB para confirmar una caída real",
+        "c": "Un paso de análisis con LLM con un prompt estructurado por empresa",
+        "d": "Informes diarios por Telegram con las mejores opciones",
+        "e": "Despliegue continuo en AWS Lambda con GitHub Actions"
+      },
+      "decisions": {
+        "a": {
+          "title": "Serverless programado",
+          "body": "La tarea dura un par de minutos al día. Una Lambda programada no cuesta casi nada y no hay servidor que mantener."
+        },
+        "b": {
+          "title": "Primero filtrar, luego pensar",
+          "body": "Código barato acorta la lista y el LLM solo ve las pocas acciones que merecen una mirada. Así bajan la latencia y el coste."
+        },
+        "c": {
+          "title": "Sin dependencias pesadas",
+          "body": "Sustituir pandas por un parser HTML ligero dejó el paquete de Lambda lo bastante pequeño para desplegarlo sin capas especiales."
+        }
+      },
+      "system": "Una ejecución diaria, del horario al informe"
     },
     "trendhub": {
       "title": "TrendHub",
@@ -739,7 +804,10 @@
       "customers": "Clientes",
       "publicInvoice": "Página pública de factura",
       "paymentGateway": "Pasarela de pago",
-      "notifications": "Notificaciones"
+      "notifications": "Notificaciones",
+      "pricingQuestionnaire": "Cuestionario de precios",
+      "emails": "Correos",
+      "agencyInbox": "Bandeja de la agencia"
     },
     "edges": {
       "signIn": "acceso",
@@ -762,7 +830,9 @@
       "send": "mejores opciones",
       "shareLink": "enlace",
       "pay": "pagar",
-      "notify": "correo + push"
+      "notify": "correo + push",
+      "typedResult": "resultado tipado",
+      "newLead": "nuevo contacto"
     }
   },
   "Notes": {

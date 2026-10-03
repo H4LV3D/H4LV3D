@@ -268,7 +268,7 @@
     "freelance": {
       "name": "Freelance",
       "role": "Ingénierie frontend et mobile",
-      "summary": "Missions indépendantes : une app et un site de finances personnelles, un portail de vente pour un fournisseur solaire et le site d'une agence de branding."
+      "summary": "Missions indépendantes : une app et un site de finances personnelles, une plateforme de facturation et de paiements, le site multilingue d'un centre médical, le site d'une agence avec un conseiller tarifaire IA, un portail de vente pour un fournisseur solaire et le site d'une agence de branding."
     },
     "lab": {
       "name": "Lab",
@@ -566,38 +566,6 @@
         }
       }
     },
-    "stock-bot": {
-      "title": "Stock Bot",
-      "tagline": "Un analyste IA pour la bourse nigériane",
-      "summary": "Un agent planifié qui parcourt chaque jour la bourse nigériane, vérifie l'historique récent des cours, demande à un LLM d'évaluer chaque baisse et m'envoie un court rapport sur Telegram.",
-      "role": "Conception et ingénierie",
-      "problem": "Repérer les bonnes baisses sur la NGX, c'est vérifier des dizaines de titres chaque jour et lire l'histoire derrière chaque chute. Je voulais automatiser la partie fastidieuse et résumer la part de jugement.",
-      "process": "Une fonction Lambda s'exécute chaque jour via EventBridge. Elle récupère les plus fortes baisses du jour, pour n'examiner que celles-ci, les compare à cinq jours de cours stockés dans DynamoDB et envoie les candidats à Gemini pour une courte analyse. Les meilleurs choix arrivent sur Telegram, et GitHub Actions déploie à chaque push.",
-      "outcome": "En cours. La collecte, l'analyse et les rapports Telegram fonctionnent en local ; le déploiement Lambda est en voie de finalisation.",
-      "learnings": "Filtrer avant de dépenser des jetons ou des requêtes. Partir des baisses du jour plutôt que de tous les titres a réduit le travail à une fraction.",
-      "built": {
-        "a": "Un collecteur parallèle des plus fortes baisses quotidiennes de la NGX",
-        "b": "Cinq jours d'historique des cours dans DynamoDB pour confirmer une vraie baisse",
-        "c": "Une étape d'analyse par LLM avec un prompt structuré par entreprise",
-        "d": "Des rapports Telegram quotidiens avec les meilleurs choix",
-        "e": "Déploiement continu sur AWS Lambda avec GitHub Actions"
-      },
-      "decisions": {
-        "a": {
-          "title": "Du serverless planifié",
-          "body": "La tâche tourne quelques minutes par jour. Une Lambda planifiée ne coûte presque rien et ne demande aucun serveur à entretenir."
-        },
-        "b": {
-          "title": "Filtrer d'abord, réfléchir ensuite",
-          "body": "Du code bon marché réduit la liste, et le LLM ne voit que les quelques titres qui méritent un examen. Cela réduit à la fois la latence et le coût."
-        },
-        "c": {
-          "title": "Se passer des dépendances lourdes",
-          "body": "Remplacer pandas par un parseur HTML léger a rendu le paquet Lambda assez petit pour être déployé sans couches spéciales."
-        }
-      },
-      "system": "Une exécution quotidienne, du planning au rapport"
-    },
     "invocipt": {
       "title": "Invocipt",
       "tagline": "Factures, paiements et reçus pour les petites entreprises",
@@ -630,6 +598,103 @@
         }
       },
       "system": "De la facture au paiement, puis au reçu"
+    },
+    "life-fount": {
+      "title": "Life Fount",
+      "tagline": "Le site multilingue d'un centre médical",
+      "summary": "Le site de Life Fount Medical Center : 18 services avec leur propre page, en anglais, yoruba, igbo et haoussa, conçu d'abord pour les patients sur mobile.",
+      "role": "Conception et ingénierie frontend",
+      "problem": "Les patients cherchent un hôpital sur leur téléphone, souvent dans une autre langue que l'anglais, et veulent savoir vite ce qu'il soigne et comment joindre quelqu'un.",
+      "process": "J'ai construit le site sur Next.js avec next-intl : chaque page existe en anglais, yoruba, igbo et haoussa, avec sa propre URL. Chacun des 18 services, de la cardiologie à la kinésithérapie, a une page générée à partir d'un seul fichier de données. La mise en page est pensée mobile d'abord, animée, avec un bouton WhatsApp flottant pour les questions rapides, une FAQ, des témoignages, une page carrières et un formulaire de contact.",
+      "outcome": "En ligne, en quatre langues.",
+      "learnings": "Concevoir pour quatre langues, c'est des mises en page qui s'adaptent à la longueur du texte au lieu d'être calibrées pour l'anglais.",
+      "built": {
+        "a": "Un accueil avec bannière, services, points forts, chiffres clés, témoignages et FAQ",
+        "b": "18 pages de services générées à partir d'un seul fichier de données",
+        "c": "Anglais, yoruba, igbo et haoussa, avec sélecteur de langue et URL localisées",
+        "d": "Un bouton WhatsApp flottant pour les questions rapides des patients",
+        "e": "Pages À propos, carrières et contact avec formulaire validé",
+        "f": "Métadonnées SEO, plan du site, manifeste d'app web et thèmes clair et sombre"
+      },
+      "decisions": {
+        "a": {
+          "title": "Les langues nigérianes à part entière",
+          "body": "Le yoruba, l'igbo et le haoussa ont leurs propres routes plutôt qu'un widget de traduction automatique : chaque page peut être partagée et trouvée dans la langue du patient."
+        },
+        "b": {
+          "title": "Les services comme données",
+          "body": "Les 18 services vivent dans un seul fichier de données : ajouter ou modifier un service est un changement de contenu, pas une nouvelle page."
+        },
+        "c": {
+          "title": "WhatsApp plutôt qu'un widget de chat",
+          "body": "Les patients utilisent déjà WhatsApp : le bouton d'assistance ouvre une conversation là-bas plutôt qu'un chat intégré qui demanderait sa propre équipe."
+        }
+      }
+    },
+    "architekt": {
+      "title": "Architekt",
+      "tagline": "Le site d'une agence avec un conseiller tarifaire IA",
+      "summary": "Le site d'une agence digitale pour sites web, apps web et apps mobiles, avec un portfolio, un calculateur de prix et un questionnaire où un LLM recommande une formule, des options et une estimation de coût.",
+      "role": "Conception et ingénierie frontend",
+      "problem": "Les gens veulent un ordre de prix avant de parler à une agence, mais les grilles fixes ne conviennent pas au sur-mesure, et un long appel commercial, c'est beaucoup demander à un petit client.",
+      "process": "J'ai conçu et construit le site sur Next.js, animé de bout en bout : services, méthode de travail, projets phares, témoignages, carrières et une page contact avec une carte Mapbox. La tarification combine formules fixes, options et un calculateur interactif. Un court questionnaire envoie le type de projet, la complexité, les fonctionnalités, le délai et le budget à Gemini via Genkit, qui renvoie une formule recommandée, des options et une estimation sous forme de données structurées. Resend envoie ensuite le résultat au visiteur et à l'agence.",
+      "outcome": "En cours. Le site et le questionnaire IA tournent sur un déploiement de préproduction pendant que les dernières pages sont finalisées.",
+      "learnings": "Il faut encadrer la sortie du modèle. Un schéma strict pour la formule, les options et le coût a transformé la réponse de l'IA en données directement exploitables par l'interface et les e-mails, au lieu de texte libre.",
+      "built": {
+        "a": "Un accueil avec services, méthode de travail, projets phares, témoignages et logos clients",
+        "b": "Un portfolio avec pages de détail et un carrousel de projets similaires",
+        "c": "Formules, options et un calculateur de prix interactif",
+        "d": "Un questionnaire tarifaire IA avec Gemini 2.5 Flash via Genkit",
+        "e": "E-mails de confirmation et de prospect via Resend",
+        "f": "Pages À propos, carrières et contact avec carte Mapbox, en thème clair et sombre"
+      },
+      "decisions": {
+        "a": {
+          "title": "Une sortie structurée, pas un chat",
+          "body": "Le modèle renvoie un objet typé (formule, options, coût) vérifié par un schéma : le résultat s'affiche comme une vraie recommandation, pas comme un paragraphe."
+        },
+        "b": {
+          "title": "Les vrais prix dans le prompt",
+          "body": "Les formules et le prix des options sont donnés explicitement au modèle : les estimations restent dans la grille réelle de l'agence au lieu d'être inventées."
+        },
+        "c": {
+          "title": "Chaque réponse devient un prospect",
+          "body": "La recommandation est envoyée au visiteur et à l'agence : la première conversation commence avec le périmètre et le budget déjà sur la table."
+        }
+      },
+      "system": "Du questionnaire à la recommandation, puis au prospect"
+    },
+    "stock-bot": {
+      "title": "Stock Bot",
+      "tagline": "Un analyste IA pour la bourse nigériane",
+      "summary": "Un agent planifié qui parcourt chaque jour la bourse nigériane, vérifie l'historique récent des cours, demande à un LLM d'évaluer chaque baisse et m'envoie un court rapport sur Telegram.",
+      "role": "Conception et ingénierie",
+      "problem": "Repérer les bonnes baisses sur la NGX, c'est vérifier des dizaines de titres chaque jour et lire l'histoire derrière chaque chute. Je voulais automatiser la partie fastidieuse et résumer la part de jugement.",
+      "process": "Une fonction Lambda s'exécute chaque jour via EventBridge. Elle récupère les plus fortes baisses du jour, pour n'examiner que celles-ci, les compare à cinq jours de cours stockés dans DynamoDB et envoie les candidats à Gemini pour une courte analyse. Les meilleurs choix arrivent sur Telegram, et GitHub Actions déploie à chaque push.",
+      "outcome": "En cours. La collecte, l'analyse et les rapports Telegram fonctionnent en local ; le déploiement Lambda est en voie de finalisation.",
+      "learnings": "Filtrer avant de dépenser des jetons ou des requêtes. Partir des baisses du jour plutôt que de tous les titres a réduit le travail à une fraction.",
+      "built": {
+        "a": "Un collecteur parallèle des plus fortes baisses quotidiennes de la NGX",
+        "b": "Cinq jours d'historique des cours dans DynamoDB pour confirmer une vraie baisse",
+        "c": "Une étape d'analyse par LLM avec un prompt structuré par entreprise",
+        "d": "Des rapports Telegram quotidiens avec les meilleurs choix",
+        "e": "Déploiement continu sur AWS Lambda avec GitHub Actions"
+      },
+      "decisions": {
+        "a": {
+          "title": "Du serverless planifié",
+          "body": "La tâche tourne quelques minutes par jour. Une Lambda planifiée ne coûte presque rien et ne demande aucun serveur à entretenir."
+        },
+        "b": {
+          "title": "Filtrer d'abord, réfléchir ensuite",
+          "body": "Du code bon marché réduit la liste, et le LLM ne voit que les quelques titres qui méritent un examen. Cela réduit à la fois la latence et le coût."
+        },
+        "c": {
+          "title": "Se passer des dépendances lourdes",
+          "body": "Remplacer pandas par un parseur HTML léger a rendu le paquet Lambda assez petit pour être déployé sans couches spéciales."
+        }
+      },
+      "system": "Une exécution quotidienne, du planning au rapport"
     },
     "trendhub": {
       "title": "TrendHub",
@@ -739,7 +804,10 @@
       "customers": "Clients",
       "publicInvoice": "Page de facture publique",
       "paymentGateway": "Passerelle de paiement",
-      "notifications": "Notifications"
+      "notifications": "Notifications",
+      "pricingQuestionnaire": "Questionnaire tarifaire",
+      "emails": "E-mails",
+      "agencyInbox": "Boîte de l'agence"
     },
     "edges": {
       "signIn": "connexion",
@@ -762,7 +830,9 @@
       "send": "meilleurs choix",
       "shareLink": "lien partagé",
       "pay": "payer",
-      "notify": "e-mail + push"
+      "notify": "e-mail + push",
+      "typedResult": "résultat typé",
+      "newLead": "nouveau prospect"
     }
   },
   "Notes": {
