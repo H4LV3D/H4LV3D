@@ -598,6 +598,39 @@
       },
       "system": "A daily run, from schedule to report"
     },
+    "invocipt": {
+      "title": "Invocipt",
+      "tagline": "Invoices, payments and receipts for small businesses",
+      "summary": "A SaaS platform where businesses create invoices, get paid online and turn paid invoices into receipts, with several businesses per account, product catalogues and customer records.",
+      "role": "Designer & full-stack engineer",
+      "problem": "Small businesses juggle invoices in documents, payments in banking apps and receipts on paper, with no single record of who paid for what.",
+      "process": "I built it as a full-stack Next.js app on Postgres with Prisma. One account can run several businesses, each with its own products (importable from a spreadsheet), customers, bank details and payment integrations. Every invoice gets a public page with a QR code where the customer pays through Paystack or Flutterwave, and a paid invoice becomes a receipt in one click. Emails go out through Resend with React Email templates, and the installable web app sends push notifications.",
+      "outcome": "Version 1.0 shipped in February 2025, followed by regular releases through June 2025 with an automated public changelog.",
+      "learnings": "Money flows need explicit states. Draft, unpaid and paid invoices behave differently, and modelling that up front kept payments, emails and reports consistent.",
+      "built": {
+        "a": "Multi-business workspaces with products, customers, bank details and team roles",
+        "b": "Product import from Excel spreadsheets",
+        "c": "Invoices with drafts, QR codes and a public payment page (Paystack, Flutterwave)",
+        "d": "One-click receipts from paid invoices, with PDF download",
+        "e": "Email notifications with React Email templates and web push notifications",
+        "f": "A revenue dashboard, reports, an admin area, a blog and a public changelog"
+      },
+      "decisions": {
+        "a": {
+          "title": "Payments go to the business",
+          "body": "Each business connects its own payment gateway keys, so customers pay the business directly and Invocipt never holds the money."
+        },
+        "b": {
+          "title": "Invoice status drives everything",
+          "body": "Draft, unpaid and paid are explicit statuses, and emails, dashboards and receipts all follow them instead of guessing."
+        },
+        "c": {
+          "title": "Release discipline, even solo",
+          "body": "Conventional commits, commit linting, Git hooks and automated releases keep version numbers and the public changelog in step."
+        }
+      },
+      "system": "From invoice to payment to receipt"
+    },
     "trendhub": {
       "title": "TrendHub",
       "tagline": "A hub for newsletters, podcasts and blogs",
@@ -701,7 +734,12 @@
       "report": "Daily report",
       "attendeeFlow": "Attendee flow",
       "creatorFlow": "Organiser tools",
-      "ticketScanner": "Ticket scanner"
+      "ticketScanner": "Ticket scanner",
+      "businessOwner": "Business owner",
+      "customers": "Customers",
+      "publicInvoice": "Public invoice page",
+      "paymentGateway": "Payment gateway",
+      "notifications": "Notifications"
     },
     "edges": {
       "signIn": "sign in",
@@ -721,7 +759,10 @@
       "fetch": "fetch losers",
       "check": "5-day check",
       "analyse": "analyse",
-      "send": "top picks"
+      "send": "top picks",
+      "shareLink": "share link",
+      "pay": "pay",
+      "notify": "email + push"
     }
   },
   "Notes": {

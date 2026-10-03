@@ -598,6 +598,39 @@
       },
       "system": "Una ejecución diaria, del horario al informe"
     },
+    "invocipt": {
+      "title": "Invocipt",
+      "tagline": "Facturas, pagos y recibos para pequeños negocios",
+      "summary": "Una plataforma SaaS donde los negocios crean facturas, cobran en línea y convierten las facturas pagadas en recibos, con varios negocios por cuenta, catálogos de productos y fichas de clientes.",
+      "role": "Diseño e ingeniería full-stack",
+      "problem": "Los pequeños negocios reparten las facturas en documentos, los pagos en apps bancarias y los recibos en papel, sin un registro único de quién pagó qué.",
+      "process": "Lo construí como una app full-stack de Next.js sobre Postgres con Prisma. Una cuenta puede gestionar varios negocios, cada uno con sus productos (importables desde una hoja de cálculo), clientes, datos bancarios e integraciones de pago. Cada factura tiene una página pública con código QR donde el cliente paga con Paystack o Flutterwave, y una factura pagada se convierte en recibo con un clic. Los correos salen por Resend con plantillas de React Email, y la app web instalable envía notificaciones push.",
+      "outcome": "La versión 1.0 salió en febrero de 2025, seguida de lanzamientos regulares hasta junio de 2025 con un registro de cambios público automatizado.",
+      "learnings": "Los flujos de dinero necesitan estados explícitos. Borrador, pendiente y pagada se comportan distinto, y modelarlo desde el principio mantuvo coherentes los pagos, los correos y los informes.",
+      "built": {
+        "a": "Espacios con varios negocios, productos, clientes, datos bancarios y roles de equipo",
+        "b": "Importación de productos desde hojas de Excel",
+        "c": "Facturas con borradores, códigos QR y una página de pago pública (Paystack, Flutterwave)",
+        "d": "Recibos con un clic a partir de facturas pagadas, con descarga en PDF",
+        "e": "Notificaciones por correo con plantillas de React Email y notificaciones push web",
+        "f": "Un panel de ingresos, informes, un área de administración, un blog y un registro de cambios público"
+      },
+      "decisions": {
+        "a": {
+          "title": "El dinero va al negocio",
+          "body": "Cada negocio conecta sus propias claves de pasarela de pago, así los clientes pagan directamente al negocio e Invocipt nunca retiene el dinero."
+        },
+        "b": {
+          "title": "El estado de la factura lo dirige todo",
+          "body": "Borrador, pendiente y pagada son estados explícitos, y los correos, paneles y recibos se guían por ellos en lugar de adivinar."
+        },
+        "c": {
+          "title": "Disciplina de lanzamientos, también en solitario",
+          "body": "Commits convencionales, validación de mensajes, hooks de Git y lanzamientos automatizados mantienen alineados los números de versión y el registro de cambios público."
+        }
+      },
+      "system": "De la factura al pago y al recibo"
+    },
     "trendhub": {
       "title": "TrendHub",
       "tagline": "Un hub de newsletters, pódcasts y blogs",
@@ -701,7 +734,12 @@
       "report": "Informe diario",
       "attendeeFlow": "Flujo del público",
       "creatorFlow": "Herramientas de organización",
-      "ticketScanner": "Escáner de entradas"
+      "ticketScanner": "Escáner de entradas",
+      "businessOwner": "Titular del negocio",
+      "customers": "Clientes",
+      "publicInvoice": "Página pública de factura",
+      "paymentGateway": "Pasarela de pago",
+      "notifications": "Notificaciones"
     },
     "edges": {
       "signIn": "acceso",
@@ -721,7 +759,10 @@
       "fetch": "caídas del día",
       "check": "control de 5 días",
       "analyse": "analiza",
-      "send": "mejores opciones"
+      "send": "mejores opciones",
+      "shareLink": "enlace",
+      "pay": "pagar",
+      "notify": "correo + push"
     }
   },
   "Notes": {

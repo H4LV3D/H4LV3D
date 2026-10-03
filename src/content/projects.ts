@@ -77,6 +77,7 @@ export type CaseStudy = ProjectBase & {
     | "lawxtech"
     | "pennywise"
     | "stock-bot"
+    | "invocipt"
     | "trendhub"
     | "coinsave"
     | "cabify";
@@ -379,6 +380,33 @@ const allProjects: Project[] = [
     built: 5,
     decisions: 3,
     system: diagrams.stockBot,
+  },
+  {
+    slug: "invocipt",
+    tier: "case-study",
+    company: "lab",
+    categories: ["web", "systems"],
+    stack: [
+      "Next.js 14",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "TanStack Query",
+      "Paystack",
+      "Flutterwave",
+      "Resend",
+      "React Email",
+      "Web Push",
+      "Sentry",
+    ],
+    period: { start: "2025-02", end: "2025-06" },
+    status: "live",
+    links: { live: "https://invocipt.com.ng" },
+    metrics: [],
+    built: 6,
+    decisions: 3,
+    system: diagrams.invocipt,
   },
   {
     slug: "trendhub",

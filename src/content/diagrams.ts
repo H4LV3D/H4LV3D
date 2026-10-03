@@ -127,6 +127,28 @@ export const diagrams = {
     ],
   }),
 
+  invocipt: d({
+    width: 800,
+    height: 400,
+    nodes: [
+      { id: "owner", label: "businessOwner", x: 150, y: 50, kind: "actor" },
+      { id: "customer", label: "customers", x: 650, y: 50, kind: "actor" },
+      { id: "app", label: "webApp", sub: "Next.js", x: 150, y: 195, kind: "accent" },
+      { id: "invoice", label: "publicInvoice", sub: "QR code", x: 650, y: 195 },
+      { id: "db", label: "database", sub: "Postgres · Prisma", x: 150, y: 345 },
+      { id: "notify", label: "notifications", sub: "Resend · Web Push", x: 400, y: 345 },
+      { id: "gateway", label: "paymentGateway", sub: "Paystack · Flutterwave", x: 650, y: 345 },
+    ],
+    edges: [
+      { from: "owner", to: "app" },
+      { from: "app", to: "db", both: true },
+      { from: "app", to: "invoice", label: "shareLink" },
+      { from: "customer", to: "invoice" },
+      { from: "invoice", to: "gateway", label: "pay" },
+      { from: "app", to: "notify", label: "notify" },
+    ],
+  }),
+
   sso: d({
     width: 800,
     height: 400,

@@ -598,6 +598,39 @@
       },
       "system": "Une exécution quotidienne, du planning au rapport"
     },
+    "invocipt": {
+      "title": "Invocipt",
+      "tagline": "Factures, paiements et reçus pour les petites entreprises",
+      "summary": "Une plateforme SaaS où les entreprises créent des factures, se font payer en ligne et transforment les factures payées en reçus, avec plusieurs entreprises par compte, des catalogues de produits et des fiches clients.",
+      "role": "Conception et ingénierie full-stack",
+      "problem": "Les petites entreprises jonglent entre des factures dans des documents, des paiements dans des apps bancaires et des reçus papier, sans aucun registre unique de qui a payé quoi.",
+      "process": "Je l'ai construit comme une app Next.js full-stack sur Postgres avec Prisma. Un compte peut gérer plusieurs entreprises, chacune avec ses produits (importables depuis un tableur), ses clients, ses coordonnées bancaires et ses intégrations de paiement. Chaque facture a une page publique avec un QR code où le client paie via Paystack ou Flutterwave, et une facture payée devient un reçu en un clic. Les e-mails partent via Resend avec des modèles React Email, et l'app web installable envoie des notifications push.",
+      "outcome": "La version 1.0 est sortie en février 2025, suivie de publications régulières jusqu'en juin 2025 avec un journal des modifications public automatisé.",
+      "learnings": "Les flux d'argent ont besoin d'états explicites. Brouillon, impayée et payée se comportent différemment, et le modéliser dès le départ a gardé paiements, e-mails et rapports cohérents.",
+      "built": {
+        "a": "Espaces multi-entreprises avec produits, clients, coordonnées bancaires et rôles d'équipe",
+        "b": "Import de produits depuis des fichiers Excel",
+        "c": "Factures avec brouillons, QR codes et page de paiement publique (Paystack, Flutterwave)",
+        "d": "Reçus en un clic à partir des factures payées, avec téléchargement PDF",
+        "e": "Notifications par e-mail avec des modèles React Email et notifications push web",
+        "f": "Un tableau de bord des revenus, des rapports, un espace d'administration, un blog et un journal des modifications public"
+      },
+      "decisions": {
+        "a": {
+          "title": "L'argent va à l'entreprise",
+          "body": "Chaque entreprise connecte ses propres clés de passerelle de paiement : les clients paient directement l'entreprise et Invocipt ne détient jamais les fonds."
+        },
+        "b": {
+          "title": "Le statut de la facture pilote tout",
+          "body": "Brouillon, impayée et payée sont des statuts explicites, et e-mails, tableaux de bord et reçus s'y fient au lieu de deviner."
+        },
+        "c": {
+          "title": "De la rigueur, même en solo",
+          "body": "Commits conventionnels, vérification des messages, hooks Git et publications automatisées gardent les numéros de version et le journal public alignés."
+        }
+      },
+      "system": "De la facture au paiement, puis au reçu"
+    },
     "trendhub": {
       "title": "TrendHub",
       "tagline": "Un hub pour newsletters, podcasts et blogs",
@@ -701,7 +734,12 @@
       "report": "Rapport quotidien",
       "attendeeFlow": "Parcours public",
       "creatorFlow": "Outils d'organisation",
-      "ticketScanner": "Scanner de billets"
+      "ticketScanner": "Scanner de billets",
+      "businessOwner": "Propriétaire",
+      "customers": "Clients",
+      "publicInvoice": "Page de facture publique",
+      "paymentGateway": "Passerelle de paiement",
+      "notifications": "Notifications"
     },
     "edges": {
       "signIn": "connexion",
@@ -721,7 +759,10 @@
       "fetch": "baisses du jour",
       "check": "contrôle 5 jours",
       "analyse": "analyse",
-      "send": "meilleurs choix"
+      "send": "meilleurs choix",
+      "shareLink": "lien partagé",
+      "pay": "payer",
+      "notify": "e-mail + push"
     }
   },
   "Notes": {
