@@ -257,7 +257,7 @@
     "hotrac": {
       "name": "Hotrac",
       "role": "Frontend Engineer",
-      "summary": "Built the frontends of two Hotrac products: Export Trades, a cross-border commodity trading platform, and FarmShare, a tractor-sharing admin dashboard."
+      "summary": "Built the frontends of two Hotrac products: Export Trades, a cross-border commodity trading platform, and Farmshare, a tractor-sharing admin dashboard."
     },
     "lawxtech": {
       "name": "Law x Tech",
@@ -643,7 +643,7 @@
       "summary": "A waitlist with country selection and validated phone numbers, used before the apps launched."
     },
     "farmshare": {
-      "title": "FarmShare Admin",
+      "title": "Farmshare",
       "tagline": "Tractor-sharing back office",
       "summary": "Admin dashboard for users, tractors, bookings, transactions and payment requests, with maps and charts."
     },

@@ -44,7 +44,7 @@ pnpm dev                     # http://localhost:3000
 - **The Work section never links to source code.** Only live sites, store listings and npm packages go in `links`.
 - **Hiding a project:** set `hidden: true` on it in `src/content/projects.ts`. It stays in the data but disappears from the site (the Circular Net admin, UI library, waitlist and SSO are hidden this way).
 - **System diagrams** are data in `src/content/diagrams.ts` (node centres in an 800-wide viewBox). Node and arrow labels are keys under `Diagram.nodes` / `Diagram.edges` in the messages; the small technology line (`sub`) is never translated.
-- **Home page** features the case studies listed in `featured`.
+- **Home page** "Selected work" shows the first case study from each company and the lab, in Work-page order (`featured`). Reorder projects to change which one leads each group.
 - **Notes** (`/notes`) live in `src/content/notes/`: metadata in `index.ts`, text per language in `en.ts`, `fr.ts`, `es.ts`, `ru.ts`, `zh.ts` (TypeScript fails the build if a language is missing a note). Blocks are `p`, `h`, `list` and `diagram`.
 - **Copy rule for French, Spanish and Russian:** keep it gender-neutral. Use activity nouns for roles ("Développement frontend", "Frontend-разработка"), and in Russian avoid first-person past tense.
 

@@ -257,7 +257,7 @@
     "hotrac": {
       "name": "Hotrac",
       "role": "前端工程师",
-      "summary": "为 Hotrac 的两款产品打造前端：跨境大宗商品交易平台 Export Trades，以及拖拉机共享管理后台 FarmShare。"
+      "summary": "为 Hotrac 的两款产品打造前端：跨境大宗商品交易平台 Export Trades，以及拖拉机共享管理后台 Farmshare。"
     },
     "lawxtech": {
       "name": "Law x Tech",
@@ -643,7 +643,7 @@
       "summary": "带国家选择和手机号校验的等候名单，在应用上线前使用。"
     },
     "farmshare": {
-      "title": "FarmShare Admin",
+      "title": "Farmshare",
       "tagline": "拖拉机共享后台",
       "summary": "管理用户、拖拉机、预订、交易和付款申请的后台，带地图和图表。"
     },

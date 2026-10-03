@@ -294,8 +294,8 @@ const allProjects: Project[] = [
     categories: ["web"],
     stack: ["Next.js", "Mantine", "Redux Toolkit", "Google Maps", "Chart.js"],
     period: { start: "2023-10", end: "2023-11" },
-    status: "offline",
-    links: {},
+    status: "live",
+    links: { live: "https://staging.d5xu6fcn1t4u1.amplifyapp.com/" },
   },
 
   // Law x Tech ---------------------------------------------------------------
@@ -344,8 +344,8 @@ const allProjects: Project[] = [
     categories: ["web"],
     stack: ["Next.js", "TanStack Table", "Redux Toolkit", "jsPDF"],
     period: { start: "2025-08", end: "2025-11" },
-    status: "internal",
-    links: {},
+    status: "live",
+    links: { live: "https://sales.dsenergy.com.ng/sign-in" },
   },
   {
     slug: "royal-revamps",
@@ -355,7 +355,7 @@ const allProjects: Project[] = [
     stack: ["Next.js", "Prisma", "TypeScript"],
     period: { start: "2026-07" },
     status: "live",
-    links: { live: "https://royal-revamps.com.ng" },
+    links: { live: "https://www.royalrevamps.com.ng/" },
   },
 
   // Lab (personal) -----------------------------------------------------------
@@ -454,13 +454,14 @@ export function groupedWork(list: Project[] = projects) {
     .filter((g) => g.items.length > 0);
 }
 
-/** The case studies featured on the home page. */
-export const featured: CaseStudy["slug"][] = [
-  "the-circular-net-web",
-  "the-circular-net-mobile",
-  "circular-ticket",
-  "stock-bot",
-];
+/**
+ * The case studies featured on the home page: the first case study from each
+ * company (and the personal lab), in the same order as the Work page.
+ */
+export const featured: CaseStudy[] = companies.flatMap((c) => {
+  const first = caseStudies.find((p) => p.company === c.id);
+  return first ? [first] : [];
+});
 
 export const toolkit = {
   frontend: [

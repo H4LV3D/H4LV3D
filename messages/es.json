@@ -257,7 +257,7 @@
     "hotrac": {
       "name": "Hotrac",
       "role": "Ingeniería frontend",
-      "summary": "Los frontends de dos productos de Hotrac: Export Trades, una plataforma de comercio internacional de materias primas, y FarmShare, un panel de administración para compartir tractores."
+      "summary": "Los frontends de dos productos de Hotrac: Export Trades, una plataforma de comercio internacional de materias primas, y Farmshare, un panel de administración para compartir tractores."
     },
     "lawxtech": {
       "name": "Law x Tech",
@@ -643,7 +643,7 @@
       "summary": "Una lista de espera con selección de país y números de teléfono validados, usada antes del lanzamiento de las apps."
     },
     "farmshare": {
-      "title": "FarmShare Admin",
+      "title": "Farmshare",
       "tagline": "Back office para compartir tractores",
       "summary": "Panel de administración de usuarios, tractores, reservas, transacciones y solicitudes de pago, con mapas y gráficos."
     },
