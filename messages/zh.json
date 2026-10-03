@@ -802,14 +802,19 @@
       "messagePlaceholder": "说说你的想法…",
       "submit": "发送",
       "sending": "发送中…",
-      "success": "已发送——我会尽快回复你。",
       "error": "出了点问题。请重试，或直接给我发邮件。",
+      "rateLimited": "短时间内消息太多了。请稍等几分钟，或直接给我发邮件。",
+      "emailInstead": "直接发邮件给我",
       "notConfigured": "联系表单尚未接通——请直接给我发邮件。",
       "errors": {
         "name": "请告诉我你的名字。",
         "email": "这个邮箱地址看起来不太对。",
         "message": "请再多写一点（至少 10 个字符）。"
-      }
+      },
+      "sentTitle": "消息已发送",
+      "sentBody": "谢谢你，{name}。消息已经收到，我会尽快回复到 {email}。",
+      "sendAnother": "好的",
+      "close": "关闭"
     },
     "faq": {
       "title": "须知",

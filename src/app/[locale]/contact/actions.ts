@@ -49,7 +49,7 @@ export async function sendContactMessage(input: ContactInput, requestedLocale?: 
 
   const data = parsed.data;
   // Honeypot filled → pretend success, send nothing.
-  if (data.company) return { status: "success" };
+  if (data.trap) return { status: "success" };
 
   const h = await headers();
   const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() || h.get("x-real-ip") || "unknown";
@@ -77,6 +77,12 @@ export async function sendContactMessage(input: ContactInput, requestedLocale?: 
     const { error } = await resend.emails.send({ from, to: owner, replyTo: data.email, ...notification });
     if (error) {
       console.error("[contact] Resend error (notification)", error);
+      if (!verifiedFrom) {
+        console.error(
+          `[contact] Sending from Resend's test address, which only delivers to the email the Resend account was created with. ` +
+            `Set CONTACT_TO_EMAIL to that address, or verify a domain in Resend and set CONTACT_FROM_EMAIL.`,
+        );
+      }
       return { status: "error" };
     }
 

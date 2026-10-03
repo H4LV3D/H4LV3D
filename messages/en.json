@@ -802,14 +802,19 @@
       "messagePlaceholder": "Tell me about your idea…",
       "submit": "Send message",
       "sending": "Sending…",
-      "success": "Message sent — I'll get back to you soon.",
       "error": "Something went wrong. Please try again or email me directly.",
+      "rateLimited": "That's a lot of messages in a short time. Please wait a few minutes, or email me directly.",
+      "emailInstead": "Email me instead",
       "notConfigured": "The contact form isn't connected yet — please email me directly.",
       "errors": {
         "name": "Please tell me your name.",
         "email": "That email doesn't look right.",
         "message": "A little more detail, please (at least 10 characters)."
-      }
+      },
+      "sentTitle": "Message sent",
+      "sentBody": "Thanks, {name}. Your message is in my inbox, and I'll reply to {email} soon.",
+      "sendAnother": "Done",
+      "close": "Close"
     },
     "faq": {
       "title": "Good to know",

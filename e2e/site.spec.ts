@@ -111,7 +111,26 @@ test("contact form reports when Resend isn't configured", async ({ page }) => {
   await page.getByLabel("Email").fill("ada@example.com");
   await page.getByLabel("Message").fill("Hello! I'd love to build something together.");
   await page.getByRole("button", { name: "Send message" }).click();
-  await expect(page.getByText("The contact form isn't connected yet")).toBeVisible();
+  await expect(page.getByRole("alert").filter({ hasText: "The contact form isn't connected yet" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Email me instead/ })).toBeVisible();
+});
+
+test("a successful send shows the confirmation dialog", async ({ page }) => {
+  await page.goto("/contact");
+  await waitForIntro(page);
+  await page.getByLabel("Your name").fill("Ada Lovelace");
+  await page.getByLabel("Email").fill("ada@example.com");
+  await page.getByLabel("Message").fill("Hello! I'd love to build something together.");
+  // The honeypot path reports success without sending an email, so this test
+  // never reaches Resend.
+  await page.locator("#contact-ref").fill("bot", { force: true });
+  await page.getByRole("button", { name: "Send message" }).click();
+  const dialog = page.getByRole("dialog", { name: "Message sent" });
+  await expect(dialog).toBeVisible();
+  await expect(dialog).toContainText("ada@example.com");
+  await dialog.getByRole("button", { name: "Done" }).click();
+  await expect(dialog).toBeHidden();
+  await expect(page.getByLabel("Your name")).toHaveValue("");
 });
 
 test("unknown pages show the localised 404", async ({ page }) => {

@@ -802,14 +802,19 @@
       "messagePlaceholder": "Cuéntame tu idea…",
       "submit": "Enviar mensaje",
       "sending": "Enviando…",
-      "success": "Mensaje enviado: te respondo muy pronto.",
       "error": "Algo salió mal. Inténtalo de nuevo o escríbeme directamente.",
+      "rateLimited": "Son muchos mensajes en poco tiempo. Espera unos minutos o escríbeme directamente.",
+      "emailInstead": "Escríbeme directamente",
       "notConfigured": "El formulario aún no está conectado: escríbeme directamente por correo.",
       "errors": {
         "name": "Dime tu nombre, por favor.",
         "email": "Ese correo no parece válido.",
         "message": "Un poco más de detalle, por favor (mínimo 10 caracteres)."
-      }
+      },
+      "sentTitle": "Mensaje enviado",
+      "sentBody": "Gracias, {name}. Tu mensaje ha llegado y te responderé pronto a {email}.",
+      "sendAnother": "Listo",
+      "close": "Cerrar"
     },
     "faq": {
       "title": "Bueno saber",
