@@ -215,6 +215,7 @@
       "links": "Links",
       "status": "Status",
       "live": "Visit site",
+      "siteVersion": "Website {version}",
       "noLinks": "Private / internal",
       "problem": "The problem",
       "process": "The process",
@@ -545,7 +546,7 @@
       "role": "Mobile & frontend engineer, sole developer",
       "problem": "People wanted to see where their money goes and stick to budgets from their phone, and the product needed a site to explain itself and collect sign-ups before launch.",
       "process": "I built the app with Expo and Expo Router: onboarding, sign-up with verification, password reset, wallets, budgets and charts, with bank account linking through a third-party widget. The website started on the Pages Router with Mantine and was later rebuilt on the App Router with Tailwind.",
-      "outcome": "The website is live at iampennywise.com, and the app ships through separate staging and preview build channels.",
+      "outcome": "Both versions of the website are live, and the app ships through separate staging and preview build channels.",
       "learnings": "Android builds and network configuration take real time. Budget for platform work alongside feature work.",
       "built": {
         "a": "Onboarding, sign-up, verification and a multi-step password reset",

@@ -53,6 +53,10 @@ export default async function CaseStudyPage({ params }: Props) {
   const letters = "abcdefgh".split("");
   const links = [
     { href: project.links.live, label: w("caseStudy.live") },
+    ...(project.links.versions ?? []).map((v) => ({
+      href: v.href,
+      label: w("caseStudy.siteVersion", { version: v.version }),
+    })),
     { href: project.links.appStore, label: w("caseStudy.appStore") },
     { href: project.links.playStore, label: w("caseStudy.playStore") },
     { href: project.links.npm, label: w("caseStudy.npm") },

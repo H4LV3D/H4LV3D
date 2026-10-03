@@ -215,6 +215,7 @@
       "links": "链接",
       "status": "状态",
       "live": "访问网站",
+      "siteVersion": "网站 {version}",
       "noLinks": "私有 / 内部",
       "problem": "问题",
       "process": "过程",
@@ -545,7 +546,7 @@
       "role": "移动与前端开发，独立完成",
       "problem": "人们想在手机上看清钱花到了哪里、守住预算；产品也需要一个网站来介绍自己，并在上线前收集报名。",
       "process": "我用 Expo 和 Expo Router 做了这款应用：新手引导、带验证的注册、密码重置、钱包、预算和图表，并通过第三方组件绑定银行账户。官网最初基于 Pages Router 和 Mantine，后来用 App Router 和 Tailwind 重做。",
-      "outcome": "官网已上线 iampennywise.com，应用通过独立的预发布与预览构建渠道发布。",
+      "outcome": "官网的两个版本都已上线，应用通过独立的预发布与预览构建渠道发布。",
       "learnings": "Android 构建和网络配置真的很费时间，要和功能开发一起预留出来。",
       "built": {
         "a": "新手引导、注册、验证和多步骤密码重置",

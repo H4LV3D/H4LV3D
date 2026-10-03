@@ -215,6 +215,7 @@
       "links": "Enlaces",
       "status": "Estado",
       "live": "Visitar el sitio",
+      "siteVersion": "Sitio web {version}",
       "noLinks": "Privado / interno",
       "problem": "El problema",
       "process": "El proceso",
@@ -545,7 +546,7 @@
       "role": "Móvil y frontend, en solitario",
       "problem": "La gente quería ver a dónde va su dinero y cumplir sus presupuestos desde el móvil, y el producto necesitaba un sitio para presentarse y reunir registros antes del lanzamiento.",
       "process": "Construí la app con Expo y Expo Router: onboarding, registro con verificación, restablecimiento de contraseña, monederos, presupuestos y gráficos, con vinculación de cuentas bancarias mediante un widget externo. El sitio empezó con el Pages Router y Mantine, y después se rehízo con el App Router y Tailwind.",
-      "outcome": "El sitio está en línea en iampennywise.com, y la app se publica mediante canales de build separados para staging y vista previa.",
+      "outcome": "Las dos versiones del sitio están en línea, y la app se publica mediante canales de build separados para staging y vista previa.",
       "learnings": "Los builds de Android y la configuración de red llevan tiempo de verdad. Hay que reservarlo junto al trabajo en funciones.",
       "built": {
         "a": "Onboarding, registro, verificación y restablecimiento de contraseña en varios pasos",

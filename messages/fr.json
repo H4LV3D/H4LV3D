@@ -215,6 +215,7 @@
       "links": "Liens",
       "status": "Statut",
       "live": "Voir le site",
+      "siteVersion": "Site web {version}",
       "noLinks": "Privé / interne",
       "problem": "Le problème",
       "process": "La démarche",
@@ -545,7 +546,7 @@
       "role": "Mobile et frontend, en solo",
       "problem": "Les gens voulaient voir où part leur argent et tenir leur budget depuis leur téléphone, et le produit avait besoin d'un site pour se présenter et recueillir des inscriptions avant le lancement.",
       "process": "J'ai construit l'app avec Expo et Expo Router : onboarding, inscription avec vérification, réinitialisation du mot de passe, portefeuilles, budgets et graphiques, avec connexion des comptes bancaires via un widget tiers. Le site a commencé sur le Pages Router avec Mantine, puis a été refait sur l'App Router avec Tailwind.",
-      "outcome": "Le site est en ligne sur iampennywise.com, et l'app est livrée via des canaux de build distincts pour la préproduction et les aperçus.",
+      "outcome": "Les deux versions du site sont en ligne, et l'app est livrée via des canaux de build distincts pour la préproduction et les aperçus.",
       "learnings": "Les builds Android et la configuration réseau prennent un vrai temps. Il faut le prévoir à côté du travail sur les fonctionnalités.",
       "built": {
         "a": "Onboarding, inscription, vérification et réinitialisation du mot de passe en plusieurs étapes",

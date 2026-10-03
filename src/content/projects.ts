@@ -48,6 +48,8 @@ export type ProjectLinks = {
   appStore?: string;
   playStore?: string;
   npm?: string;
+  /** Several versions of the same site, shown as "Website v1", "Website v2"… */
+  versions?: { version: string; href: string }[];
 };
 
 type ProjectBase = {
@@ -332,7 +334,12 @@ const allProjects: Project[] = [
     stack: ["Expo", "React Native", "Expo Router", "NativeWind", "Redux Toolkit", "MMKV", "Skia", "Next.js"],
     period: { start: "2024-01", end: "2025-05" },
     status: "live",
-    links: { live: "https://www.iampennywise.com" },
+    links: {
+      versions: [
+        { version: "v1", href: "https://pennywise-web.vercel.app/" },
+        { version: "v2", href: "https://website-penny.vercel.app/" },
+      ],
+    },
     metrics: [],
     built: 5,
     decisions: 2,
