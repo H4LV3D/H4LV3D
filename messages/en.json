@@ -783,6 +783,13 @@
         "q": "Do you work remotely?",
         "a": "Yes. I'm used to async, remote collaboration with teams across time zones."
       }
+    },
+    "autoReply": {
+      "subject": "Thanks for getting in touch",
+      "greeting": "Hi {name},",
+      "body": "Thanks for reaching out. Your message has arrived and I'll reply as soon as I can, usually within a couple of days.\n\nIf there's anything to add in the meantime, just reply to this email.",
+      "quoteLabel": "Your message:",
+      "signoff": "Best,"
     }
   },
   "NotFound": {

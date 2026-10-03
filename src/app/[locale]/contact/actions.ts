@@ -1,18 +1,27 @@
 "use server";
 
 import { headers } from "next/headers";
+import { hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Resend } from "resend";
 
 import { contactSchema, type ContactInput, type ContactResult } from "@/lib/contact-schema";
+import { ownerEmail, senderEmail } from "@/lib/contact-email";
+import { localeTags, routing } from "@/i18n/routing";
 import { site } from "@/config/site";
 
 /*
  * Environment:
- *   RESEND_API_KEY      — from https://resend.com/api-keys
- *   CONTACT_TO_EMAIL    — where messages are delivered (defaults to site.email)
+ *   RESEND_API_KEY      — from https://resend.com/api-keys (required)
  *   CONTACT_FROM_EMAIL  — a sender on a domain verified in Resend,
- *                         e.g. "Portfolio <hello@toluwalope.tech>"
+ *                         e.g. "Toluwalope Akinkunmi <hello@toluwalope.tech>".
+ *                         Optional: without it, messages are still delivered
+ *                         to you via Resend's test sender, but people who
+ *                         write in don't get a confirmation email (Resend only
+ *                         lets the test sender mail the account owner).
+ *   CONTACT_TO_EMAIL    — where messages are delivered (defaults to site.email)
  */
+const TEST_SENDER = `${site.name} <onboarding@resend.dev>`;
 
 // Best-effort, per-instance rate limit: 5 messages per IP per 10 minutes.
 const WINDOW_MS = 10 * 60 * 1000;
@@ -27,7 +36,7 @@ function rateLimited(ip: string) {
   return recent.length > LIMIT;
 }
 
-export async function sendContactMessage(input: ContactInput): Promise<ContactResult> {
+export async function sendContactMessage(input: ContactInput, requestedLocale?: string): Promise<ContactResult> {
   const parsed = contactSchema.safeParse(input);
   if (!parsed.success) {
     const fields: Partial<Record<keyof ContactInput, string>> = {};
@@ -47,24 +56,51 @@ export async function sendContactMessage(input: ContactInput): Promise<ContactRe
   if (rateLimited(ip)) return { status: "rate-limited" };
 
   const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.CONTACT_FROM_EMAIL;
-  if (!apiKey || !from) return { status: "not-configured" };
+  if (!apiKey) return { status: "not-configured" };
+
+  const verifiedFrom = process.env.CONTACT_FROM_EMAIL?.trim();
+  const from = verifiedFrom || TEST_SENDER;
+  const owner = process.env.CONTACT_TO_EMAIL?.trim() || site.email;
+  const locale = hasLocale(routing.locales, requestedLocale) ? requestedLocale : routing.defaultLocale;
 
   try {
     const resend = new Resend(apiKey);
-    const { error } = await resend.emails.send({
-      from,
-      to: process.env.CONTACT_TO_EMAIL || site.email,
-      replyTo: data.email,
-      subject: `Portfolio: new message from ${data.name}`,
-      text: [`Name: ${data.name}`, `Email: ${data.email}`, `Budget: ${data.budget ?? "—"}`, "", data.message].join(
-        "\n",
-      ),
+    const budgets = await getTranslations({ locale: "en", namespace: "Contact.form.budgets" });
+
+    // 1. The message itself, to you. Replying answers the sender.
+    const notification = ownerEmail({
+      data,
+      budget: data.budget ? budgets(data.budget) : "—",
+      locale,
+      siteUrl: site.url,
     });
+    const { error } = await resend.emails.send({ from, to: owner, replyTo: data.email, ...notification });
     if (error) {
-      console.error("[contact] Resend error", error);
+      console.error("[contact] Resend error (notification)", error);
       return { status: "error" };
     }
+
+    // 2. A confirmation to the sender, in their language. Needs a verified
+    //    sending domain; a failure here never fails the form.
+    if (verifiedFrom) {
+      const t = await getTranslations({ locale, namespace: "Contact.autoReply" });
+      const confirmation = senderEmail(
+        data,
+        {
+          subject: t("subject"),
+          greeting: t("greeting", { name: data.name }),
+          body: t("body"),
+          quoteLabel: t("quoteLabel"),
+          signoff: t("signoff"),
+        },
+        localeTags[locale],
+        site.name,
+        site.url,
+      );
+      const reply = await resend.emails.send({ from, to: data.email, replyTo: owner, ...confirmation });
+      if (reply.error) console.error("[contact] Resend error (confirmation)", reply.error);
+    }
+
     return { status: "success" };
   } catch (err) {
     console.error("[contact] send failed", err);

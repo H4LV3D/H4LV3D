@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 import { contactSchema, budgets, type ContactInput } from "@/lib/contact-schema";
@@ -20,6 +20,7 @@ type FieldKey = "name" | "email" | "message";
 
 export function ContactForm({ onSent }: { onSent?: () => void }) {
   const t = useTranslations("Contact.form");
+  const locale = useLocale();
   const [pending, startTransition] = React.useTransition();
   const {
     register,
@@ -40,7 +41,7 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
 
   const onSubmit = (values: ContactInput) =>
     startTransition(async () => {
-      const result = await sendContactMessage(values);
+      const result = await sendContactMessage(values, locale);
       switch (result.status) {
         case "success":
           toast(t("success"));

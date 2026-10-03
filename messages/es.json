@@ -783,6 +783,13 @@
         "q": "¿Trabajas en remoto?",
         "a": "Sí. Colaborar en remoto y de forma asíncrona con equipos en distintas zonas horarias es mi día a día."
       }
+    },
+    "autoReply": {
+      "subject": "Gracias por escribir",
+      "greeting": "Hola, {name}:",
+      "body": "Gracias por ponerte en contacto. Tu mensaje ha llegado y te responderé lo antes posible, normalmente en un par de días.\n\nSi quieres añadir algo mientras tanto, responde a este correo.",
+      "quoteLabel": "Tu mensaje:",
+      "signoff": "Un saludo,"
     }
   },
   "NotFound": {

@@ -783,6 +783,13 @@
         "q": "Travaillez-vous à distance ?",
         "a": "Oui. J'ai l'habitude de collaborer à distance, en asynchrone, avec des équipes sur plusieurs fuseaux horaires."
       }
+    },
+    "autoReply": {
+      "subject": "Merci pour votre message",
+      "greeting": "Bonjour {name},",
+      "body": "Merci de m'avoir écrit. Votre message est bien arrivé et je vous répondrai dès que possible, en général sous deux ou trois jours.\n\nSi vous souhaitez ajouter quelque chose d'ici là, répondez simplement à cet e-mail.",
+      "quoteLabel": "Votre message :",
+      "signoff": "Bien à vous,"
     }
   },
   "NotFound": {

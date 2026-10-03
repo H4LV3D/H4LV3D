@@ -51,9 +51,23 @@ pnpm dev                     # http://localhost:3000
 ## Contact form
 
 `src/app/[locale]/contact/actions.ts` validates with the same zod schema as the client
-(`src/lib/contact-schema.ts`), has a honeypot field and a per-instance rate limit, then sends via Resend.
-Set `RESEND_API_KEY`, `CONTACT_FROM_EMAIL` (a sender on a domain verified in Resend) and optionally
-`CONTACT_TO_EMAIL`. Without them the form tells visitors to email you directly.
+(`src/lib/contact-schema.ts`), has a honeypot field and a per-instance rate limit, then sends two emails
+through Resend (templates in `src/lib/contact-email.ts`):
+
+1. **To you** (`CONTACT_TO_EMAIL`, default the address in `src/config/site.ts`): the message, name, email,
+   budget and language. Reply-To is the sender, so hitting Reply answers them.
+2. **To the sender**: a confirmation in the language they used, with a copy of their message (copy in
+   `Contact.autoReply` in the messages). Reply-To is you. If this one fails, the form still succeeds.
+
+| Variable             | Needed for                                                                                                                |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `RESEND_API_KEY`     | Everything. Without it the form tells visitors to email you directly.                                                     |
+| `CONTACT_FROM_EMAIL` | The confirmation to senders, e.g. `Toluwalope Akinkunmi <hello@toluwalope.tech>`. Must be on a domain verified in Resend. |
+| `CONTACT_TO_EMAIL`   | Optional. Where messages go.                                                                                              |
+
+Without `CONTACT_FROM_EMAIL`, messages are sent from Resend's test address (`onboarding@resend.dev`), which
+can only deliver to the email you signed up to Resend with, and no confirmation goes to the sender. After
+changing environment variables on Vercel, redeploy for them to take effect.
 
 ## How the moving parts work
 
