@@ -48,6 +48,16 @@ pnpm dev                     # http://localhost:3000
 - **Notes** (`/notes`) live in `src/content/notes/`: metadata in `index.ts`, text per language in `en.ts`, `fr.ts`, `es.ts`, `ru.ts`, `zh.ts` (TypeScript fails the build if a language is missing a note). Blocks are `p`, `h`, `list` and `diagram`.
 - **Copy rule for French, Spanish and Russian:** keep it gender-neutral. Use activity nouns for roles ("Développement frontend", "Frontend-разработка"), and in Russian avoid first-person past tense.
 
+## CV (cv.toluwalopeakinkunmi.dev)
+
+- Content lives in `src/content/cv.ts` (English); dates come from the company data, so they match the site.
+- `app/cv` renders it as two A4 sheets that print exactly (`@page size: A4`). It is also reachable at `/cv`.
+- `src/proxy.ts` rewrites any request whose host starts with `cv.` to `/cv`.
+- The download button serves `public/toluwalope-akinkunmi-cv.pdf`. After editing the CV, rebuild, start the site and run
+  `pnpm cv:pdf http://localhost:3000/cv` to regenerate it (it refuses to write a PDF if a page overflows).
+- Vercel: add `cv.toluwalopeakinkunmi.dev` under Project → Settings → Domains. If the domain's DNS isn't on Vercel,
+  add a `CNAME` record `cv → cname.vercel-dns.com`.
+
 ## Contact form
 
 `src/app/[locale]/contact/actions.ts` validates with the same zod schema as the client
@@ -59,11 +69,11 @@ through Resend (templates in `src/lib/contact-email.ts`):
 2. **To the sender**: a confirmation in the language they used, with a copy of their message (copy in
    `Contact.autoReply` in the messages). Reply-To is you. If this one fails, the form still succeeds.
 
-| Variable             | Needed for                                                                                                                |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `RESEND_API_KEY`     | Everything. Without it the form tells visitors to email you directly.                                                     |
-| `CONTACT_FROM_EMAIL` | The confirmation to senders, e.g. `Toluwalope Akinkunmi <hello@toluwalope.tech>`. Must be on a domain verified in Resend. |
-| `CONTACT_TO_EMAIL`   | Optional. Where messages go.                                                                                              |
+| Variable             | Needed for                                                                                                                        |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `RESEND_API_KEY`     | Everything. Without it the form tells visitors to email you directly.                                                             |
+| `CONTACT_FROM_EMAIL` | The confirmation to senders, e.g. `Toluwalope Akinkunmi <hello@toluwalopeakinkunmi.dev>`. Must be on a domain verified in Resend. |
+| `CONTACT_TO_EMAIL`   | Optional. Where messages go.                                                                                                      |
 
 Without `CONTACT_FROM_EMAIL`, messages are sent from Resend's test address (`onboarding@resend.dev`), which
 can only deliver to the email you signed up to Resend with, and no confirmation goes to the sender. After

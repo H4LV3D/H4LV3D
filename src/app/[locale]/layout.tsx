@@ -17,6 +17,7 @@ import { Preloader } from "@/components/preloader/preloader";
 import { Cursor } from "@/components/motion/cursor";
 import { Grain } from "@/components/illustrations/grain";
 import { BoilFilter } from "@/components/illustrations/boil-filter";
+import { Analytics } from "@vercel/analytics/next";
 
 type Props = {
   children: React.ReactNode;
@@ -87,6 +88,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         </NextIntlClientProvider>
         <BoilFilter />
         <Grain />
+        <Analytics />
       </body>
     </html>
   );

@@ -46,7 +46,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
         }}
       >
         <span>{site.name}</span>
-        <span>toluwalope.tech</span>
+        <span>toluwalopeakinkunmi.dev</span>
       </div>
       <svg width={900} height={(900 * h) / w} viewBox={signature.viewBox}>
         <g fill="none" stroke="#171717" strokeWidth={26} strokeLinecap="round" strokeLinejoin="round">

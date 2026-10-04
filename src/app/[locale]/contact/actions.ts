@@ -14,7 +14,7 @@ import { site } from "@/config/site";
  * Environment:
  *   RESEND_API_KEY      — from https://resend.com/api-keys (required)
  *   CONTACT_FROM_EMAIL  — a sender on a domain verified in Resend,
- *                         e.g. "Toluwalope Akinkunmi <hello@toluwalope.tech>".
+ *                         e.g. "Toluwalope Akinkunmi <hello@toluwalopeakinkunmi.dev>".
  *                         Optional: without it, messages are still delivered
  *                         to you via Resend's test sender, but people who
  *                         write in don't get a confirmation email (Resend only

@@ -146,3 +146,20 @@ test("SEO files are served", async ({ request }) => {
   const og = await request.get("/en/opengraph-image");
   expect(og.headers()["content-type"]).toContain("image/png");
 });
+
+test("the CV is two A4 pages with nothing cut off", async ({ page }) => {
+  await page.goto("/cv");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Toluwalope Akinkunmi");
+  const sheets = page.locator(".cv-page");
+  await expect(sheets).toHaveCount(2);
+  await page.evaluate(() => document.fonts.ready);
+  const overflowing = await sheets.evaluateAll((els) => els.map((el) => el.scrollHeight > el.clientHeight + 1));
+  expect(overflowing).toEqual([false, false]);
+  const pdf = await page.request.get("/toluwalope-akinkunmi-cv.pdf");
+  expect(pdf.headers()["content-type"]).toContain("application/pdf");
+});
+
+test("the cv. subdomain serves the CV", async ({ request }) => {
+  const res = await request.get("/", { headers: { host: "cv.toluwalopeakinkunmi.dev" } });
+  expect(await res.text()).toContain("<title>Toluwalope Akinkunmi — CV</title>");
+});

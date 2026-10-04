@@ -11,10 +11,12 @@
     "i18n:check": "node scripts/check-messages.mjs",
     "format": "prettier --write .",
     "test:e2e": "playwright test",
-    "check": "pnpm typecheck && pnpm lint && pnpm i18n:check"
+    "check": "pnpm typecheck && pnpm lint && pnpm i18n:check",
+    "cv:pdf": "node scripts/generate-cv-pdf.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
+    "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",

@@ -25,7 +25,7 @@ This is my portfolio website, where I showcase my skills, projects, and experien
 - responsive on all devices
 - improved SEO and accessibility
 
-[View Project](https://toluwalope.tech)
+[View Project](https://www.toluwalopeakinkunmi.dev)
 
 ### Gen-Z Blog - A Blogging Website
 

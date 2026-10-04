@@ -12,7 +12,7 @@
 | 4 | **Claude draws the illustrations**: an Open Peeps-style rig drawn as SVG, with a placeholder likeness until your photos arrive. |
 | 5 | Contact form: **server action + Resend** (`RESEND_API_KEY`, `CONTACT_TO_EMAIL`). |
 | 6 | Pages: core 4 + case studies + 404. **No** `/now` or `/uses`. |
-| 7 | Vercel on **toluwalope.tech** (you're renewing the domain). |
+| 7 | Vercel on **toluwalopeakinkunmi.dev** (you're renewing the domain). |
 | 8 | **No** location or clock anywhere on the site. |
 | — | All other ✅ defaults are accepted: no localised slugs, shorter preloader on repeat visits in a session, photos stay grayscale. |
 | — | Change from the plan: case-study text lives in the translation files (one typed JSON per locale) instead of per-locale MDX. Every project is fully translated, and there's one fewer build dependency. |
@@ -29,7 +29,7 @@
 | ❓4 | **Who draws the illustrated "you"?** | Start from **Open Peeps (CC0) parts** customised to look like you (hair, glasses, outfit), then refine. | This decides how far the illustration can go (see §5.1). |
 | ❓5 | **Contact form backend** | Server Action + **Resend** (free tier) | A plain `mailto:` needs nothing; Resend needs an API key and a verified domain. |
 | ❓6 | **Pages beyond the 4 core ones** | Core 4 + `/work/[slug]` case studies + custom 404. Optional: `/now` or `/uses`. | Scope and timeline. |
-| ❓7 | **Domain/hosting** | Vercel on `toluwalope.tech` | DNS, OG URLs, and sitemap use it. |
+| ❓7 | **Domain/hosting** | Vercel on `toluwalopeakinkunmi.dev` | DNS, OG URLs, and sitemap use it. |
 | ❓8 | **Location/timezone shown on the site** | "Lagos, NG — 14:32" live clock in the footer | Small personal touch; skip it if you'd rather not show your location. |
 
 ---

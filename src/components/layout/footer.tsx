@@ -49,6 +49,9 @@ export function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <p className="label-mono text-muted-foreground">{t("elsewhere")}</p>
+            <a href={site.cvUrl} target="_blank" rel="noreferrer" className="scribble-underline w-fit">
+              {nav("cv")}
+            </a>
             {site.socials.map((s) => (
               <a key={s.id} href={s.href} target="_blank" rel="noreferrer" className="scribble-underline w-fit">
                 {s.label}

@@ -1,8 +1,10 @@
 export const site = {
   name: "Toluwalope Akinkunmi",
   shortName: "Tolu",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://toluwalope.tech",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.toluwalopeakinkunmi.dev",
   email: "akinkunmitolulope23@gmail.com",
+  /** The printable CV (served by app/cv on the cv. subdomain). */
+  cvUrl: process.env.NEXT_PUBLIC_CV_URL ?? "https://cv.toluwalopeakinkunmi.dev",
   // Add LinkedIn, X, Dribbble… here — they appear in the footer, contact page
   // and command palette automatically.
   socials: [
