@@ -56,13 +56,13 @@
     "scroll": "向下滚动"
   },
   "Peep": {
-    "laptop": "正在用笔记本电脑工作的 Toluwalope",
-    "wave": "挥手打招呼的 Toluwalope",
-    "thinking": "正在思考的 Toluwalope",
-    "coffee": "端着咖啡的 Toluwalope",
-    "envelope": "拿着信封的 Toluwalope",
-    "sign": "举着牌子的 Toluwalope",
-    "lost": "把地图拿反了的 Toluwalope"
+    "laptop": "Toluwalope 在用笔记本电脑工作",
+    "coffee": "Toluwalope 端着一杯咖啡",
+    "phone": "Toluwalope 在用手机打字",
+    "pointing": "Toluwalope 开心地指向上方",
+    "shrug": "Toluwalope 耸了耸肩",
+    "explaining": "Toluwalope 在解释什么",
+    "portrait": "Toluwalope 的插画肖像"
   },
   "Home": {
     "hero": {
@@ -76,7 +76,7 @@
         "d": "我用 AI 做真正有用的事。"
       },
       "intro": "资深前端工程师，正在迈向系统设计与 AI。我为一整个产品家族搭建了单点登录，做过 Web 与移动端共用的 monorepo、已发布的设计系统，以及实时音视频房间。",
-      "note": "这就是画里的我！",
+      "note": "这就是我！",
       "cta": "查看作品",
       "secondary": "联系我"
     },
@@ -102,8 +102,7 @@
     "cta": {
       "title": "有系统要搭建？",
       "subtitle": "先把它设计好，再把它上线。",
-      "button": "开始聊聊",
-      "sign": "雇我吧！"
+      "button": "开始聊聊"
     }
   },
   "About": {

@@ -36,7 +36,6 @@
 
   --brand-soft: color-mix(in oklch, var(--brand) 16%, transparent);
   /* Illustration ink + paper (line art, see components/illustrations/peep) */
-  --peep-line: var(--color-neutral-900);
   --peep-fill: var(--background);
   /* Hand-drawn artwork: black ink on a paper cut-out (sticker-style in dark mode) */
   --art-ink: var(--color-neutral-900);
@@ -72,8 +71,7 @@
   --border: var(--color-gray-700);
   --input: var(--color-gray-700);
 
-  --peep-line: var(--color-neutral-100);
-  --peep-fill: var(--background);
+  --peep-fill: var(--art-paper);
   --art-ink: var(--color-neutral-900);
   --art-paper: var(--color-neutral-200);
 
@@ -308,84 +306,10 @@ html.has-custom-cursor button {
   cursor: none;
 }
 
-/* ─── Peep draw-in ─────────────────────────────────────────────────────────
- * Strokes draw on via dash offset (pathLength="1" is set in JS-free CSS by
- * normalising with a large dasharray), then fills fade in.
- */
-.peep[data-draw="pending"] .peep-part {
-  opacity: 0;
-}
-.peep[data-draw="play"] .peep-part {
-  animation: peep-part-in 0.5s var(--ease-out-expo) both;
-}
-.peep[data-draw="play"] .peep-part path,
-.peep[data-draw="play"] .peep-part ellipse,
-.peep[data-draw="play"] .peep-part circle,
-.peep[data-draw="play"] .peep-part rect {
-  stroke-dasharray: 1200;
-  animation:
-    peep-stroke 1.4s var(--ease-out-expo) both,
-    peep-fill 0.6s ease-out both;
-  animation-delay: var(--peep-delay, 0s), calc(var(--peep-delay, 0s) + 0.55s);
-}
-.peep [data-part="body"] {
-}
-.peep [data-part="arms"] {
-}
-.peep [data-part="head"] {
-}
-.peep [data-part="props"] {
-}
-
-@keyframes peep-part-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes peep-stroke {
-  from {
-    stroke-dashoffset: 1200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes peep-fill {
-  from {
-    fill-opacity: 0;
-  }
-  to {
-    fill-opacity: 1;
-  }
-}
-
-/* Line art: the paper fill matches whatever surface the figure sits on. */
-.bg-card {
+/* Line art: in light mode the fill matches the surface the figure sits on;
+   in dark mode figures stay ink-on-paper, like a cut-out (see --art-paper). */
+html:not(.dark) .bg-card {
   --peep-fill: var(--card);
-}
-
-/* Coffee steam drifts up and fades, forever. */
-.peep-steam path {
-  animation: steam 2.4s ease-in-out infinite;
-}
-.peep-steam path:nth-child(2) {
-  animation-delay: 1.2s;
-}
-@keyframes steam {
-  0% {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
 }
 
 /* Locked while the preloader is showing (removed by components/preloader). */
@@ -397,4 +321,38 @@ html.preloading {
  * Unlayered on purpose so it wins over the leading-* utilities. */
 :lang(zh) .font-display {
   line-height: 1.18;
+}
+
+/* Open Peeps: settle in, then breathe (see components/illustrations/open-peeps) */
+@keyframes open-peep-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) rotate(-1.5deg);
+  }
+}
+@keyframes open-peep-breathe {
+  50% {
+    transform: translateY(-4px);
+  }
+}
+.open-peep {
+  color: var(--art-ink);
+  transform-origin: 50% 100%;
+  animation:
+    open-peep-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) both,
+    open-peep-breathe 5s ease-in-out 1s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .open-peep {
+    animation: none;
+  }
+}
+/* Dark mode: a thin paper halo keeps dark hair and clothes from vanishing. */
+.dark .open-peep {
+  filter: url(#boil) drop-shadow(0 0 1px var(--art-paper)) drop-shadow(0 0 0.5px var(--art-paper));
+}
+@media (prefers-reduced-motion: reduce) {
+  .dark .open-peep {
+    filter: url(#boil-static) drop-shadow(0 0 1px var(--art-paper)) drop-shadow(0 0 0.5px var(--art-paper));
+  }
 }

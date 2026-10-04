@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { Peep } from "@/components/illustrations/peep/peep";
+import { OpenPeep } from "@/components/illustrations/open-peeps/open-peep";
+import { peep as coffee } from "@/components/illustrations/open-peeps/generated/coffee";
 import { Doodle } from "@/components/illustrations/doodle";
 import { Reveal } from "@/components/motion/reveal";
 import { SectionLabel } from "@/components/sections/section-label";
@@ -8,6 +9,7 @@ import { TransitionLink } from "@/components/motion/page-transition";
 
 export function Currently() {
   const t = useTranslations("Home.currently");
+  const peep = useTranslations("Peep");
   const items = ["building", "learning", "writing"] as const;
   return (
     <section className="container-page grid items-center gap-12 py-24 md:grid-cols-12 md:py-32">
@@ -35,7 +37,7 @@ export function Currently() {
         </ul>
       </div>
       <div className="mx-auto w-full max-w-sm md:col-span-5">
-        <Peep pose="coffee" />
+        <OpenPeep peep={coffee} title={peep("coffee")} />
       </div>
     </section>
   );

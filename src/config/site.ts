@@ -23,6 +23,14 @@ export const site = {
    * public/images/me/portrait.jpg and set this to "/images/me/portrait.jpg".
    */
   portrait: "/images/me/portrait.jpg" as string | undefined,
+  /** Black-and-white studio headshot for the home hero. */
+  headshot: "/images/me/headshot-bw.jpg",
+  /**
+   * Illustrated portrait shown in front of the photo on the About page
+   * (e.g. a Ghibli-style painting). Drop it in public/images/me/ and set the
+   * path; until then an Open Peep stands in.
+   */
+  portraitIllustration: undefined as string | undefined,
   /** Numbers for the About page (labels in About.stats). */
   stats: [
     { key: "years", value: 3, suffix: "+" },

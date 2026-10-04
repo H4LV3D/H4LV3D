@@ -6,13 +6,19 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Doodle } from "@/components/illustrations/doodle";
 import { doodles, type DoodleName } from "@/components/illustrations/doodle-paths";
-import { Peep, type PeepPose } from "@/components/illustrations/peep/peep";
+import { OpenPeep } from "@/components/illustrations/open-peeps/open-peep";
+import { peep as coffee } from "@/components/illustrations/open-peeps/generated/coffee";
+import { peep as phone } from "@/components/illustrations/open-peeps/generated/phone";
+import { peep as pointing } from "@/components/illustrations/open-peeps/generated/pointing";
+import { peep as shrug } from "@/components/illustrations/open-peeps/generated/shrug";
+import { peep as explaining } from "@/components/illustrations/open-peeps/generated/explaining";
+import { peep as armsCrossed } from "@/components/illustrations/open-peeps/generated/armsCrossed";
 import { ArrowRight } from "@/components/illustrations/doodle-icons";
 
 export const metadata: Metadata = { title: "Styleguide", robots: { index: false, follow: false } };
 
 const neutrals = [100, 200, 300, 400, 500, 600, 700, 800, 900];
-const poses: PeepPose[] = ["laptop", "wave", "thinking", "coffee", "envelope", "sign", "lost"];
+const poses = { coffee, phone, pointing, shrug, explaining, armsCrossed };
 
 /** Internal design-system reference: tokens, components, doodles and poses. */
 export default async function Styleguide({ params }: { params: Promise<{ locale: Locale }> }) {
@@ -78,10 +84,10 @@ export default async function Styleguide({ params }: { params: Promise<{ locale:
       </section>
 
       <section className="grid grid-cols-2 gap-10 md:grid-cols-4">
-        {poses.map((pose) => (
-          <div key={pose} className="flex flex-col items-center gap-2">
-            <Peep pose={pose} signText="hire me!" className="w-full" />
-            <span className="label-mono text-muted-foreground">{pose}</span>
+        {Object.entries(poses).map(([name, def]) => (
+          <div key={name} className="flex flex-col items-center gap-2">
+            <OpenPeep peep={def} title={name} className="w-full" />
+            <span className="label-mono text-muted-foreground">{name}</span>
           </div>
         ))}
       </section>

@@ -7,7 +7,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Close, Menu } from "@/components/illustrations/doodle-icons";
-import { Peep } from "@/components/illustrations/peep/peep";
+import { OpenPeep } from "@/components/illustrations/open-peeps/open-peep";
+import { peep as explaining } from "@/components/illustrations/open-peeps/generated/explaining";
 import { usePageTransition } from "@/components/motion/page-transition";
 import { getPathname, usePathname } from "@/i18n/navigation";
 import { allPages } from "./nav-items";
@@ -17,6 +18,7 @@ import { cn } from "@/lib/utils";
 
 export function MobileMenu() {
   const t = useTranslations("Nav");
+  const peepT = useTranslations("Peep");
   const [open, setOpen] = React.useState(false);
   const { navigate } = usePageTransition();
   const pathname = usePathname();
@@ -79,7 +81,7 @@ export function MobileMenu() {
               </li>
             ))}
           </ul>
-          <Peep pose="wave" className="-mb-6 w-40" wave={open} />
+          {open && <OpenPeep peep={explaining} title={peepT("explaining")} className="-mb-6 w-40" />}
         </div>
       </SheetContent>
     </Sheet>

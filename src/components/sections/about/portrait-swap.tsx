@@ -5,7 +5,8 @@ import Image from "next/image";
 import { m } from "motion/react";
 import { useTranslations } from "next-intl";
 
-import { Peep } from "@/components/illustrations/peep/peep";
+import { OpenPeep } from "@/components/illustrations/open-peeps/open-peep";
+import { peep as armsCrossed } from "@/components/illustrations/open-peeps/generated/armsCrossed";
 import { SketchFrame } from "@/components/illustrations/sketch-frame";
 import { site } from "@/config/site";
 import { ease } from "@/lib/motion";
@@ -16,6 +17,7 @@ import { ease } from "@/lib/motion";
  */
 export function PortraitSwap() {
   const t = useTranslations("About.photo");
+  const peep = useTranslations("Peep");
   const [real, setReal] = React.useState(false);
 
   return (
@@ -30,9 +32,21 @@ export function PortraitSwap() {
         className="group relative aspect-[4/5] w-full cursor-pointer rounded-md"
       >
         <SketchFrame />
-        <div className="absolute inset-0 flex items-end justify-center overflow-hidden rounded-md border border-border bg-card px-6 pt-10">
-          <Peep pose="thinking" className="w-full" />
-        </div>
+        {site.portraitIllustration ? (
+          <div className="absolute inset-0 overflow-hidden rounded-md border border-border bg-card">
+            <Image
+              src={site.portraitIllustration}
+              alt={peep("portrait")}
+              fill
+              sizes="(min-width: 768px) 40vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+        ) : (
+          <div className="absolute inset-0 flex items-end justify-center overflow-hidden rounded-md border border-border bg-card px-6 pt-10">
+            <OpenPeep peep={armsCrossed} title={peep("portrait")} className="w-full" />
+          </div>
+        )}
         <m.div
           className="absolute inset-0 overflow-hidden rounded-md bg-secondary"
           initial={false}

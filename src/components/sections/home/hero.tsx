@@ -9,7 +9,7 @@ import { SplitText } from "@/components/motion/split-text";
 import { Magnetic } from "@/components/motion/magnetic";
 import { TransitionLink } from "@/components/motion/page-transition";
 import { Doodle } from "@/components/illustrations/doodle";
-import { Artwork } from "@/components/illustrations/art/artwork";
+import Image from "next/image";
 import { ArrowRight } from "@/components/illustrations/doodle-icons";
 import { Button } from "@/components/ui/button";
 import { site } from "@/config/site";
@@ -20,7 +20,7 @@ const ROLE_KEYS = ["a", "b", "c", "d"] as const;
 export function Hero() {
   const t = useTranslations("Home.hero");
   const common = useTranslations("Common");
-  const peep = useTranslations("Peep");
+  const about = useTranslations("About.photo");
   const { introDone } = useIntro();
   const [role, setRole] = React.useState(0);
 
@@ -112,7 +112,28 @@ export function Hero() {
             tone="muted"
           />
         </m.div>
-        <Artwork name="laptop" title={peep("laptop")} play={introDone} className="mx-auto w-full max-w-[460px]" />
+        <m.div
+          className="relative mx-auto aspect-[4/5] w-full max-w-[440px] overflow-hidden rounded-md border border-border bg-secondary shadow-2xl shadow-neutral-950/10"
+          initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
+          animate={{ clipPath: introDone ? "inset(0% 0% 0% 0%)" : "inset(100% 0% 0% 0%)" }}
+          transition={{ duration: 1.2, ease: ease.inOut, delay: 0.5 }}
+        >
+          <m.div
+            className="absolute inset-0"
+            initial={{ scale: 1.15 }}
+            animate={{ scale: introDone ? 1 : 1.15 }}
+            transition={{ duration: 1.8, ease: ease.out, delay: 0.5 }}
+          >
+            <Image
+              src={site.headshot}
+              alt={about("alt")}
+              fill
+              priority
+              sizes="(min-width: 768px) 440px, 90vw"
+              className="object-cover"
+            />
+          </m.div>
+        </m.div>
       </div>
 
       <m.div

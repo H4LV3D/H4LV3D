@@ -56,13 +56,13 @@
     "scroll": "Desliza"
   },
   "Peep": {
-    "laptop": "Toluwalope trabajando en un portátil",
-    "wave": "Toluwalope saludando",
-    "thinking": "Toluwalope pensando",
+    "laptop": "Toluwalope trabajando con un portátil",
     "coffee": "Toluwalope con un café",
-    "envelope": "Toluwalope sosteniendo un sobre",
-    "sign": "Toluwalope sosteniendo un cartel",
-    "lost": "Toluwalope sosteniendo un mapa al revés"
+    "phone": "Toluwalope escribiendo en el móvil",
+    "pointing": "Toluwalope señalando hacia arriba, con alegría",
+    "shrug": "Toluwalope encogiéndose de hombros",
+    "explaining": "Toluwalope explicando algo",
+    "portrait": "Retrato ilustrado de Toluwalope"
   },
   "Home": {
     "hero": {
@@ -76,7 +76,7 @@
         "d": "Construyo con IA, para trabajo real."
       },
       "intro": "Ingeniería frontend senior, en camino hacia el diseño de sistemas y la IA. He construido el inicio de sesión único de una familia de productos, un monorepo web y móvil, un design system publicado y salas de audio y vídeo en directo.",
-      "note": "¡soy yo, en dibujo!",
+      "note": "¡aquí estoy!",
       "cta": "Ver mis proyectos",
       "secondary": "Escríbeme"
     },
@@ -102,8 +102,7 @@
     "cta": {
       "title": "¿Tienes un sistema que construir?",
       "subtitle": "Diseñémoslo bien y luego lancémoslo.",
-      "button": "Empezar a hablar",
-      "sign": "¡trabajemos!"
+      "button": "Empezar a hablar"
     }
   },
   "About": {

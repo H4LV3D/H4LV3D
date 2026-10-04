@@ -57,12 +57,12 @@
   },
   "Peep": {
     "laptop": "Toluwalope working on a laptop",
-    "wave": "Toluwalope waving hello",
-    "thinking": "Toluwalope thinking",
     "coffee": "Toluwalope holding a coffee",
-    "envelope": "Toluwalope holding an envelope",
-    "sign": "Toluwalope holding a sign",
-    "lost": "Toluwalope holding a map upside down"
+    "phone": "Toluwalope typing on a phone",
+    "pointing": "Toluwalope pointing up, pleased",
+    "shrug": "Toluwalope shrugging",
+    "explaining": "Toluwalope explaining something",
+    "portrait": "Illustrated portrait of Toluwalope"
   },
   "Home": {
     "hero": {
@@ -76,7 +76,7 @@
         "d": "I build with AI, for real work."
       },
       "intro": "Senior frontend engineer moving into systems design and AI. I've built single sign-on for a product family, a web-and-mobile monorepo, a published design system and live audio and video rooms.",
-      "note": "that's me, drawn!",
+      "note": "that's me!",
       "cta": "See my work",
       "secondary": "Get in touch"
     },
@@ -102,8 +102,7 @@
     "cta": {
       "title": "Got a system to build?",
       "subtitle": "Let's design it properly, then ship it.",
-      "button": "Start a conversation",
-      "sign": "hire me!"
+      "button": "Start a conversation"
     }
   },
   "About": {

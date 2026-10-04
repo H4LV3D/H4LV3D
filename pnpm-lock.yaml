@@ -96,6 +96,9 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: ^0.8.1
         version: 0.8.1(prettier@3.9.9)
+      react-peeps:
+        specifier: ^0.1.10
+        version: 0.1.10
       tailwindcss:
         specifier: ^4
         version: 4.3.3
@@ -3267,6 +3270,9 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-peeps@0.1.10:
+    resolution: {integrity: sha512-DXn1rRIeEWeMN99y2//6y9PhzIHqmklO0Y7LpPt6jpTL6pVfREcTGxBol9+7oZCgZmVI/t4ra3hR0KrU7PKsnQ==}
 
   react-remove-scroll-bar@2.3.8:
     resolution: {integrity: sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==}
@@ -6925,6 +6931,8 @@ snapshots:
       '@types/react': 19.3.0
 
   react-is@16.13.1: {}
+
+  react-peeps@0.1.10: {}
 
   react-remove-scroll-bar@2.3.8(@types/react@19.3.0)(react@19.2.8):
     dependencies:

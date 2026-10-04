@@ -4,7 +4,9 @@ import * as React from "react";
 import { m } from "motion/react";
 import { useTranslations } from "next-intl";
 
-import { Peep } from "@/components/illustrations/peep/peep";
+import { OpenPeep } from "@/components/illustrations/open-peeps/open-peep";
+import { peep as phone } from "@/components/illustrations/open-peeps/generated/phone";
+import { peep as pointing } from "@/components/illustrations/open-peeps/generated/pointing";
 import { Button } from "@/components/ui/button";
 import { Copy } from "@/components/illustrations/doodle-icons";
 import { useCopyEmail } from "@/hooks/use-copy-email";
@@ -15,6 +17,7 @@ import { ContactForm } from "./contact-form";
 export function ContactBody() {
   const t = useTranslations("Contact");
   const common = useTranslations("Common");
+  const peep = useTranslations("Peep");
   const copyEmail = useCopyEmail();
   const [sent, setSent] = React.useState(0);
 
@@ -61,7 +64,11 @@ export function ContactBody() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: sent ? 0.6 : 0 }}
         >
-          <Peep pose={sent ? "wave" : "envelope"} wave={sent > 0} />
+          {sent ? (
+            <OpenPeep peep={pointing} title={peep("pointing")} />
+          ) : (
+            <OpenPeep peep={phone} title={peep("phone")} />
+          )}
         </m.div>
       </aside>
       <div className="md:col-span-7 md:col-start-6">

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { Peep } from "@/components/illustrations/peep/peep";
+import { OpenPeep } from "@/components/illustrations/open-peeps/open-peep";
+import { peep as shrug } from "@/components/illustrations/open-peeps/generated/shrug";
 import { TransitionLink } from "@/components/motion/page-transition";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "@/components/illustrations/doodle-icons";
@@ -8,6 +9,7 @@ import { SectionLabel } from "@/components/sections/section-label";
 
 export default function NotFound() {
   const t = useTranslations("NotFound");
+  const peep = useTranslations("Peep");
   return (
     <section className="container-page grid min-h-svh items-center gap-12 pt-28 pb-16 md:grid-cols-12">
       <div className="flex flex-col items-start gap-6 md:col-span-6">
@@ -20,8 +22,8 @@ export default function NotFound() {
           </TransitionLink>
         </Button>
       </div>
-      <div className="mx-auto w-full max-w-md md:col-span-6">
-        <Peep pose="lost" />
+      <div className="mx-auto w-full max-w-sm md:col-span-6">
+        <OpenPeep peep={shrug} title={peep("shrug")} />
       </div>
     </section>
   );
