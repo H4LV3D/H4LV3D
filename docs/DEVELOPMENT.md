@@ -64,8 +64,8 @@ pnpm dev                     # http://localhost:3000
 (`src/lib/contact-schema.ts`), has a honeypot field and a per-instance rate limit, then sends two emails
 through Resend (templates in `src/lib/contact-email.ts`):
 
-1. **To you** (`CONTACT_TO_EMAIL`, default the address in `src/config/site.ts`): the message, name, email,
-   budget and language. Reply-To is the sender, so hitting Reply answers them.
+1. **To you** (`CONTACT_TO_EMAIL`, default the address in `src/config/site.ts`): the message, name, email
+   and language. Reply-To is the sender, so hitting Reply answers them.
 2. **To the sender**: a confirmation in the language they used, with a copy of their message (copy in
    `Contact.autoReply` in the messages). Reply-To is you. If this one fails, the form still succeeds.
 

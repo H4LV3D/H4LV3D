@@ -777,6 +777,7 @@
       "payouts": "Выплаты",
       "marketingSite": "Маркетинговый сайт",
       "circularTicket": "Circular Ticket",
+      "eventsApp": "Приложение мероприятий",
       "providers": "Соцвход",
       "authApi": "API авторизации",
       "emailOtp": "OTP по почте",
@@ -859,15 +860,6 @@
       "namePlaceholder": "Ада Лавлейс",
       "email": "E-mail",
       "emailPlaceholder": "ada@example.com",
-      "budget": "Бюджет",
-      "budgetPlaceholder": "Выберите диапазон (необязательно)",
-      "budgets": {
-        "small": "До $1 000",
-        "medium": "$1 000 – $5 000",
-        "large": "$5 000 – $15 000",
-        "xl": "$15 000+",
-        "unsure": "Пока не знаю"
-      },
       "message": "Сообщение",
       "messagePlaceholder": "Расскажите о своей идее…",
       "submit": "Отправить",

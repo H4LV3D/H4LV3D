@@ -3,18 +3,18 @@ import type { NoteTranslations } from "./types";
 export const zh: NoteTranslations = {
   "one-sign-in-many-apps": {
     title: "多个应用，一次登录",
-    summary: "The Circular Net 的产品如何迁移到统一的 OAuth 2.0 登录服务，以及保证它安全的那些规则。",
+    summary: "一组产品如何迁移到统一的 OAuth 2.0 登录服务，以及保证它安全的那些规则。",
     blocks: [
       {
         type: "p",
-        text: "在 The Circular Net，每个产品过去都有自己的登录。只有一个应用时还行；当有了 Web 应用、移动应用、活动产品和官网，每个认证 bug 都得修四遍，用户也要为同一家公司记好几个密码。",
+        text: "在我合作过的一家公司，每个产品过去都有自己的登录。只有一个应用时还行；当有了 Web 应用、移动应用、活动产品和官网，每个认证 bug 都得修四遍，用户也要为同一家公司记好几个密码。",
       },
       { type: "h", text: "整体结构" },
       {
         type: "p",
         text: "登录被拆成独立应用，部署在自己的域名上。各产品不再显示登录表单，而是带着自己的 client ID 和重定向地址把用户送到 SSO 服务；服务完成登录后，带着一个短时有效的授权码把用户送回，产品再用它换取令牌。",
       },
-      { type: "diagram", id: "sso", caption: "所有产品都通过同一个服务登录。" },
+      { type: "diagram", id: "sharedSignIn", caption: "所有产品都通过同一个服务登录。" },
       { type: "h", text: "真正重要的规则" },
       {
         type: "list",
@@ -35,11 +35,11 @@ export const zh: NoteTranslations = {
   },
   "share-logic-not-screens": {
     title: "共享逻辑，不共享界面",
-    summary: "Circular Ticket 的 Next.js 与 Expo 应用之间，哪些放进了共享包，哪些没有，以及为什么。",
+    summary: "一个活动平台的 Next.js 与 Expo 应用之间，哪些放进了共享包，哪些没有，以及为什么。",
     blocks: [
       {
         type: "p",
-        text: "Circular Ticket 最初是一个 Web 应用。移动应用到来时，最快的做法是把 API 调用和规则复制过去。没过几周，两个应用就在一些不起眼却很重要的地方出现分歧：奈拉金额怎么格式化，哪些订单状态算已支付，主办方什么时候可以申请提现。",
+        text: "这个活动平台最初是一个 Web 应用。移动应用到来时，最快的做法是把 API 调用和规则复制过去。没过几周，两个应用就在一些不起眼却很重要的地方出现分歧：奈拉金额怎么格式化，哪些订单状态算已支付，主办方什么时候可以申请提现。",
       },
       { type: "h", text: "一个包，三条规则" },
       {

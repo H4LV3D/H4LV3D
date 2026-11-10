@@ -24,7 +24,7 @@ export function ContactBody() {
   return (
     <div className="container-page grid gap-16 md:grid-cols-12">
       <aside className="flex flex-col gap-8 md:col-span-4">
-        <p className="inline-flex w-fit items-center gap-2 rounded-full border border-border px-3 py-1.5 text-sm">
+        <p className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground">
           <span className="relative flex size-2">
             {site.availableForWork && (
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-brand opacity-60" />

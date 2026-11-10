@@ -18,15 +18,18 @@ export type Note = {
   slug: NoteSlug;
   /** ISO date */
   date: string;
-  /** Case study this note comes from. */
+  /**
+   * Case study this note comes from. Only for personal projects: notes about
+   * client or employer work stay anonymous, so they link to no case study.
+   */
   related?: CaseStudy["slug"];
 };
 
 /** Newest first. */
 export const notes: Note[] = [
   { slug: "filter-before-you-think", date: "2026-10-02", related: "stock-bot" },
-  { slug: "share-logic-not-screens", date: "2026-10-02", related: "circular-ticket" },
-  { slug: "one-sign-in-many-apps", date: "2026-10-02", related: "the-circular-net-web" },
+  { slug: "share-logic-not-screens", date: "2026-10-02" },
+  { slug: "one-sign-in-many-apps", date: "2026-10-02" },
 ];
 
 const content: Record<Locale, NoteTranslations> = { en, fr, es, ru, zh };

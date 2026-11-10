@@ -18,14 +18,13 @@ ${body}
 </div></body></html>`;
 }
 
-type Notification = { data: ContactInput; budget: string; locale: string; siteUrl: string };
+type Notification = { data: ContactInput; locale: string; siteUrl: string };
 
 /** The message you receive. Reply goes straight to the sender. */
-export function ownerEmail({ data, budget, locale, siteUrl }: Notification) {
+export function ownerEmail({ data, locale, siteUrl }: Notification) {
   const rows: [string, string][] = [
     ["Name", data.name],
     ["Email", data.email],
-    ["Budget", budget],
     ["Language", locale],
   ];
   const text = [...rows.map(([k, v]) => `${k}: ${v}`), "", data.message, "", `— sent from ${siteUrl}/contact`].join(

@@ -777,6 +777,7 @@
       "payouts": "提现",
       "marketingSite": "官网",
       "circularTicket": "Circular Ticket",
+      "eventsApp": "活动应用",
       "providers": "社交登录",
       "authApi": "认证 API",
       "emailOtp": "邮箱 OTP",
@@ -859,15 +860,6 @@
       "namePlaceholder": "Ada Lovelace",
       "email": "邮箱",
       "emailPlaceholder": "ada@example.com",
-      "budget": "预算",
-      "budgetPlaceholder": "选择一个范围（可选）",
-      "budgets": {
-        "small": "1000 美元以下",
-        "medium": "1000 – 5000 美元",
-        "large": "5000 – 15000 美元",
-        "xl": "15000 美元以上",
-        "unsure": "还不确定"
-      },
       "message": "留言",
       "messagePlaceholder": "说说你的想法…",
       "submit": "发送",

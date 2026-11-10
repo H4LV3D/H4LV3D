@@ -1,17 +1,16 @@
 "use client";
 
 import * as React from "react";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, m } from "motion/react";
 
-import { contactSchema, budgets, type ContactInput } from "@/lib/contact-schema";
+import { contactSchema, type ContactInput } from "@/lib/contact-schema";
 import { sendContactMessage } from "@/app/[locale]/contact/actions";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ArrowRight } from "@/components/illustrations/doodle-icons";
@@ -31,7 +30,6 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
   const {
     register,
     handleSubmit,
-    control,
     reset,
     setError,
     setFocus,
@@ -109,27 +107,6 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
               />
             </Field>
           </div>
-
-          <Field id="budget" label={t("budget")}>
-            <Controller
-              control={control}
-              name="budget"
-              render={({ field }) => (
-                <Select value={field.value ?? ""} onValueChange={field.onChange} disabled={pending}>
-                  <SelectTrigger id="budget">
-                    <SelectValue placeholder={t("budgetPlaceholder")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {budgets.map((b) => (
-                      <SelectItem key={b} value={b}>
-                        {t(`budgets.${b}`)}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-            />
-          </Field>
 
           <Field id="message" label={t("message")} error={errorText("message")}>
             <Textarea

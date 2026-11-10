@@ -191,6 +191,29 @@ export const diagrams = {
     ],
   }),
 
+  /** The SSO story with no product names, for the public note. */
+  sharedSignIn: d({
+    width: 800,
+    height: 400,
+    nodes: [
+      { id: "site", label: "marketingSite", x: 140, y: 50 },
+      { id: "web", label: "webApp", x: 400, y: 50 },
+      { id: "events", label: "eventsApp", x: 660, y: 50 },
+      { id: "sso", label: "sso", sub: "OAuth 2.0", x: 400, y: 200, w: 200, kind: "accent" },
+      { id: "providers", label: "providers", sub: "Google · Apple", x: 140, y: 345 },
+      { id: "auth", label: "authApi", x: 400, y: 345 },
+      { id: "otp", label: "emailOtp", x: 660, y: 345 },
+    ],
+    edges: [
+      { from: "site", to: "sso", both: true },
+      { from: "web", to: "sso", label: "authorise", both: true },
+      { from: "events", to: "sso", both: true },
+      { from: "sso", to: "providers", label: "socialSignIn" },
+      { from: "sso", to: "auth", label: "tokens", both: true },
+      { from: "sso", to: "otp", label: "verify" },
+    ],
+  }),
+
   exportTrades: d({
     width: 800,
     height: 470,

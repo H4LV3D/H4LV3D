@@ -777,6 +777,7 @@
       "payouts": "Versements",
       "marketingSite": "Site vitrine",
       "circularTicket": "Circular Ticket",
+      "eventsApp": "App d'événements",
       "providers": "Connexion sociale",
       "authApi": "API d'authentification",
       "emailOtp": "OTP par e-mail",
@@ -859,15 +860,6 @@
       "namePlaceholder": "Ada Lovelace",
       "email": "E-mail",
       "emailPlaceholder": "ada@exemple.com",
-      "budget": "Budget",
-      "budgetPlaceholder": "Choisissez une fourchette (facultatif)",
-      "budgets": {
-        "small": "Moins de 1 000 $",
-        "medium": "1 000 – 5 000 $",
-        "large": "5 000 – 15 000 $",
-        "xl": "15 000 $ et plus",
-        "unsure": "Je ne sais pas encore"
-      },
       "message": "Message",
       "messagePlaceholder": "Parlez-moi de votre idée…",
       "submit": "Envoyer le message",

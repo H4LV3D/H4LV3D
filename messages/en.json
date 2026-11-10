@@ -777,6 +777,7 @@
       "payouts": "Payouts",
       "marketingSite": "Marketing site",
       "circularTicket": "Circular Ticket",
+      "eventsApp": "Events app",
       "providers": "Social sign-in",
       "authApi": "Auth API",
       "emailOtp": "Email OTP",
@@ -859,15 +860,6 @@
       "namePlaceholder": "Ada Lovelace",
       "email": "Email",
       "emailPlaceholder": "ada@example.com",
-      "budget": "Budget",
-      "budgetPlaceholder": "Pick a range (optional)",
-      "budgets": {
-        "small": "Under $1k",
-        "medium": "$1k – $5k",
-        "large": "$5k – $15k",
-        "xl": "$15k+",
-        "unsure": "Not sure yet"
-      },
       "message": "Message",
       "messagePlaceholder": "Tell me about your idea…",
       "submit": "Send message",
