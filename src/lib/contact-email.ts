@@ -27,7 +27,7 @@ export function ownerEmail({ data, locale, siteUrl }: Notification) {
     ["First name", data.firstName],
     ["Last name", data.lastName],
     ["Email", data.email],
-    ["Phone", data.phone],
+    ["Phone", data.phone || "—"],
     ["Language", locale],
   ];
   const text = [...rows.map(([k, v]) => `${k}: ${v}`), "", data.message, "", `— sent from ${siteUrl}/contact`].join(

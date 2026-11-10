@@ -862,7 +862,7 @@
       "lastNamePlaceholder": "Lovelace",
       "email": "邮箱",
       "emailPlaceholder": "ada@example.com",
-      "phone": "电话",
+      "phone": "电话（选填）",
       "phonePlaceholder": "+234 800 000 0000",
       "message": "留言",
       "messagePlaceholder": "说说你的想法…",

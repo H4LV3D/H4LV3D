@@ -216,7 +216,7 @@ Hero (title, one-liner, cover) → meta grid (Role · Year · Stack · Links) �
 
 ### 4.6 Contact
 - Peep holding an envelope. On successful submit the envelope flies off.
-- Form: first name · last name · email · phone · message · hidden honeypot field. Validated client and server side with the same zod schema, with basic rate limiting.
+- Form: first name · last name · email · phone (optional) · message · hidden honeypot field. Validated client and server side with the same zod schema, with basic rate limiting.
 - "Copy email" button that shows a toast. Social links. An "Available for work" badge with a pulsing brand dot.
 - A short FAQ accordion (availability, rates, timezone).
 

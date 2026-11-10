@@ -862,7 +862,7 @@
       "lastNamePlaceholder": "Lovelace",
       "email": "Correo electrónico",
       "emailPlaceholder": "ada@ejemplo.com",
-      "phone": "Teléfono",
+      "phone": "Teléfono (opcional)",
       "phonePlaceholder": "+234 800 000 0000",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntame tu idea…",

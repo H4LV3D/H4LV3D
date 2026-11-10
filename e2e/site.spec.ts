@@ -101,6 +101,10 @@ test("contact form validates input", async ({ page }) => {
   await page.getByRole("button", { name: "Send message" }).click();
   await expect(page.getByText("Please tell me your first name.")).toBeVisible();
   await expect(page.getByText("Please tell me your last name.")).toBeVisible();
+  // Phone is optional: empty is fine, but a filled-in number must look like one.
+  await expect(page.getByText("That phone number doesn't look right.")).toBeHidden();
+  await page.getByLabel("Phone (optional)").fill("12");
+  await page.getByRole("button", { name: "Send message" }).click();
   await expect(page.getByText("That phone number doesn't look right.")).toBeVisible();
   await expect(page.getByText("That email doesn't look right.")).toBeVisible();
 });
@@ -112,7 +116,7 @@ test("contact form reports when Resend isn't configured", async ({ page }) => {
   await page.getByLabel("First name").fill("Ada");
   await page.getByLabel("Last name").fill("Lovelace");
   await page.getByLabel("Email").fill("ada@example.com");
-  await page.getByLabel("Phone", { exact: true }).fill("+234 800 000 0000");
+  await page.getByLabel("Phone (optional)").fill("+234 800 000 0000");
   await page.getByLabel("Message").fill("Hello! I'd love to build something together.");
   await page.getByRole("button", { name: "Send message" }).click();
   await expect(page.getByRole("alert").filter({ hasText: "The contact form isn't connected yet" })).toBeVisible();
@@ -125,7 +129,7 @@ test("a successful send shows the confirmation dialog", async ({ page }) => {
   await page.getByLabel("First name").fill("Ada");
   await page.getByLabel("Last name").fill("Lovelace");
   await page.getByLabel("Email").fill("ada@example.com");
-  await page.getByLabel("Phone", { exact: true }).fill("+234 800 000 0000");
+  // Phone left empty: it's optional.
   await page.getByLabel("Message").fill("Hello! I'd love to build something together.");
   // The honeypot path reports success without sending an email, so this test
   // never reaches Resend.

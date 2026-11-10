@@ -862,7 +862,7 @@
       "lastNamePlaceholder": "Лавлейс",
       "email": "E-mail",
       "emailPlaceholder": "ada@example.com",
-      "phone": "Телефон",
+      "phone": "Телефон (необязательно)",
       "phonePlaceholder": "+234 800 000 0000",
       "message": "Сообщение",
       "messagePlaceholder": "Расскажите о своей идее…",

@@ -8,12 +8,12 @@ export const contactSchema = z.object({
   firstName: z.string().trim().min(1, "firstName").max(60, "firstName"),
   lastName: z.string().trim().min(1, "lastName").max(60, "lastName"),
   email: z.email("email").max(200, "email"),
-  /** Any common format: digits, spaces, + - ( ) . — and at least 7 digits. */
+  /** Optional. If given: digits, spaces, + - ( ) . — with 7 to 15 digits. */
   phone: z
     .string()
     .trim()
-    .regex(/^\+?[\d\s().-]+$/, "phone")
-    .refine((v) => v.replace(/\D/g, "").length >= 7 && v.replace(/\D/g, "").length <= 15, "phone"),
+    .refine((v) => v === "" || (/^\+?[\d\s().-]+$/.test(v) && /^\d{7,15}$/.test(v.replace(/\D/g, ""))), "phone")
+    .optional(),
   message: z.string().trim().min(10, "message").max(5000, "message"),
   /**
    * Honeypot: hidden from people, so only bots fill it in. The server quietly
