@@ -1,0 +1,3412 @@
+{
+  "generatedAt": "2026-10-02T22:10:56+00:00",
+  "identities": [
+    "Toluwalope Akinkunmi <akinkunmitolulope23@gmail.com> (git config user.email)",
+    "Toluwalope <akinkunmitolulope23@gmail.com>",
+    "Toluwalope Akinkunmi <64863887+H4LV3D@users.noreply.github.com>",
+    "Moyinoluwa <64863887+H4LV3D@users.noreply.github.com> (confirmed by you on 2026-10-02)",
+    "GitHub user H4LV3D",
+    "H4LV3D <akinkunmitolulope23@gmail.com> and h4lv3d <akinkunmitolulope23@gmail.com> (same email, GitHub handle as name)",
+    "dynamix23 / Dynamix23 <akinkunmitolulope23@gmail.com> (same email; appears to be your earlier GitHub username)",
+    "Toluwalope Akinkunmi <64863887+dynamix23@users.noreply.github.com> and dynamix23 <64863887+dynamix23@users.noreply.github.com> (same GitHub account number as H4LV3D)"
+  ],
+  "identitiesToConfirm": [
+    {
+      "identity": "Tolu Wade (GitHub: toluwade / thetoluwade, fiatmatch.com address)",
+      "where": "TheBaseNet/TCN_mobile (18 commits)",
+      "counted": false,
+      "why": "Matches the name 'Tolu' in your rule, but it is tied to separate GitHub accounts and a different email domain, so I treated it as another person."
+    },
+    {
+      "identity": "Law x Tech org account (LawxTech noreply address and the org's Gmail address)",
+      "where": "LawxTech/lawxtech-website (3 merge commits), LawxTech/LawXTech (75 commits)",
+      "counted": false,
+      "why": "Commits made from the organisation's own GitHub account. Say so if some of these were you working while signed in as the org."
+    },
+    {
+      "identity": "copilot-swe-agent[bot]",
+      "where": "tcn-webapp (1 commit)",
+      "counted": false,
+      "why": "Automated agent commit, not attributed to you."
+    },
+    {
+      "identity": "dynamix23 (name on about 57 commits in older personal repos)",
+      "where": "Personal repos from 2020-2023 (e.g. Workstudy, Cabify, early portfolio repos)",
+      "counted": true,
+      "why": "Counted because it uses your email or the same GitHub account number as H4LV3D. Confirm it is your old username."
+    },
+    {
+      "identity": "Claude <noreply@anthropic.com>, v0 and Vercel bots, github-actions, dependabot",
+      "where": "H4LV3D/H4LV3D (7), InstaSpot, todo-app-altshool-exam, sales-portal-frontend, GitHub Skills repos",
+      "counted": false,
+      "why": "Automated or AI-agent commits, not attributed to you."
+    }
+  ],
+  "experience": [
+    {
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "role": "Frontend Developer (web + mobile)",
+      "start": "2023-12",
+      "end": "present",
+      "summary": "Frontend development across The Circular Net's product family: the sustainability-focused social network on web and mobile, the Circular Ticket events and ticketing apps, the admin dashboard, the SSO service and the marketing site. Sole or lead committer on almost every frontend repository in the organisation.",
+      "highlights": [
+        "Built the current web app (625 of 653 commits) covering feed, communities, messaging, audio/video rooms, jobs board, projects hub and podcasts",
+        "Built the Expo/React Native mobile app (448 of 493 commits), listed on the App Store and Google Play",
+        "Built Circular Ticket on web and mobile as a monorepo with a shared package, including ticket scanning, checkout, wallets, payouts and KYC",
+        "Built the OAuth 2.0 single sign-on frontend used across the product family",
+        "Built the marketing website, including blog publishing, service pages and an SEO and accessibility pass",
+        "Built the admin dashboard, including the Circular Ticket KYC and payout review screens",
+        "Published a shared UI component library to npm for reuse across the web apps"
+      ],
+      "website": "https://www.thecircularnet.com",
+      "needsReview": true,
+      "notes": "Role title and employment type are inferred, not documented in the repos. Start date is my first commit in the earlier web app repo (tbn-webapp, Dec 2023); the current repos start mid-2025."
+    },
+    {
+      "organisation": "Law x Tech",
+      "type": "volunteer",
+      "role": "Web Developer",
+      "start": "2023-09",
+      "end": "present",
+      "summary": "Built and maintain the Law x Tech website, the public face of a community at the intersection of law and technology in Africa. Delivered the original React site in 2023-24 and a full Next.js redesign with an admin CMS in 2026.",
+      "highlights": [
+        "Rebuilt the site on Next.js 16 with public pages for series, summit and awards, partners, sponsors, careers and blog",
+        "Built an admin CMS with authentication, blog management, role-based user management and image uploads",
+        "Built the original site (156 of 237 commits) with home, about, series, blog and contact pages",
+        "Keep series episodes, team, partners and summit content current"
+      ],
+      "website": "https://lawxtech.org",
+      "needsReview": true,
+      "notes": "Type (volunteer vs freelance/client) and role title are guesses - nothing in the repos states them."
+    },
+    {
+      "organisation": "Export Trades",
+      "type": "client",
+      "role": "Frontend Developer",
+      "start": "2025-08",
+      "end": "2026-04",
+      "summary": "Frontend development for a global commodity trading platform: a multilingual marketing site plus an authenticated trading web app. Largest contributor on a five-person repository (99 of 169 commits).",
+      "highlights": [
+        "Built marketplace, commodities and market-trends pages on the public site",
+        "Built trading workflows including requests for quote, expressions of interest, offers, escrow and disputes",
+        "Added multi-language support, including Arabic"
+      ],
+      "website": "https://www.exportrades.com",
+      "needsReview": true,
+      "notes": "Engagement type and role title are guesses. Confirm you are happy to name this organisation."
+    },
+    {
+      "organisation": "DS Energy Ltd",
+      "type": "client",
+      "role": "Frontend Developer",
+      "start": "2025-08",
+      "end": "2025-11",
+      "summary": "Built the frontend of a sales portal for managing the marketers and customers of a solar and inverter provider. Sole frontend committer (84 of 84 commits).",
+      "highlights": [
+        "Built sales, customers, commissions and procurement-list modules",
+        "Built multi-step onboarding with document upload and account-status handling",
+        "Built sale details and invoices with PDF export and payment links"
+      ],
+      "website": null,
+      "needsReview": true,
+      "notes": "Engagement type and role title are guesses. No production URL found in the repo."
+    },
+    {
+      "organisation": "Pennywise",
+      "type": "client",
+      "role": "Frontend & Mobile Developer",
+      "start": "2024-01",
+      "end": "2025-05",
+      "summary": "Built the Pennywise personal-finance mobile app and its marketing website. Sole committer on the mobile app (132 of 132 commits) and near-sole on the website (199 of 201).",
+      "highlights": [
+        "Built the Expo/React Native app: auth, onboarding, wallets, budgets and charts",
+        "Built the marketing site with waitlist, pricing, contact, community and blog pages",
+        "Rebuilt the landing page in a later Next.js + Tailwind version"
+      ],
+      "website": "https://www.iampennywise.com",
+      "needsReview": true,
+      "notes": "Engagement type and role title are guesses. I did not check whether the site is still live."
+    },
+    {
+      "organisation": "Hotrac (FarmShare)",
+      "type": "client",
+      "role": "Frontend Developer",
+      "start": "2023-10",
+      "end": "2023-11",
+      "summary": "Built the administrator's dashboard for FarmShare, a tractor and farm-equipment sharing product. Authored 165 of 166 commits over about a month.",
+      "highlights": [
+        "Built users, tractors, bookings, transactions and payment-request screens",
+        "Built per-user and per-tractor detail pages with maps and charts"
+      ],
+      "website": null,
+      "needsReview": true,
+      "notes": "Organisation name is taken from the GitHub org slug (hotrac-org); the product name FarmShare is from the README. Engagement type is a guess."
+    },
+    {
+      "organisation": "StellarMaxi (Tonmax)",
+      "type": "freelance",
+      "role": "Frontend Developer",
+      "start": "2024-07",
+      "end": "2024-07",
+      "summary": "Built the UI of a Telegram mini app for a crypto referral platform. Only 2 commits (project initialisation and fixes), both mine.",
+      "highlights": [
+        "Built dashboard, referral, level, mining, transactions and withdrawal screens"
+      ],
+      "website": null,
+      "needsReview": true,
+      "notes": "Very small footprint (2 commits). Decide whether it belongs in the portfolio at all."
+    },
+    {
+      "organisation": "Gemspay Solutions Limited",
+      "type": "client",
+      "role": "Frontend Developer",
+      "start": "2024-05",
+      "end": "2025-06",
+      "summary": "Built the marketing website for a payments company across two versions. Sole committer on the website repository (28 of 28 commits).",
+      "highlights": [
+        "Built product, pricing, blog and support pages",
+        "Built demo-request, contact and newsletter forms",
+        "Delivered a second landing-page version in mid-2025"
+      ],
+      "website": null,
+      "needsReview": true,
+      "notes": "Engagement type and role title are guesses. A Flutter app for the same company also sits in your account (see otherRepos) but looks imported rather than written by you."
+    },
+    {
+      "organisation": "Independent projects",
+      "type": "freelance",
+      "role": "Full-stack / Frontend Developer",
+      "start": "2022-04",
+      "end": "2026-07",
+      "summary": "Self-directed products and small client websites built outside any organisation, from early full-stack JavaScript apps to recent Next.js and NestJS builds.",
+      "highlights": [
+        "Built Invocipt, an invoicing and receipts SaaS, to a tagged 1.0.1 release (595 commits)",
+        "Built Tosin Farms, a full-stack e-commerce platform with a NestJS API and passkey login",
+        "Built TrendHub, a content hub for newsletters, podcasts and blogs",
+        "Built websites for a hospital, a branding consultancy, an architecture studio and a clothing brand",
+        "Built admin dashboards for event ticketing, trading and a small retail business",
+        "Built a Python stock-analysis bot deployed to AWS Lambda"
+      ],
+      "website": null,
+      "needsReview": true,
+      "notes": "This groups personal builds and what look like client jobs. I could not tell which were paid, so each project's type (personal vs freelance) is a guess for you to correct."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "circular-ticket-mobile",
+      "title": "Circular Ticket (mobile app)",
+      "tagline": "Event discovery and ticketing app",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "mobile"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (mobile, sole committer)",
+      "period": {
+        "start": "2026-07",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 162,
+        "total": 162
+      },
+      "source": "events-workspace/apps/events-mobile (local monorepo)",
+      "areas": [
+        "src/modules",
+        "src/app",
+        "src/components",
+        "src/lib",
+        "ios",
+        "android"
+      ],
+      "stack": [
+        "Expo 57",
+        "React Native 0.86",
+        "Expo Router",
+        "TypeScript",
+        "NativeWind (Tailwind)",
+        "TanStack Query",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Zod",
+        "Reanimated",
+        "expo-camera",
+        "react-native-maps",
+        "expo-notifications",
+        "EAS Build"
+      ],
+      "summary": "iOS and Android app for Circular Ticket, the events and ticketing product from The Circular Net. Attendees discover events and buy tickets; organisers create events, track orders and get paid.",
+      "problem": "Organisers and attendees needed a native app for the events product, with one account switching between attendee and creator roles.",
+      "process": "Built the app in an npm-workspaces monorepo alongside the web app, sharing services, hooks and schemas through a common package. Started from mock data and UI primitives, then wired each area (events, orders, wallets, payouts, KYC, scanning) to the real API.",
+      "outcome": "App identity, deep links and EAS builds for Play Console are configured in the repo. No store listing is recorded yet.",
+      "learnings": "Sharing data and validation logic between web and mobile kept the two apps consistent while screens stayed platform-specific.",
+      "features": [
+        "[mobile] Built the attendee flow: discover and filter events, event details, registration, checkout and orders with QR tickets",
+        "[mobile] Built the creator flow: multi-step create/edit event wizard, dashboard stats, orders and scanner access",
+        "[mobile] Built the ticket scanner: camera framing that locks onto the code, validation and attendee check-in",
+        "[mobile] Built multi-currency (NGN/USD) wallets, transactions, payout accounts and payout requests",
+        "[mobile] Built the 5-step KYC wizard and in-review states on payout screens",
+        "[mobile] Built SSO-only sign-in with a local onboarding gate, location selection and notification opt-in",
+        "[mobile] Added device calendar sync, a notifications hub, dark mode, pull-to-refresh and illustrated empty states",
+        "[mobile] Added iPad rotation support and adopted the iOS scene lifecycle so the app launches on the newest iOS"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://circularticket.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [
+        "events-workspace/apps/events-mobile/assets/images/icon.png",
+        "events-workspace/apps/events-mobile/assets/images/adaptive-icon.png",
+        "events-workspace/apps/events-mobile/assets/icon-light.png",
+        "events-workspace/apps/events-mobile/assets/images/logo.png",
+        "events-workspace/apps/events-mobile/assets/images/auth/mascot-welcome.png",
+        "events-workspace/apps/events-mobile/assets/illustrations/celebration.png"
+      ],
+      "needsReview": true,
+      "notes": "The live link is the web app's domain, not a store listing - I found no App Store or Play Store URL for Circular Ticket. Commit counts for the three monorepo projects overlap, because one commit often touches several apps (the whole monorepo is 226 commits, all mine). No app screenshots exist in the repo, only icons and illustrations."
+    },
+    {
+      "slug": "circular-ticket-web",
+      "title": "Circular Ticket (web app)",
+      "tagline": "Create, sell and scan event tickets",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (web, sole committer)",
+      "period": {
+        "start": "2026-03",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 89,
+        "total": 89
+      },
+      "source": "events-workspace/apps/events-frontend (local monorepo) + earlier standalone repo TheBaseNet/events-frontend (198 of 198 commits, Mar-Sep 2026)",
+      "areas": [
+        "src/modules",
+        "src/app",
+        "src/components"
+      ],
+      "stack": [
+        "Next.js 15 (App Router)",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "shadcn/ui + Base UI",
+        "TanStack Query",
+        "TanStack Table",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Zod / Yup",
+        "Recharts",
+        "qr-scanner",
+        "Databuddy analytics"
+      ],
+      "summary": "Web app for Circular Ticket: a public events site plus an organiser dashboard for creating events, selling tickets, checking attendees in and requesting payouts.",
+      "problem": "Organisers needed one place to publish events, manage ticket types and orders, verify their identity and get paid in NGN or USD.",
+      "process": "Built the app as a standalone Next.js project, then moved it into a monorepo with the mobile app and extracted shared services and hooks. Built each module (events, orders, wallet, payouts, KYC, scan) and wired it to the live API, including Stripe and bank payout flows.",
+      "outcome": "Runs on the production domain referenced by the marketing site. Three written audits of architecture, monorepo correctness and web/mobile sharing are kept in the repo's docs folder.",
+      "learnings": "Separating loading, error, filtered-empty and truly-empty states made data-heavy dashboard screens much clearer.",
+      "features": [
+        "[web] Built the public home page, event listing and event detail pages with SEO metadata, sitemap and OG image",
+        "[web] Built the event create/edit flow with schedules, ticket types, speakers and hybrid/virtual venues",
+        "[web] Built organiser orders, order detail and registration stats, with spreadsheet export",
+        "[web] Built the browser ticket scanner, scanner hub and staff scanner-access pages",
+        "[web] Built wallets with an NGN/USD toggle, transactions, payout accounts and payout requests, including the return from Stripe onboarding",
+        "[web] Built the KYC form and Payouts & Verification settings",
+        "[web] Added dark mode that follows the system theme, plus new branding, favicon and app icons"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://circularticket.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [
+        "events-workspace/apps/events-frontend/public/og-image.png",
+        "events-workspace/apps/events-frontend/public/icon.png",
+        "events-workspace/apps/events-frontend/public/images/hero/image-1.jpg",
+        "events-workspace/apps/events-frontend/public/images/celebrate.png"
+      ],
+      "needsReview": true,
+      "notes": "Commit count is for the monorepo path only; the earlier standalone repo adds 198 more, with some history duplicated when it was synced into the monorepo. The domain comes from the marketing site's example environment file; I did not open it to check it is live. Hero images may be stock photography - check licensing before reuse."
+    },
+    {
+      "slug": "circular-ticket-shared",
+      "title": "Circular Ticket shared package",
+      "tagline": "Shared logic for web and mobile",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web",
+        "mobile"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2026-07",
+        "end": "2026-09"
+      },
+      "commits": {
+        "mine": 61,
+        "total": 61
+      },
+      "source": "events-workspace/packages/shared (local monorepo)",
+      "areas": [
+        "src/services",
+        "src/hooks",
+        "src/utils",
+        "src/constants",
+        "src/store",
+        "src/config",
+        "src/schemas"
+      ],
+      "stack": [
+        "TypeScript",
+        "npm workspaces",
+        "TanStack Query",
+        "Axios",
+        "Redux Toolkit",
+        "Redux Persist",
+        "Zod / Yup",
+        "React Hook Form",
+        "Day.js"
+      ],
+      "summary": "Internal package holding the API services, query hooks, validation schemas, store and constants used by both Circular Ticket apps.",
+      "problem": "The web and mobile apps were duplicating API calls, formatting and business rules, and drifting apart.",
+      "process": "Set up the monorepo with npm workspaces and moved cross-platform logic into one package. Centralised currency formatting, order status mapping, scanner verification and the auth-failure check, guided by written audits.",
+      "outcome": "Both apps import the same services, hooks and rules, such as the single rule for when a payout can be requested.",
+      "learnings": "Shared code needs aligned dependency versions and careful handling of hoisting across web and native.",
+      "features": [
+        "[shared] Set up the monorepo structure and consolidated lockfiles and dependency versions",
+        "[shared] Centralised API services and TanStack Query hooks for events, orders, wallets, payouts and KYC",
+        "[shared] Centralised currency formatting, status mapping and status badge colours",
+        "[shared] Centralised scanner verification and the transport for staff scan tokens",
+        "[shared] Shared one privacy policy and one payout-eligibility rule between web and mobile"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": false,
+      "notes": "Internal package, not published. Listed separately because you asked for each packages/* entry as its own project; you may prefer to fold it into the two app entries."
+    },
+    {
+      "slug": "the-circular-net-web",
+      "title": "The Circular Net (web app)",
+      "tagline": "Social network for sustainability",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (web, lead committer)",
+      "period": {
+        "start": "2025-06",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 625,
+        "total": 653
+      },
+      "source": "tcn-webapp (local)",
+      "areas": [
+        "src/app/(authenticated)",
+        "src/components/shared",
+        "src/components/ui",
+        "src/utils",
+        "src/packages/post",
+        "src/contexts",
+        "src/app/(auth)",
+        "src/components/call"
+      ],
+      "stack": [
+        "Next.js 15 (App Router)",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "Radix UI / shadcn",
+        "TanStack Query",
+        "Redux Toolkit",
+        "Stream Video SDK",
+        "Stream Chat",
+        "Pusher",
+        "TipTap",
+        "React Hook Form",
+        "Zod / Yup",
+        "Paystack",
+        "WaveSurfer",
+        "Databuddy analytics"
+      ],
+      "summary": "A platform combining environmental advocacy with social networking, connecting individuals, organisations and businesses around sustainability and climate solutions.",
+      "problem": "People and organisations working on sustainability needed one place to share, organise, hire and meet, rather than a general-purpose social network.",
+      "process": "Rebuilt the web app on the Next.js App Router with a module per product area. Built real-time chat and live audio/video rooms on Stream and Pusher, a rich-text post composer, and infinite-scrolling feeds across the app.",
+      "outcome": "Runs on the production app domain, with deep links into the mobile app and a download page pointing to both stores.",
+      "learnings": "Live rooms need careful state handling around device setup, screen share and participants leaving or being removed.",
+      "features": [
+        "[web] Built the feed and posts: composer with media, scheduling, editing, comments, hashtags, saved posts and impression tracking",
+        "[web] Built communities, discover people, business pages and profiles with a multi-step complete-profile flow",
+        "[web] Built messaging: direct and group chat, pasted images, media previews and rooms attached to chats",
+        "[web] Built audio and video rooms: host controls, moderation, raise hand, emoji reactions, screen share, recording UI and picture-in-picture",
+        "[web] Built the jobs board, projects hub with milestones, podcasts with an audio player, and events",
+        "[web] Built notifications, settings (including delete account and data) and a new-user walkthrough tour",
+        "[web] Built guest pages for communities, events and jobs, plus link previews and SEO metadata"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://app.thecircularnet.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [
+        "tcn-webapp/public/icon.png",
+        "tcn-webapp/public/adaptive-icon.png"
+      ],
+      "needsReview": false,
+      "notes": "One other contributor and one automated commit account for the remaining 28 commits. No screenshots in the repo; the marketing site's feature images (listed under that project) show the product."
+    },
+    {
+      "slug": "the-circular-net-mobile",
+      "title": "The Circular Net (mobile app)",
+      "tagline": "Sustainability social network, in your pocket",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "mobile"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (mobile, lead committer)",
+      "period": {
+        "start": "2025-07",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 448,
+        "total": 493
+      },
+      "source": "tcn-mobileapp (local)",
+      "areas": [
+        "src/modules/authenticated",
+        "src/utils",
+        "src/components/shared",
+        "src/modules/auth",
+        "src/modules/complete-profile",
+        "src/lib/toast",
+        "src/components/ui",
+        "src/contexts"
+      ],
+      "stack": [
+        "Expo 53",
+        "React Native 0.79",
+        "Expo Router",
+        "TypeScript",
+        "NativeWind (Tailwind)",
+        "TanStack Query",
+        "Redux Toolkit",
+        "Stream Video SDK",
+        "Stream Chat",
+        "Pusher",
+        "Notifee",
+        "react-native-track-player",
+        "Gorhom Bottom Sheet",
+        "Reanimated",
+        "EAS Build + Updates"
+      ],
+      "summary": "The iOS and Android app for The Circular Net: feed, communities, messaging, live audio and video rooms, jobs, projects and podcasts for a sustainability-focused community.",
+      "problem": "The community needed the full platform on mobile, including real-time chat, calls and background audio, not just a wrapped website.",
+      "process": "Built the app with Expo and expo-router, organised by feature module. Added Stream-based rooms and calls, a Pusher-backed chat store, a background podcast player and an iOS share extension, with separate development, staging and production variants.",
+      "outcome": "Listed on the App Store and Google Play. The app config records version 1.3.1.",
+      "learnings": "Explicit environment variants that fail loudly prevent builds from silently pointing at the wrong backend.",
+      "features": [
+        "[mobile] Built auth and onboarding: email and Google sign-in, password strength rules and a multi-step complete-profile flow",
+        "[mobile] Built the feed and post creation with media, scheduling, hashtag autocomplete and fullscreen media gestures",
+        "[mobile] Built messaging with media-aware previews, document preview and download, and 1:1 calling with ring detection",
+        "[mobile] Built audio and video rooms with reactions, raise hand, host actions, picture-in-picture and background audio",
+        "[mobile] Built a podcast player with mini and full players, queue, resume position and background playback",
+        "[mobile] Built communities, explore, jobs board, project hubs, business pages and saved posts",
+        "[mobile] Added deep linking, push notifications, token refresh and an iOS share extension"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://www.thecircularnet.com",
+        "appStore": "https://apps.apple.com/app/the-circular-net/id6747455234",
+        "playStore": "https://play.google.com/store/apps/details?id=com.thecircularnet.mobile",
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed",
+        "appStore": "confirmed",
+        "playStore": "confirmed"
+      },
+      "visuals": [
+        "tcn-mobileapp/assets/images/icon.png",
+        "tcn-mobileapp/assets/images/adaptive-icon.png",
+        "tcn-mobileapp/assets/images/splash-icon.png",
+        "tcn-mobileapp/assets/images/logo.png"
+      ],
+      "needsReview": false,
+      "notes": "One other contributor authored the remaining 45 commits (Jan-Feb 2026), including Apple sign-in and biometric login, so those are not listed as yours. Store links come from the web app and marketing site source; I did not open them. No store screenshots in the repo."
+    },
+    {
+      "slug": "tcn-admin-dashboard",
+      "title": "The Circular Net Admin Dashboard",
+      "tagline": "Back-office for the platform",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2024-06",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 51,
+        "total": 51
+      },
+      "source": "tcn-admin-webapp (local)",
+      "areas": [
+        "src/utils",
+        "src/components",
+        "src/app",
+        "src/store",
+        "src/hooks"
+      ],
+      "stack": [
+        "Next.js 13 (App Router)",
+        "React 18",
+        "TypeScript",
+        "Tailwind CSS",
+        "Mantine",
+        "Radix UI",
+        "TanStack Query",
+        "TanStack Table",
+        "Redux Toolkit",
+        "Zustand",
+        "FullCalendar",
+        "React Hook Form",
+        "Yup",
+        "Docker"
+      ],
+      "summary": "Internal admin web app for managing The Circular Net: users, content, communities, jobs, projects and events, plus review tools for Circular Ticket.",
+      "problem": "Staff needed to manage users and content, and to review organiser identity checks and payouts, without touching the database.",
+      "process": "Built the dashboard shell, auth and data tables first, then added an app switcher so one admin can move between products. Most recently added the Circular Ticket section for KYC and payout review.",
+      "outcome": "Used as the internal admin tool; no public metrics are recorded in the repo.",
+      "learnings": "A shared app picker and layout let one admin codebase serve several products.",
+      "features": [
+        "[web] Built admin login, password reset and the dashboard layout with stats",
+        "[web] Built user management with paginated, searchable and sortable tables",
+        "[web] Built sections for communities, content moderation, job board, projects and an event calendar",
+        "[web] Built the Circular Ticket admin area: KYC review with an image viewer and payout review",
+        "[web] Built app-switcher dropdowns, admin profile pages and per-app loaders"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [
+        "tcn-admin-webapp/public/circular-ticket-logo-white.png"
+      ],
+      "needsReview": true,
+      "notes": "Only a staging address appears in the repo, so I left the live link empty (internal hostname). The dashboard also has a section for a second in-house app called Zola - I could not tell whether that name is public, so check before mentioning it."
+    },
+    {
+      "slug": "tcn-sso",
+      "title": "The Circular Net SSO",
+      "tagline": "One sign-in for every app",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2025-12",
+        "end": "2026-07"
+      },
+      "commits": {
+        "mine": 42,
+        "total": 42
+      },
+      "source": "sso-frontend (local)",
+      "areas": [
+        "src/utils",
+        "src/app",
+        "src/components",
+        "src/styles",
+        "src/contexts"
+      ],
+      "stack": [
+        "Next.js 16 (App Router)",
+        "React 19",
+        "React Compiler",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "Radix UI",
+        "TanStack Query",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Yup",
+        "Google OAuth",
+        "Sign in with Apple",
+        "Motion"
+      ],
+      "summary": "Dedicated single sign-on frontend that handles login, sign-up and account recovery for The Circular Net's apps using OAuth 2.0.",
+      "problem": "Each product had its own login; users needed one account and one secure sign-in across the web app, events app and marketing site.",
+      "process": "Built the OAuth 2.0 authorisation flow with client validation and safe redirect handling. Added email/password, Google and Apple sign-in, OTP email verification and password reset, with animated multi-step forms.",
+      "outcome": "Runs on the accounts domain and is the sign-in entry point used by the marketing site, the web app and Circular Ticket.",
+      "learnings": "Redirect and client validation must be strict, because the SSO page is the one place every app trusts.",
+      "features": [
+        "[web] Built the OAuth 2.0 authorise flow with client ID validation and redirect handling",
+        "[web] Built email/password sign-in and sign-up with OTP email verification",
+        "[web] Added Google and Apple sign-in with provider callback handling",
+        "[web] Built password reset with live strength validation and confirm-password checks",
+        "[web] Added animated multi-step forms, light/dark themes and a post-auth redirect page"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://accounts.thecircularnet.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [
+        "sso-frontend/public/icon.png"
+      ],
+      "needsReview": false,
+      "notes": "The domain comes from the marketing site's example environment file. The README says PKCE is supported; I did not verify that in code."
+    },
+    {
+      "slug": "thecircularnet-website",
+      "title": "The Circular Net website",
+      "tagline": "Marketing site and sustainability insights",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2026-06",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 62,
+        "total": 62
+      },
+      "source": "thecircularnet-website (local)",
+      "areas": [
+        "src/modules",
+        "src/constants",
+        "src/app",
+        "src/components",
+        "src/utils"
+      ],
+      "stack": [
+        "Next.js 15 (App Router, Turbopack)",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "shadcn/ui + Radix UI",
+        "React Hook Form",
+        "Yup",
+        "Motion",
+        "Lenis",
+        "Swiper",
+        "Databuddy analytics"
+      ],
+      "summary": "Public marketing website for The Circular Net, presenting the platform, its sustainability services and a blog of thought-leadership articles.",
+      "problem": "The company needed a site that explains the product and its services, ranks in search and routes visitors into the apps.",
+      "process": "Built the home page and service pages as feature modules, then added a blog with a password-gated writing page. Followed with an SEO, web-vitals and accessibility pass, and redirects for old indexed links.",
+      "outcome": "Live on the company's main domain, with SSO sign-in that hands users over to the web app.",
+      "learnings": "Server-side secrets behave differently per host; the blog admin needed specific handling for the hosting platform's SSR.",
+      "features": [
+        "[web] Built the home page with feature showcases and live upcoming events from the API",
+        "[web] Built Carbon Accounting, ESG Reporting & Compliance and Sustainability Projects pages",
+        "[web] Built the blog listing and article pages, with a white paper download and share actions",
+        "[web] Built a password-gated admin page for publishing blog posts",
+        "[web] Rebuilt the contact form with validation, plus legal, account-deletion and 404 pages",
+        "[web] Delivered an SEO overhaul: metadata, sitemap, generated OG images, redirects and accessibility fixes",
+        "[web] Added SSO sign-in with CSRF state validation and analytics"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://www.thecircularnet.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [
+        "thecircularnet-website/public/features/feature-communities.png",
+        "thecircularnet-website/public/features/feature-audio-rooms.png",
+        "thecircularnet-website/public/features/feature-video-rooms.png",
+        "thecircularnet-website/public/features/feature-events.png",
+        "thecircularnet-website/public/features/feature-jobs.png",
+        "thecircularnet-website/public/features/feature-podcasts.png",
+        "thecircularnet-website/public/features/feature-projects.png",
+        "thecircularnet-website/public/images/hero-image.jpg",
+        "thecircularnet-website/public/images/hero-esg.png",
+        "thecircularnet-website/public/icon.png"
+      ],
+      "needsReview": false,
+      "notes": "The feature-*.png images look like the best existing product visuals for the TCN web and mobile entries too."
+    },
+    {
+      "slug": "thebasenet-ui",
+      "title": "@thebasenet/ui",
+      "tagline": "Shared React UI component library",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "public",
+      "role": "Frontend Developer (author)",
+      "period": {
+        "start": null,
+        "end": null
+      },
+      "commits": {
+        "mine": 0,
+        "total": 0
+      },
+      "source": "tcn-ui (local folder, git initialised but no commits)",
+      "areas": [
+        "src/ui",
+        "src/components",
+        "src/brand",
+        "src/tokens",
+        "styles"
+      ],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Radix UI",
+        "Tailwind CSS",
+        "class-variance-authority",
+        "tsup",
+        "cmdk",
+        "Vaul",
+        "Sonner",
+        "React Hook Form"
+      ],
+      "summary": "The Circular Net's shared UI component library: design tokens, brand assets and about 37 UI primitives used by the web apps.",
+      "problem": "Several Next.js apps were re-implementing the same buttons, dialogs, forms and brand components.",
+      "process": "Extracted the common components into one package with separate entry points for UI, components, brand, tokens and styles, bundled with tsup.",
+      "outcome": "Published on the public npm registry at version 0.1.9 and used by the marketing site and the Circular Ticket web app.",
+      "learnings": "Splitting entry points lets apps import only what they need from a shared library.",
+      "features": [
+        "[web] Built UI primitives including button, dialog, drawer, select, combobox, calendar, date-time picker, tabs and form",
+        "[web] Built shared components: empty, error and loading states, page loader, custom modal, country selector and theme switcher",
+        "[web] Packaged brand logos, colour, radius and typography tokens, and shared stylesheets",
+        "[web] Set up the tsup build and npm publishing"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://www.npmjs.com/package/@thebasenet/ui",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "No git history exists locally and the GitHub repo named in package.json was not reachable, so I have no dates or commit counts and cannot prove authorship from history. Fill in the period yourself. Visibility is 'public' because the package is on public npm; the source repo is not public."
+    },
+    {
+      "slug": "network-requests-ui",
+      "title": "network-requests-ui",
+      "tagline": "Drop-in network debug panel",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Author",
+      "period": {
+        "start": "2026-07",
+        "end": "2026-07"
+      },
+      "commits": {
+        "mine": 2,
+        "total": 2
+      },
+      "source": "network-requests-ui (local, no remote)",
+      "areas": [
+        "src"
+      ],
+      "stack": [
+        "TypeScript",
+        "React",
+        "tsup",
+        "Axios interceptors"
+      ],
+      "summary": "A drop-in request logger and floating debug panel for axios-based React apps, for diagnosing requests on devices where devtools can't be attached, such as in-app browsers.",
+      "problem": "Bugs that only appear inside in-app browsers are hard to diagnose because there is no network tab.",
+      "process": "Wrote a logger that attaches to any axios instance through interceptors, with a real detach, and a presentational panel with inline styles and no CSS dependency. Sensitive fields are redacted from captured request bodies by default.",
+      "outcome": "Used in the SSO frontend's login page as a debug panel. Not published to npm as of this export.",
+      "learnings": "Keeping capture and display separate gives the host app control over when logging starts and stops.",
+      "features": [
+        "[web] Built createRequestLogger with attach, detach, subscribe and clear",
+        "[web] Built a floating, expandable panel showing request body, response, errors and duration",
+        "[web] Added default redaction of password and token fields",
+        "[web] Kept it dependency-free apart from React, with no Tailwind or CSS requirement"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "No git remote and not on npm, so I marked it private and personal. If you built it as part of your Circular Net work, change the type and organisation. package.json is set up for public MIT publishing."
+    },
+    {
+      "slug": "the-circular-net-web-v1",
+      "title": "The Circular Net web app (first version)",
+      "tagline": "Original platform web app",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2023-12",
+        "end": "2025-03"
+      },
+      "commits": {
+        "mine": 1379,
+        "total": 1379
+      },
+      "source": "GitHub: TheBaseNet/tbn-webapp (staging branch; cloned to a temp folder)",
+      "areas": [
+        "src/components",
+        "src/layouts",
+        "src/pages",
+        "src/utils",
+        "src/store"
+      ],
+      "stack": [
+        "Next.js (Pages Router)",
+        "React",
+        "TypeScript",
+        "Mantine",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "TanStack Query",
+        "Stream Video SDK",
+        "Pusher",
+        "TipTap",
+        "WaveSurfer",
+        "Sentry",
+        "React Hook Form",
+        "Yup"
+      ],
+      "summary": "The first version of The Circular Net's web app, later replaced by the current App Router rebuild.",
+      "problem": "The platform needed its first working web product covering profiles, posts, messaging and jobs.",
+      "process": "Built the app on the Next.js Pages Router with Mantine and Redux, from auth and multi-step profile completion through to posts, messaging, jobs and audio rooms.",
+      "outcome": "Superseded by the current web app in mid-2025; no metrics are recorded in the repo.",
+      "learnings": "The rebuild moved to the App Router and a module-per-feature layout after this version grew large.",
+      "features": [
+        "[web] Built auth and a multi-step complete-profile flow",
+        "[web] Built posts with a rich-text editor, visibility options and media",
+        "[web] Built messaging, notifications and following",
+        "[web] Built job listing and job creation pages",
+        "[web] Built early audio rooms and events editing"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "The count is across all branches and includes many small commits. You may want to merge this into the current web app entry as its history rather than show it separately."
+    },
+    {
+      "slug": "tcn-mobile-legacy",
+      "title": "The Circular Net mobile app (earlier build)",
+      "tagline": "Earlier React Native app",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "mobile"
+      ],
+      "visibility": "private",
+      "role": "Contributor",
+      "period": {
+        "start": "2025-02",
+        "end": "2025-05"
+      },
+      "commits": {
+        "mine": 3,
+        "total": 48
+      },
+      "source": "GitHub: TheBaseNet/TCN_mobile (cloned to a temp folder)",
+      "areas": [
+        "Screens/Private",
+        "Utils",
+        "Navigation"
+      ],
+      "stack": [
+        "React Native (bare)",
+        "React Navigation",
+        "NativeWind",
+        "Redux Toolkit",
+        "TanStack Query",
+        "Stream Video SDK",
+        "Pusher"
+      ],
+      "summary": "An earlier bare React Native build of The Circular Net app, led by other developers before the current Expo app.",
+      "problem": "The mobile app needed feed and navigation improvements while the team evaluated its mobile approach.",
+      "process": "Contributed a small set of changes: refactored the Home and Spaces screens, updated feed fetching and added Tailwind configuration.",
+      "outcome": "Replaced by the current Expo app in July 2025.",
+      "learnings": "Minor contribution; context for why the app was rebuilt with Expo.",
+      "features": [
+        "[mobile] Refactored Home and Spaces screens and feed fetching",
+        "[mobile] Added Tailwind (NativeWind) configuration and tab navigation animation tweaks"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Only 3 commits are yours. 18 commits by 'Tolu Wade' were NOT counted as you (see Identities). Probably not worth a portfolio entry on its own."
+    },
+    {
+      "slug": "tcn-waitlist",
+      "title": "The Circular Net waitlist",
+      "tagline": "Pre-launch waitlist sign-up page",
+      "organisation": "The Circular Net Limited",
+      "type": "employment",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2025-08",
+        "end": "2025-09"
+      },
+      "commits": {
+        "mine": 17,
+        "total": 17
+      },
+      "source": "GitHub: TheBaseNet/waitlist-frontend (cloned to a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "src/utils"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Radix UI",
+        "TanStack Query",
+        "React Hook Form",
+        "Yup / Zod",
+        "Motion"
+      ],
+      "summary": "A small waitlist site that collects sign-ups ahead of launch.",
+      "problem": "The team needed to capture interested users before the apps were publicly available.",
+      "process": "Built a responsive waitlist form with a country selector and phone number input with validation and country code mapping.",
+      "outcome": "No sign-up numbers are recorded in the repo.",
+      "learnings": "Small, focused build.",
+      "features": [
+        "[web] Built the waitlist form with validation",
+        "[web] Built a country selection dialog and phone number input with country codes",
+        "[web] Built the responsive header and footer"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://waitlist-frontend-ruby.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [],
+      "needsReview": false,
+      "notes": "The link is the preview-style address set as the GitHub repo homepage, so it may not be the production URL or still be up."
+    },
+    {
+      "slug": "lawxtech-website",
+      "title": "Law x Tech website (2026 redesign)",
+      "tagline": "Africa's home for law and technology",
+      "organisation": "Law x Tech",
+      "type": "volunteer",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "public",
+      "role": "Full-stack Web Developer (sole developer)",
+      "period": {
+        "start": "2026-05",
+        "end": "present"
+      },
+      "commits": {
+        "mine": 93,
+        "total": 96
+      },
+      "source": "lawxtech-website (local)",
+      "areas": [
+        "components/home",
+        "app/admin",
+        "components/ui",
+        "components/admin",
+        "components/about",
+        "components/summit",
+        "components/series",
+        "lib/data"
+      ],
+      "stack": [
+        "Next.js 16 (App Router)",
+        "React 19",
+        "React Compiler",
+        "TypeScript",
+        "Tailwind CSS 4",
+        "shadcn/ui + Base UI",
+        "Auth.js (NextAuth)",
+        "Neon Postgres",
+        "Vercel Blob",
+        "TipTap",
+        "Zod",
+        "Framer Motion",
+        "Embla Carousel",
+        "Vercel Analytics",
+        "Databuddy analytics"
+      ],
+      "summary": "Redesigned website for Law x Tech, a platform at the intersection of law and technology that runs events, training and recognition for lawyers in legal tech across Nigeria and beyond.",
+      "problem": "The organisation needed a modern site it could update itself, covering its series, summit and awards, partners and blog.",
+      "process": "Rebuilt the site on Next.js 16 with a component library and motion, then added an admin CMS backed by Postgres with credential login, a rich-text blog editor, image uploads and role-based user management. Features such as the partners section were written up as a design spec and plan before building.",
+      "outcome": "Live on the organisation's domain. The home page it serves reports a community of 2,000+ members.",
+      "learnings": "Serverless database drivers need care around connection pooling and build-time access.",
+      "features": [
+        "[web] Built the home page with hero, animated stats, series preview, speakers carousel and community sections",
+        "[web] Built About, Series, Summit & Awards, Careers, Contact and Sponsors pages",
+        "[web] Built the partners section with detail pages and a summit countdown",
+        "[web] Built the blog with listing and article pages",
+        "[backend] Built the admin CMS: login, blog create/edit with a rich-text editor and image uploads",
+        "[backend] Built user management with add, remove and promote actions and admin-only access",
+        "[web] Added a branded 404 page, SEO metadata and analytics"
+      ],
+      "metrics": [
+        {
+          "label": "community members",
+          "value": 2000,
+          "suffix": "+",
+          "source": "lawxtech-website/components/home/StatsStrip.tsx (figure shown on the home page)"
+        },
+        {
+          "label": "major series",
+          "value": 8,
+          "suffix": "",
+          "source": "lawxtech-website/components/home/StatsStrip.tsx"
+        },
+        {
+          "label": "mini series",
+          "value": 5,
+          "suffix": "",
+          "source": "lawxtech-website/components/home/StatsStrip.tsx"
+        }
+      ],
+      "links": {
+        "live": "https://lawxtech.org",
+        "appStore": null,
+        "playStore": null,
+        "code": "https://github.com/LawxTech/lawxtech-website"
+      },
+      "linkConfidence": {
+        "live": "confirmed",
+        "code": "confirmed"
+      },
+      "visuals": [
+        "lawxtech-website/public/images/hero-image.jpeg",
+        "lawxtech-website/public/assets/logo/logo.JPG",
+        "lawxtech-website/public/assets/logo/logo_2.JPG"
+      ],
+      "needsReview": true,
+      "notes": "The metrics are the organisation's own community figures hard-coded on the home page, not results of your work - use them as context only. The 3 commits not counted are merges made from the Law x Tech org account. Project type (volunteer) is a guess."
+    },
+    {
+      "slug": "lawxtech-website-v1",
+      "title": "Law x Tech website (original)",
+      "tagline": "First Law x Tech website",
+      "organisation": "Law x Tech",
+      "type": "volunteer",
+      "categories": [
+        "web"
+      ],
+      "visibility": "public",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2023-09",
+        "end": "2026-05"
+      },
+      "commits": {
+        "mine": 156,
+        "total": 237
+      },
+      "source": "GitHub: LawxTech/LawXTech (cloned to a temp folder)",
+      "areas": [
+        "src/components",
+        "src/pages",
+        "src/data",
+        "public"
+      ],
+      "stack": [
+        "React (Create React App)",
+        "TypeScript",
+        "React Router",
+        "Material UI",
+        "styled-components",
+        "Framer Motion",
+        "AOS",
+        "React Slick"
+      ],
+      "summary": "The original Law x Tech website: home, about, series, blogs and contact pages introducing the community and its events.",
+      "problem": "A new legal-tech community needed a first web presence to explain its mission and promote its series.",
+      "process": "Built a single-page React app with Material UI and scroll animations. Most work happened between October 2023 and January 2024, with small fixes afterwards.",
+      "outcome": "Served as the organisation's site until the 2026 redesign replaced it.",
+      "learnings": "Content managed in code became hard for the organisation to update, which led to the CMS in the redesign.",
+      "features": [
+        "[web] Built the Home, About, Series, Blogs and Contact pages",
+        "[web] Built events, speaker and review components with carousels",
+        "[web] Built the contact form and site footer",
+        "[web] Added scroll animations and responsive layouts"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://law-x-tech.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": "https://github.com/LawxTech/LawXTech"
+      },
+      "linkConfidence": {
+        "live": "guess",
+        "code": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "The live link is the repo's homepage field and is probably an old preview address. Activity is concentrated in Oct 2023-Jan 2024; the 2026-05 end date is a single late fix."
+    },
+    {
+      "slug": "exportrades-webapp",
+      "title": "Export Trades",
+      "tagline": "Global commodity trading marketplace",
+      "organisation": "Export Trades",
+      "type": "client",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2025-08",
+        "end": "2026-04"
+      },
+      "commits": {
+        "mine": 99,
+        "total": 169
+      },
+      "source": "GitHub: exportrade2025/exportrades-webapp (cloned to a temp folder)",
+      "areas": [
+        "src/modules",
+        "src/components",
+        "src/utils",
+        "src/translations",
+        "src/app"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Radix UI / shadcn",
+        "next-intl",
+        "TanStack Query",
+        "TanStack Table",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Zod / Yup",
+        "AWS S3 uploads"
+      ],
+      "summary": "A marketing website and web app for a commodity trading platform that connects buyers and sellers and walks them through quoting, escrow and delivery.",
+      "problem": "Commodity buyers and sellers needed a trusted place to find products, negotiate and complete trades across borders and languages.",
+      "process": "Built the public site (marketplace, commodities, market trends) and the authenticated app around a module per trading step. Added locale-based routing and translations, and file uploads for verification documents.",
+      "outcome": "A v0.9 of the website and web app was merged to the main branch in February 2026.",
+      "learnings": "Building translation in from the start is far easier than retrofitting it.",
+      "features": [
+        "[web] Built the public site: hero, marketplace, commodity categories, market index and market trends",
+        "[web] Built sign-up with country selection and OTP verification, login and profile editing",
+        "[web] Built product pages with specifications, certificates and FAQs",
+        "[web] Built requests for quote, expressions of interest, offers and trades, with separate user and admin views",
+        "[web] Built escrow setup and details, dispute management and transaction history",
+        "[web] Added multi-language support with locale routing, including Arabic"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://www.exportrades.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Four other contributors authored the other 70 commits, so some listed areas were shared work. The domain is the base URL constant in the repo; I did not check it is live. Confirm the client is happy to be named."
+    },
+    {
+      "slug": "ds-energy-sales-portal",
+      "title": "DS Energy Sales Portal",
+      "tagline": "Sales and commissions for solar marketers",
+      "organisation": "DS Energy Ltd",
+      "type": "client",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2025-08",
+        "end": "2025-11"
+      },
+      "commits": {
+        "mine": 84,
+        "total": 84
+      },
+      "source": "GitHub: DS-Energy/sales-portal-frontend (staging branch; cloned to a temp folder)",
+      "areas": [
+        "src/modules",
+        "src/components",
+        "src/app",
+        "src/utils",
+        "src/contexts"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Radix UI / shadcn",
+        "TanStack Query",
+        "TanStack Table",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Yup",
+        "jsPDF + html2canvas",
+        "Vercel Blob",
+        "Google OAuth"
+      ],
+      "summary": "A portal for managing the marketers and customers of a solar and inverter provider, covering sales, commissions and procurement.",
+      "problem": "The company needed to track sales made through independent marketers, the customers they bring in and the commissions owed.",
+      "process": "Built the authenticated dashboard with modules for sales, customers, commissions and procurement, plus onboarding and account-status flows for marketers. Added invoice generation with PDF export.",
+      "outcome": "No usage figures are recorded in the repo.",
+      "learnings": "Invoice rendering to PDF needs its own layout rather than a screenshot of the screen view.",
+      "features": [
+        "[web] Built auth, multi-step onboarding with file uploads and account-status screens",
+        "[web] Built the sales form with products, services and discounts",
+        "[web] Built sale details and invoices with PDF export and payment links",
+        "[web] Built customers, commissions and procurement-list modules",
+        "[web] Built admin and settings sections"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://sales-portal-frontend-pi.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "The link is the homepage of your personal fork of this repo (a preview-style address that responded when checked), not a documented production URL - likely not something to publish. Your fork has 6 more commits than the organisation repo, running to Dec 2025. Confirm the client is happy to be named."
+    },
+    {
+      "slug": "pennywise-app",
+      "title": "Pennywise (mobile app)",
+      "tagline": "Personal finance and budgeting app",
+      "organisation": "Pennywise",
+      "type": "client",
+      "categories": [
+        "mobile"
+      ],
+      "visibility": "private",
+      "role": "Mobile Developer (sole committer)",
+      "period": {
+        "start": "2024-03",
+        "end": "2025-05"
+      },
+      "commits": {
+        "mine": 132,
+        "total": 132
+      },
+      "source": "GitHub: iampennywise/pennywise-app (testing branch; cloned to a temp folder)",
+      "areas": [
+        "src/components",
+        "src/data",
+        "src/utils",
+        "config/theme",
+        "app"
+      ],
+      "stack": [
+        "Expo",
+        "React Native",
+        "Expo Router",
+        "TypeScript",
+        "NativeWind",
+        "Redux Toolkit",
+        "TanStack Query",
+        "React Hook Form",
+        "MMKV",
+        "React Native Skia",
+        "Mono Connect",
+        "Reanimated"
+      ],
+      "summary": "A personal finance app for tracking expenses, managing budgets and working towards financial goals.",
+      "problem": "Users wanted to see where their money goes and keep to budgets from their phone.",
+      "process": "Built the app with Expo and expo-router: onboarding, authentication with verification and password reset, wallets, budgets and charts, with bank account linking through a third-party connect widget.",
+      "outcome": "No store listing or usage figures are recorded in the repo.",
+      "learnings": "Android build and network configuration took real effort alongside feature work.",
+      "features": [
+        "[mobile] Built onboarding, sign-up, verification and a multi-step password reset",
+        "[mobile] Built wallets and amount displays with theming",
+        "[mobile] Built budget creation and expense tracking screens with charts",
+        "[mobile] Added bank account linking and secure local storage",
+        "[mobile] Set up EAS build channels for staging and preview"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://www.iampennywise.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "The live link is the marketing site, marked as a guess because I found no store listing for the app."
+    },
+    {
+      "slug": "pennywise-website",
+      "title": "Pennywise website",
+      "tagline": "Marketing site for Pennywise",
+      "organisation": "Pennywise",
+      "type": "client",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2024-01",
+        "end": "2025-01"
+      },
+      "commits": {
+        "mine": 206,
+        "total": 208
+      },
+      "source": "GitHub: iampennywise/pennywise-website (199 of 201) + iampennywise/website (5 of 5) + iampennywise/landing-page (2 of 2), cloned to a temp folder",
+      "areas": [
+        "src/pages",
+        "src/components",
+        "src/app",
+        "src/data",
+        "public"
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Mantine",
+        "Tailwind CSS",
+        "TanStack Query",
+        "React Hook Form",
+        "Yup",
+        "Lottie",
+        "Framer Motion",
+        "Radix UI (later version)",
+        "Docker (later version)"
+      ],
+      "summary": "The landing website for the Pennywise finance app, with waitlist sign-up, pricing, contact, community and blog pages.",
+      "problem": "The product needed a public site to explain the app and collect waitlist sign-ups before launch.",
+      "process": "Built the first site on the Next.js Pages Router with Mantine, then a second version on the App Router with Tailwind and Radix across two later repos.",
+      "outcome": "Published on the product's own domain according to the site metadata.",
+      "learnings": "A later rewrite moved styling from a component library to Tailwind for easier theming.",
+      "features": [
+        "[web] Built the landing page with light/dark theme and Lottie animation",
+        "[web] Built the waitlist page and form, with saved progress",
+        "[web] Built pricing, contact, community and blog pages and a 404 page",
+        "[web] Rebuilt the landing page as a second version on the App Router"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://www.iampennywise.com",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Combines three repos. A preview image exists inside the repo (public/assets/images/preview.png) but the repo is not on disk, so it is not listed under visuals. I did not check the domain is still live."
+    },
+    {
+      "slug": "farmshare-admin-dashboard",
+      "title": "FarmShare Admin Dashboard",
+      "tagline": "Admin dashboard for tractor sharing",
+      "organisation": "Hotrac (FarmShare)",
+      "type": "client",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2023-10",
+        "end": "2023-11"
+      },
+      "commits": {
+        "mine": 165,
+        "total": 166
+      },
+      "source": "GitHub: hotrac-org/fs-admin-dashboard (cloned to a temp folder)",
+      "areas": [
+        "src/components",
+        "src/utils",
+        "src/store",
+        "src/layouts",
+        "src/pages"
+      ],
+      "stack": [
+        "Next.js (Pages Router)",
+        "React",
+        "TypeScript",
+        "Mantine",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "Chart.js",
+        "Google Maps API",
+        "React Hook Form",
+        "Yup"
+      ],
+      "summary": "The administrator's dashboard for FarmShare, a product for sharing tractors and farm equipment between owners and farmers.",
+      "problem": "Administrators needed to oversee users, tractors, bookings and payments across the platform.",
+      "process": "Built the dashboard over about a month with a Redux store and reusable table and card components, covering each admin area with list and detail pages.",
+      "outcome": "No usage figures are recorded in the repo.",
+      "learnings": "Early project; established the table and page-wrapper patterns reused in later dashboards.",
+      "features": [
+        "[web] Built login, sign-up and password reset",
+        "[web] Built users and tractors lists with individual detail pages",
+        "[web] Built bookings, transactions and payment-request screens",
+        "[web] Built analytics, maps, reviews and roles sections"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Organisation name is inferred from the GitHub org slug."
+    },
+    {
+      "slug": "tonmax-telegram-mini-app",
+      "title": "Tonmax Telegram Mini App",
+      "tagline": "Crypto referral mini app UI",
+      "organisation": "StellarMaxi (Tonmax)",
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2024-07",
+        "end": "2024-07"
+      },
+      "commits": {
+        "mine": 2,
+        "total": 2
+      },
+      "source": "GitHub: StellarMaxi/webapp (cloned to a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "src/utils"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Mantine",
+        "Tailwind CSS",
+        "Telegram Web Apps SDK",
+        "TON Connect",
+        "Stellar SDK",
+        "TanStack Query"
+      ],
+      "summary": "A Telegram mini app for a crypto platform where users earn through referrals.",
+      "problem": "The platform needed its interface to run inside Telegram with wallet connection.",
+      "process": "Built the mini app screens in Next.js with the Telegram SDK and TON wallet connection, delivered in two large commits.",
+      "outcome": "No usage figures are recorded in the repo.",
+      "learnings": "Mini apps run in a constrained in-app browser, which shapes layout and navigation.",
+      "features": [
+        "[web] Built sign-up, dashboard and settings screens",
+        "[web] Built referral, invite and level screens with an organisation-chart view",
+        "[web] Built mining, transactions and withdrawal screens"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Only 2 commits. Only a test bot link appears in the repo, so no live link is given. Crypto referral product - decide whether you want it in your portfolio."
+    },
+    {
+      "slug": "invocipt",
+      "title": "Invocipt",
+      "tagline": "Invoices and receipts for businesses",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "private",
+      "role": "Full-stack Developer (sole committer)",
+      "period": {
+        "start": "2024-06",
+        "end": "2025-06"
+      },
+      "commits": {
+        "mine": 595,
+        "total": 595
+      },
+      "source": "GitHub: H4LV3D/receipt-app (history-only clone in a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "public/images",
+        "src/utils",
+        "src/types",
+        "prisma/schema"
+      ],
+      "stack": [
+        "Next.js 14 (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui + Radix UI",
+        "Prisma",
+        "PostgreSQL",
+        "Auth.js (NextAuth)",
+        "Passkeys (SimpleWebAuthn)",
+        "TanStack Query",
+        "TanStack Table",
+        "TipTap",
+        "React Email",
+        "react-pdf",
+        "Paystack",
+        "Sentry",
+        "Vercel Blob",
+        "Jest",
+        "Husky + commitlint"
+      ],
+      "summary": "A SaaS application for generating invoices and converting them into receipts. Businesses customise invoice fields, upload product lists from Excel and manage customers, payments and records.",
+      "problem": "Small businesses were issuing paper receipts with no digital trail, and needed invoices that match their own business fields.",
+      "process": "Built the product end to end on Next.js with Prisma and PostgreSQL: a marketing site, authentication, and a client workspace for businesses, customers, invoices, receipts, payments and reports, plus an admin area. Added release tooling with conventional commits and a changelog.",
+      "outcome": "Reached a tagged 1.0.1 release in June 2025 according to the changelog. The custom domain set on the repo did not respond when checked for this export.",
+      "learnings": "Treating a side project like a product, with releases, linted commits and tests, kept a large solo codebase manageable.",
+      "features": [
+        "[web] Built the marketing site with blog, changelog, help centre, about and contact pages",
+        "[web] Built the client workspace: businesses, customers, invoices, receipts, payments, records, reports and statistics",
+        "[web] Built customisable invoices that convert to receipts, with PDF output and print mode",
+        "[web] Built Excel import for product lists and file uploads for business and profile images",
+        "[backend] Built authentication with email/password, OAuth providers, OTP verification and passkeys",
+        "[backend] Modelled the data with Prisma and PostgreSQL and added online payments",
+        "[web] Added dark and light themes, notifications and an admin area",
+        "[shared] Set up commit linting, pre-commit tests and automated changelog releases"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [
+        "H4LV3D/receipt-app: public/images/hero/hero-light.png",
+        "H4LV3D/receipt-app: public/images/hero/hero-dark.png",
+        "H4LV3D/receipt-app: public/icon.png"
+      ],
+      "needsReview": true,
+      "notes": "The repo homepage is https://invocipt.com.ng, but it did not respond on 2026-10-02, so the live link is left empty - add it back if the site is up. The README also lists Google Drive integration and AI expense predictions; I could not confirm those are built, so they are not in the feature list."
+    },
+    {
+      "slug": "trendhub",
+      "title": "TrendHub",
+      "tagline": "Newsletters, podcasts and blogs hub",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web"
+      ],
+      "visibility": "public",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2023-10",
+        "end": "2024-06"
+      },
+      "commits": {
+        "mine": 523,
+        "total": 523
+      },
+      "source": "GitHub: H4LV3D/TrendHub (history-only clone in a temp folder)",
+      "areas": [
+        "public/assets",
+        "src/assets",
+        "src/components",
+        "src/app",
+        "src/layouts"
+      ],
+      "stack": [
+        "Next.js 13 (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Yup",
+        "TinyMCE",
+        "Chart.js",
+        "WaveSurfer",
+        "Framer Motion"
+      ],
+      "summary": "A website that brings newsletters, podcasts and blogs into one place, designed for Gen Z readers to discover and keep up with content.",
+      "problem": "Readers had to visit separate platforms for newsletters, podcasts and blogs.",
+      "process": "Built the public pages for each content type and an authenticated area with a dashboard, an editor for writing posts and content management. Most of the work happened between October and December 2023.",
+      "outcome": "A demo is deployed and was reachable when checked for this export. The README still marks the project as under construction.",
+      "learnings": "An early large Next.js App Router project; many of its layout and page-wrapper patterns carried into later work.",
+      "features": [
+        "[web] Built home, about, blogs, newsletters and podcasts pages with detail views",
+        "[web] Built sign-up, login and password reset",
+        "[web] Built a dashboard, a rich-text editor and a 'my blogs' management area",
+        "[web] Built podcast pages with an audio waveform player",
+        "[web] Built settings and responsive layouts"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://trendingstuffs.vercel.app/",
+        "appStore": null,
+        "playStore": null,
+        "code": "https://github.com/H4LV3D/TrendHub"
+      },
+      "linkConfidence": {
+        "live": "confirmed",
+        "code": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": false,
+      "notes": "About 2,400 of the changed files are image and asset files, which inflates the 523-commit count relative to code written."
+    },
+    {
+      "slug": "tosin-farms",
+      "title": "Tosin Farms",
+      "tagline": "Farm-to-table e-commerce platform",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "public",
+      "role": "Full-stack Developer (sole committer)",
+      "period": {
+        "start": "2026-02",
+        "end": "2026-03"
+      },
+      "commits": {
+        "mine": 36,
+        "total": 36
+      },
+      "source": "GitHub: H4LV3D/tosin-farms (history-only clone in a temp folder)",
+      "areas": [
+        "frontend/src",
+        "backend/src",
+        "backend/prisma",
+        "frontend/public"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "TanStack Query",
+        "React Hook Form",
+        "Zod",
+        "NestJS",
+        "Prisma",
+        "Passport (JWT + Google OAuth)",
+        "Passkeys (SimpleWebAuthn)",
+        "Redis cache",
+        "Nodemailer"
+      ],
+      "summary": "A full-stack e-commerce platform for selling fresh produce and artisan-processed foods directly to customers.",
+      "problem": "A farm business needed to sell produce online and manage products and customer orders itself.",
+      "process": "Built a Next.js storefront and a NestJS REST API in one repository, with Prisma for data, Redis caching for the product catalogue and role-based access for customers and admins.",
+      "outcome": "No live URL or usage figures are recorded in the repo.",
+      "learnings": "Passkey login alongside password and Google sign-in needed careful session handling across frontend and API.",
+      "features": [
+        "[web] Built the shop with categories, product pages and a checkout order summary",
+        "[web] Built the customer portal: orders, tracking, payments, profile, wishlist and addresses",
+        "[web] Built the admin dashboard for managing products and customer orders",
+        "[backend] Built the NestJS API for products, categories, users and orders",
+        "[backend] Built JWT and Google OAuth login, passkey authentication and email password reset",
+        "[backend] Added Redis caching for high-frequency catalogue reads",
+        "[web] Built About, Contact, Privacy and Terms pages"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": "https://github.com/H4LV3D/tosin-farms"
+      },
+      "linkConfidence": {
+        "code": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess - it could be a client job or a personal build. The repo is public; confirm that is intended."
+    },
+    {
+      "slug": "personal-portfolio",
+      "title": "Personal portfolio (toluwalope.tech)",
+      "tagline": "My earlier portfolio website",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "private",
+      "role": "Developer (sole committer)",
+      "period": {
+        "start": "2022-07",
+        "end": "2024-10"
+      },
+      "commits": {
+        "mine": 363,
+        "total": 363
+      },
+      "source": "GitHub: H4LV3D/Portfolio (history-only clone in a temp folder)",
+      "areas": [
+        "client/src",
+        "client/public",
+        "frontend/public",
+        "docs"
+      ],
+      "stack": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "GSAP",
+        "Express",
+        "MongoDB (Mongoose)",
+        "Nodemailer"
+      ],
+      "summary": "My own portfolio website across several iterations: a React single-page site, a Next.js version and a small Express backend for the contact form.",
+      "problem": "I needed a public home for my projects and a way for people to contact me.",
+      "process": "Rebuilt the site several times as my stack changed, moving from a Create React App client to Next.js, with an Express and MongoDB service handling contact email.",
+      "outcome": "Served on my personal domain according to the repo; the domain did not respond when checked for this export.",
+      "learnings": "Each rewrite tracked what I was learning at the time.",
+      "features": [
+        "[web] Built the portfolio pages with scroll and page animations",
+        "[web] Built a blog section fed from local data",
+        "[backend] Built a contact endpoint that sends email",
+        "[web] Rebuilt the frontend in Next.js with Tailwind"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [
+        "H4LV3D/Portfolio: client/public/preview2.jpg"
+      ],
+      "needsReview": true,
+      "notes": "Repo homepage is http://toluwalope.tech, which did not respond on 2026-10-02. Over 4,000 of the changed files are a vendored icon font, so the commit count overstates the code. This is the site you are replacing, so you may not want it listed."
+    },
+    {
+      "slug": "cabify-ride-booking",
+      "title": "Cabify (ride booking app)",
+      "tagline": "Book and track city rides",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "private",
+      "role": "Full-stack Developer (sole committer)",
+      "period": {
+        "start": "2022-04",
+        "end": "2023-07"
+      },
+      "commits": {
+        "mine": 349,
+        "total": 349
+      },
+      "source": "GitHub: H4LV3D/Cabify (history-only clone in a temp folder)",
+      "areas": [
+        "Client/src",
+        "Client/public",
+        "Client/build",
+        "routes"
+      ],
+      "stack": [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB (Mongoose)",
+        "JWT auth",
+        "Google Maps API",
+        "Nodemailer",
+        "Multer"
+      ],
+      "summary": "A ride-booking web app where users book rides across a city, with maps, email notifications and receipts.",
+      "problem": "A learning project to build a complete product with accounts, bookings and location features.",
+      "process": "Built a React client and an Express and MongoDB API, adding authentication, email verification, maps and receipts over about a year.",
+      "outcome": "The old hosting address no longer responds; no usage figures are recorded.",
+      "learnings": "First full-stack project: authentication, email flows and deployment.",
+      "features": [
+        "[web] Built the booking flow with map-based pickup and destination",
+        "[web] Built sign-up, login and an email verification page",
+        "[backend] Built the Express API with JWT auth and MongoDB models",
+        "[backend] Built transactional emails and ride receipts"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [
+        "H4LV3D/Cabify: Client/public/assets/logo.png"
+      ],
+      "needsReview": true,
+      "notes": "'Cabify' is also the name of a real ride-hailing company - consider renaming this entry before publishing. The README lists planned features (calendar sync, crypto payments, live tracking) that I could not confirm were built. Repo homepage https://cabify.cyclic.app did not respond."
+    },
+    {
+      "slug": "workstudy-attendance",
+      "title": "Workstudy attendance portal",
+      "tagline": "Student work-study check-in portal",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web"
+      ],
+      "visibility": "public",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2022-04",
+        "end": "2023-05"
+      },
+      "commits": {
+        "mine": 206,
+        "total": 346
+      },
+      "source": "GitHub: H4LV3D/Workstudy (history-only clone in a temp folder)",
+      "areas": [
+        "assets/css",
+        "*.html pages",
+        "*.php pages"
+      ],
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ],
+      "summary": "An application that lets students check in and out of work-study shifts with a unique code, records attendance in real time, and lets supervisors manage schedules and reports.",
+      "problem": "Work-study attendance was hard to record and monitor reliably.",
+      "process": "Built the student, supervisor and admin pages with one other developer, who accounts for the other 140 commits.",
+      "outcome": "The repo's homepage points to a university portal address, which responded when checked for this export.",
+      "learnings": "Early team project; first experience sharing a codebase.",
+      "features": [
+        "[web] Built login, student activity and attendance pages",
+        "[web] Built the supervisor view",
+        "[web] Built admin dashboard, attendance, add-student and settings pages"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://workstudy.cu.edu.ng/portal",
+        "appStore": null,
+        "playStore": null,
+        "code": "https://github.com/H4LV3D/Workstudy"
+      },
+      "linkConfidence": {
+        "live": "guess",
+        "code": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "The live link is on a university domain. I cannot tell whether your code is what runs there or whether you may name the institution, so it is marked as a guess. About 4,200 of the changed files are a vendored icon font."
+    },
+    {
+      "slug": "coinsave-budget-tracker",
+      "title": "CoinSave budget tracker",
+      "tagline": "Track budgets, wallets and expenses",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "private",
+      "role": "Full-stack Developer (sole committer)",
+      "period": {
+        "start": "2023-04",
+        "end": "2024-06"
+      },
+      "commits": {
+        "mine": 178,
+        "total": 178
+      },
+      "source": "GitHub: H4LV3D/Budget-Tracking (history-only clone in a temp folder)",
+      "areas": [
+        "Client/src",
+        "Client/public",
+        "routes",
+        "utils"
+      ],
+      "stack": [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB (Mongoose)",
+        "Passport (Google OAuth)",
+        "JWT auth",
+        "Nodemailer"
+      ],
+      "summary": "A budget tracking web app for following the inflow and outflow of money across wallets, budgets and expenses.",
+      "problem": "People wanted a simple view of where their money goes to plan spending and saving.",
+      "process": "Built a React client and an Express and MongoDB API with session and Google sign-in.",
+      "outcome": "The old hosting address no longer responds; no usage figures are recorded.",
+      "learnings": "Practised auth with third-party sign-in and error boundaries in React.",
+      "features": [
+        "[web] Built dashboard, wallet, budget and expenses pages",
+        "[backend] Built the Express API with MongoDB models",
+        "[backend] Built email/password and Google sign-in"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [
+        "H4LV3D/Budget-Tracking: Client/public/Assets/images/Logo.png"
+      ],
+      "needsReview": false,
+      "notes": "Repo homepage https://coinsave.cyclic.app did not respond on 2026-10-02 (that hosting service has shut down). Thousands of the changed files are committed build output."
+    },
+    {
+      "slug": "forex-assignment-portal",
+      "title": "Forex Assignment Portal",
+      "tagline": "Submit and mark trading assignments",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2023-01",
+        "end": "2023-10"
+      },
+      "commits": {
+        "mine": 157,
+        "total": 274
+      },
+      "source": "GitHub: H4LV3D/Twb-assignment (history-only clone in a temp folder)",
+      "areas": [
+        "Assignment-App-Frontend/src",
+        "src",
+        "public/Assets"
+      ],
+      "stack": [
+        "React (Create React App)",
+        "JavaScript",
+        "Tailwind CSS",
+        "React Router",
+        "JWT auth",
+        "Node.js REST API (by collaborator)"
+      ],
+      "summary": "A web application for forex students to submit assignments and for teachers to review and mark them.",
+      "problem": "A trading school needed a structured way to collect and grade student assignments.",
+      "process": "Built the React frontend against a Node.js REST API written by a collaborator, who accounts for the other 117 commits.",
+      "outcome": "No usage figures are recorded. The repo's preview address returned 'not found' when checked.",
+      "learnings": "Working to a collaborator's API contract.",
+      "features": [
+        "[web] Built login and role-based views for students and teachers",
+        "[web] Built assignment lists, submission and assessment sections",
+        "[web] Built the sidebar navigation and responsive layout"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess. Repo homepage https://twb-assignment.vercel.app returned 404."
+    },
+    {
+      "slug": "asteroid-clothing",
+      "title": "Asteroid",
+      "tagline": "Clothing brand website",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2023-12",
+        "end": "2024-06"
+      },
+      "commits": {
+        "mine": 135,
+        "total": 135
+      },
+      "source": "GitHub: H4LV3D/Asteroid (history-only clone in a temp folder)",
+      "areas": [
+        "public/assets",
+        "src/components",
+        "src/app"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "AOS",
+        "Google Drive API",
+        "React Hook Form"
+      ],
+      "summary": "A website for a clothing brand, showing collections and a shop view.",
+      "problem": "The brand needed an online presence to show its collections.",
+      "process": "Built the home, collections and shop pages, with a gallery that pulls images from a cloud drive folder through an API route.",
+      "outcome": "No live URL or usage figures are recorded in the repo.",
+      "learnings": "Serving a gallery from a drive folder let the owner update images without code changes.",
+      "features": [
+        "[web] Built the home page with banner and collections",
+        "[web] Built the shop page with product display cards",
+        "[web] Built a gallery fed from a cloud drive folder",
+        "[web] Built contact forms and scroll animations"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess. Heads-up unrelated to the portfolio: this repo has a file named like an API credentials file committed at its root - worth checking and rotating if it is real."
+    },
+    {
+      "slug": "zaptasks",
+      "title": "ZapTasks",
+      "tagline": "Fast, accessible todo app",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Developer (sole author)",
+      "period": {
+        "start": "2025-06",
+        "end": "2025-06"
+      },
+      "commits": {
+        "mine": 60,
+        "total": 61
+      },
+      "source": "GitHub: H4LV3D/todo-app-altshool-exam (history-only clone in a temp folder)",
+      "areas": [
+        "app/pages",
+        "app/components",
+        "components/ui",
+        "app/utils"
+      ],
+      "stack": [
+        "React 19",
+        "React Router 7",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui + Radix UI",
+        "TanStack Query",
+        "Axios",
+        "Docker"
+      ],
+      "summary": "A responsive todo application built as a frontend engineering school project, demonstrating API integration, routing, error handling and accessibility.",
+      "problem": "A course exam brief: build a complete, accessible CRUD app against an API.",
+      "process": "Built the app with React Router and TanStack Query in about two weeks, with paginated lists, nested detail routes and error states.",
+      "outcome": "Submitted as a school project. The preview address returned 'not found' when checked.",
+      "learnings": "Practised accessible components, pagination and optimistic feedback.",
+      "features": [
+        "[web] Built the todo list with client-side pagination, search and status filters",
+        "[web] Built a todo detail page as a nested route",
+        "[web] Built create, update and delete with loading and error states",
+        "[web] Added light and dark themes and an error-boundary test page"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": false,
+      "notes": "Coursework. Repo homepage https://todo-app-altshool-exam.vercel.app returned 404. Two near-copies exist (todo-vuejs, a Vue rewrite, and todo-nextjs) - see otherRepos."
+    },
+    {
+      "slug": "receipt-print",
+      "title": "Receipt Print",
+      "tagline": "Digital receipts instead of paper",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "public",
+      "role": "Developer (sole committer)",
+      "period": {
+        "start": "2022-12",
+        "end": "2024-09"
+      },
+      "commits": {
+        "mine": 53,
+        "total": 53
+      },
+      "source": "GitHub: H4LV3D/Reciept-Print (history-only clone in a temp folder)",
+      "areas": [
+        "Reciept",
+        "modules",
+        "assets"
+      ],
+      "stack": [
+        "Node.js",
+        "Express",
+        "JavaScript",
+        "HTML",
+        "Bootstrap",
+        "PDF.js"
+      ],
+      "summary": "A small tool that replaces a paper receipt system with digital receipts, leaving a trail a company can follow and monitor.",
+      "problem": "Paper receipts were easy to lose and hard to audit.",
+      "process": "Built an Express server with HTML receipt templates and PDF handling. It was the precursor to Invocipt.",
+      "outcome": "No usage figures are recorded in the repo.",
+      "learnings": "The limits of this tool shaped the later SaaS version.",
+      "features": [
+        "[web] Built receipt input and printable receipt templates",
+        "[backend] Built the Express server and PDF handling"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": "https://github.com/H4LV3D/Reciept-Print"
+      },
+      "linkConfidence": {
+        "code": "confirmed"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "This PUBLIC repo contains what look like real business documents at its root (a PDF and a zip archive of receipts). Check them before linking to the repo, and consider removing them. The link to Invocipt as its successor is my inference from the shared theme."
+    },
+    {
+      "slug": "wisemonie",
+      "title": "Wisemonie",
+      "tagline": "Trading dashboard and admin console",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2024-05",
+        "end": "2024-05"
+      },
+      "commits": {
+        "mine": 35,
+        "total": 35
+      },
+      "source": "GitHub: H4LV3D/wisemonie (history-only clone in a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "src/layouts",
+        "src/utils",
+        "src/store"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Mantine",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "TanStack Query",
+        "Chart.js",
+        "React Hook Form",
+        "Yup"
+      ],
+      "summary": "A web dashboard for a trading and investment product, with a user area and an admin console.",
+      "problem": "The product needed user and admin interfaces for trades and transactions.",
+      "process": "Built the frontend in about a week with Mantine and Redux, using generated sample data.",
+      "outcome": "A preview deployment responded when checked for this export; no usage figures are recorded.",
+      "learnings": "Fast delivery of a dashboard from reusable layouts.",
+      "features": [
+        "[web] Built registration, login and password reset",
+        "[web] Built the user dashboard, trade screen, transactions and a profit calculator",
+        "[web] Built admin pages for users, transactions, active trades and settings"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://wisemonie.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess. The link is a preview-style address. The data appears to be sample data, so this may be a UI prototype rather than a live product."
+    },
+    {
+      "slug": "ticki-admin",
+      "title": "Ticki Admin",
+      "tagline": "Admin console for event ticketing",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (lead committer)",
+      "period": {
+        "start": "2024-03",
+        "end": "2024-10"
+      },
+      "commits": {
+        "mine": 38,
+        "total": 51
+      },
+      "source": "GitHub: H4LV3D/ticki_admin (history-only clone in a temp folder)",
+      "areas": [
+        "components/pageWrappers",
+        "components/shared",
+        "hooks",
+        "app/events",
+        "redux/Slices",
+        "components/forms"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Mantine",
+        "Material UI",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "TanStack Query",
+        "TanStack Table",
+        "React Hook Form"
+      ],
+      "summary": "An admin web app for an event ticketing product, covering events, tickets, users and analysis.",
+      "problem": "The ticketing team needed to create and manage events, categories and users from one console.",
+      "process": "Built most of the admin screens on top of an existing codebase; one other developer accounts for the remaining 13 commits.",
+      "outcome": "A preview deployment responded when checked for this export; no usage figures are recorded.",
+      "learnings": "An earlier ticketing admin that informed the later Circular Ticket work.",
+      "features": [
+        "[web] Built events pages: list, create, categories and types",
+        "[web] Built event ticket tables with profit totals",
+        "[web] Built user management, profile and password reset",
+        "[web] Built dashboard and analysis views"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://ticki-admin-app.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess and the client is not named in the repo. The link is a preview-style address. The 'informed Circular Ticket' learning is my inference. Heads-up: an env file is committed in this repo."
+    },
+    {
+      "slug": "gemspay-website",
+      "title": "Gemspay website",
+      "tagline": "Marketing site for a payments company",
+      "organisation": "Gemspay Solutions Limited",
+      "type": "client",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2024-05",
+        "end": "2025-06"
+      },
+      "commits": {
+        "mine": 28,
+        "total": 28
+      },
+      "source": "GitHub: H4LV3D/gemspay-website (history-only clone in a temp folder)",
+      "areas": [
+        "src/app",
+        "src/components",
+        "public/img",
+        "public/logos"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui + Radix UI",
+        "TanStack Query",
+        "Lottie",
+        "AOS",
+        "Embla Carousel"
+      ],
+      "summary": "The marketing website for a payments company, presenting its products, pricing and support content.",
+      "problem": "The company needed a site to explain its payment products and capture demo requests.",
+      "process": "Built the first version in 2024, then a second landing-page version in mid-2025 with new product, blog and pricing layouts.",
+      "outcome": "A preview deployment responded when checked for this export; the production domain is not recorded in the repo.",
+      "learnings": "Restructured product pages around shared data so new products need no new layout.",
+      "features": [
+        "[web] Built the home page and a 'why us' page",
+        "[web] Built product listing and product detail pages",
+        "[web] Built blog, pricing, FAQ and help pages",
+        "[web] Built request-a-demo, contact and newsletter forms",
+        "[web] Built legal pages including dispute resolution"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://gemspay-website.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [
+        "H4LV3D/gemspay-website: public/images/landing-dashboard.png",
+        "H4LV3D/gemspay-website: src/app/opengraph-image.png"
+      ],
+      "needsReview": true,
+      "notes": "Engagement type is a guess and the link is a preview address. Product names inside the site were left out in case they are not public."
+    },
+    {
+      "slug": "architekt",
+      "title": "Architekt",
+      "tagline": "Architecture studio website",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2025-12",
+        "end": "2026-02"
+      },
+      "commits": {
+        "mine": 27,
+        "total": 27
+      },
+      "source": "GitHub: H4LV3D/company (history-only clone in a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "src/lib",
+        "public/images"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui + Radix UI",
+        "Genkit (Google AI)",
+        "Databuddy analytics"
+      ],
+      "summary": "A company website for an architecture studio, with project case studies, pricing and careers.",
+      "problem": "The studio needed a site to present its projects and take enquiries.",
+      "process": "Built from a cloud IDE starter, then restructured into reusable sections with scroll animations and a projects area with detail pages.",
+      "outcome": "A preview deployment responded when checked for this export; no usage figures are recorded.",
+      "learnings": "Reusable section and animation components kept a content-heavy site consistent.",
+      "features": [
+        "[web] Built home, about, pricing, careers and contact pages",
+        "[web] Built the projects listing, project detail pages and a similar-projects carousel",
+        "[web] Built scroll-triggered animations, flip cards and a floating contact button",
+        "[web] Built error and not-found pages and legal pages"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://company-eta-seven.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess; 'Architekt' is the site title in the code and may be a placeholder brand. The link is a preview-style address."
+    },
+    {
+      "slug": "royal-revamps",
+      "title": "Royal Revamps",
+      "tagline": "Personal and corporate branding site",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web",
+        "fullstack"
+      ],
+      "visibility": "private",
+      "role": "Full-stack Developer (sole committer)",
+      "period": {
+        "start": "2024-10",
+        "end": "2026-07"
+      },
+      "commits": {
+        "mine": 22,
+        "total": 22
+      },
+      "source": "GitHub: H4LV3D/royal-revamp (history-only clone in a temp folder)",
+      "areas": [
+        "src/app",
+        "src/components",
+        "public",
+        "prisma/schema"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Prisma",
+        "React Hook Form",
+        "Yup",
+        "Swiper",
+        "AOS"
+      ],
+      "summary": "A website for a personal and corporate branding consultancy, with services, learning articles and client testimonials.",
+      "problem": "The consultancy needed a site to present its services and collect enquiries and newsletter sign-ups.",
+      "process": "Built the pages and API routes with Prisma models for blog posts, contacts and testimonials. Most work was in late 2024, with a data-fetching fix in July 2026.",
+      "outcome": "A preview deployment responded when checked for this export; no usage figures are recorded.",
+      "learnings": "Small database-backed content models are enough for a brochure site that the owner updates occasionally.",
+      "features": [
+        "[web] Built home, services, about, company and contact pages",
+        "[web] Built a learn section with article pages",
+        "[backend] Built API routes and Prisma models for testimonials, contacts and blog posts",
+        "[web] Built a testimonial carousel, a consult-us call to action and newsletter sign-up"
+      ],
+      "metrics": [],
+      "links": {
+        "live": "https://royal-revamp.vercel.app",
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {
+        "live": "guess"
+      },
+      "visuals": [
+        "H4LV3D/royal-revamp: public/hero.png",
+        "H4LV3D/royal-revamp: public/logo.png"
+      ],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess. The link is a preview-style address, not a documented production domain. Confirm the client can be named."
+    },
+    {
+      "slug": "life-fount-medical",
+      "title": "Life Fount Medical Center website",
+      "tagline": "Multilingual hospital website",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2025-08",
+        "end": "2025-11"
+      },
+      "commits": {
+        "mine": 11,
+        "total": 11
+      },
+      "source": "GitHub: H4LV3D/life-crest (history-only clone in a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "src/translations",
+        "public"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Radix UI",
+        "next-intl",
+        "TanStack Query",
+        "Databuddy analytics"
+      ],
+      "summary": "A mobile-first website for a hospital, presenting its services in English, Yoruba, Igbo and Hausa.",
+      "problem": "The hospital needed a site its patients could read in their own language, with clear emergency contact details.",
+      "process": "Built the site with locale-based routing and translation files, reusing structure from an earlier multilingual project.",
+      "outcome": "No live URL is confirmed; the repo's preview address returned 'not found' when checked.",
+      "learnings": "Planning copy as translation keys from the start made four languages manageable.",
+      "features": [
+        "[web] Built home, about, services, careers, FAQ and contact pages",
+        "[web] Added four-language support with locale routing",
+        "[web] Built service cards and an emergency contact display"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [
+        "H4LV3D/life-crest: public/images/about-us-hero.jpg",
+        "H4LV3D/life-crest: public/logo.png"
+      ],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess. Repo homepage https://life-crest-ten.vercel.app returned 404. Confirm the client can be named."
+    },
+    {
+      "slug": "tenfun",
+      "title": "Tenfun Enterprises dashboard",
+      "tagline": "Shop and invoice dashboard",
+      "organisation": null,
+      "type": "freelance",
+      "categories": [
+        "web"
+      ],
+      "visibility": "private",
+      "role": "Frontend Developer (sole committer)",
+      "period": {
+        "start": "2024-06",
+        "end": "2024-09"
+      },
+      "commits": {
+        "mine": 15,
+        "total": 15
+      },
+      "source": "GitHub: H4LV3D/tenfun (history-only clone in a temp folder)",
+      "areas": [
+        "src/components",
+        "src/app",
+        "src/store"
+      ],
+      "stack": [
+        "Next.js (App Router)",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui + Radix UI",
+        "TanStack Table",
+        "Chart.js",
+        "React Hook Form"
+      ],
+      "summary": "An internal dashboard for a small business, with a shop view, invoices and notifications.",
+      "problem": "The business needed a simple back-office for products and invoices.",
+      "process": "Built the authenticated dashboard shell with a sidebar, data tables and charts.",
+      "outcome": "No live URL or usage figures are recorded in the repo.",
+      "learnings": "A small build that reused table and layout patterns.",
+      "features": [
+        "[web] Built login and the dashboard layout with sidebar",
+        "[web] Built shop and invoice pages with data tables",
+        "[web] Built notifications and an admin section"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": true,
+      "notes": "Type (freelance) is a guess. Small project (15 commits). Confirm the client can be named."
+    },
+    {
+      "slug": "ngx-stock-bot",
+      "title": "NGX stock bot",
+      "tagline": "Daily stock-market analysis bot",
+      "organisation": null,
+      "type": "personal",
+      "categories": [
+        "fullstack"
+      ],
+      "visibility": "private",
+      "role": "Developer (sole committer)",
+      "period": {
+        "start": "2026-02",
+        "end": "2026-02"
+      },
+      "commits": {
+        "mine": 18,
+        "total": 18
+      },
+      "source": "GitHub: H4LV3D/stock-bot (history-only clone in a temp folder)",
+      "areas": [
+        "stockbot.py",
+        ".github/workflows",
+        "requirements"
+      ],
+      "stack": [
+        "Python",
+        "BeautifulSoup",
+        "Requests",
+        "AWS Lambda",
+        "boto3",
+        "GitHub Actions"
+      ],
+      "summary": "A scheduled Python bot that analyses the Nigerian stock exchange, pre-filtering the day's biggest losers for closer analysis.",
+      "problem": "I wanted a daily summary of notable movers without checking the exchange site by hand.",
+      "process": "Wrote a scraper and analysis script, slimmed its dependencies for serverless deployment, and set up a GitHub Actions workflow that deploys it to AWS Lambda.",
+      "outcome": "Deployment workflow and function configuration are in the repo; no results or accuracy figures are recorded.",
+      "learnings": "Keeping dependencies light matters for serverless packaging.",
+      "features": [
+        "[backend] Built the scraper and daily-losers pre-filter",
+        "[backend] Replaced a heavy data library with a lightweight HTML parser for deployment",
+        "[backend] Set up automated deployment to AWS Lambda with GitHub Actions"
+      ],
+      "metrics": [],
+      "links": {
+        "live": null,
+        "appStore": null,
+        "playStore": null,
+        "code": null
+      },
+      "linkConfidence": {},
+      "visuals": [],
+      "needsReview": false,
+      "notes": "Categories uses 'fullstack' because the schema has no backend-only value. The only non-JavaScript project in the export."
+    }
+  ],
+  "otherRepos": [
+    {
+      "repo": "H4LV3D/H4LV3D",
+      "visibility": "public",
+      "commits": {
+        "mine": 23,
+        "total": 30
+      },
+      "period": "2021-06 to 2023-10",
+      "what": "GitHub profile README. Its two newest branches hold a new Next.js portfolio site committed by an AI coding agent on 2026-10-02 (7 commits) - not counted as yours."
+    },
+    {
+      "repo": "H4LV3D/sales-portal-frontend",
+      "visibility": "private",
+      "commits": {
+        "mine": 90,
+        "total": 91
+      },
+      "period": "2025-08 to 2025-12",
+      "what": "Your fork of the DS Energy sales portal - same project as ds-energy-sales-portal, with 6 more commits than the organisation repo."
+    },
+    {
+      "repo": "H4LV3D/sales-portal-backend",
+      "visibility": "private",
+      "commits": {
+        "mine": 1,
+        "total": 102
+      },
+      "period": "2025-11",
+      "what": "Fork of the DS Energy backend, written by a collaborator; your one commit is a deployment change."
+    },
+    {
+      "repo": "H4LV3D/flutter_app",
+      "visibility": "private",
+      "commits": {
+        "mine": 7,
+        "total": 7
+      },
+      "period": "2025-01",
+      "what": "Flutter mobile app for a payments company. The commits look like an import of an existing codebase plus build fixes, so I did not claim it as Flutter experience - tell me if you wrote it."
+    },
+    {
+      "repo": "H4LV3D/[client-name]-portfolio",
+      "visibility": "private",
+      "commits": {
+        "mine": 14,
+        "total": 17
+      },
+      "period": "2024-05 to 2024-06",
+      "what": "Portfolio website built for another developer (Next.js, Sanity CMS, Zustand). Left out of projects because the name and link identify a private individual."
+    },
+    {
+      "repo": "H4LV3D/portfolio_next",
+      "visibility": "private",
+      "commits": {
+        "mine": 10,
+        "total": 10
+      },
+      "period": "2023-08",
+      "what": "Portfolio website built for another developer (Next.js, Tailwind). Left out of projects for the same reason."
+    },
+    {
+      "repo": "H4LV3D/InstaSpot",
+      "visibility": "private",
+      "commits": {
+        "mine": 8,
+        "total": 10
+      },
+      "period": "2025-06",
+      "what": "'Spots' photo-sharing practice app in React and Vite; 2 commits by a UI-generation bot."
+    },
+    {
+      "repo": "H4LV3D/deezhotpot",
+      "visibility": "private",
+      "commits": {
+        "mine": 5,
+        "total": 194
+      },
+      "period": "2025-03 to 2025-05",
+      "what": "Restaurant website mostly written by someone else; your commits are the initial setup and domain configuration."
+    },
+    {
+      "repo": "H4LV3D/Circle9",
+      "visibility": "public",
+      "commits": {
+        "mine": 3,
+        "total": 39
+      },
+      "period": "2025-05",
+      "what": "Fork of a group slide deck (Slidev); you wrote the section on JavaScript modules."
+    },
+    {
+      "repo": "H4LV3D/opensource101",
+      "visibility": "public",
+      "commits": {
+        "mine": 3,
+        "total": 98
+      },
+      "period": "2023-04 to 2023-05",
+      "what": "Fork of a beginner open-source project; small README contributions and two issue fixes."
+    },
+    {
+      "repo": "H4LV3D/todo-vuejs",
+      "visibility": "public",
+      "commits": {
+        "mine": 2,
+        "total": 2
+      },
+      "period": "2025-10",
+      "what": "Vue 3 + Pinia rewrite of the ZapTasks todo app."
+    },
+    {
+      "repo": "H4LV3D/todo-nextjs",
+      "visibility": "public",
+      "commits": {
+        "mine": 1,
+        "total": 1
+      },
+      "period": "2025-10",
+      "what": "Copy of the ZapTasks todo app (despite the name it is still the React Router version)."
+    },
+    {
+      "repo": "H4LV3D/hng-stage-one",
+      "visibility": "public",
+      "commits": {
+        "mine": 4,
+        "total": 4
+      },
+      "period": "2025-10",
+      "what": "Internship task: accessible multi-page profile site in HTML, CSS and JavaScript."
+    },
+    {
+      "repo": "H4LV3D/stage-zero",
+      "visibility": "public",
+      "commits": {
+        "mine": 2,
+        "total": 2
+      },
+      "period": "2025-10",
+      "what": "Internship task: accessible profile card component."
+    },
+    {
+      "repo": "H4LV3D/altschool-assignments",
+      "visibility": "public",
+      "commits": {
+        "mine": 4,
+        "total": 4
+      },
+      "period": "2025-02 to 2025-06",
+      "what": "HTML and CSS coursework."
+    },
+    {
+      "repo": "H4LV3D/spots-alt-school-assignment",
+      "visibility": "public",
+      "commits": {
+        "mine": 6,
+        "total": 6
+      },
+      "period": "2025-05",
+      "what": "HTML and CSS coursework."
+    },
+    {
+      "repo": "H4LV3D/skills-introduction-to-codeql",
+      "visibility": "public",
+      "commits": {
+        "mine": 3,
+        "total": 9
+      },
+      "period": "2025-06",
+      "what": "GitHub Skills course exercise (code scanning)."
+    },
+    {
+      "repo": "H4LV3D/skills-introduction-to-github",
+      "visibility": "public",
+      "commits": {
+        "mine": 3,
+        "total": 5
+      },
+      "period": "2025-05",
+      "what": "GitHub Skills course exercise."
+    },
+    {
+      "repo": "H4LV3D/mini_Proj",
+      "visibility": "public",
+      "commits": {
+        "mine": 23,
+        "total": 23
+      },
+      "period": "2021-12 to 2022-02",
+      "what": "Early static portfolio site (HTML/CSS), still served on GitHub Pages."
+    },
+    {
+      "repo": "H4LV3D/Advanced-projects",
+      "visibility": "public",
+      "commits": {
+        "mine": 28,
+        "total": 28
+      },
+      "period": "2020-08 to 2021-01",
+      "what": "First HTML, CSS and JavaScript practice projects."
+    },
+    {
+      "repo": "H4LV3D/MyProjects",
+      "visibility": "public",
+      "commits": {
+        "mine": 29,
+        "total": 29
+      },
+      "period": "2020-08 to 2020-12",
+      "what": "First portfolio site and CSS animation practice."
+    },
+    {
+      "repo": "H4LV3D/Eletrical-Generators",
+      "visibility": "private",
+      "commits": {
+        "mine": 20,
+        "total": 20
+      },
+      "period": "2022-10 to 2023-05",
+      "what": "Document storage for a university final-year project; not a software project."
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "Next.js (App Router and Pages Router)",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Radix UI",
+      "Mantine",
+      "Material UI",
+      "TanStack Query",
+      "TanStack Table",
+      "Redux Toolkit",
+      "React Hook Form",
+      "Zod",
+      "Yup",
+      "TipTap",
+      "Framer Motion / Motion",
+      "next-intl",
+      "Recharts",
+      "Vite",
+      "React Router 7",
+      "PHP (early work)"
+    ],
+    "backend": [
+      "Auth.js (NextAuth)",
+      "Neon Postgres",
+      "Vercel Blob",
+      "Next.js API routes and server actions",
+      "OAuth 2.0 flows (client side)",
+      "AWS S3 uploads",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "Express",
+      "MongoDB (Mongoose)",
+      "Passkeys (WebAuthn)",
+      "Redis caching",
+      "Python"
+    ],
+    "mobile": [
+      "Expo",
+      "React Native",
+      "Expo Router",
+      "NativeWind",
+      "EAS Build",
+      "Reanimated",
+      "Stream Video SDK",
+      "Stream Chat",
+      "Pusher",
+      "Notifee",
+      "react-native-track-player"
+    ],
+    "tooling": [
+      "npm workspaces (monorepo)",
+      "tsup",
+      "ESLint",
+      "Docker",
+      "Vercel",
+      "npm publishing",
+      "Databuddy analytics",
+      "Git branching with staging and main",
+      "AWS Lambda",
+      "GitHub Actions",
+      "Jest",
+      "Husky + commitlint"
+    ],
+    "evidence": {
+      "Next.js": [
+        "circular-ticket-web",
+        "the-circular-net-web",
+        "tcn-admin-dashboard",
+        "tcn-sso",
+        "thecircularnet-website",
+        "lawxtech-website",
+        "exportrades-webapp",
+        "ds-energy-sales-portal",
+        "pennywise-website",
+        "farmshare-admin-dashboard",
+        "tonmax-telegram-mini-app",
+        "tcn-waitlist",
+        "the-circular-net-web-v1",
+        "invocipt",
+        "trendhub",
+        "tosin-farms",
+        "asteroid-clothing",
+        "wisemonie",
+        "ticki-admin",
+        "gemspay-website",
+        "architekt",
+        "royal-revamps",
+        "life-fount-medical",
+        "tenfun"
+      ],
+      "React": [
+        "lawxtech-website-v1",
+        "thebasenet-ui",
+        "network-requests-ui",
+        "personal-portfolio",
+        "cabify-ride-booking",
+        "coinsave-budget-tracker",
+        "forex-assignment-portal",
+        "zaptasks"
+      ],
+      "TypeScript": [
+        "all projects except tcn-mobile-legacy"
+      ],
+      "Tailwind CSS": [
+        "circular-ticket-web",
+        "the-circular-net-web",
+        "tcn-sso",
+        "thecircularnet-website",
+        "lawxtech-website",
+        "exportrades-webapp",
+        "ds-energy-sales-portal",
+        "invocipt",
+        "trendhub",
+        "tosin-farms",
+        "gemspay-website",
+        "architekt",
+        "royal-revamps",
+        "life-fount-medical",
+        "tenfun",
+        "zaptasks"
+      ],
+      "shadcn/ui": [
+        "circular-ticket-web",
+        "thecircularnet-website",
+        "lawxtech-website",
+        "exportrades-webapp",
+        "ds-energy-sales-portal",
+        "invocipt",
+        "tosin-farms",
+        "gemspay-website",
+        "architekt",
+        "royal-revamps",
+        "tenfun",
+        "zaptasks"
+      ],
+      "Radix UI": [
+        "the-circular-net-web",
+        "tcn-sso",
+        "thebasenet-ui",
+        "exportrades-webapp"
+      ],
+      "Mantine": [
+        "tcn-admin-dashboard",
+        "the-circular-net-web-v1",
+        "pennywise-website",
+        "farmshare-admin-dashboard",
+        "tonmax-telegram-mini-app",
+        "wisemonie",
+        "ticki-admin"
+      ],
+      "Material UI": [
+        "lawxtech-website-v1"
+      ],
+      "TanStack Query": [
+        "circular-ticket-mobile",
+        "circular-ticket-web",
+        "circular-ticket-shared",
+        "the-circular-net-web",
+        "the-circular-net-mobile",
+        "tcn-sso",
+        "exportrades-webapp",
+        "ds-energy-sales-portal",
+        "pennywise-app",
+        "invocipt",
+        "tosin-farms",
+        "zaptasks",
+        "wisemonie",
+        "ticki-admin",
+        "gemspay-website"
+      ],
+      "Redux Toolkit": [
+        "circular-ticket-shared",
+        "the-circular-net-web",
+        "the-circular-net-mobile",
+        "tcn-admin-dashboard",
+        "tcn-sso",
+        "pennywise-app",
+        "farmshare-admin-dashboard",
+        "trendhub",
+        "wisemonie",
+        "ticki-admin"
+      ],
+      "React Hook Form": [
+        "circular-ticket-mobile",
+        "circular-ticket-web",
+        "the-circular-net-web",
+        "tcn-sso",
+        "thecircularnet-website",
+        "lawxtech-website",
+        "exportrades-webapp"
+      ],
+      "Zod": [
+        "circular-ticket-mobile",
+        "circular-ticket-web",
+        "lawxtech-website",
+        "exportrades-webapp"
+      ],
+      "TipTap": [
+        "the-circular-net-web",
+        "lawxtech-website",
+        "the-circular-net-web-v1",
+        "invocipt"
+      ],
+      "next-intl": [
+        "exportrades-webapp",
+        "life-fount-medical"
+      ],
+      "Expo": [
+        "circular-ticket-mobile",
+        "the-circular-net-mobile",
+        "pennywise-app"
+      ],
+      "React Native": [
+        "circular-ticket-mobile",
+        "the-circular-net-mobile",
+        "pennywise-app",
+        "tcn-mobile-legacy"
+      ],
+      "NativeWind": [
+        "circular-ticket-mobile",
+        "the-circular-net-mobile",
+        "pennywise-app"
+      ],
+      "EAS Build": [
+        "circular-ticket-mobile",
+        "the-circular-net-mobile",
+        "pennywise-app"
+      ],
+      "Stream Video SDK": [
+        "the-circular-net-web",
+        "the-circular-net-mobile",
+        "the-circular-net-web-v1"
+      ],
+      "Stream Chat": [
+        "the-circular-net-web",
+        "the-circular-net-mobile"
+      ],
+      "Pusher": [
+        "the-circular-net-web",
+        "the-circular-net-mobile",
+        "the-circular-net-web-v1"
+      ],
+      "Auth.js (NextAuth)": [
+        "lawxtech-website",
+        "invocipt"
+      ],
+      "Neon Postgres": [
+        "lawxtech-website"
+      ],
+      "Vercel Blob": [
+        "lawxtech-website",
+        "ds-energy-sales-portal"
+      ],
+      "OAuth 2.0": [
+        "tcn-sso",
+        "thecircularnet-website"
+      ],
+      "npm workspaces (monorepo)": [
+        "circular-ticket-shared"
+      ],
+      "tsup": [
+        "thebasenet-ui",
+        "network-requests-ui"
+      ],
+      "npm publishing": [
+        "thebasenet-ui"
+      ],
+      "Docker": [
+        "tcn-admin-dashboard",
+        "pennywise-website",
+        "zaptasks"
+      ],
+      "Prisma": [
+        "invocipt",
+        "tosin-farms",
+        "royal-revamps"
+      ],
+      "PostgreSQL": [
+        "invocipt"
+      ],
+      "NestJS": [
+        "tosin-farms"
+      ],
+      "Passkeys (WebAuthn)": [
+        "invocipt",
+        "tosin-farms"
+      ],
+      "Redis caching": [
+        "tosin-farms"
+      ],
+      "Express": [
+        "cabify-ride-booking",
+        "coinsave-budget-tracker",
+        "receipt-print",
+        "personal-portfolio"
+      ],
+      "MongoDB (Mongoose)": [
+        "cabify-ride-booking",
+        "coinsave-budget-tracker",
+        "personal-portfolio"
+      ],
+      "Python": [
+        "ngx-stock-bot"
+      ],
+      "AWS Lambda": [
+        "ngx-stock-bot"
+      ],
+      "GitHub Actions": [
+        "ngx-stock-bot"
+      ],
+      "Vite": [
+        "zaptasks"
+      ],
+      "React Router 7": [
+        "zaptasks"
+      ],
+      "PHP (early work)": [
+        "workstudy-attendance"
+      ],
+      "Jest": [
+        "invocipt"
+      ],
+      "Husky + commitlint": [
+        "invocipt"
+      ]
+    }
+  },
+  "scanNotes": {
+    "countingMethod": "Commit counts are across all local and remote branches, merge commits included, excluding stashes. For the three monorepo projects the counts are limited to that app's folder, so they overlap.",
+    "localReposScanned": [
+      "events-workspace",
+      "lawxtech-website",
+      "network-requests-ui",
+      "sso-frontend",
+      "tcn-admin-webapp",
+      "tcn-mobileapp",
+      "tcn-ui",
+      "tcn-webapp",
+      "thecircularnet-website"
+    ],
+    "githubOrgsScanned": [
+      "hotrac-org",
+      "Law-x-Tech (0 repos)",
+      "TheBaseNet",
+      "iampennywise",
+      "StellarMaxi",
+      "DS-Energy",
+      "exportrade2025",
+      "LawxTech (a user account, not an org; scanned because the local remote points there)"
+    ],
+    "orgReposWithNoCommitsByMe": 17,
+    "personalAccountScanned": "All 41 repositories under github.com/H4LV3D. 19 became project entries; the other 22 are listed under otherRepos with a one-line reason.",
+    "personalAreasMethod": "For personal repos I cloned history without file contents, so 'areas' are ranked by number of files I changed rather than lines changed.",
+    "linkCheck": "Personal live links were requested once on 2026-10-02. Links that did not respond or returned 404 were left empty and the address is recorded in that project's notes.",
+    "privacy": "No source code, keys, tokens, env values, staging or API hostnames, collaborator names, partner names or ticket numbers were copied into the export."
+  }
+}

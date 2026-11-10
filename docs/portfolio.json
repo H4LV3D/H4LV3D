@@ -1,0 +1,107 @@
+I'm updating my portfolio site and need a factual export of my professional work.
+Scan my local repositories and GitHub organisations, then write two files:
+`portfolio-export.json` and `portfolio-export.md` in the current directory.
+
+## Who I am in git history
+Treat commits as mine if the author matches any of: my `git config user.email`,
+`akinkunmitolulope23@gmail.com`, GitHub user `H4LV3D`, or the names
+"Toluwalope", "Tolu" or "Akinkunmi". List any other identities you find that
+look like me, so I can confirm them.
+
+## What to scan
+1. Every git repo under the current directory, up to 3 levels deep. Include
+   monorepos like `events-workspace` and treat each app in `apps/*` or
+   `packages/*` as its own project.
+2. If the `gh` CLI is logged in: run `gh org list`, then for every org
+   (especially Circular Net / CircularNet and LawxTech) run
+   `gh repo list <org> --limit 200 --json name,description,visibility,homepageUrl,url,pushedAt,primaryLanguage`
+   and include any repo with commits by me. Use `gh api` for each repo's
+   description, homepage and topics. Shallow-clone into a temp folder only if a
+   repo isn't already on disk.
+
+## For each project, gather
+- Product: what it does and who it's for (from README, docs, app.json/app.config,
+  page metadata, marketing copy, store listings in the repo).
+- My role and period: my first and last commit dates, my commit count vs the
+  total, and the areas I touched (top directories by my changed lines).
+- What I built: summarise my commits into 4–8 feature bullets, written as
+  outcomes, e.g. "Built the ticket scanner and attendee check-in flow".
+  Group them by platform (web, mobile, backend, shared).
+- Stack: frameworks and key libraries from package.json, app.json, pubspec,
+  requirements and so on (e.g. Next.js, Expo/React Native, Tailwind, Prisma).
+- Live links: production URLs, App Store and Play Store links, and the
+  marketing site. Search README, package.json `homepage`, app.json, metadata or
+  SEO files, `.env.example`, and deploy configs (vercel.json, eas.json, etc.).
+  Mark each link `confirmed` (clearly production) or `guess`.
+- Metrics: only if written down in the repo or docs (users, downloads,
+  ratings, performance numbers). Never invent numbers.
+- Visuals: paths to existing screenshots, app icons or store images I could
+  reuse (just list the paths).
+- Visibility: public or private.
+
+## Privacy rules (strict)
+- Never copy source code, API keys, tokens, `.env` values, Google Maps or
+  Firebase keys, credentials, internal hostnames, customer names or data, or
+  Jira ticket numbers into the output. If a description needs a secret to make
+  sense, leave it out.
+- For private repos: describe the product and my contribution only, and set
+  `links.code` to null.
+- If you can't tell whether something is confidential, include it with
+  `"needsReview": true`.
+
+## Output: portfolio-export.json
+```json
+{
+  "generatedAt": "ISO date",
+  "identities": ["emails/names counted as me"],
+  "experience": [
+    {
+      "organisation": "Circular Net Limited",
+      "type": "employment | volunteer | freelance | client",
+      "role": "Frontend Developer",
+      "start": "YYYY-MM", "end": "YYYY-MM | present",
+      "summary": "2 sentences",
+      "highlights": ["outcome-style bullet", "..."],
+      "website": "https://..."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "circular-ticket",
+      "title": "Circular Ticket",
+      "tagline": "max 6 words",
+      "organisation": "Circular Net Limited | null",
+      "type": "employment | volunteer | freelance | client | personal | open-source",
+      "categories": ["web", "mobile", "fullstack"],
+      "visibility": "public | private",
+      "role": "e.g. Frontend Developer (mobile + web)",
+      "period": { "start": "YYYY-MM", "end": "YYYY-MM | present" },
+      "commits": { "mine": 0, "total": 0 },
+      "stack": ["Expo", "React Native", "..."],
+      "summary": "1–2 sentences: what it is",
+      "problem": "1–2 sentences",
+      "process": "2–3 sentences on what I built and how",
+      "outcome": "1–2 sentences; only documented facts",
+      "learnings": "1 sentence",
+      "features": ["bullet", "..."],
+      "metrics": [{ "label": "users", "value": 0, "suffix": "+", "source": "where this came from" }],
+      "links": { "live": null, "appStore": null, "playStore": null, "code": null },
+      "linkConfidence": { "live": "confirmed | guess" },
+      "visuals": ["relative/path/to/screenshot.png"],
+      "needsReview": false,
+      "notes": "anything I should double-check"
+    }
+  ],
+  "skills": {
+    "frontend": [], "backend": [], "mobile": [], "tooling": [],
+    "evidence": { "Expo": ["projects that use it"] }
+  }
+}
+```
+
+## Output: portfolio-export.md
+A readable version of the same data: one section per experience entry and per
+project, followed by a "Needs my review" list and an "Identities found" list.
+
+When you're done, show me the "Needs my review" list and stop. Don't push or
+upload anything.
