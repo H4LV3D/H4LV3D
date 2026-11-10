@@ -77,6 +77,15 @@ export default async function NotePage({ params }: Props) {
                   {b.text}
                 </h2>
               );
+            case "quote":
+              return (
+                <blockquote
+                  key={i}
+                  className="mx-auto my-8 w-full max-w-3xl border-l-2 border-brand pl-6 font-display text-4xl leading-[1.05] text-balance italic md:pl-10 md:text-6xl"
+                >
+                  <p>{b.text}</p>
+                </blockquote>
+              );
             case "p":
               return (
                 <p key={i} className="mx-auto w-full max-w-2xl text-lg leading-relaxed text-pretty md:text-xl">

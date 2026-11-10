@@ -1,6 +1,41 @@
 import type { NoteTranslations } from "./types";
 
 export const es: NoteTranslations = {
+  "the-cost-of-simplicity": {
+    title: "El precio de la simplicidad",
+    summary:
+      "Toda experiencia simple se paga en algún sitio. Adónde va la complejidad y quién debería cargar con ella.",
+    blocks: [
+      { type: "quote", text: "El precio de la simplicidad es la complejidad." },
+      {
+        type: "p",
+        text: "Las cosas simples rara vez son simples de hacer. Cuando un producto parece no costar ningún esfuerzo, suele ser porque alguien apartó las partes difíciles del camino y se hizo cargo de ellas. La complejidad no desaparece. Cambia de dueño.",
+      },
+      { type: "h", text: "Adónde va" },
+      {
+        type: "p",
+        text: "Un solo inicio de sesión para todas las apps es simple para quien inicia sesión. Detrás hay un servicio aparte, un registro de clientes, comprobaciones de redirección e intercambios de tokens. Un formulario que pide solo lo necesario es simple de rellenar. Detrás hay una validación que tiene que coincidir en el navegador y en el servidor, en cada idioma del sitio.",
+      },
+      {
+        type: "list",
+        items: [
+          "Alguien siempre paga. Decide a propósito si es el usuario, el equipo o el sistema.",
+          "Lleva la complejidad hacia quien mejor la maneja: el equipo de ingeniería antes que los visitantes, el código antes que las listas de pasos.",
+          "Escóndela, pero no la pierdas. La complejidad fuera de la vista sigue necesitando pruebas, logs y alguien responsable.",
+          "No pagues dos veces. Si dos sitios llevan la misma regla, tarde o temprano no coincidirán.",
+        ],
+      },
+      { type: "h", text: "Cuándo no pagarlo" },
+      {
+        type: "p",
+        text: "No toda fricción merece eliminarse. La simplicidad construida para una función que nadie usa es complejidad sin retorno. Intento gastarla donde más se nota: los primeros cinco minutos, el momento en que el dinero cambia de manos, el punto en que algo sale mal.",
+      },
+      {
+        type: "p",
+        text: "Bien hecho, la persona al otro lado ni lo nota. De eso se trata. El trabajo queda invisible y el coste cae donde debe: en quienes lo construyeron.",
+      },
+    ],
+  },
   "one-sign-in-many-apps": {
     title: "Un inicio de sesión para muchas apps",
     summary:

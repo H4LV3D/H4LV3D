@@ -27,6 +27,7 @@ export type Note = {
 
 /** Newest first. */
 export const notes: Note[] = [
+  { slug: "the-cost-of-simplicity", date: "2026-11-10" },
   { slug: "filter-before-you-think", date: "2026-10-02", related: "stock-bot" },
   { slug: "share-logic-not-screens", date: "2026-10-02" },
   { slug: "one-sign-in-many-apps", date: "2026-10-02" },

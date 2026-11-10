@@ -1,6 +1,40 @@
 import type { NoteTranslations } from "./types";
 
 export const en: NoteTranslations = {
+  "the-cost-of-simplicity": {
+    title: "The cost of simplicity",
+    summary: "Every simple experience is paid for somewhere. Where the complexity goes, and who should carry it.",
+    blocks: [
+      { type: "quote", text: "The cost of simplicity is complexity." },
+      {
+        type: "p",
+        text: "Simple things are rarely simple to make. When a product feels effortless, it's usually because someone moved the hard parts out of the way and took them on themselves. The complexity doesn't disappear. It changes owners.",
+      },
+      { type: "h", text: "Where it goes" },
+      {
+        type: "p",
+        text: "One sign-in for every app feels simple to the person signing in. Behind it is a separate service, a registry of clients, redirect checks and token exchanges. A form that asks only for what it needs feels simple to fill in. Behind it is validation that has to agree in the browser and on the server, in every language the site speaks.",
+      },
+      {
+        type: "list",
+        items: [
+          "Someone always pays. Decide on purpose whether it's the user, the team or the system.",
+          "Move complexity toward whoever handles it best: engineers rather than visitors, code rather than checklists.",
+          "Hide it, but don't lose it. Complexity that's out of sight still needs tests, logs and an owner.",
+          "Don't pay twice. If two places carry the same rule, sooner or later they'll disagree.",
+        ],
+      },
+      { type: "h", text: "When not to pay it" },
+      {
+        type: "p",
+        text: "Not every bit of friction is worth removing. Simplicity built for a feature nobody uses is complexity with no return. I try to spend it where people feel it most: the first five minutes, the moment money changes hands, the point where something goes wrong.",
+      },
+      {
+        type: "p",
+        text: "Done well, the person on the other side never notices. That's the point. The work stays invisible, and the cost lands where it should: on the people who built it.",
+      },
+    ],
+  },
   "one-sign-in-many-apps": {
     title: "One sign-in for many apps",
     summary: "How a family of products moved onto a single OAuth 2.0 sign-in service, and the rules that keep it safe.",

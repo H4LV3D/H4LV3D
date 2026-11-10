@@ -1,6 +1,40 @@
 import type { NoteTranslations } from "./types";
 
 export const fr: NoteTranslations = {
+  "the-cost-of-simplicity": {
+    title: "Le prix de la simplicité",
+    summary: "Toute expérience simple se paie quelque part. Où va la complexité, et qui doit la porter.",
+    blocks: [
+      { type: "quote", text: "Le prix de la simplicité, c'est la complexité." },
+      {
+        type: "p",
+        text: "Les choses simples sont rarement simples à faire. Quand un produit paraît sans effort, c'est souvent que quelqu'un a écarté les parties difficiles du chemin pour les prendre à sa charge. La complexité ne disparaît pas. Elle change de propriétaire.",
+      },
+      { type: "h", text: "Où elle va" },
+      {
+        type: "p",
+        text: "Une seule connexion pour toutes les apps, c'est simple pour la personne qui se connecte. Derrière, il y a un service à part, un registre de clients, des vérifications de redirection et des échanges de jetons. Un formulaire qui ne demande que l'essentiel est simple à remplir. Derrière, il y a une validation qui doit être la même dans le navigateur et sur le serveur, dans chaque langue du site.",
+      },
+      {
+        type: "list",
+        items: [
+          "Quelqu'un paie toujours. Décidez sciemment si c'est l'utilisateur, l'équipe ou le système.",
+          "Déplacez la complexité vers qui la gère le mieux : les ingénieurs plutôt que les visiteurs, le code plutôt que les procédures.",
+          "Cachez-la, mais ne la perdez pas. Une complexité hors de vue a toujours besoin de tests, de logs et d'un responsable.",
+          "Ne payez pas deux fois. Si deux endroits portent la même règle, tôt ou tard ils divergeront.",
+        ],
+      },
+      { type: "h", text: "Quand ne pas payer" },
+      {
+        type: "p",
+        text: "Toute friction ne mérite pas d'être supprimée. De la simplicité construite pour une fonction que personne n'utilise, c'est de la complexité sans retour. J'essaie de la dépenser là où on la ressent le plus : les cinq premières minutes, le moment où l'argent change de mains, l'instant où quelque chose tourne mal.",
+      },
+      {
+        type: "p",
+        text: "Bien fait, la personne en face ne remarque rien. C'est tout l'intérêt. Le travail reste invisible, et le coût retombe là où il doit : sur ceux qui l'ont construit.",
+      },
+    ],
+  },
   "one-sign-in-many-apps": {
     title: "Une seule connexion pour plusieurs apps",
     summary:
