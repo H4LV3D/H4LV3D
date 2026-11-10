@@ -4,18 +4,18 @@ export const es: NoteTranslations = {
   "one-sign-in-many-apps": {
     title: "Un inicio de sesión para muchas apps",
     summary:
-      "Cómo los productos de The Circular Net pasaron a un único servicio de inicio de sesión con OAuth 2.0, y las reglas que lo mantienen seguro.",
+      "Cómo una familia de productos pasó a un único servicio de inicio de sesión con OAuth 2.0, y las reglas que lo mantienen seguro.",
     blocks: [
       {
         type: "p",
-        text: "En The Circular Net, cada producto tenía su propio inicio de sesión. Con una sola app funciona. Con una app web, una app móvil, un producto de eventos y un sitio corporativo, son cuatro lugares donde arreglar cada fallo de autenticación, y gente haciendo malabares con varias contraseñas para una misma empresa.",
+        text: "En una empresa con la que trabajé, cada producto tenía su propio inicio de sesión. Con una sola app funciona. Con una app web, una app móvil, un producto de eventos y un sitio corporativo, son cuatro lugares donde arreglar cada fallo de autenticación, y gente haciendo malabares con varias contraseñas para una misma empresa.",
       },
       { type: "h", text: "La forma" },
       {
         type: "p",
         text: "El inicio de sesión pasó a ser una app propia, en su propio dominio. Los productos ya no muestran un formulario de acceso. Envían a la gente al servicio SSO con su ID de cliente y una URL de redirección; el servicio inicia la sesión y la devuelve con un código de corta duración, que el producto cambia por tokens.",
       },
-      { type: "diagram", id: "sso", caption: "Todos los productos inician sesión en un solo servicio." },
+      { type: "diagram", id: "sharedSignIn", caption: "Todos los productos inician sesión en un solo servicio." },
       { type: "h", text: "Las reglas que importan" },
       {
         type: "list",
@@ -37,11 +37,11 @@ export const es: NoteTranslations = {
   "share-logic-not-screens": {
     title: "Compartir lógica, no pantallas",
     summary:
-      "Qué entró en el paquete compartido entre las apps de Next.js y Expo de Circular Ticket, qué se quedó fuera y por qué.",
+      "Qué entró en el paquete compartido entre las apps de Next.js y Expo de una plataforma de eventos, qué se quedó fuera y por qué.",
     blocks: [
       {
         type: "p",
-        text: "Circular Ticket empezó como una app web. Cuando llegó la app móvil, lo más rápido era copiar las llamadas a la API y las reglas. En pocas semanas, las dos apps discrepaban en cosas pequeñas pero importantes: cómo formatear una cantidad en nairas, qué estados de pedido cuentan como pagados, cuándo puede quien organiza solicitar un pago.",
+        text: "La plataforma de eventos empezó como una app web. Cuando llegó la app móvil, lo más rápido era copiar las llamadas a la API y las reglas. En pocas semanas, las dos apps discrepaban en cosas pequeñas pero importantes: cómo formatear una cantidad en nairas, qué estados de pedido cuentan como pagados, cuándo puede quien organiza solicitar un pago.",
       },
       { type: "h", text: "Un paquete, tres reglas" },
       {

@@ -3,19 +3,18 @@ import type { NoteTranslations } from "./types";
 export const en: NoteTranslations = {
   "one-sign-in-many-apps": {
     title: "One sign-in for many apps",
-    summary:
-      "How The Circular Net's products moved onto a single OAuth 2.0 sign-in service, and the rules that keep it safe.",
+    summary: "How a family of products moved onto a single OAuth 2.0 sign-in service, and the rules that keep it safe.",
     blocks: [
       {
         type: "p",
-        text: "At The Circular Net, every product used to have its own login. That works with one app. With a web app, a mobile app, an events product and a marketing site, it means four places to fix every auth bug, and people juggling several passwords for one company.",
+        text: "At a company I worked with, every product used to have its own login. That works with one app. With a web app, a mobile app, an events product and a marketing site, it means four places to fix every auth bug, and people juggling several passwords for one company.",
       },
       { type: "h", text: "The shape" },
       {
         type: "p",
         text: "Sign-in moved to its own app on its own domain. Products no longer show a login form. They send people to the SSO service with their client ID and a redirect URL; the service signs them in and sends them back with a short-lived code, which the product exchanges for tokens.",
       },
-      { type: "diagram", id: "sso", caption: "Every product signs in through one service." },
+      { type: "diagram", id: "sharedSignIn", caption: "Every product signs in through one service." },
       { type: "h", text: "Rules that matter" },
       {
         type: "list",
@@ -37,11 +36,11 @@ export const en: NoteTranslations = {
   "share-logic-not-screens": {
     title: "Share logic, not screens",
     summary:
-      "What went into the shared package between Circular Ticket's Next.js and Expo apps, what stayed out, and why.",
+      "What went into the shared package between an events platform's Next.js and Expo apps, what stayed out, and why.",
     blocks: [
       {
         type: "p",
-        text: "Circular Ticket started as a web app. When the mobile app arrived, the fastest path was to copy the API calls and rules across. Within weeks the two apps disagreed about small, important things: how to format a naira amount, which order statuses count as paid, when an organiser can request a payout.",
+        text: "The events platform started as a web app. When the mobile app arrived, the fastest path was to copy the API calls and rules across. Within weeks the two apps disagreed about small, important things: how to format a naira amount, which order statuses count as paid, when an organiser can request a payout.",
       },
       { type: "h", text: "One package, three rules" },
       {

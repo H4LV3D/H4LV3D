@@ -1,17 +1,16 @@
 "use client";
 
 import * as React from "react";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatePresence, m } from "motion/react";
 
-import { contactSchema, budgets, type ContactInput } from "@/lib/contact-schema";
+import { contactSchema, type ContactInput } from "@/lib/contact-schema";
 import { sendContactMessage } from "@/app/[locale]/contact/actions";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ArrowRight } from "@/components/illustrations/doodle-icons";
@@ -19,7 +18,8 @@ import { Doodle } from "@/components/illustrations/doodle";
 import { site } from "@/config/site";
 import { ease } from "@/lib/motion";
 
-type FieldKey = "name" | "email" | "message";
+const FIELDS = ["firstName", "lastName", "email", "phone", "message"] as const;
+type FieldKey = (typeof FIELDS)[number];
 type Failure = "error" | "notConfigured" | "rateLimited";
 
 export function ContactForm({ onSent }: { onSent?: () => void }) {
@@ -27,18 +27,17 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
   const locale = useLocale();
   const [pending, startTransition] = React.useTransition();
   const [failure, setFailure] = React.useState<Failure | null>(null);
-  const [sent, setSent] = React.useState<{ name: string; email: string } | null>(null);
+  const [sent, setSent] = React.useState<{ firstName: string; email: string } | null>(null);
   const {
     register,
     handleSubmit,
-    control,
     reset,
     setError,
     setFocus,
     formState: { errors },
   } = useForm<ContactInput>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { name: "", email: "", message: "", trap: "" },
+    defaultValues: { firstName: "", lastName: "", email: "", phone: "", message: "", trap: "" },
   });
 
   const errorText = (key: FieldKey) => {
@@ -53,14 +52,12 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
         const result = await sendContactMessage(values, locale);
         switch (result.status) {
           case "success":
-            setSent({ name: values.name, email: values.email });
+            setSent({ firstName: values.firstName, email: values.email });
             reset();
             onSent?.();
             break;
           case "invalid": {
-            const keys = Object.keys(result.fields).filter((k): k is FieldKey =>
-              ["name", "email", "message"].includes(k),
-            );
+            const keys = FIELDS.filter((k) => k in result.fields);
             for (const key of keys) setError(key, { message: key });
             if (keys[0]) setFocus(keys[0]);
             else setFailure("error");
@@ -87,14 +84,24 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
       <form onSubmit={handleSubmit(onSubmit)} noValidate aria-busy={pending} className="flex flex-col gap-8">
         <fieldset disabled={pending} className="contents">
           <div className="grid gap-8 md:grid-cols-2">
-            <Field id="name" label={t("name")} error={errorText("name")}>
+            <Field id="firstName" label={t("firstName")} error={errorText("firstName")}>
               <Input
-                id="name"
-                autoComplete="name"
-                placeholder={t("namePlaceholder")}
-                aria-invalid={!!errors.name}
-                aria-describedby={errors.name ? "name-error" : undefined}
-                {...register("name")}
+                id="firstName"
+                autoComplete="given-name"
+                placeholder={t("firstNamePlaceholder")}
+                aria-invalid={!!errors.firstName}
+                aria-describedby={errors.firstName ? "firstName-error" : undefined}
+                {...register("firstName")}
+              />
+            </Field>
+            <Field id="lastName" label={t("lastName")} error={errorText("lastName")}>
+              <Input
+                id="lastName"
+                autoComplete="family-name"
+                placeholder={t("lastNamePlaceholder")}
+                aria-invalid={!!errors.lastName}
+                aria-describedby={errors.lastName ? "lastName-error" : undefined}
+                {...register("lastName")}
               />
             </Field>
             <Field id="email" label={t("email")} error={errorText("email")}>
@@ -108,28 +115,19 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
                 {...register("email")}
               />
             </Field>
+            <Field id="phone" label={t("phone")} error={errorText("phone")}>
+              <Input
+                id="phone"
+                type="tel"
+                inputMode="tel"
+                autoComplete="tel"
+                placeholder={t("phonePlaceholder")}
+                aria-invalid={!!errors.phone}
+                aria-describedby={errors.phone ? "phone-error" : undefined}
+                {...register("phone")}
+              />
+            </Field>
           </div>
-
-          <Field id="budget" label={t("budget")}>
-            <Controller
-              control={control}
-              name="budget"
-              render={({ field }) => (
-                <Select value={field.value ?? ""} onValueChange={field.onChange} disabled={pending}>
-                  <SelectTrigger id="budget">
-                    <SelectValue placeholder={t("budgetPlaceholder")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {budgets.map((b) => (
-                      <SelectItem key={b} value={b}>
-                        {t(`budgets.${b}`)}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-            />
-          </Field>
 
           <Field id="message" label={t("message")} error={errorText("message")}>
             <Textarea
@@ -199,7 +197,7 @@ export function ContactForm({ onSent }: { onSent?: () => void }) {
             <Doodle name="check" className="size-12" draw="mount" />
             <DialogTitle className="text-4xl">{t("sentTitle")}</DialogTitle>
             <DialogDescription className="text-base text-pretty">
-              {sent && t("sentBody", { name: sent.name.split(" ")[0], email: sent.email })}
+              {sent && t("sentBody", { name: sent.firstName, email: sent.email })}
             </DialogDescription>
           </DialogHeader>
           <div>

@@ -1,4 +1,4 @@
-import type { ContactInput } from "@/lib/contact-schema";
+import { fullName, type ContactInput } from "@/lib/contact-schema";
 
 const escape = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
@@ -18,21 +18,23 @@ ${body}
 </div></body></html>`;
 }
 
-type Notification = { data: ContactInput; budget: string; locale: string; siteUrl: string };
+type Notification = { data: ContactInput; locale: string; siteUrl: string };
 
 /** The message you receive. Reply goes straight to the sender. */
-export function ownerEmail({ data, budget, locale, siteUrl }: Notification) {
+export function ownerEmail({ data, locale, siteUrl }: Notification) {
+  const name = fullName(data);
   const rows: [string, string][] = [
-    ["Name", data.name],
+    ["First name", data.firstName],
+    ["Last name", data.lastName],
     ["Email", data.email],
-    ["Budget", budget],
+    ["Phone", data.phone || "—"],
     ["Language", locale],
   ];
   const text = [...rows.map(([k, v]) => `${k}: ${v}`), "", data.message, "", `— sent from ${siteUrl}/contact`].join(
     "\n",
   );
   const html = layout(
-    `<h1 style="font-size:20px;margin:0 0 20px">New message from ${escape(data.name)}</h1>
+    `<h1 style="font-size:20px;margin:0 0 20px">New message from ${escape(name)}</h1>
 <table style="border-collapse:collapse;margin:0 0 24px;font-size:14px">${rows
       .map(
         ([k, v]) =>
@@ -40,10 +42,10 @@ export function ownerEmail({ data, budget, locale, siteUrl }: Notification) {
       )
       .join("")}</table>
 <div style="border-left:3px solid #e5e5e5;padding-left:16px">${paragraphs(data.message)}</div>
-<p style="font-size:13px;color:#737373;margin-top:24px">Reply to this email to answer ${escape(data.name)} directly.</p>`,
+<p style="font-size:13px;color:#737373;margin-top:24px">Reply to this email to answer ${escape(name)} directly.</p>`,
     "en",
   );
-  return { subject: `Portfolio: new message from ${data.name.replace(/\s+/g, " ")}`, text, html };
+  return { subject: `Portfolio: new message from ${name.replace(/\s+/g, " ")}`, text, html };
 }
 
 export type AutoReplyCopy = {

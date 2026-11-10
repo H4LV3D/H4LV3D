@@ -65,15 +65,8 @@ export async function sendContactMessage(input: ContactInput, requestedLocale?: 
 
   try {
     const resend = new Resend(apiKey);
-    const budgets = await getTranslations({ locale: "en", namespace: "Contact.form.budgets" });
-
     // 1. The message itself, to you. Replying answers the sender.
-    const notification = ownerEmail({
-      data,
-      budget: data.budget ? budgets(data.budget) : "—",
-      locale,
-      siteUrl: site.url,
-    });
+    const notification = ownerEmail({ data, locale, siteUrl: site.url });
     const { error } = await resend.emails.send({ from, to: owner, replyTo: data.email, ...notification });
     if (error) {
       console.error("[contact] Resend error (notification)", error);
@@ -94,7 +87,7 @@ export async function sendContactMessage(input: ContactInput, requestedLocale?: 
         data,
         {
           subject: t("subject"),
-          greeting: t("greeting", { name: data.name }),
+          greeting: t("greeting", { name: data.firstName }),
           body: t("body"),
           quoteLabel: t("quoteLabel"),
           signoff: t("signoff"),
