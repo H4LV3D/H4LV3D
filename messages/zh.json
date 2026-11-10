@@ -856,10 +856,14 @@
     "subtitle": "有项目、职位机会，或只是一个问题？欢迎随时来信。",
     "or": "或发邮件至",
     "form": {
-      "name": "你的名字",
-      "namePlaceholder": "Ada Lovelace",
+      "firstName": "名",
+      "firstNamePlaceholder": "Ada",
+      "lastName": "姓",
+      "lastNamePlaceholder": "Lovelace",
       "email": "邮箱",
       "emailPlaceholder": "ada@example.com",
+      "phone": "电话",
+      "phonePlaceholder": "+234 800 000 0000",
       "message": "留言",
       "messagePlaceholder": "说说你的想法…",
       "submit": "发送",
@@ -869,8 +873,10 @@
       "emailInstead": "直接发邮件给我",
       "notConfigured": "联系表单尚未接通——请直接给我发邮件。",
       "errors": {
-        "name": "请告诉我你的名字。",
+        "firstName": "请告诉我你的名字。",
+        "lastName": "请告诉我你的姓氏。",
         "email": "这个邮箱地址看起来不太对。",
+        "phone": "这个电话号码看起来不太对。",
         "message": "请再多写一点（至少 10 个字符）。"
       },
       "sentTitle": "消息已发送",

@@ -5,8 +5,15 @@ import { z } from "zod";
  * message keys under Contact.form.errors.
  */
 export const contactSchema = z.object({
-  name: z.string().trim().min(1, "name").max(120, "name"),
+  firstName: z.string().trim().min(1, "firstName").max(60, "firstName"),
+  lastName: z.string().trim().min(1, "lastName").max(60, "lastName"),
   email: z.email("email").max(200, "email"),
+  /** Any common format: digits, spaces, + - ( ) . — and at least 7 digits. */
+  phone: z
+    .string()
+    .trim()
+    .regex(/^\+?[\d\s().-]+$/, "phone")
+    .refine((v) => v.replace(/\D/g, "").length >= 7 && v.replace(/\D/g, "").length <= 15, "phone"),
   message: z.string().trim().min(10, "message").max(5000, "message"),
   /**
    * Honeypot: hidden from people, so only bots fill it in. The server quietly
@@ -17,6 +24,8 @@ export const contactSchema = z.object({
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;
+
+export const fullName = (d: Pick<ContactInput, "firstName" | "lastName">) => `${d.firstName} ${d.lastName}`;
 
 export type ContactResult =
   | { status: "success" }

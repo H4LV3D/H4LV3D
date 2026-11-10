@@ -856,10 +856,14 @@
     "subtitle": "Un projet, un poste ou simplement une question ? Ma boîte mail est ouverte.",
     "or": "ou écrivez à",
     "form": {
-      "name": "Votre nom",
-      "namePlaceholder": "Ada Lovelace",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Ada",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Lovelace",
       "email": "E-mail",
       "emailPlaceholder": "ada@exemple.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+234 800 000 0000",
       "message": "Message",
       "messagePlaceholder": "Parlez-moi de votre idée…",
       "submit": "Envoyer le message",
@@ -869,8 +873,10 @@
       "emailInstead": "M'écrire directement",
       "notConfigured": "Le formulaire n'est pas encore connecté — écrivez-moi directement par e-mail.",
       "errors": {
-        "name": "Indiquez-moi votre nom.",
+        "firstName": "Indiquez-moi votre prénom.",
+        "lastName": "Indiquez-moi votre nom.",
         "email": "Cet e-mail ne semble pas valide.",
+        "phone": "Ce numéro de téléphone ne semble pas valide.",
         "message": "Un peu plus de détails, s'il vous plaît (10 caractères minimum)."
       },
       "sentTitle": "Message envoyé",

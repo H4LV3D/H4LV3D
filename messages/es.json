@@ -856,10 +856,14 @@
     "subtitle": "¿Tienes un proyecto, un puesto o simplemente una pregunta? Mi bandeja de entrada está abierta.",
     "or": "o escribe a",
     "form": {
-      "name": "Tu nombre",
-      "namePlaceholder": "Ada Lovelace",
+      "firstName": "Nombre",
+      "firstNamePlaceholder": "Ada",
+      "lastName": "Apellido",
+      "lastNamePlaceholder": "Lovelace",
       "email": "Correo electrónico",
       "emailPlaceholder": "ada@ejemplo.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+234 800 000 0000",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntame tu idea…",
       "submit": "Enviar mensaje",
@@ -869,8 +873,10 @@
       "emailInstead": "Escríbeme directamente",
       "notConfigured": "El formulario aún no está conectado: escríbeme directamente por correo.",
       "errors": {
-        "name": "Dime tu nombre, por favor.",
+        "firstName": "Dime tu nombre, por favor.",
+        "lastName": "Dime tu apellido, por favor.",
         "email": "Ese correo no parece válido.",
+        "phone": "Ese número de teléfono no parece válido.",
         "message": "Un poco más de detalle, por favor (mínimo 10 caracteres)."
       },
       "sentTitle": "Mensaje enviado",

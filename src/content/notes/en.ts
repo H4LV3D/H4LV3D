@@ -3,8 +3,7 @@ import type { NoteTranslations } from "./types";
 export const en: NoteTranslations = {
   "one-sign-in-many-apps": {
     title: "One sign-in for many apps",
-    summary:
-      "How a family of products moved onto a single OAuth 2.0 sign-in service, and the rules that keep it safe.",
+    summary: "How a family of products moved onto a single OAuth 2.0 sign-in service, and the rules that keep it safe.",
     blocks: [
       {
         type: "p",

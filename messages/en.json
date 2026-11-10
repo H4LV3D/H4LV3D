@@ -856,10 +856,14 @@
     "subtitle": "Have a project, a role or just a question? My inbox is open.",
     "or": "or write to",
     "form": {
-      "name": "Your name",
-      "namePlaceholder": "Ada Lovelace",
+      "firstName": "First name",
+      "firstNamePlaceholder": "Ada",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "Lovelace",
       "email": "Email",
       "emailPlaceholder": "ada@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+234 800 000 0000",
       "message": "Message",
       "messagePlaceholder": "Tell me about your idea…",
       "submit": "Send message",
@@ -869,8 +873,10 @@
       "emailInstead": "Email me instead",
       "notConfigured": "The contact form isn't connected yet — please email me directly.",
       "errors": {
-        "name": "Please tell me your name.",
+        "firstName": "Please tell me your first name.",
+        "lastName": "Please tell me your last name.",
         "email": "That email doesn't look right.",
+        "phone": "That phone number doesn't look right.",
         "message": "A little more detail, please (at least 10 characters)."
       },
       "sentTitle": "Message sent",

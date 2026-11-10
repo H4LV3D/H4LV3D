@@ -87,7 +87,7 @@ export async function sendContactMessage(input: ContactInput, requestedLocale?: 
         data,
         {
           subject: t("subject"),
-          greeting: t("greeting", { name: data.name }),
+          greeting: t("greeting", { name: data.firstName }),
           body: t("body"),
           quoteLabel: t("quoteLabel"),
           signoff: t("signoff"),
